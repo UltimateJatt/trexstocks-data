@@ -187,6 +187,12 @@ def score_all(groups, tech, fund, live, today=None):
             if t.get("ret126_21") is not None else None,
         })
     df = pd.DataFrame(rows).set_index("sym")
+    # Older saved measurements may lack newer columns; treat them as missing data
+    for col in ("dist50", "dist200", "slope50", "rsi14", "volTrend", "volatility60",
+                "beta", "maxDrawdown", "fromHigh", "high52", "low52", "ret63",
+                "avgDollarVol50", "bars"):
+        if col not in df:
+            df[col] = np.nan
     sec = df["sector"]
     fin = sec == "Financial Services"
 
