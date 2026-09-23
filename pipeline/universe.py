@@ -3,6 +3,7 @@
 If a source fails or returns a suspiciously short list, the previous saved list is
 kept, so a bad scrape can never wipe out the site.
 """
+import re
 from datetime import datetime, timedelta
 from io import StringIO
 
@@ -20,21 +21,29 @@ SOURCES = {
     "ndx": ("https://en.wikipedia.org/wiki/Nasdaq-100", 95, 110),
     "tsx": ("https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index", 180, 260),
 }
-SYMBOL_COLS = ("Symbol", "Ticker", "Ticker symbol")
-NAME_COLS = ("Security", "Company", "Name")
+SYMBOL_COLS = ("symbol", "ticker", "ticker symbol")
+NAME_COLS = ("security", "company", "name")
+
+
+def _norm(c):
+    """'Ticker[12]' -> 'ticker' (drops footnote marks and extra spaces)."""
+    return re.sub(r"\[.*?\]", "", str(c[-1] if isinstance(c, tuple) else c)).strip().lower()
 
 
 def _wiki_table(url, lo, hi):
     html = requests.get(url, headers=UA, timeout=30).text
-    for t in pd.read_html(StringIO(html)):
-        cols = [str(c[-1] if isinstance(c, tuple) else c).strip() for c in t.columns]
+    tables = pd.read_html(StringIO(html))
+    seen = []
+    for t in tables:
+        cols = [_norm(c) for c in t.columns]
+        seen.append(f"{len(t)} rows {cols[:4]}")
         t.columns = cols
         sym = next((c for c in SYMBOL_COLS if c in cols), None)
         if sym and lo <= len(t) <= hi:
             name = next((c for c in NAME_COLS if c in cols), None)
             return [(str(r[sym]).strip(), str(r[name]).strip() if name else "")
-                    for _, r in t.iterrows()]
-    raise ValueError(f"no suitable table at {url}")
+                    for _, r in t.iterrows() if str(r[sym]).strip() not in ("", "nan")]
+    raise ValueError(f"no suitable table at {url}; tables seen: {seen}")
 
 
 def _to_yahoo_us(s):
