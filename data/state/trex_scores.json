@@ -1,0 +1,5453 @@
+{
+ "asOf": "2026-09-23T09:35:38.210391-04:00",
+ "scores": {
+  "PAYX": [
+   45,
+   null
+  ],
+  "CSCO": [
+   52,
+   "speculative"
+  ],
+  "EXR": [
+   53,
+   null
+  ],
+  "SHW": [
+   46,
+   "blueChip"
+  ],
+  "BE": [
+   62,
+   "speculative"
+  ],
+  "IEX": [
+   63,
+   null
+  ],
+  "COR": [
+   56,
+   "blueChip"
+  ],
+  "GEHC": [
+   42,
+   "speculative"
+  ],
+  "BEN": [
+   65,
+   null
+  ],
+  "MET": [
+   66,
+   "blueChip"
+  ],
+  "FRT": [
+   46,
+   null
+  ],
+  "GNRC": [
+   50,
+   "speculative"
+  ],
+  "AMGN": [
+   66,
+   "blueChip"
+  ],
+  "UBER": [
+   52,
+   "speculative"
+  ],
+  "IR": [
+   51,
+   null
+  ],
+  "HPQ": [
+   73,
+   "speculative"
+  ],
+  "WTW": [
+   49,
+   null
+  ],
+  "NTAP": [
+   78,
+   "speculative"
+  ],
+  "VMRK": [
+   55,
+   null
+  ],
+  "SBAC": [
+   49,
+   null
+  ],
+  "HLT": [
+   48,
+   "blueChip"
+  ],
+  "EMR": [
+   59,
+   "blueChip"
+  ],
+  "GL": [
+   58,
+   null
+  ],
+  "ON": [
+   48,
+   "speculative"
+  ],
+  "PSX": [
+   89,
+   "speculative"
+  ],
+  "DPZ": [
+   30,
+   "speculative"
+  ],
+  "CMS": [
+   35,
+   null
+  ],
+  "CPAY": [
+   61,
+   "speculative"
+  ],
+  "KLAC": [
+   45,
+   "blueChip"
+  ],
+  "OXY": [
+   70,
+   "speculative"
+  ],
+  "ABBV": [
+   61,
+   "blueChip"
+  ],
+  "AMZN": [
+   66,
+   "speculative"
+  ],
+  "ERIE": [
+   39,
+   "hiddenGem"
+  ],
+  "ARES": [
+   47,
+   "speculative"
+  ],
+  "FERG": [
+   42,
+   null
+  ],
+  "LH": [
+   67,
+   null
+  ],
+  "MNST": [
+   56,
+   "speculative"
+  ],
+  "LULU": [
+   30,
+   "speculative"
+  ],
+  "HSY": [
+   47,
+   null
+  ],
+  "PKG": [
+   63,
+   null
+  ],
+  "ELV": [
+   59,
+   "blueChip"
+  ],
+  "OKE": [
+   63,
+   "speculative"
+  ],
+  "LII": [
+   17,
+   "speculative"
+  ],
+  "CRH": [
+   38,
+   "blueChip"
+  ],
+  "NOC": [
+   49,
+   "blueChip"
+  ],
+  "DLR": [
+   45,
+   "speculative"
+  ],
+  "TT": [
+   54,
+   "blueChip"
+  ],
+  "FFIV": [
+   68,
+   "speculative"
+  ],
+  "CVNA": [
+   49,
+   "speculative"
+  ],
+  "ITW": [
+   60,
+   "blueChip"
+  ],
+  "AMP": [
+   68,
+   null
+  ],
+  "BDX": [
+   70,
+   null
+  ],
+  "NDSN": [
+   68,
+   "hiddenGem"
+  ],
+  "INTU": [
+   48,
+   "blueChip"
+  ],
+  "RF": [
+   47,
+   null
+  ],
+  "KMI": [
+   56,
+   "blueChip"
+  ],
+  "PGR": [
+   50,
+   "blueChip"
+  ],
+  "KEYS": [
+   61,
+   "speculative"
+  ],
+  "FIX": [
+   51,
+   "speculative"
+  ],
+  "KVUE": [
+   61,
+   null
+  ],
+  "LMT": [
+   49,
+   "blueChip"
+  ],
+  "PEG": [
+   40,
+   null
+  ],
+  "TROW": [
+   59,
+   null
+  ],
+  "LLY": [
+   66,
+   "speculative"
+  ],
+  "DVN": [
+   74,
+   "speculative"
+  ],
+  "IVZ": [
+   64,
+   "speculative"
+  ],
+  "SMCI": [
+   71,
+   "speculative"
+  ],
+  "HUM": [
+   59,
+   "speculative"
+  ],
+  "MRVL": [
+   58,
+   "speculative"
+  ],
+  "LVS": [
+   37,
+   null
+  ],
+  "PODD": [
+   42,
+   "speculative"
+  ],
+  "CCI": [
+   41,
+   null
+  ],
+  "MRSH": [
+   44,
+   "blueChip"
+  ],
+  "V": [
+   63,
+   "blueChip"
+  ],
+  "TPL": [
+   51,
+   "speculative"
+  ],
+  "BKR": [
+   42,
+   "blueChip"
+  ],
+  "NEE": [
+   40,
+   "blueChip"
+  ],
+  "MPWR": [
+   62,
+   "speculative"
+  ],
+  "VICI": [
+   44,
+   null
+  ],
+  "TJX": [
+   42,
+   "blueChip"
+  ],
+  "SW": [
+   53,
+   "speculative"
+  ],
+  "GS": [
+   58,
+   "speculative"
+  ],
+  "ROK": [
+   49,
+   null
+  ],
+  "DUK": [
+   42,
+   "blueChip"
+  ],
+  "MCK": [
+   56,
+   "blueChip"
+  ],
+  "VRSK": [
+   28,
+   "speculative"
+  ],
+  "XOM": [
+   71,
+   "speculative"
+  ],
+  "ACGL": [
+   59,
+   null
+  ],
+  "MAR": [
+   53,
+   "blueChip"
+  ],
+  "PHM": [
+   56,
+   null
+  ],
+  "SNPS": [
+   47,
+   "speculative"
+  ],
+  "ODFL": [
+   40,
+   null
+  ],
+  "UPS": [
+   44,
+   "blueChip"
+  ],
+  "NWSA": [
+   67,
+   "hiddenGem"
+  ],
+  "NUE": [
+   67,
+   "speculative"
+  ],
+  "FOXA": [
+   66,
+   "speculative"
+  ],
+  "BSX": [
+   54,
+   "blueChip"
+  ],
+  "MTD": [
+   61,
+   null
+  ],
+  "ROST": [
+   57,
+   "blueChip"
+  ],
+  "WYNN": [
+   40,
+   null
+  ],
+  "IBM": [
+   42,
+   "blueChip"
+  ],
+  "BG": [
+   58,
+   "speculative"
+  ],
+  "MOS": [
+   47,
+   "speculative"
+  ],
+  "NCLH": [
+   31,
+   "speculative"
+  ],
+  "MSFT": [
+   69,
+   "speculative"
+  ],
+  "CRM": [
+   66,
+   "speculative"
+  ],
+  "EXC": [
+   41,
+   null
+  ],
+  "TPR": [
+   30,
+   "speculative"
+  ],
+  "ZTS": [
+   43,
+   null
+  ],
+  "TSCO": [
+   36,
+   null
+  ],
+  "BKNG": [
+   53,
+   "speculative"
+  ],
+  "FAST": [
+   63,
+   "blueChip"
+  ],
+  "RDDT": [
+   48,
+   "speculative"
+  ],
+  "COO": [
+   40,
+   "speculative"
+  ],
+  "TGT": [
+   61,
+   "blueChip"
+  ],
+  "TFC": [
+   57,
+   "blueChip"
+  ],
+  "LHX": [
+   37,
+   null
+  ],
+  "CNC": [
+   59,
+   "speculative"
+  ],
+  "ECHO": [
+   32,
+   "hiddenGem"
+  ],
+  "VRT": [
+   50,
+   "speculative"
+  ],
+  "CVS": [
+   40,
+   "blueChip"
+  ],
+  "RJF": [
+   60,
+   "speculative"
+  ],
+  "LOW": [
+   43,
+   "blueChip"
+  ],
+  "APA": [
+   72,
+   "speculative"
+  ],
+  "XYZ": [
+   47,
+   "speculative"
+  ],
+  "EME": [
+   46,
+   "speculative"
+  ],
+  "IDXX": [
+   44,
+   null
+  ],
+  "KIM": [
+   48,
+   null
+  ],
+  "KHC": [
+   58,
+   null
+  ],
+  "ES": [
+   50,
+   null
+  ],
+  "CMCSA": [
+   41,
+   "blueChip"
+  ],
+  "BF-B": [
+   52,
+   "speculative"
+  ],
+  "CFG": [
+   56,
+   null
+  ],
+  "MU": [
+   55,
+   "speculative"
+  ],
+  "SBUX": [
+   38,
+   "blueChip"
+  ],
+  "FDXF": [
+   34,
+   "speculative"
+  ],
+  "ROL": [
+   32,
+   null
+  ],
+  "GEN": [
+   72,
+   "hiddenGem"
+  ],
+  "IQV": [
+   74,
+   "speculative"
+  ],
+  "CPRT": [
+   36,
+   "speculative"
+  ],
+  "FSLR": [
+   33,
+   "speculative"
+  ],
+  "SYF": [
+   44,
+   null
+  ],
+  "JPM": [
+   70,
+   "speculative"
+  ],
+  "BRK-B": [
+   63,
+   "blueChip"
+  ],
+  "CF": [
+   69,
+   "speculative"
+  ],
+  "JKHY": [
+   49,
+   "speculative"
+  ],
+  "TDY": [
+   56,
+   null
+  ],
+  "PCAR": [
+   44,
+   "blueChip"
+  ],
+  "P": [
+   89,
+   "speculative"
+  ],
+  "MSCI": [
+   47,
+   null
+  ],
+  "MPC": [
+   91,
+   "speculative"
+  ],
+  "ZBRA": [
+   74,
+   "speculative"
+  ],
+  "TMO": [
+   57,
+   "blueChip"
+  ],
+  "DVA": [
+   51,
+   "hiddenGem"
+  ],
+  "FITB": [
+   54,
+   "speculative"
+  ],
+  "A": [
+   57,
+   null
+  ],
+  "GILD": [
+   50,
+   "blueChip"
+  ],
+  "MCO": [
+   58,
+   "speculative"
+  ],
+  "NVDA": [
+   74,
+   "speculative"
+  ],
+  "MAA": [
+   41,
+   null
+  ],
+  "LDOS": [
+   38,
+   "speculative"
+  ],
+  "VMC": [
+   34,
+   null
+  ],
+  "SNA": [
+   53,
+   "hiddenGem"
+  ],
+  "EXPE": [
+   69,
+   "speculative"
+  ],
+  "ADM": [
+   69,
+   null
+  ],
+  "CHTR": [
+   22,
+   "speculative"
+  ],
+  "EVRG": [
+   54,
+   null
+  ],
+  "DECK": [
+   31,
+   "speculative"
+  ],
+  "YUM": [
+   45,
+   null
+  ],
+  "CDW": [
+   59,
+   "hiddenGem"
+  ],
+  "LIN": [
+   47,
+   "blueChip"
+  ],
+  "CHRW": [
+   30,
+   "speculative"
+  ],
+  "GLW": [
+   40,
+   "speculative"
+  ],
+  "GPN": [
+   58,
+   "speculative"
+  ],
+  "CCL": [
+   18,
+   null
+  ],
+  "TRGP": [
+   57,
+   "blueChip"
+  ],
+  "MO": [
+   62,
+   "blueChip"
+  ],
+  "BRO": [
+   43,
+   "speculative"
+  ],
+  "MTB": [
+   56,
+   null
+  ],
+  "WY": [
+   46,
+   null
+  ],
+  "VRSN": [
+   63,
+   null
+  ],
+  "GOOGL": [
+   65,
+   "speculative"
+  ],
+  "HONA": [
+   46,
+   "blueChip"
+  ],
+  "AXP": [
+   40,
+   "blueChip"
+  ],
+  "AMD": [
+   78,
+   "speculative"
+  ],
+  "HRL": [
+   33,
+   "hiddenGem"
+  ],
+  "RMD": [
+   51,
+   "speculative"
+  ],
+  "CMG": [
+   38,
+   "speculative"
+  ],
+  "EIX": [
+   27,
+   "speculative"
+  ],
+  "AKAM": [
+   36,
+   "speculative"
+  ],
+  "CSX": [
+   53,
+   "blueChip"
+  ],
+  "BBY": [
+   68,
+   "speculative"
+  ],
+  "MDLZ": [
+   54,
+   "blueChip"
+  ],
+  "META": [
+   66,
+   "speculative"
+  ],
+  "CLX": [
+   40,
+   null
+  ],
+  "BLK": [
+   56,
+   "speculative"
+  ],
+  "AMCR": [
+   58,
+   "speculative"
+  ],
+  "DASH": [
+   49,
+   "speculative"
+  ],
+  "TER": [
+   65,
+   "speculative"
+  ],
+  "CSGP": [
+   39,
+   "speculative"
+  ],
+  "PLTR": [
+   72,
+   "speculative"
+  ],
+  "WMB": [
+   49,
+   "blueChip"
+  ],
+  "EL": [
+   57,
+   "speculative"
+  ],
+  "HII": [
+   36,
+   "speculative"
+  ],
+  "NDAQ": [
+   63,
+   "blueChip"
+  ],
+  "ADP": [
+   67,
+   "blueChip"
+  ],
+  "DHI": [
+   57,
+   null
+  ],
+  "C": [
+   58,
+   "blueChip"
+  ],
+  "ROP": [
+   60,
+   "speculative"
+  ],
+  "XEL": [
+   47,
+   null
+  ],
+  "HST": [
+   54,
+   null
+  ],
+  "AEP": [
+   43,
+   "blueChip"
+  ],
+  "ANET": [
+   73,
+   "speculative"
+  ],
+  "NOW": [
+   54,
+   "speculative"
+  ],
+  "SRE": [
+   41,
+   "blueChip"
+  ],
+  "SYY": [
+   57,
+   null
+  ],
+  "KKR": [
+   44,
+   "speculative"
+  ],
+  "PNW": [
+   41,
+   null
+  ],
+  "PTC": [
+   52,
+   "speculative"
+  ],
+  "PPL": [
+   40,
+   null
+  ],
+  "SLB": [
+   53,
+   "speculative"
+  ],
+  "JCI": [
+   58,
+   "blueChip"
+  ],
+  "GM": [
+   60,
+   "blueChip"
+  ],
+  "HAL": [
+   38,
+   null
+  ],
+  "WFC": [
+   56,
+   "blueChip"
+  ],
+  "ALB": [
+   33,
+   "speculative"
+  ],
+  "MRNA": [
+   61,
+   "speculative"
+  ],
+  "VST": [
+   21,
+   "speculative"
+  ],
+  "WM": [
+   41,
+   "blueChip"
+  ],
+  "CAH": [
+   49,
+   "blueChip"
+  ],
+  "ECL": [
+   55,
+   "blueChip"
+  ],
+  "TRV": [
+   65,
+   "blueChip"
+  ],
+  "ETR": [
+   44,
+   null
+  ],
+  "SWKS": [
+   64,
+   "speculative"
+  ],
+  "CTSH": [
+   44,
+   "speculative"
+  ],
+  "APD": [
+   47,
+   "blueChip"
+  ],
+  "BR": [
+   54,
+   "hiddenGem"
+  ],
+  "DLTR": [
+   52,
+   null
+  ],
+  "AON": [
+   35,
+   "blueChip"
+  ],
+  "CAT": [
+   47,
+   "speculative"
+  ],
+  "GIS": [
+   23,
+   "speculative"
+  ],
+  "GRMN": [
+   68,
+   "speculative"
+  ],
+  "COIN": [
+   49,
+   "speculative"
+  ],
+  "FIS": [
+   32,
+   "speculative"
+  ],
+  "L": [
+   47,
+   null
+  ],
+  "CBOE": [
+   52,
+   "speculative"
+  ],
+  "HUBB": [
+   35,
+   "speculative"
+  ],
+  "AAPL": [
+   70,
+   "speculative"
+  ],
+  "MRK": [
+   66,
+   "speculative"
+  ],
+  "AEE": [
+   45,
+   null
+  ],
+  "AVY": [
+   59,
+   "hiddenGem"
+  ],
+  "WRB": [
+   60,
+   null
+  ],
+  "TXT": [
+   48,
+   null
+  ],
+  "ICE": [
+   57,
+   "blueChip"
+  ],
+  "LITE": [
+   69,
+   "speculative"
+  ],
+  "PNC": [
+   55,
+   "speculative"
+  ],
+  "SOLV": [
+   67,
+   null
+  ],
+  "WAB": [
+   61,
+   "speculative"
+  ],
+  "MKC": [
+   34,
+   "speculative"
+  ],
+  "CI": [
+   54,
+   "blueChip"
+  ],
+  "LRCX": [
+   59,
+   "speculative"
+  ],
+  "MCHP": [
+   43,
+   "speculative"
+  ],
+  "PSKY": [
+   46,
+   "speculative"
+  ],
+  "VTRS": [
+   59,
+   "hiddenGem"
+  ],
+  "GWW": [
+   58,
+   "blueChip"
+  ],
+  "F": [
+   46,
+   "blueChip"
+  ],
+  "TMUS": [
+   36,
+   "blueChip"
+  ],
+  "DIS": [
+   58,
+   "blueChip"
+  ],
+  "TTWO": [
+   35,
+   "speculative"
+  ],
+  "ATO": [
+   48,
+   null
+  ],
+  "EXE": [
+   39,
+   null
+  ],
+  "DOC": [
+   54,
+   null
+  ],
+  "ORLY": [
+   47,
+   "blueChip"
+  ],
+  "NWS": [
+   59,
+   "hiddenGem"
+  ],
+  "HAS": [
+   43,
+   "speculative"
+  ],
+  "NRG": [
+   24,
+   "speculative"
+  ],
+  "HWM": [
+   49,
+   "speculative"
+  ],
+  "HON": [
+   48,
+   "blueChip"
+  ],
+  "JBHT": [
+   56,
+   "speculative"
+  ],
+  "CRL": [
+   67,
+   "speculative"
+  ],
+  "O": [
+   42,
+   "blueChip"
+  ],
+  "PANW": [
+   78,
+   "speculative"
+  ],
+  "CINF": [
+   56,
+   "speculative"
+  ],
+  "INVH": [
+   52,
+   null
+  ],
+  "XYL": [
+   52,
+   null
+  ],
+  "ARE": [
+   46,
+   "speculative"
+  ],
+  "BNY": [
+   56,
+   "blueChip"
+  ],
+  "FTNT": [
+   77,
+   "speculative"
+  ],
+  "D": [
+   44,
+   "speculative"
+  ],
+  "ETN": [
+   62,
+   "speculative"
+  ],
+  "FE": [
+   45,
+   null
+  ],
+  "PCG": [
+   23,
+   "speculative"
+  ],
+  "ABT": [
+   52,
+   "blueChip"
+  ],
+  "INCY": [
+   79,
+   "speculative"
+  ],
+  "BAX": [
+   62,
+   "speculative"
+  ],
+  "ADSK": [
+   58,
+   "speculative"
+  ],
+  "AWK": [
+   52,
+   null
+  ],
+  "KEY": [
+   56,
+   null
+  ],
+  "MSI": [
+   60,
+   "blueChip"
+  ],
+  "LYV": [
+   49,
+   null
+  ],
+  "MMM": [
+   65,
+   "blueChip"
+  ],
+  "DHR": [
+   60,
+   "speculative"
+  ],
+  "FDS": [
+   46,
+   "speculative"
+  ],
+  "LEN": [
+   34,
+   "speculative"
+  ],
+  "MGM": [
+   45,
+   null
+  ],
+  "EQIX": [
+   55,
+   "speculative"
+  ],
+  "HCA": [
+   51,
+   "speculative"
+  ],
+  "HOOD": [
+   75,
+   "speculative"
+  ],
+  "STX": [
+   60,
+   "speculative"
+  ],
+  "MS": [
+   58,
+   "speculative"
+  ],
+  "WMT": [
+   39,
+   "blueChip"
+  ],
+  "MLM": [
+   36,
+   "speculative"
+  ],
+  "SNDK": [
+   61,
+   "blueChip"
+  ],
+  "WDAY": [
+   68,
+   "speculative"
+  ],
+  "CRWD": [
+   82,
+   "speculative"
+  ],
+  "EXPD": [
+   78,
+   "speculative"
+  ],
+  "QCOM": [
+   52,
+   "blueChip"
+  ],
+  "VLO": [
+   92,
+   "speculative"
+  ],
+  "BMY": [
+   66,
+   "blueChip"
+  ],
+  "IRM": [
+   49,
+   "speculative"
+  ],
+  "FICO": [
+   42,
+   "speculative"
+  ],
+  "GPC": [
+   52,
+   "hiddenGem"
+  ],
+  "FANG": [
+   67,
+   "speculative"
+  ],
+  "AIG": [
+   59,
+   null
+  ],
+  "UNP": [
+   57,
+   "blueChip"
+  ],
+  "AES": [
+   57,
+   "hiddenGem"
+  ],
+  "IFF": [
+   55,
+   null
+  ],
+  "USB": [
+   61,
+   "blueChip"
+  ],
+  "AME": [
+   64,
+   "speculative"
+  ],
+  "ESS": [
+   49,
+   null
+  ],
+  "ACN": [
+   47,
+   "blueChip"
+  ],
+  "TSN": [
+   49,
+   null
+  ],
+  "KDP": [
+   60,
+   "speculative"
+  ],
+  "TDG": [
+   45,
+   "blueChip"
+  ],
+  "AOS": [
+   51,
+   null
+  ],
+  "GOOG": [
+   64,
+   "speculative"
+  ],
+  "RVTY": [
+   69,
+   "speculative"
+  ],
+  "VZ": [
+   54,
+   "blueChip"
+  ],
+  "WDC": [
+   61,
+   "blueChip"
+  ],
+  "MA": [
+   58,
+   "blueChip"
+  ],
+  "STZ": [
+   26,
+   null
+  ],
+  "DAL": [
+   64,
+   "blueChip"
+  ],
+  "NVR": [
+   55,
+   "hiddenGem"
+  ],
+  "NXPI": [
+   54,
+   "blueChip"
+  ],
+  "LYB": [
+   52,
+   "speculative"
+  ],
+  "VRTX": [
+   63,
+   "blueChip"
+  ],
+  "AVGO": [
+   64,
+   "speculative"
+  ],
+  "MCD": [
+   47,
+   "blueChip"
+  ],
+  "DGX": [
+   66,
+   null
+  ],
+  "CVX": [
+   80,
+   "speculative"
+  ],
+  "CTAS": [
+   40,
+   "blueChip"
+  ],
+  "DG": [
+   50,
+   "speculative"
+  ],
+  "BA": [
+   32,
+   "blueChip"
+  ],
+  "STT": [
+   73,
+   "speculative"
+  ],
+  "TKO": [
+   50,
+   "speculative"
+  ],
+  "FISV": [
+   32,
+   "speculative"
+  ],
+  "KR": [
+   54,
+   null
+  ],
+  "SO": [
+   39,
+   "blueChip"
+  ],
+  "DE": [
+   47,
+   "blueChip"
+  ],
+  "UDR": [
+   43,
+   null
+  ],
+  "AJG": [
+   48,
+   "speculative"
+  ],
+  "HBAN": [
+   48,
+   "speculative"
+  ],
+  "MDT": [
+   67,
+   "blueChip"
+  ],
+  "SPG": [
+   59,
+   "blueChip"
+  ],
+  "CMI": [
+   39,
+   "blueChip"
+  ],
+  "JNJ": [
+   65,
+   "blueChip"
+  ],
+  "SWK": [
+   64,
+   null
+  ],
+  "ISRG": [
+   38,
+   "speculative"
+  ],
+  "BIIB": [
+   53,
+   "speculative"
+  ],
+  "TEL": [
+   57,
+   "blueChip"
+  ],
+  "WEC": [
+   49,
+   null
+  ],
+  "IT": [
+   53,
+   "speculative"
+  ],
+  "GD": [
+   50,
+   "blueChip"
+  ],
+  "PFE": [
+   66,
+   "blueChip"
+  ],
+  "PSA": [
+   49,
+   "blueChip"
+  ],
+  "INTC": [
+   59,
+   "speculative"
+  ],
+  "HD": [
+   40,
+   "blueChip"
+  ],
+  "AMT": [
+   67,
+   "blueChip"
+  ],
+  "CTVA": [
+   45,
+   "blueChip"
+  ],
+  "PWR": [
+   52,
+   "speculative"
+  ],
+  "WBD": [
+   39,
+   "blueChip"
+  ],
+  "DTE": [
+   45,
+   null
+  ],
+  "PG": [
+   59,
+   "blueChip"
+  ],
+  "REGN": [
+   72,
+   "blueChip"
+  ],
+  "ADBE": [
+   61,
+   "blueChip"
+  ],
+  "KMB": [
+   51,
+   null
+  ],
+  "IBKR": [
+   64,
+   "speculative"
+  ],
+  "SYK": [
+   42,
+   "speculative"
+  ],
+  "TRMB": [
+   52,
+   null
+  ],
+  "FLEX": [
+   51,
+   "speculative"
+  ],
+  "ILMN": [
+   76,
+   "speculative"
+  ],
+  "CARR": [
+   38,
+   null
+  ],
+  "PEP": [
+   46,
+   "blueChip"
+  ],
+  "DOW": [
+   38,
+   "speculative"
+  ],
+  "UHS": [
+   57,
+   null
+  ],
+  "SCHW": [
+   62,
+   "speculative"
+  ],
+  "CME": [
+   58,
+   "blueChip"
+  ],
+  "OMC": [
+   63,
+   "speculative"
+  ],
+  "OTIS": [
+   57,
+   null
+  ],
+  "UAL": [
+   48,
+   "speculative"
+  ],
+  "ALLE": [
+   62,
+   null
+  ],
+  "EBAY": [
+   62,
+   null
+  ],
+  "FTV": [
+   50,
+   null
+  ],
+  "HPE": [
+   88,
+   "speculative"
+  ],
+  "NEM": [
+   74,
+   "blueChip"
+  ],
+  "COHR": [
+   50,
+   "speculative"
+  ],
+  "PNR": [
+   7,
+   "speculative"
+  ],
+  "PPG": [
+   50,
+   null
+  ],
+  "DXCM": [
+   76,
+   "speculative"
+  ],
+  "APH": [
+   70,
+   "speculative"
+  ],
+  "COP": [
+   73,
+   "speculative"
+  ],
+  "ORCL": [
+   55,
+   "blueChip"
+  ],
+  "WAT": [
+   71,
+   "speculative"
+  ],
+  "RCL": [
+   37,
+   "blueChip"
+  ],
+  "FOX": [
+   69,
+   "speculative"
+  ],
+  "PM": [
+   61,
+   "blueChip"
+  ],
+  "ADI": [
+   62,
+   "speculative"
+  ],
+  "REG": [
+   53,
+   null
+  ],
+  "SPGI": [
+   45,
+   "blueChip"
+  ],
+  "ED": [
+   50,
+   null
+  ],
+  "GE": [
+   54,
+   "speculative"
+  ],
+  "BALL": [
+   53,
+   "speculative"
+  ],
+  "WST": [
+   62,
+   null
+  ],
+  "COST": [
+   32,
+   "blueChip"
+  ],
+  "T": [
+   64,
+   "blueChip"
+  ],
+  "NI": [
+   36,
+   null
+  ],
+  "ALGN": [
+   28,
+   "speculative"
+  ],
+  "CPT": [
+   34,
+   null
+  ],
+  "SJM": [
+   63,
+   null
+  ],
+  "NFLX": [
+   45,
+   "blueChip"
+  ],
+  "PH": [
+   60,
+   "blueChip"
+  ],
+  "BX": [
+   51,
+   "speculative"
+  ],
+  "HIG": [
+   57,
+   null
+  ],
+  "CEG": [
+   45,
+   "blueChip"
+  ],
+  "LNT": [
+   38,
+   null
+  ],
+  "RL": [
+   52,
+   null
+  ],
+  "EQT": [
+   41,
+   null
+  ],
+  "DELL": [
+   89,
+   "speculative"
+  ],
+  "ZBH": [
+   53,
+   null
+  ],
+  "UNH": [
+   47,
+   "blueChip"
+  ],
+  "EFX": [
+   40,
+   "speculative"
+  ],
+  "KO": [
+   65,
+   "blueChip"
+  ],
+  "PLD": [
+   51,
+   "blueChip"
+  ],
+  "WELL": [
+   65,
+   "speculative"
+  ],
+  "APP": [
+   36,
+   "blueChip"
+  ],
+  "IP": [
+   43,
+   "speculative"
+  ],
+  "VLTO": [
+   64,
+   null
+  ],
+  "APTV": [
+   16,
+   "speculative"
+  ],
+  "MAS": [
+   48,
+   "speculative"
+  ],
+  "COF": [
+   54,
+   "blueChip"
+  ],
+  "VEEV": [
+   72,
+   "speculative"
+  ],
+  "CDNS": [
+   49,
+   "speculative"
+  ],
+  "RSG": [
+   54,
+   "blueChip"
+  ],
+  "PFG": [
+   67,
+   null
+  ],
+  "STE": [
+   52,
+   null
+  ],
+  "DRI": [
+   44,
+   null
+  ],
+  "PRU": [
+   68,
+   null
+  ],
+  "APO": [
+   52,
+   "speculative"
+  ],
+  "AIZ": [
+   65,
+   "hiddenGem"
+  ],
+  "AXON": [
+   52,
+   "speculative"
+  ],
+  "FCX": [
+   59,
+   "blueChip"
+  ],
+  "NTRS": [
+   64,
+   "speculative"
+  ],
+  "TYL": [
+   46,
+   "speculative"
+  ],
+  "URI": [
+   59,
+   "speculative"
+  ],
+  "ALL": [
+   57,
+   "blueChip"
+  ],
+  "CHD": [
+   55,
+   null
+  ],
+  "DD": [
+   50,
+   null
+  ],
+  "TSLA": [
+   40,
+   "speculative"
+  ],
+  "J": [
+   56,
+   "speculative"
+  ],
+  "AMAT": [
+   51,
+   "speculative"
+  ],
+  "CASY": [
+   46,
+   "speculative"
+  ],
+  "PYPL": [
+   46,
+   "speculative"
+  ],
+  "BXP": [
+   51,
+   null
+  ],
+  "NSC": [
+   54,
+   "blueChip"
+  ],
+  "CNP": [
+   45,
+   null
+  ],
+  "ABNB": [
+   61,
+   "speculative"
+  ],
+  "EG": [
+   71,
+   null
+  ],
+  "EOG": [
+   74,
+   "speculative"
+  ],
+  "NKE": [
+   21,
+   null
+  ],
+  "HSIC": [
+   65,
+   null
+  ],
+  "CB": [
+   59,
+   "blueChip"
+  ],
+  "EW": [
+   58,
+   "blueChip"
+  ],
+  "ULTA": [
+   50,
+   "speculative"
+  ],
+  "FDX": [
+   48,
+   "blueChip"
+  ],
+  "VTR": [
+   54,
+   "speculative"
+  ],
+  "RTX": [
+   40,
+   "blueChip"
+  ],
+  "JBL": [
+   36,
+   "speculative"
+  ],
+  "DOV": [
+   47,
+   null
+  ],
+  "CBRE": [
+   55,
+   "speculative"
+  ],
+  "GEV": [
+   52,
+   "speculative"
+  ],
+  "LUV": [
+   46,
+   "speculative"
+  ],
+  "BAC": [
+   61,
+   "speculative"
+  ],
+  "CIEN": [
+   51,
+   "speculative"
+  ],
+  "CL": [
+   50,
+   "blueChip"
+  ],
+  "DDOG": [
+   67,
+   "speculative"
+  ],
+  "Q": [
+   37,
+   "speculative"
+  ],
+  "TECH": [
+   66,
+   null
+  ],
+  "AFL": [
+   55,
+   "blueChip"
+  ],
+  "AZO": [
+   47,
+   null
+  ],
+  "STLD": [
+   59,
+   "speculative"
+  ],
+  "TXN": [
+   59,
+   "speculative"
+  ],
+  "GDDY": [
+   62,
+   "speculative"
+  ],
+  "WSM": [
+   63,
+   null
+  ],
+  "CHEF": [
+   59,
+   "hiddenGem"
+  ],
+  "VERA": [
+   45,
+   "speculative"
+  ],
+  "BPOP": [
+   59,
+   "hiddenGem"
+  ],
+  "DRS": [
+   46,
+   null
+  ],
+  "ONBPO": [
+   61,
+   null
+  ],
+  "FIVE": [
+   66,
+   "speculative"
+  ],
+  "OXLCL": [
+   60,
+   null
+  ],
+  "AMLX": [
+   63,
+   "speculative"
+  ],
+  "LOGI": [
+   51,
+   "hiddenGem"
+  ],
+  "NAMS": [
+   31,
+   "speculative"
+  ],
+  "MELI": [
+   57,
+   "speculative"
+  ],
+  "BGC": [
+   69,
+   "hiddenGem"
+  ],
+  "IONS": [
+   24,
+   "speculative"
+  ],
+  "ACGLO": [
+   54,
+   "hiddenGem"
+  ],
+  "TILE": [
+   64,
+   null
+  ],
+  "NVMI": [
+   44,
+   "hiddenGem"
+  ],
+  "ELVN": [
+   57,
+   "hiddenGem"
+  ],
+  "RGEN": [
+   46,
+   null
+  ],
+  "SHAZ": [
+   46,
+   "speculative"
+  ],
+  "NWE": [
+   58,
+   "hiddenGem"
+  ],
+  "FRVO": [
+   36,
+   "speculative"
+  ],
+  "CACC": [
+   54,
+   "hiddenGem"
+  ],
+  "NVTS": [
+   35,
+   "hiddenGem"
+  ],
+  "VLYPO": [
+   49,
+   "hiddenGem"
+  ],
+  "PLUS": [
+   66,
+   "hiddenGem"
+  ],
+  "CG": [
+   34,
+   null
+  ],
+  "USLM": [
+   59,
+   "hiddenGem"
+  ],
+  "KSPI": [
+   73,
+   "hiddenGem"
+  ],
+  "TNGX": [
+   53,
+   "speculative"
+  ],
+  "ECPG": [
+   69,
+   "hiddenGem"
+  ],
+  "AEIS": [
+   39,
+   "speculative"
+  ],
+  "CLOV": [
+   64,
+   "speculative"
+  ],
+  "LIVN": [
+   60,
+   "hiddenGem"
+  ],
+  "XE": [
+   51,
+   "speculative"
+  ],
+  "ACIW": [
+   54,
+   "hiddenGem"
+  ],
+  "TRMD": [
+   84,
+   "hiddenGem"
+  ],
+  "AAON": [
+   42,
+   "hiddenGem"
+  ],
+  "HTHT": [
+   45,
+   null
+  ],
+  "ZBIO": [
+   64,
+   "speculative"
+  ],
+  "OXLCO": [
+   58,
+   null
+  ],
+  "RGC": [
+   28,
+   null
+  ],
+  "TENB": [
+   69,
+   "speculative"
+  ],
+  "OCTV": [
+   61,
+   "hiddenGem"
+  ],
+  "KLIC": [
+   51,
+   "hiddenGem"
+  ],
+  "PRVA": [
+   38,
+   "speculative"
+  ],
+  "HRMY": [
+   80,
+   "speculative"
+  ],
+  "DORM": [
+   41,
+   "hiddenGem"
+  ],
+  "TARS": [
+   57,
+   "speculative"
+  ],
+  "SRAD": [
+   34,
+   "speculative"
+  ],
+  "RXRX": [
+   50,
+   "hiddenGem"
+  ],
+  "NEOG": [
+   54,
+   "hiddenGem"
+  ],
+  "SHOP": [
+   69,
+   "speculative"
+  ],
+  "PLUG": [
+   24,
+   "speculative"
+  ],
+  "INIO": [
+   43,
+   "speculative"
+  ],
+  "VEON": [
+   67,
+   "hiddenGem"
+  ],
+  "WSC": [
+   26,
+   "hiddenGem"
+  ],
+  "LASR": [
+   25,
+   "hiddenGem"
+  ],
+  "HCM": [
+   43,
+   "speculative"
+  ],
+  "DJT": [
+   46,
+   "speculative"
+  ],
+  "WSFS": [
+   60,
+   "hiddenGem"
+  ],
+  "DOX": [
+   47,
+   "hiddenGem"
+  ],
+  "BELFA": [
+   42,
+   null
+  ],
+  "DBX": [
+   68,
+   "hiddenGem"
+  ],
+  "VLYPN": [
+   59,
+   null
+  ],
+  "HYMC": [
+   46,
+   "hiddenGem"
+  ],
+  "SIRI": [
+   49,
+   null
+  ],
+  "FTAIM": [
+   55,
+   null
+  ],
+  "ENPH": [
+   21,
+   "speculative"
+  ],
+  "DNLI": [
+   45,
+   null
+  ],
+  "MEOH": [
+   73,
+   "speculative"
+  ],
+  "ZION": [
+   56,
+   "speculative"
+  ],
+  "NSIT": [
+   77,
+   "hiddenGem"
+  ],
+  "VLYPP": [
+   50,
+   "hiddenGem"
+  ],
+  "DHCNI": [
+   57,
+   null
+  ],
+  "MBLY": [
+   30,
+   null
+  ],
+  "SBCF": [
+   54,
+   "hiddenGem"
+  ],
+  "LAUR": [
+   53,
+   "hiddenGem"
+  ],
+  "PHVS": [
+   57,
+   null
+  ],
+  "DXPE": [
+   62,
+   "hiddenGem"
+  ],
+  "MCHB": [
+   51,
+   "hiddenGem"
+  ],
+  "RNW": [
+   60,
+   null
+  ],
+  "CGABL": [
+   53,
+   null
+  ],
+  "DKNG": [
+   29,
+   null
+  ],
+  "XMTR": [
+   73,
+   "speculative"
+  ],
+  "MXL": [
+   57,
+   "speculative"
+  ],
+  "DOCU": [
+   65,
+   "speculative"
+  ],
+  "SANM": [
+   52,
+   "speculative"
+  ],
+  "VC": [
+   42,
+   "hiddenGem"
+  ],
+  "NTNX": [
+   75,
+   "speculative"
+  ],
+  "SAIL": [
+   75,
+   "speculative"
+  ],
+  "DRVN": [
+   51,
+   null
+  ],
+  "IDCC": [
+   62,
+   "hiddenGem"
+  ],
+  "UBSI": [
+   62,
+   "hiddenGem"
+  ],
+  "AUGO": [
+   79,
+   "speculative"
+  ],
+  "MBX": [
+   70,
+   "speculative"
+  ],
+  "BPYPP": [
+   46,
+   null
+  ],
+  "CHYM": [
+   70,
+   "speculative"
+  ],
+  "BCRX": [
+   58,
+   "speculative"
+  ],
+  "CROX": [
+   64,
+   null
+  ],
+  "CLMT": [
+   77,
+   "speculative"
+  ],
+  "IESC": [
+   58,
+   "hiddenGem"
+  ],
+  "RKLB": [
+   43,
+   "speculative"
+  ],
+  "ESTA": [
+   34,
+   "speculative"
+  ],
+  "PENN": [
+   37,
+   null
+  ],
+  "DAVE": [
+   54,
+   "speculative"
+  ],
+  "ACAD": [
+   60,
+   "speculative"
+  ],
+  "CARG": [
+   53,
+   null
+  ],
+  "CSQ": [
+   58,
+   "hiddenGem"
+  ],
+  "LSTR": [
+   37,
+   "speculative"
+  ],
+  "ONBPP": [
+   57,
+   null
+  ],
+  "SPCX": [
+   56,
+   "speculative"
+  ],
+  "POWI": [
+   40,
+   "hiddenGem"
+  ],
+  "MRX": [
+   65,
+   null
+  ],
+  "SBET": [
+   61,
+   "speculative"
+  ],
+  "WGS": [
+   54,
+   "speculative"
+  ],
+  "EMAT": [
+   46,
+   "hiddenGem"
+  ],
+  "WSBC": [
+   59,
+   "hiddenGem"
+  ],
+  "MMED": [
+   70,
+   "speculative"
+  ],
+  "RLAY": [
+   60,
+   null
+  ],
+  "PENG": [
+   33,
+   "speculative"
+  ],
+  "SITM": [
+   62,
+   "speculative"
+  ],
+  "ALRM": [
+   64,
+   "hiddenGem"
+  ],
+  "KNSA": [
+   76,
+   "speculative"
+  ],
+  "MTCH": [
+   66,
+   null
+  ],
+  "AVT": [
+   79,
+   "speculative"
+  ],
+  "AXSM": [
+   48,
+   "speculative"
+  ],
+  "BCPC": [
+   63,
+   "hiddenGem"
+  ],
+  "CENX": [
+   43,
+   "hiddenGem"
+  ],
+  "Z": [
+   39,
+   "hiddenGem"
+  ],
+  "NXST": [
+   50,
+   "hiddenGem"
+  ],
+  "SLMBP": [
+   52,
+   null
+  ],
+  "FTAI": [
+   37,
+   "hiddenGem"
+  ],
+  "IMVT": [
+   50,
+   null
+  ],
+  "IREN": [
+   28,
+   "speculative"
+  ],
+  "PTEN": [
+   52,
+   "speculative"
+  ],
+  "IPAR": [
+   59,
+   "hiddenGem"
+  ],
+  "FSLY": [
+   60,
+   "speculative"
+  ],
+  "ROAD": [
+   32,
+   "hiddenGem"
+  ],
+  "ABVX": [
+   41,
+   "speculative"
+  ],
+  "CELH": [
+   30,
+   "speculative"
+  ],
+  "OTTR": [
+   61,
+   "hiddenGem"
+  ],
+  "AXTI": [
+   50,
+   "speculative"
+  ],
+  "ADPT": [
+   70,
+   "speculative"
+  ],
+  "COCO": [
+   56,
+   "hiddenGem"
+  ],
+  "SAIC": [
+   60,
+   "hiddenGem"
+  ],
+  "TGTX": [
+   66,
+   "hiddenGem"
+  ],
+  "UNIT": [
+   49,
+   "speculative"
+  ],
+  "FLYW": [
+   56,
+   "speculative"
+  ],
+  "INTA": [
+   60,
+   "speculative"
+  ],
+  "TBBK": [
+   53,
+   "hiddenGem"
+  ],
+  "PECO": [
+   44,
+   null
+  ],
+  "SYRE": [
+   60,
+   "speculative"
+  ],
+  "INTR": [
+   51,
+   null
+  ],
+  "AUPH": [
+   59,
+   "hiddenGem"
+  ],
+  "TTD": [
+   23,
+   "speculative"
+  ],
+  "EBC": [
+   58,
+   "hiddenGem"
+  ],
+  "MKSI": [
+   42,
+   "speculative"
+  ],
+  "GBDC": [
+   52,
+   "hiddenGem"
+  ],
+  "ICHR": [
+   37,
+   "hiddenGem"
+  ],
+  "ASND": [
+   63,
+   "speculative"
+  ],
+  "QURE": [
+   48,
+   null
+  ],
+  "LIF": [
+   34,
+   "hiddenGem"
+  ],
+  "LECO": [
+   57,
+   null
+  ],
+  "AEHR": [
+   56,
+   "speculative"
+  ],
+  "NMRK": [
+   49,
+   "hiddenGem"
+  ],
+  "BATRK": [
+   48,
+   "hiddenGem"
+  ],
+  "LFUS": [
+   50,
+   "hiddenGem"
+  ],
+  "VNOM": [
+   57,
+   "speculative"
+  ],
+  "BPYPO": [
+   52,
+   null
+  ],
+  "CYTK": [
+   38,
+   null
+  ],
+  "IBOC": [
+   55,
+   "hiddenGem"
+  ],
+  "BLLN": [
+   55,
+   "speculative"
+  ],
+  "IPGP": [
+   30,
+   "hiddenGem"
+  ],
+  "WFRD": [
+   41,
+   null
+  ],
+  "INDV": [
+   60,
+   "hiddenGem"
+  ],
+  "ATAT": [
+   50,
+   "speculative"
+  ],
+  "FFBC": [
+   52,
+   "hiddenGem"
+  ],
+  "FIGR": [
+   70,
+   "speculative"
+  ],
+  "ERAS": [
+   52,
+   "speculative"
+  ],
+  "VCEL": [
+   54,
+   "speculative"
+  ],
+  "CVLT": [
+   56,
+   "speculative"
+  ],
+  "FBNC": [
+   66,
+   "hiddenGem"
+  ],
+  "MDGL": [
+   52,
+   "speculative"
+  ],
+  "QLYS": [
+   75,
+   "speculative"
+  ],
+  "DUOL": [
+   54,
+   "speculative"
+  ],
+  "KRYS": [
+   61,
+   "speculative"
+  ],
+  "POWL": [
+   42,
+   "hiddenGem"
+  ],
+  "FA": [
+   62,
+   "speculative"
+  ],
+  "MMSI": [
+   62,
+   null
+  ],
+  "BMRN": [
+   54,
+   "speculative"
+  ],
+  "NWL": [
+   56,
+   "speculative"
+  ],
+  "UMBF": [
+   56,
+   null
+  ],
+  "LAMR": [
+   46,
+   "hiddenGem"
+  ],
+  "NTRSO": [
+   56,
+   null
+  ],
+  "ADAMN": [
+   63,
+   null
+  ],
+  "GGAL": [
+   27,
+   "hiddenGem"
+  ],
+  "PCTY": [
+   62,
+   null
+  ],
+  "EWTX": [
+   71,
+   "speculative"
+  ],
+  "PLBL": [
+   27,
+   null
+  ],
+  "XENE": [
+   38,
+   "speculative"
+  ],
+  "VLY": [
+   46,
+   "speculative"
+  ],
+  "TXRH": [
+   40,
+   null
+  ],
+  "MEDP": [
+   65,
+   "speculative"
+  ],
+  "NXT": [
+   24,
+   "speculative"
+  ],
+  "GRAB": [
+   45,
+   "speculative"
+  ],
+  "MIDD": [
+   44,
+   "hiddenGem"
+  ],
+  "NTSK": [
+   71,
+   "speculative"
+  ],
+  "MYRG": [
+   41,
+   "hiddenGem"
+  ],
+  "BTSG": [
+   48,
+   "speculative"
+  ],
+  "OTEX": [
+   51,
+   null
+  ],
+  "DSGX": [
+   61,
+   null
+  ],
+  "SIMO": [
+   62,
+   "speculative"
+  ],
+  "TCBI": [
+   51,
+   null
+  ],
+  "DFTX": [
+   67,
+   "speculative"
+  ],
+  "TRI": [
+   46,
+   "speculative"
+  ],
+  "GMAB": [
+   62,
+   "speculative"
+  ],
+  "MAAS": [
+   59,
+   "speculative"
+  ],
+  "CRUS": [
+   53,
+   "hiddenGem"
+  ],
+  "BBIO": [
+   55,
+   "speculative"
+  ],
+  "SLNHP": [
+   56,
+   null
+  ],
+  "ASML": [
+   59,
+   "blueChip"
+  ],
+  "MSTR": [
+   53,
+   "blueChip"
+  ],
+  "ZG": [
+   35,
+   null
+  ],
+  "NEO": [
+   65,
+   "speculative"
+  ],
+  "OZK": [
+   46,
+   "hiddenGem"
+  ],
+  "MGEE": [
+   45,
+   "hiddenGem"
+  ],
+  "ONB": [
+   59,
+   "speculative"
+  ],
+  "UFPI": [
+   48,
+   "hiddenGem"
+  ],
+  "PONY": [
+   40,
+   "speculative"
+  ],
+  "PI": [
+   56,
+   "speculative"
+  ],
+  "ACGLN": [
+   53,
+   null
+  ],
+  "SMMT": [
+   52,
+   "speculative"
+  ],
+  "FRMI": [
+   29,
+   "hiddenGem"
+  ],
+  "ARLP": [
+   54,
+   "hiddenGem"
+  ],
+  "CIFR": [
+   34,
+   "speculative"
+  ],
+  "TEM": [
+   65,
+   "speculative"
+  ],
+  "WSE": [
+   53,
+   "speculative"
+  ],
+  "EXPO": [
+   63,
+   "hiddenGem"
+  ],
+  "FFIN": [
+   53,
+   "hiddenGem"
+  ],
+  "WMG": [
+   50,
+   null
+  ],
+  "CNXN": [
+   70,
+   "hiddenGem"
+  ],
+  "SUPN": [
+   47,
+   "hiddenGem"
+  ],
+  "MFP": [
+   43,
+   "hiddenGem"
+  ],
+  "VCTR": [
+   76,
+   "speculative"
+  ],
+  "FROG": [
+   62,
+   "speculative"
+  ],
+  "VSEC": [
+   53,
+   "speculative"
+  ],
+  "XP": [
+   58,
+   null
+  ],
+  "APPF": [
+   58,
+   "speculative"
+  ],
+  "MCRI": [
+   62,
+   "hiddenGem"
+  ],
+  "FHB": [
+   43,
+   "hiddenGem"
+  ],
+  "UPST": [
+   40,
+   "speculative"
+  ],
+  "BOKF": [
+   52,
+   "hiddenGem"
+  ],
+  "HLNE": [
+   48,
+   "hiddenGem"
+  ],
+  "RRR": [
+   37,
+   null
+  ],
+  "GPCR": [
+   35,
+   "speculative"
+  ],
+  "NRIX": [
+   60,
+   null
+  ],
+  "ASST": [
+   74,
+   "speculative"
+  ],
+  "PDFS": [
+   55,
+   "speculative"
+  ],
+  "KYIV": [
+   45,
+   "hiddenGem"
+  ],
+  "FRSH": [
+   63,
+   "speculative"
+  ],
+  "EFSC": [
+   53,
+   "hiddenGem"
+  ],
+  "REYN": [
+   48,
+   "hiddenGem"
+  ],
+  "ADEA": [
+   48,
+   "hiddenGem"
+  ],
+  "ALM": [
+   45,
+   "hiddenGem"
+  ],
+  "RUN": [
+   23,
+   "speculative"
+  ],
+  "VSAT": [
+   54,
+   "speculative"
+  ],
+  "MKTX": [
+   48,
+   "hiddenGem"
+  ],
+  "QBTS": [
+   31,
+   "speculative"
+  ],
+  "MIRM": [
+   42,
+   "speculative"
+  ],
+  "LNTH": [
+   50,
+   "hiddenGem"
+  ],
+  "BSY": [
+   47,
+   null
+  ],
+  "BLTE": [
+   53,
+   "speculative"
+  ],
+  "NMIH": [
+   64,
+   "hiddenGem"
+  ],
+  "LI": [
+   33,
+   null
+  ],
+  "LLYVA": [
+   51,
+   "hiddenGem"
+  ],
+  "IBRX": [
+   61,
+   "speculative"
+  ],
+  "SOLS": [
+   31,
+   "hiddenGem"
+  ],
+  "LOPE": [
+   51,
+   "hiddenGem"
+  ],
+  "INDB": [
+   59,
+   "hiddenGem"
+  ],
+  "TMDX": [
+   46,
+   "hiddenGem"
+  ],
+  "SHC": [
+   63,
+   "hiddenGem"
+  ],
+  "AMBA": [
+   50,
+   "speculative"
+  ],
+  "LFTO": [
+   44,
+   "speculative"
+  ],
+  "CGNX": [
+   45,
+   "speculative"
+  ],
+  "NWBI": [
+   66,
+   "speculative"
+  ],
+  "OLED": [
+   45,
+   "hiddenGem"
+  ],
+  "STNE": [
+   42,
+   null
+  ],
+  "ONDS": [
+   41,
+   "hiddenGem"
+  ],
+  "SDGR": [
+   57,
+   null
+  ],
+  "ICUI": [
+   49,
+   "hiddenGem"
+  ],
+  "CLDX": [
+   40,
+   null
+  ],
+  "ASO": [
+   54,
+   null
+  ],
+  "SFNC": [
+   52,
+   "hiddenGem"
+  ],
+  "ALGM": [
+   35,
+   "speculative"
+  ],
+  "VIAV": [
+   51,
+   "speculative"
+  ],
+  "SOUN": [
+   34,
+   "speculative"
+  ],
+  "CVBF": [
+   65,
+   "hiddenGem"
+  ],
+  "VECO": [
+   39,
+   "hiddenGem"
+  ],
+  "AXGN": [
+   66,
+   "speculative"
+  ],
+  "ETOR": [
+   36,
+   null
+  ],
+  "LIFE": [
+   63,
+   null
+  ],
+  "PEGA": [
+   49,
+   "hiddenGem"
+  ],
+  "NBTB": [
+   66,
+   "speculative"
+  ],
+  "SLAB": [
+   52,
+   "speculative"
+  ],
+  "BULL": [
+   63,
+   "speculative"
+  ],
+  "LQDA": [
+   58,
+   "hiddenGem"
+  ],
+  "TRMK": [
+   63,
+   "hiddenGem"
+  ],
+  "BTDR": [
+   40,
+   "speculative"
+  ],
+  "MGNI": [
+   70,
+   "speculative"
+  ],
+  "WAFD": [
+   52,
+   "hiddenGem"
+  ],
+  "TWST": [
+   76,
+   "speculative"
+  ],
+  "CBSH": [
+   54,
+   "hiddenGem"
+  ],
+  "SRPT": [
+   47,
+   "speculative"
+  ],
+  "GCMG": [
+   66,
+   null
+  ],
+  "HWKN": [
+   45,
+   "hiddenGem"
+  ],
+  "FIBK": [
+   56,
+   "hiddenGem"
+  ],
+  "NTCT": [
+   64,
+   "hiddenGem"
+  ],
+  "WING": [
+   26,
+   "speculative"
+  ],
+  "GTLB": [
+   65,
+   "speculative"
+  ],
+  "NWCL": [
+   41,
+   "hiddenGem"
+  ],
+  "CORZ": [
+   39,
+   "speculative"
+  ],
+  "UFPT": [
+   62,
+   "hiddenGem"
+  ],
+  "PAYP": [
+   55,
+   "speculative"
+  ],
+  "PURR": [
+   79,
+   "speculative"
+  ],
+  "SLS": [
+   66,
+   "speculative"
+  ],
+  "OMAB": [
+   54,
+   "hiddenGem"
+  ],
+  "ARCC": [
+   56,
+   null
+  ],
+  "DGII": [
+   67,
+   "speculative"
+  ],
+  "REGCP": [
+   51,
+   null
+  ],
+  "GLXY": [
+   31,
+   "speculative"
+  ],
+  "GRAL": [
+   76,
+   "speculative"
+  ],
+  "TTEK": [
+   54,
+   "hiddenGem"
+  ],
+  "SRRK": [
+   52,
+   null
+  ],
+  "CCEP": [
+   55,
+   null
+  ],
+  "PVLA": [
+   66,
+   "speculative"
+  ],
+  "ALKS": [
+   50,
+   "speculative"
+  ],
+  "RGTI": [
+   40,
+   "speculative"
+  ],
+  "CHRN": [
+   45,
+   "hiddenGem"
+  ],
+  "SATA": [
+   65,
+   null
+  ],
+  "TH": [
+   75,
+   "speculative"
+  ],
+  "COLM": [
+   52,
+   "hiddenGem"
+  ],
+  "TXG": [
+   63,
+   "speculative"
+  ],
+  "OLLI": [
+   43,
+   null
+  ],
+  "ACHC": [
+   39,
+   "speculative"
+  ],
+  "FCFS": [
+   60,
+   "speculative"
+  ],
+  "HWC": [
+   57,
+   "hiddenGem"
+  ],
+  "VSNT": [
+   42,
+   "hiddenGem"
+  ],
+  "SFM": [
+   37,
+   null
+  ],
+  "AGNC": [
+   57,
+   "hiddenGem"
+  ],
+  "TTMI": [
+   42,
+   "hiddenGem"
+  ],
+  "ALAB": [
+   65,
+   "speculative"
+  ],
+  "GENB": [
+   60,
+   "hiddenGem"
+  ],
+  "CALM": [
+   27,
+   "hiddenGem"
+  ],
+  "GNTX": [
+   45,
+   "hiddenGem"
+  ],
+  "FRPT": [
+   45,
+   "speculative"
+  ],
+  "CRWV": [
+   48,
+   "speculative"
+  ],
+  "KOD": [
+   52,
+   "speculative"
+  ],
+  "NMFCZ": [
+   61,
+   null
+  ],
+  "NN": [
+   38,
+   "hiddenGem"
+  ],
+  "PAYO": [
+   62,
+   "hiddenGem"
+  ],
+  "SSRM": [
+   68,
+   "hiddenGem"
+  ],
+  "MRCY": [
+   30,
+   "hiddenGem"
+  ],
+  "PTCT": [
+   45,
+   "speculative"
+  ],
+  "SAIA": [
+   35,
+   "speculative"
+  ],
+  "BATRA": [
+   52,
+   null
+  ],
+  "KC": [
+   38,
+   "speculative"
+  ],
+  "AGYS": [
+   53,
+   "hiddenGem"
+  ],
+  "PLMR": [
+   61,
+   "hiddenGem"
+  ],
+  "CCC": [
+   61,
+   "hiddenGem"
+  ],
+  "DRH": [
+   62,
+   null
+  ],
+  "ACMR": [
+   56,
+   "speculative"
+  ],
+  "BILI": [
+   37,
+   null
+  ],
+  "KEEL": [
+   36,
+   "speculative"
+  ],
+  "LINE": [
+   40,
+   null
+  ],
+  "OCUL": [
+   52,
+   "speculative"
+  ],
+  "RELY": [
+   67,
+   "speculative"
+  ],
+  "STEP": [
+   40,
+   "hiddenGem"
+  ],
+  "IRON": [
+   46,
+   null
+  ],
+  "APLD": [
+   36,
+   "speculative"
+  ],
+  "PLSE": [
+   78,
+   "speculative"
+  ],
+  "TLN": [
+   36,
+   "speculative"
+  ],
+  "SFD": [
+   44,
+   "hiddenGem"
+  ],
+  "RIOT": [
+   45,
+   "speculative"
+  ],
+  "TTAN": [
+   53,
+   "speculative"
+  ],
+  "MBIN": [
+   76,
+   "hiddenGem"
+  ],
+  "AYA": [
+   92,
+   "speculative"
+  ],
+  "EXTR": [
+   41,
+   "hiddenGem"
+  ],
+  "OXLCN": [
+   53,
+   null
+  ],
+  "DYN": [
+   44,
+   "speculative"
+  ],
+  "EQPT": [
+   40,
+   "hiddenGem"
+  ],
+  "OUST": [
+   48,
+   "speculative"
+  ],
+  "CIGI": [
+   50,
+   "speculative"
+  ],
+  "POWWP": [
+   56,
+   null
+  ],
+  "MARA": [
+   40,
+   "speculative"
+  ],
+  "CENT": [
+   49,
+   null
+  ],
+  "QUBT": [
+   44,
+   "speculative"
+  ],
+  "TPGXL": [
+   50,
+   null
+  ],
+  "JAZZ": [
+   56,
+   "speculative"
+  ],
+  "BHF": [
+   53,
+   "hiddenGem"
+  ],
+  "ADAMM": [
+   59,
+   null
+  ],
+  "CBC": [
+   71,
+   "hiddenGem"
+  ],
+  "HTO": [
+   59,
+   "hiddenGem"
+  ],
+  "WSBCO": [
+   53,
+   null
+  ],
+  "AVPT": [
+   71,
+   "speculative"
+  ],
+  "USAR": [
+   38,
+   "hiddenGem"
+  ],
+  "PDD": [
+   62,
+   "blueChip"
+  ],
+  "MAT": [
+   46,
+   null
+  ],
+  "FULTP": [
+   52,
+   null
+  ],
+  "WIX": [
+   46,
+   "speculative"
+  ],
+  "ARQT": [
+   66,
+   "speculative"
+  ],
+  "NOVT": [
+   54,
+   "hiddenGem"
+  ],
+  "HIMX": [
+   50,
+   "hiddenGem"
+  ],
+  "PRAX": [
+   50,
+   "speculative"
+  ],
+  "PAGP": [
+   69,
+   "speculative"
+  ],
+  "SYNA": [
+   39,
+   "hiddenGem"
+  ],
+  "VICR": [
+   54,
+   "hiddenGem"
+  ],
+  "COKE": [
+   63,
+   "hiddenGem"
+  ],
+  "WERN": [
+   33,
+   "speculative"
+  ],
+  "ZIONP": [
+   44,
+   null
+  ],
+  "PTON": [
+   43,
+   "speculative"
+  ],
+  "UCTT": [
+   38,
+   "hiddenGem"
+  ],
+  "BPYPN": [
+   53,
+   null
+  ],
+  "SYBT": [
+   60,
+   "hiddenGem"
+  ],
+  "HALO": [
+   80,
+   "speculative"
+  ],
+  "BRZE": [
+   65,
+   "speculative"
+  ],
+  "TOWN": [
+   61,
+   "speculative"
+  ],
+  "CAKE": [
+   55,
+   null
+  ],
+  "KTOS": [
+   33,
+   "speculative"
+  ],
+  "SSNC": [
+   57,
+   "hiddenGem"
+  ],
+  "OSW": [
+   47,
+   "hiddenGem"
+  ],
+  "POOL": [
+   40,
+   null
+  ],
+  "TIGO": [
+   52,
+   "hiddenGem"
+  ],
+  "FSV": [
+   39,
+   "hiddenGem"
+  ],
+  "CHRD": [
+   63,
+   "speculative"
+  ],
+  "SBLK": [
+   82,
+   "speculative"
+  ],
+  "BANF": [
+   50,
+   "hiddenGem"
+  ],
+  "CWST": [
+   39,
+   "speculative"
+  ],
+  "JOYY": [
+   61,
+   "speculative"
+  ],
+  "INOD": [
+   51,
+   "hiddenGem"
+  ],
+  "STGW": [
+   62,
+   "hiddenGem"
+  ],
+  "ALNY": [
+   35,
+   "speculative"
+  ],
+  "IQMX": [
+   57,
+   "hiddenGem"
+  ],
+  "CAE": [
+   50,
+   "hiddenGem"
+  ],
+  "BANR": [
+   55,
+   "hiddenGem"
+  ],
+  "NCNO": [
+   54,
+   null
+  ],
+  "CPB": [
+   41,
+   null
+  ],
+  "PPC": [
+   41,
+   "hiddenGem"
+  ],
+  "PGEN": [
+   74,
+   "speculative"
+  ],
+  "PATK": [
+   39,
+   null
+  ],
+  "GLPI": [
+   48,
+   null
+  ],
+  "DIOD": [
+   53,
+   "hiddenGem"
+  ],
+  "SEIC": [
+   69,
+   "hiddenGem"
+  ],
+  "BELFB": [
+   42,
+   "hiddenGem"
+  ],
+  "VNET": [
+   27,
+   null
+  ],
+  "SLM": [
+   51,
+   null
+  ],
+  "HTFL": [
+   79,
+   "speculative"
+  ],
+  "TVTX": [
+   66,
+   "speculative"
+  ],
+  "SRCE": [
+   61,
+   "hiddenGem"
+  ],
+  "ADUS": [
+   63,
+   null
+  ],
+  "CAR": [
+   37,
+   "hiddenGem"
+  ],
+  "RYTM": [
+   54,
+   "speculative"
+  ],
+  "OSIS": [
+   40,
+   "hiddenGem"
+  ],
+  "TLX": [
+   69,
+   "speculative"
+  ],
+  "GTX": [
+   47,
+   "hiddenGem"
+  ],
+  "GLBE": [
+   76,
+   "speculative"
+  ],
+  "CATY": [
+   63,
+   "hiddenGem"
+  ],
+  "CHTRP": [
+   52,
+   null
+  ],
+  "VRDN": [
+   56,
+   "speculative"
+  ],
+  "DNTH": [
+   69,
+   "speculative"
+  ],
+  "TPG": [
+   57,
+   "speculative"
+  ],
+  "ATRC": [
+   70,
+   "hiddenGem"
+  ],
+  "PLXS": [
+   48,
+   "hiddenGem"
+  ],
+  "CAMT": [
+   33,
+   "hiddenGem"
+  ],
+  "CZR": [
+   52,
+   null
+  ],
+  "LBTYK": [
+   44,
+   null
+  ],
+  "NBIS": [
+   54,
+   "speculative"
+  ],
+  "WTFC": [
+   45,
+   null
+  ],
+  "LUNR": [
+   34,
+   "speculative"
+  ],
+  "OPEN": [
+   16,
+   "hiddenGem"
+  ],
+  "IRDM": [
+   60,
+   "hiddenGem"
+  ],
+  "EEFT": [
+   40,
+   "hiddenGem"
+  ],
+  "ADMA": [
+   58,
+   "hiddenGem"
+  ],
+  "KALU": [
+   52,
+   "speculative"
+  ],
+  "RMBS": [
+   50,
+   "hiddenGem"
+  ],
+  "WULF": [
+   25,
+   "speculative"
+  ],
+  "BUSE": [
+   58,
+   "hiddenGem"
+  ],
+  "SKWD": [
+   54,
+   "speculative"
+  ],
+  "ABCL": [
+   59,
+   "speculative"
+  ],
+  "PRCH": [
+   53,
+   null
+  ],
+  "SGRY": [
+   46,
+   "speculative"
+  ],
+  "FRHC": [
+   55,
+   "speculative"
+  ],
+  "FELE": [
+   54,
+   "hiddenGem"
+  ],
+  "AAOI": [
+   39,
+   "speculative"
+  ],
+  "AVAV": [
+   44,
+   "speculative"
+  ],
+  "AMKR": [
+   39,
+   "speculative"
+  ],
+  "LEGN": [
+   42,
+   "speculative"
+  ],
+  "ACT": [
+   66,
+   "hiddenGem"
+  ],
+  "AMRX": [
+   73,
+   "hiddenGem"
+  ],
+  "HURN": [
+   63,
+   "hiddenGem"
+  ],
+  "MGRC": [
+   53,
+   "hiddenGem"
+  ],
+  "PTGX": [
+   80,
+   "speculative"
+  ],
+  "WDFC": [
+   48,
+   "hiddenGem"
+  ],
+  "URBN": [
+   59,
+   null
+  ],
+  "AUR": [
+   61,
+   "speculative"
+  ],
+  "BWIN": [
+   78,
+   "speculative"
+  ],
+  "STRL": [
+   46,
+   "hiddenGem"
+  ],
+  "OPCH": [
+   56,
+   null
+  ],
+  "CHDN": [
+   48,
+   null
+  ],
+  "MORN": [
+   58,
+   "hiddenGem"
+  ],
+  "AGIO": [
+   53,
+   "speculative"
+  ],
+  "LILAP": [
+   40,
+   null
+  ],
+  "FORM": [
+   56,
+   "speculative"
+  ],
+  "RUSHA": [
+   53,
+   "hiddenGem"
+  ],
+  "IMOS": [
+   55,
+   "speculative"
+  ],
+  "IOVA": [
+   72,
+   "speculative"
+  ],
+  "CLBT": [
+   37,
+   "hiddenGem"
+  ],
+  "SNEX": [
+   46,
+   "hiddenGem"
+  ],
+  "COLB": [
+   46,
+   "speculative"
+  ],
+  "DOO": [
+   46,
+   "hiddenGem"
+  ],
+  "SEDG": [
+   33,
+   "speculative"
+  ],
+  "ATRO": [
+   62,
+   "speculative"
+  ],
+  "OXLCM": [
+   57,
+   null
+  ],
+  "TRVI": [
+   43,
+   "speculative"
+  ],
+  "BUSEP": [
+   55,
+   null
+  ],
+  "ARWR": [
+   58,
+   "speculative"
+  ],
+  "VCYT": [
+   46,
+   "speculative"
+  ],
+  "ITRI": [
+   43,
+   "hiddenGem"
+  ],
+  "ACLS": [
+   43,
+   "hiddenGem"
+  ],
+  "VRNS": [
+   65,
+   "speculative"
+  ],
+  "FLY": [
+   42,
+   "speculative"
+  ],
+  "MZTI": [
+   50,
+   "hiddenGem"
+  ],
+  "MMYT": [
+   46,
+   "hiddenGem"
+  ],
+  "CORT": [
+   83,
+   "speculative"
+  ],
+  "SPSC": [
+   61,
+   null
+  ],
+  "VFS": [
+   36,
+   "hiddenGem"
+  ],
+  "RDNT": [
+   63,
+   "speculative"
+  ],
+  "ALMR": [
+   73,
+   "speculative"
+  ],
+  "NKTR": [
+   38,
+   "hiddenGem"
+  ],
+  "PGNY": [
+   57,
+   null
+  ],
+  "CMPS": [
+   70,
+   "speculative"
+  ],
+  "PCVX": [
+   63,
+   "hiddenGem"
+  ],
+  "LGND": [
+   69,
+   "speculative"
+  ],
+  "QNT": [
+   53,
+   "speculative"
+  ],
+  "MANH": [
+   64,
+   "hiddenGem"
+  ],
+  "ADAMI": [
+   56,
+   null
+  ],
+  "FUTU": [
+   47,
+   "speculative"
+  ],
+  "ENLT": [
+   53,
+   "speculative"
+  ],
+  "LYFT": [
+   50,
+   "speculative"
+  ],
+  "PBLS": [
+   72,
+   "hiddenGem"
+  ],
+  "TFSL": [
+   50,
+   "hiddenGem"
+  ],
+  "GSAT": [
+   49,
+   "hiddenGem"
+  ],
+  "CHKP": [
+   51,
+   null
+  ],
+  "APPN": [
+   60,
+   null
+  ],
+  "CENTA": [
+   52,
+   null
+  ],
+  "SMTC": [
+   72,
+   "speculative"
+  ],
+  "RUSHB": [
+   62,
+   null
+  ],
+  "HQY": [
+   51,
+   null
+  ],
+  "BVC": [
+   57,
+   "speculative"
+  ],
+  "AAL": [
+   37,
+   "speculative"
+  ],
+  "ZLAB": [
+   57,
+   "speculative"
+  ],
+  "FER": [
+   41,
+   null
+  ],
+  "IMNM": [
+   58,
+   null
+  ],
+  "QRVO": [
+   65,
+   null
+  ],
+  "IDYA": [
+   57,
+   null
+  ],
+  "CVCO": [
+   49,
+   "hiddenGem"
+  ],
+  "SHOO": [
+   66,
+   "speculative"
+  ],
+  "NESR": [
+   75,
+   "speculative"
+  ],
+  "LGN": [
+   32,
+   "speculative"
+  ],
+  "LBTYB": [
+   30,
+   null
+  ],
+  "MLYS": [
+   55,
+   "hiddenGem"
+  ],
+  "QS": [
+   24,
+   "hiddenGem"
+  ],
+  "LFST": [
+   80,
+   "speculative"
+  ],
+  "DLO": [
+   57,
+   "hiddenGem"
+  ],
+  "HSAI": [
+   38,
+   "speculative"
+  ],
+  "PSMT": [
+   52,
+   "hiddenGem"
+  ],
+  "WAY": [
+   53,
+   "speculative"
+  ],
+  "ARCB": [
+   47,
+   "speculative"
+  ],
+  "EWBC": [
+   58,
+   "speculative"
+  ],
+  "GLNG": [
+   60,
+   "speculative"
+  ],
+  "ENSG": [
+   57,
+   "hiddenGem"
+  ],
+  "VKTX": [
+   61,
+   "speculative"
+  ],
+  "NOVTU": [
+   56,
+   null
+  ],
+  "NAVN": [
+   61,
+   "speculative"
+  ],
+  "REGCO": [
+   57,
+   null
+  ],
+  "LBTYA": [
+   38,
+   null
+  ],
+  "ADAML": [
+   59,
+   null
+  ],
+  "HUT": [
+   54,
+   "speculative"
+  ],
+  "BEAM": [
+   35,
+   "speculative"
+  ],
+  "ALGT": [
+   38,
+   "speculative"
+  ],
+  "LKQ": [
+   39,
+   "hiddenGem"
+  ],
+  "CAI": [
+   73,
+   "speculative"
+  ],
+  "SIGI": [
+   54,
+   "hiddenGem"
+  ],
+  "FIZZ": [
+   55,
+   "hiddenGem"
+  ],
+  "CRVL": [
+   68,
+   "hiddenGem"
+  ],
+  "FIVN": [
+   72,
+   "speculative"
+  ],
+  "MNDY": [
+   53,
+   "speculative"
+  ],
+  "BZ": [
+   62,
+   "speculative"
+  ],
+  "FTDR": [
+   60,
+   "hiddenGem"
+  ],
+  "EXEL": [
+   66,
+   null
+  ],
+  "IOSP": [
+   72,
+   "hiddenGem"
+  ],
+  "PPLI": [
+   41,
+   "hiddenGem"
+  ],
+  "NICE": [
+   43,
+   "speculative"
+  ],
+  "SEZL": [
+   43,
+   "hiddenGem"
+  ],
+  "ALVO": [
+   60,
+   "hiddenGem"
+  ],
+  "CECO": [
+   48,
+   "speculative"
+  ],
+  "CHA": [
+   60,
+   null
+  ],
+  "ICLR": [
+   61,
+   null
+  ],
+  "FULT": [
+   55,
+   "hiddenGem"
+  ],
+  "LLYVK": [
+   57,
+   "hiddenGem"
+  ],
+  "AVAH": [
+   76,
+   "speculative"
+  ],
+  "EXLS": [
+   56,
+   "hiddenGem"
+  ],
+  "SLDE": [
+   85,
+   "hiddenGem"
+  ],
+  "WWD": [
+   43,
+   "speculative"
+  ],
+  "SKYW": [
+   57,
+   "hiddenGem"
+  ],
+  "CDNA": [
+   73,
+   "speculative"
+  ],
+  "FRME": [
+   54,
+   "hiddenGem"
+  ],
+  "CGON": [
+   60,
+   null
+  ],
+  "GRFS": [
+   51,
+   null
+  ],
+  "PAA": [
+   72,
+   "speculative"
+  ],
+  "PTRN": [
+   52,
+   "speculative"
+  ],
+  "ARM": [
+   59,
+   "speculative"
+  ],
+  "PLPC": [
+   63,
+   "speculative"
+  ],
+  "IEP": [
+   38,
+   "speculative"
+  ],
+  "OXLCZ": [
+   55,
+   null
+  ],
+  "BRKR": [
+   64,
+   "speculative"
+  ],
+  "KYMR": [
+   76,
+   "speculative"
+  ],
+  "ORKA": [
+   64,
+   "speculative"
+  ],
+  "CLSK": [
+   33,
+   "speculative"
+  ],
+  "CRSP": [
+   64,
+   "speculative"
+  ],
+  "NBIX": [
+   45,
+   "speculative"
+  ],
+  "LSCC": [
+   61,
+   "speculative"
+  ],
+  "GDS": [
+   36,
+   null
+  ],
+  "SBRA": [
+   50,
+   "speculative"
+  ],
+  "URGN": [
+   67,
+   "speculative"
+  ],
+  "CELC": [
+   29,
+   "speculative"
+  ],
+  "ANDE": [
+   51,
+   "hiddenGem"
+  ],
+  "CART": [
+   55,
+   null
+  ],
+  "COHU": [
+   63,
+   "speculative"
+  ],
+  "IRTC": [
+   41,
+   "speculative"
+  ],
+  "MESO": [
+   53,
+   "speculative"
+  ],
+  "PPTA": [
+   46,
+   "hiddenGem"
+  ],
+  "RUM": [
+   78,
+   "speculative"
+  ],
+  "MWH": [
+   36,
+   "speculative"
+  ],
+  "COGT": [
+   41,
+   null
+  ],
+  "GWO.TO": [
+   69,
+   "blueChip"
+  ],
+  "CRT-UN.TO": [
+   42,
+   "hiddenGem"
+  ],
+  "WCP.TO": [
+   82,
+   "speculative"
+  ],
+  "CU.TO": [
+   51,
+   null
+  ],
+  "AG.TO": [
+   68,
+   "speculative"
+  ],
+  "DFY.TO": [
+   55,
+   "speculative"
+  ],
+  "MG.TO": [
+   53,
+   null
+  ],
+  "ATS.TO": [
+   31,
+   "hiddenGem"
+  ],
+  "BCE.TO": [
+   41,
+   null
+  ],
+  "HBM.TO": [
+   60,
+   "speculative"
+  ],
+  "AGI.TO": [
+   49,
+   "speculative"
+  ],
+  "BN.TO": [
+   33,
+   "blueChip"
+  ],
+  "LB.TO": [
+   54,
+   "hiddenGem"
+  ],
+  "OTEX.TO": [
+   59,
+   "hiddenGem"
+  ],
+  "BYD.TO": [
+   27,
+   "speculative"
+  ],
+  "FTS.TO": [
+   44,
+   null
+  ],
+  "MX.TO": [
+   76,
+   "speculative"
+  ],
+  "WSP.TO": [
+   33,
+   "speculative"
+  ],
+  "IFC.TO": [
+   42,
+   null
+  ],
+  "AAV.TO": [
+   45,
+   null
+  ],
+  "FFH.TO": [
+   56,
+   null
+  ],
+  "DSG.TO": [
+   52,
+   "hiddenGem"
+  ],
+  "NWC.TO": [
+   62,
+   "hiddenGem"
+  ],
+  "X.TO": [
+   58,
+   "speculative"
+  ],
+  "BB.TO": [
+   39,
+   "speculative"
+  ],
+  "ACO-X.TO": [
+   55,
+   "hiddenGem"
+  ],
+  "FRU.TO": [
+   60,
+   "speculative"
+  ],
+  "IAG.TO": [
+   68,
+   "speculative"
+  ],
+  "EMP-A.TO": [
+   51,
+   "hiddenGem"
+  ],
+  "ERO.TO": [
+   80,
+   "speculative"
+  ],
+  "QBR-B.TO": [
+   45,
+   null
+  ],
+  "SRU-UN.TO": [
+   41,
+   "hiddenGem"
+  ],
+  "ALA.TO": [
+   65,
+   "speculative"
+  ],
+  "BNS.TO": [
+   66,
+   "blueChip"
+  ],
+  "SU.TO": [
+   77,
+   "speculative"
+  ],
+  "DIR-UN.TO": [
+   49,
+   "hiddenGem"
+  ],
+  "CJT.TO": [
+   43,
+   null
+  ],
+  "AIF.TO": [
+   39,
+   "hiddenGem"
+  ],
+  "TECK-B.TO": [
+   82,
+   "speculative"
+  ],
+  "BIP-UN.TO": [
+   48,
+   "speculative"
+  ],
+  "CCA.TO": [
+   34,
+   null
+  ],
+  "IAU.TO": [
+   56,
+   "speculative"
+  ],
+  "AQN.TO": [
+   39,
+   "hiddenGem"
+  ],
+  "NG.TO": [
+   38,
+   "hiddenGem"
+  ],
+  "OR.TO": [
+   60,
+   "speculative"
+  ],
+  "ATH.TO": [
+   45,
+   "speculative"
+  ],
+  "TCL-A.TO": [
+   58,
+   null
+  ],
+  "WPK.TO": [
+   58,
+   null
+  ],
+  "HWX.TO": [
+   78,
+   "speculative"
+  ],
+  "USA.TO": [
+   47,
+   "speculative"
+  ],
+  "RY.TO": [
+   64,
+   "blueChip"
+  ],
+  "SCR.TO": [
+   61,
+   "speculative"
+  ],
+  "CAE.TO": [
+   40,
+   null
+  ],
+  "TRI.TO": [
+   52,
+   "speculative"
+  ],
+  "POW.TO": [
+   68,
+   null
+  ],
+  "CG.TO": [
+   75,
+   "speculative"
+  ],
+  "ELD.TO": [
+   65,
+   "speculative"
+  ],
+  "PMZ-UN.TO": [
+   65,
+   "speculative"
+  ],
+  "CURA.TO": [
+   64,
+   "speculative"
+  ],
+  "LUN.TO": [
+   52,
+   "speculative"
+  ],
+  "ATRL.TO": [
+   41,
+   null
+  ],
+  "LSPD.TO": [
+   43,
+   "hiddenGem"
+  ],
+  "BEP-UN.TO": [
+   43,
+   null
+  ],
+  "H.TO": [
+   44,
+   null
+  ],
+  "TKO.TO": [
+   68,
+   "speculative"
+  ],
+  "TFII.TO": [
+   44,
+   null
+  ],
+  "ARX.TO": [
+   60,
+   "speculative"
+  ],
+  "TPZ.TO": [
+   49,
+   "speculative"
+  ],
+  "CPX.TO": [
+   45,
+   "speculative"
+  ],
+  "EQX.TO": [
+   63,
+   "speculative"
+  ],
+  "KEL.TO": [
+   78,
+   "speculative"
+  ],
+  "ABRA.TO": [
+   53,
+   "speculative"
+  ],
+  "LUG.TO": [
+   53,
+   "speculative"
+  ],
+  "BTO.TO": [
+   71,
+   "speculative"
+  ],
+  "NPI.TO": [
+   49,
+   null
+  ],
+  "SKE.TO": [
+   54,
+   "speculative"
+  ],
+  "BBD-B.TO": [
+   40,
+   "speculative"
+  ],
+  "POU.TO": [
+   73,
+   "speculative"
+  ],
+  "L.TO": [
+   54,
+   "blueChip"
+  ],
+  "TSU.TO": [
+   50,
+   "hiddenGem"
+  ],
+  "PPL.TO": [
+   56,
+   "speculative"
+  ],
+  "AYA.TO": [
+   92,
+   "speculative"
+  ],
+  "AAUC.TO": [
+   36,
+   "hiddenGem"
+  ],
+  "BTE.TO": [
+   70,
+   "speculative"
+  ],
+  "QSR.TO": [
+   59,
+   null
+  ],
+  "ATZ.TO": [
+   47,
+   "speculative"
+  ],
+  "EFN.TO": [
+   36,
+   "hiddenGem"
+  ],
+  "MTL.TO": [
+   66,
+   null
+  ],
+  "ASM.TO": [
+   64,
+   "hiddenGem"
+  ],
+  "SVM.TO": [
+   63,
+   "speculative"
+  ],
+  "PPTA.TO": [
+   48,
+   "hiddenGem"
+  ],
+  "KEY.TO": [
+   50,
+   null
+  ],
+  "DPM.TO": [
+   79,
+   "speculative"
+  ],
+  "EQB.TO": [
+   47,
+   "hiddenGem"
+  ],
+  "BAM.TO": [
+   51,
+   "speculative"
+  ],
+  "MFI.TO": [
+   39,
+   "hiddenGem"
+  ],
+  "FVI.TO": [
+   75,
+   "hiddenGem"
+  ],
+  "DOL.TO": [
+   50,
+   "speculative"
+  ],
+  "EFX.TO": [
+   38,
+   "hiddenGem"
+  ],
+  "CVE.TO": [
+   86,
+   "speculative"
+  ],
+  "KXS.TO": [
+   74,
+   "speculative"
+  ],
+  "RUS.TO": [
+   70,
+   "speculative"
+  ],
+  "VITL-UN.TO": [
+   38,
+   "hiddenGem"
+  ],
+  "CM.TO": [
+   68,
+   "blueChip"
+  ],
+  "CSH-UN.TO": [
+   39,
+   "speculative"
+  ],
+  "ATD.TO": [
+   42,
+   "blueChip"
+  ],
+  "WN.TO": [
+   56,
+   null
+  ],
+  "LNR.TO": [
+   57,
+   "hiddenGem"
+  ],
+  "CTC-A.TO": [
+   46,
+   "hiddenGem"
+  ],
+  "DOO.TO": [
+   37,
+   "speculative"
+  ],
+  "FSV.TO": [
+   35,
+   "hiddenGem"
+  ],
+  "SSRM.TO": [
+   73,
+   "speculative"
+  ],
+  "ONEX.TO": [
+   52,
+   "hiddenGem"
+  ],
+  "BHC.TO": [
+   56,
+   "speculative"
+  ],
+  "CP.TO": [
+   61,
+   "blueChip"
+  ],
+  "PET.TO": [
+   32,
+   "hiddenGem"
+  ],
+  "SEA.TO": [
+   61,
+   "speculative"
+  ],
+  "CAR-UN.TO": [
+   41,
+   null
+  ],
+  "GSY.TO": [
+   39,
+   null
+  ],
+  "BDGI.TO": [
+   50,
+   "speculative"
+  ],
+  "IVN.TO": [
+   55,
+   "speculative"
+  ],
+  "KMP-UN.TO": [
+   46,
+   null
+  ],
+  "RCI-B.TO": [
+   40,
+   null
+  ],
+  "WPM.TO": [
+   78,
+   "speculative"
+  ],
+  "RBA.TO": [
+   31,
+   "speculative"
+  ],
+  "ARIS.TO": [
+   68,
+   "hiddenGem"
+  ],
+  "ABX.TO": [
+   69,
+   "blueChip"
+  ],
+  "TXG.TO": [
+   65,
+   "speculative"
+  ],
+  "SII.TO": [
+   61,
+   "hiddenGem"
+  ],
+  "SIA.TO": [
+   48,
+   null
+  ],
+  "DML.TO": [
+   30,
+   "speculative"
+  ],
+  "DSV.TO": [
+   90,
+   "speculative"
+  ],
+  "CHP-UN.TO": [
+   29,
+   "hiddenGem"
+  ],
+  "PEY.TO": [
+   40,
+   "speculative"
+  ],
+  "TOU.TO": [
+   50,
+   null
+  ],
+  "VZLA.TO": [
+   52,
+   "speculative"
+  ],
+  "VNP.TO": [
+   46,
+   "hiddenGem"
+  ],
+  "PXT.TO": [
+   76,
+   "hiddenGem"
+  ],
+  "MRU.TO": [
+   57,
+   null
+  ],
+  "NFI.TO": [
+   54,
+   "speculative"
+  ],
+  "GEI.TO": [
+   58,
+   "speculative"
+  ],
+  "FNV.TO": [
+   69,
+   "speculative"
+  ],
+  "CSU.TO": [
+   52,
+   "speculative"
+  ],
+  "AP-UN.TO": [
+   33,
+   "hiddenGem"
+  ],
+  "CIGI.TO": [
+   53,
+   "speculative"
+  ],
+  "NTR.TO": [
+   62,
+   null
+  ],
+  "ARE.TO": [
+   58,
+   "speculative"
+  ],
+  "NXE.TO": [
+   36,
+   "speculative"
+  ],
+  "TIH.TO": [
+   42,
+   "speculative"
+  ],
+  "CS.TO": [
+   68,
+   "speculative"
+  ],
+  "LIF.TO": [
+   37,
+   "hiddenGem"
+  ],
+  "JWEL.TO": [
+   74,
+   "hiddenGem"
+  ],
+  "BEI-UN.TO": [
+   48,
+   null
+  ],
+  "TD.TO": [
+   63,
+   "blueChip"
+  ],
+  "BMO.TO": [
+   62,
+   "blueChip"
+  ],
+  "EFR.TO": [
+   33,
+   "speculative"
+  ],
+  "CLS.TO": [
+   51,
+   "speculative"
+  ],
+  "RCH.TO": [
+   45,
+   null
+  ],
+  "STN.TO": [
+   51,
+   null
+  ],
+  "GRT-UN.TO": [
+   44,
+   "hiddenGem"
+  ],
+  "CNR.TO": [
+   65,
+   "blueChip"
+  ],
+  "MDA.TO": [
+   41,
+   "speculative"
+  ],
+  "PSK.TO": [
+   65,
+   "speculative"
+  ],
+  "CCL-B.TO": [
+   63,
+   null
+  ],
+  "GIL.TO": [
+   38,
+   "speculative"
+  ],
+  "GIB-A.TO": [
+   53,
+   null
+  ],
+  "KNT.TO": [
+   76,
+   "speculative"
+  ],
+  "LAC.TO": [
+   40,
+   "hiddenGem"
+  ],
+  "ENB.TO": [
+   38,
+   "blueChip"
+  ],
+  "EDR.TO": [
+   63,
+   "speculative"
+  ],
+  "IGM.TO": [
+   65,
+   "speculative"
+  ],
+  "SOBO.TO": [
+   46,
+   null
+  ],
+  "PBH.TO": [
+   34,
+   null
+  ],
+  "CEU.TO": [
+   63,
+   "hiddenGem"
+  ],
+  "BDT.TO": [
+   81,
+   "speculative"
+  ],
+  "MAU.TO": [
+   73,
+   "speculative"
+  ],
+  "REI-UN.TO": [
+   54,
+   null
+  ],
+  "WDO.TO": [
+   80,
+   "hiddenGem"
+  ],
+  "PAAS.TO": [
+   52,
+   "speculative"
+  ],
+  "GFL.TO": [
+   57,
+   "speculative"
+  ],
+  "IMG.TO": [
+   78,
+   "speculative"
+  ],
+  "NGEX.TO": [
+   53,
+   "speculative"
+  ],
+  "VET.TO": [
+   51,
+   "speculative"
+  ],
+  "SHOP.TO": [
+   67,
+   "speculative"
+  ],
+  "SJ.TO": [
+   40,
+   "hiddenGem"
+  ],
+  "SLF.TO": [
+   59,
+   null
+  ],
+  "AC.TO": [
+   66,
+   "speculative"
+  ],
+  "MFC.TO": [
+   68,
+   "blueChip"
+  ],
+  "WCN.TO": [
+   52,
+   null
+  ],
+  "CNQ.TO": [
+   77,
+   "speculative"
+  ],
+  "CCO.TO": [
+   26,
+   "speculative"
+  ],
+  "TA.TO": [
+   33,
+   null
+  ],
+  "SAP.TO": [
+   46,
+   null
+  ],
+  "TVK.TO": [
+   40,
+   "hiddenGem"
+  ],
+  "FCR-UN.TO": [
+   53,
+   "hiddenGem"
+  ],
+  "TFPM.TO": [
+   65,
+   "speculative"
+  ],
+  "K.TO": [
+   58,
+   "speculative"
+  ],
+  "IMO.TO": [
+   71,
+   "speculative"
+  ],
+  "OGC.TO": [
+   58,
+   "speculative"
+  ],
+  "TVE.TO": [
+   74,
+   "speculative"
+  ],
+  "SPB.TO": [
+   49,
+   null
+  ],
+  "GMIN.TO": [
+   67,
+   "speculative"
+  ],
+  "FTT.TO": [
+   53,
+   "speculative"
+  ],
+  "FM.TO": [
+   70,
+   "speculative"
+  ],
+  "BBUC.TO": [
+   24,
+   "hiddenGem"
+  ],
+  "EMA.TO": [
+   39,
+   null
+  ],
+  "EIF.TO": [
+   46,
+   "speculative"
+  ],
+  "HR-UN.TO": [
+   36,
+   "hiddenGem"
+  ],
+  "T.TO": [
+   17,
+   null
+  ],
+  "BIR.TO": [
+   51,
+   null
+  ],
+  "IPCO.TO": [
+   50,
+   "hiddenGem"
+  ],
+  "TRP.TO": [
+   42,
+   "blueChip"
+  ],
+  "AEM.TO": [
+   63,
+   "speculative"
+  ],
+  "WFG.TO": [
+   57,
+   "hiddenGem"
+  ],
+  "CRR-UN.TO": [
+   32,
+   "hiddenGem"
+  ]
+ }
+}
