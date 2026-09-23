@@ -163,9 +163,9 @@ def _pct(x, d=0):
 
 def _phrase(k, m):
     try:
-        if k == "trend" and m["dist200"] is not None:
+        if k == "trend" and m["dist200"] is not None and m["dist200"] > 0:
             return f"Uptrend: {_pct(m['dist200'])} above its 200-day average"
-        if k == "relStrength" and m["rs3m"] is not None:
+        if k == "relStrength" and m["rs3m"] is not None and m["rs3m"] > 0:
             return f"Beating its index by {_pct(m['rs3m'], 1)} over 3 months"
         if k == "entry" and m["rsi14"] is not None:
             return f"Calm entry point (RSI {m['rsi14']:.0f})"
