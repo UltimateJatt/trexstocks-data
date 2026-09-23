@@ -1,0 +1,56 @@
+name: Market refresh
+
+on:
+  schedule:
+    # Every 15 min, 9am-5pm Eastern on weekdays (times below are UTC).
+    # The script itself skips runs outside 9:25am-4:45pm ET and on holidays.
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run even if the market is closed"
+        type: boolean
+        default: false
+      picks:
+        description: "Lock today's picks now (if not already done)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trexstocks-pipeline
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - name: Refresh market data
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ "${{ inputs.picks }}" = "true" ]; then ARGS="$ARGS --picks"; fi
+          python -m pipeline.run refresh $ARGS
+      - name: Save picks / portfolio changes
+        run: |
+          git config user.name "trexstocks-bot"
+          git config user.email "trexstocks-bot@users.noreply.github.com"
+          git add data/state
+          if git diff --cached --quiet; then echo "no state changes"; exit 0; fi
+          git commit -m "data: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push
