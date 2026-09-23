@@ -13,7 +13,10 @@
   "benchEntry": 7724.32,
   "results": {},
   "entryRatio": 0.9935,
-  "benchRatio": 1.002
+  "benchRatio": 1.002,
+  "pickDayClose": 123.65,
+  "adjRatio": 0.9935,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -29,7 +32,10 @@
   "benchEntry": 7724.32,
   "results": {},
   "entryRatio": 0.984,
-  "benchRatio": 1.002
+  "benchRatio": 1.002,
+  "pickDayClose": 370.38,
+  "adjRatio": 1.0131,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -45,7 +51,10 @@
   "benchEntry": 7724.32,
   "results": {},
   "entryRatio": 0.9952,
-  "benchRatio": 1.002
+  "benchRatio": 1.002,
+  "pickDayClose": 321.575,
+  "adjRatio": 0.993,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -61,7 +70,10 @@
   "benchEntry": 26978.88,
   "results": {},
   "entryRatio": 1.0105,
-  "benchRatio": 1.0021
+  "benchRatio": 1.0021,
+  "pickDayClose": 794.32,
+  "adjRatio": 1.0066,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -77,7 +89,10 @@
   "benchEntry": 26978.88,
   "results": {},
   "entryRatio": 1.0014,
-  "benchRatio": 1.0021
+  "benchRatio": 1.0021,
+  "pickDayClose": 28.12,
+  "adjRatio": 1.0044,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -93,7 +108,10 @@
   "benchEntry": 26978.88,
   "results": {},
   "entryRatio": 1.0043,
-  "benchRatio": 1.0021
+  "benchRatio": 1.0021,
+  "pickDayClose": 23.21,
+  "adjRatio": 1.0082,
+  "benchAdjRatio": 1.0011
  },
  {
   "date": "2026-09-23",
@@ -109,7 +127,10 @@
   "benchEntry": 35937.16,
   "results": {},
   "entryRatio": 1.0007,
-  "benchRatio": 0.9995
+  "benchRatio": 0.9995,
+  "pickDayClose": 43.34,
+  "adjRatio": 1.0226,
+  "benchAdjRatio": 1.0019
  },
  {
   "date": "2026-09-23",
@@ -125,7 +146,10 @@
   "benchEntry": 35937.16,
   "results": {},
   "entryRatio": 1.0013,
-  "benchRatio": 0.9995
+  "benchRatio": 0.9995,
+  "pickDayClose": 39.62,
+  "adjRatio": 1.0043,
+  "benchAdjRatio": 1.0019
  },
  {
   "date": "2026-09-23",
@@ -141,6 +165,9 @@
   "benchEntry": 35937.16,
   "results": {},
   "entryRatio": 0.9998,
-  "benchRatio": 0.9995
+  "benchRatio": 0.9995,
+  "pickDayClose": 45.45,
+  "adjRatio": 0.9998,
+  "benchAdjRatio": 1.0019
  }
 ]
