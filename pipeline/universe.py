@@ -57,6 +57,19 @@ def _to_yahoo_tsx(s):
     return s.replace(".", "-") + ".TO"
 
 
+def _nasdaq100():
+    """NASDAQ-100 members straight from nasdaq.com (backup when Wikipedia's table fails)."""
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+               "Accept": "application/json"}
+    j = requests.get("https://api.nasdaq.com/api/quote/list-type/nasdaq100",
+                     headers=headers, timeout=60).json()
+    d = j.get("data") or {}
+    rows = (d.get("data") or {}).get("rows") or d.get("rows") or []
+    out = [((r.get("symbol") or "").strip(), (r.get("companyName") or "").strip())
+           for r in rows]
+    return [(s, n) for s, n in out if s]
+
+
 def _nasdaq_midcaps(exclude):
     """All NASDAQ-listed stocks between $2B and $20B, minus index members."""
     url = ("https://api.nasdaq.com/api/screener/stocks"
@@ -91,7 +104,15 @@ def refresh(force=False):
     ok = 0
     for key, (url, lo, hi) in SOURCES.items():
         try:
-            rows = _wiki_table(url, lo, hi)
+            try:
+                rows = _wiki_table(url, lo, hi)
+            except Exception as e:
+                if key != "ndx":
+                    raise
+                log(f"ndx: Wikipedia failed ({e}); trying nasdaq.com")
+                rows = _nasdaq100()
+                if not lo <= len(rows) <= hi:
+                    raise ValueError(f"nasdaq.com returned {len(rows)} rows")
             conv = _to_yahoo_tsx if key == "tsx" else _to_yahoo_us
             new[key] = {conv(s): n for s, n in rows}
             log(f"{key}: {len(new[key])} members")
