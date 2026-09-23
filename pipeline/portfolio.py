@@ -11,7 +11,7 @@ from . import config
 from .util import load_state, save_state, display_symbol, currency_of, log
 
 STATE_FILE = "portfolio.json"
-TYPE_LABEL = {"blueChip": "Blue Chip", "speculative": "Speculative", "hiddenGem": "Hidden Gem"}
+TYPE_LABEL = config.CATEGORY_LABELS  # "speculative" is shown as "Growth"
 LABEL_TYPE = {v: k for k, v in TYPE_LABEL.items()}
 
 
@@ -107,7 +107,7 @@ def value(state, live, fx_now, today=None):
         cost = h["allocationUSD"]
         holdings.append({
             "symbol": display_symbol(h["yahoo"]), "yahoo": h["yahoo"], "name": h["name"],
-            "type": TYPE_LABEL[h["type"]], "shares": shares,
+            "type": TYPE_LABEL.get(h["type"], h["type"]), "shares": shares,
             "costBasis": h["purchasePrice"], "currentPrice": price,
             "currentValue": usd, "costBasisUSD": cost,
             "gainLoss": usd - cost, "gainLossPercent": (usd / cost - 1) * 100,
@@ -133,6 +133,8 @@ def value(state, live, fx_now, today=None):
         "holdings": holdings,
         "period": p["id"],
         "pricesVerified": bool(p.get("verified")),
+        # Period 1 was chosen by hand; later periods are chosen by the algorithm
+        "selection": p.get("selection", "manual" if p["id"] == 1 else "algorithm"),
         "verifyNote": p.get("verifyNote"),
         "allTime": {
             "startDate": inception["date"], "startValue": inception["valueUSD"],
@@ -144,13 +146,14 @@ def value(state, live, fx_now, today=None):
 
 
 def _select(candidates):
-    """Pick 4 Blue Chip, 3 Speculative, 1 Hidden Gem; 2+ TSX; max 2 per sector."""
+    """Pick 4 Blue Chip, 3 Growth, 1 Hidden Gem; 2+ TSX; max 2 per sector."""
     total_slots = sum(config.PORTFOLIO_MIX.values())
 
     def fill(min_tsx, max_sector):
         chosen, used, sectors = [], set(), Counter()
         for cat, n in config.PORTFOLIO_MIX.items():
-            pool = sorted((r for r in candidates if r["eligible"][cat] and not r["filtersFailed"]),
+            pool = sorted((r for r in candidates if r["eligible"][cat] and not r["filtersFailed"]
+                           and r["scores"].get(cat) is not None),
                           key=lambda r: r["scores"][cat], reverse=True)
             for _ in range(n):
                 slots_left = total_slots - len(chosen)
@@ -181,12 +184,11 @@ def rebalance(state, scored, live, fx_now, names, today):
     if today < date.fromisoformat(p["nextRebalance"]):
         return False
     val = value(state, live, fx_now, today)
-    # merge all indices; a stock in two indices keeps its better scores
+    # merge all indices (a stock has the same scores in every list it belongs to)
     merged = {}
     for idx_recs in scored.values():
         for s, r in idx_recs.items():
-            if s not in merged or max(r["scores"].values()) > max(merged[s]["scores"].values()):
-                merged[s] = r
+            merged.setdefault(s, r)
     chosen = _select(list(merged.values()))
     if len(chosen) < sum(config.PORTFOLIO_MIX.values()):
         log(f"rebalance: only found {len(chosen)} holdings, postponing to next run")
@@ -212,6 +214,7 @@ def rebalance(state, scored, live, fx_now, names, today):
         "nextRebalance": add_months(today, config.REBALANCE_MONTHS).isoformat(),
         "startValueUSD": total, "fxAtStart": fx_now, "verified": True,
         "verifyNote": "Bought automatically at the 10:30am ET price on rebalance day.",
+        "selection": "algorithm",
         "holdings": holdings,
     })
     save_state(STATE_FILE, state)

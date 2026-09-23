@@ -1,5 +1,13 @@
-"""Price-based measurements computed from one year of daily prices."""
+"""Price-based measurements computed from one year of daily prices.
+
+Returns, averages, RSI, volatility, beta and drawdown use dividend-adjusted closes
+(AdjClose). Prices shown on the site (close, 52-week high/low) use the plain close.
+"""
 import numpy as np
+import pandas as pd
+
+RISK_MIN_OBS = 200      # daily returns needed for beta / drawdown
+RISK_WINDOW = 252       # about one year of trading days
 
 
 def rsi(close, n=14):
@@ -18,46 +26,83 @@ def _ret(c, a, b=None):
     return float(end / c.iloc[-1 - a] - 1)
 
 
-def compute(df):
-    c, v = df["Close"].astype(float), df["Volume"].astype(float)
+def _beta(daily, bench_daily):
+    """Beta vs the stock's home index over the last year of daily returns."""
+    if bench_daily is None:
+        return None
+    both = pd.concat([daily, bench_daily], axis=1, join="inner").dropna().tail(RISK_WINDOW)
+    if len(both) < RISK_MIN_OBS:
+        return None
+    var = both.iloc[:, 1].var()
+    return float(both.iloc[:, 0].cov(both.iloc[:, 1]) / var) if var else None
+
+
+def _max_drawdown(adj):
+    """Largest peak-to-trough fall over the last year, e.g. -0.18 for -18%."""
+    a = adj.tail(RISK_WINDOW + 1)
+    if len(a) < RISK_MIN_OBS:
+        return None
+    return float((a / a.cummax() - 1).min())
+
+
+def compute(df, bench_daily=None):
+    c = df["Close"].astype(float)
+    a = (df["AdjClose"] if "AdjClose" in df else df["Close"]).astype(float)
+    v = df["Volume"].astype(float)
     n = len(c)
     if n < 60:
         return None
     close = float(c.iloc[-1])
-    sma50 = float(c.tail(50).mean())
-    sma200 = float(c.tail(200).mean()) if n >= 200 else None
-    sma50_prev = float(c.iloc[-70:-20].mean()) if n >= 70 else None
-    daily = c.pct_change().dropna()
+    adj = float(a.iloc[-1])
+    sma50 = float(a.tail(50).mean())
+    sma200 = float(a.tail(200).mean()) if n >= 200 else None
+    sma50_prev = float(a.iloc[-70:-20].mean()) if n >= 70 else None
+    daily = a.pct_change().dropna()
+    down = daily[daily < 0].tail(60)
     avg_vol50 = float(v.tail(50).mean())
+    high52 = float(df["High"].astype(float).tail(252).max())
     return {
         "bars": n,
         "close": close,
         "sma50": sma50,
         "sma200": sma200,
-        "dist50": close / sma50 - 1,
-        "dist200": (close / sma200 - 1) if sma200 else None,
+        "dist50": adj / sma50 - 1,
+        "dist200": (adj / sma200 - 1) if sma200 else None,
         "slope50": (sma50 / sma50_prev - 1) if sma50_prev else None,
-        "ret5": _ret(c, 5),
-        "ret21": _ret(c, 21),
-        "ret63": _ret(c, 63),
-        "ret126_21": _ret(c, 126, 21),
-        "rsi14": rsi(c),
+        "ret5": _ret(a, 5),
+        "ret21": _ret(a, 21),
+        "ret63": _ret(a, 63),
+        "ret126_21": _ret(a, 126, 21),
+        "rsi14": rsi(a),
         "volTrend": float(v.tail(10).mean() / avg_vol50) if avg_vol50 else None,
         "avgVol50": avg_vol50,
         "avgDollarVol50": float((c.tail(50) * v.tail(50)).mean()),
         "volatility60": float(daily.tail(60).std() * np.sqrt(252)),
-        "high52": float(df["High"].astype(float).tail(252).max()),
+        "downsideVol60": float(np.sqrt((down ** 2).sum() / 60) * np.sqrt(252)) if len(down) else 0.0,
+        "beta": _beta(daily, bench_daily),
+        "maxDrawdown": _max_drawdown(a),
+        "high52": high52,
         "low52": float(df["Low"].astype(float).tail(252).min()),
-        "fromHigh": close / float(df["High"].astype(float).tail(252).max()) - 1,
+        "fromHigh": close / high52 - 1,
         "asOf": df.index[-1].date().isoformat(),
     }
 
 
-def compute_all(hist):
+def _daily(df):
+    if df is None:
+        return None
+    a = (df["AdjClose"] if "AdjClose" in df else df["Close"]).astype(float)
+    return a.pct_change().dropna()
+
+
+def compute_all(hist, us_bench="^GSPC", ca_bench="^GSPTSE"):
+    """Measurements for every symbol. Beta is vs the S&P 500 for US stocks and the
+    TSX Composite for Canadian ones."""
+    bench = {"US": _daily(hist.get(us_bench)), "CA": _daily(hist.get(ca_bench))}
     out = {}
     for s, df in hist.items():
         try:
-            t = compute(df)
+            t = compute(df, bench["CA" if s.endswith(".TO") else "US"])
             if t:
                 out[s] = t
         except Exception:

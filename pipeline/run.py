@@ -6,6 +6,10 @@
 Options: --force (run outside market hours), --dry (don't send to Cloudflare)
 """
 import argparse
+import csv
+import gzip
+import io
+from datetime import date
 
 import pandas as pd
 
@@ -18,9 +22,6 @@ BENCH = [v["yahoo"] for v in config.INDEX_SYMBOLS.values()]
 MAIN = ("sp500", "nasdaq", "tsx")
 
 
-def bench_for(idx):
-    """Benchmark for relative strength; the wide 'us' group uses the S&P 500."""
-    return config.INDEX_SYMBOLS.get(idx, config.INDEX_SYMBOLS["sp500"])["yahoo"]
 HISTORY_FILE = "picks_history.json"
 
 
@@ -51,6 +52,7 @@ def prep(args):
 
     # Slowest step last, so a Yahoo hiccup here never blocks prices
     fund = fundamentals.refresh(stock_syms, priority=set(core))
+    _weekly_snapshot(c, fund)
 
     # Publish stock-lookup scores now (based on yesterday's close) so the search
     # works before the 10:30am picks run, which refreshes them with live prices.
@@ -58,11 +60,39 @@ def prep(args):
     for s, f in fund.items():
         if not names.get(s):
             names[s] = f.get("name")
-    groups = universe.lookup_groups(c)
-    scored = {idx: scoring.score_index(
-        idx, g["pool"], tech, fund, tech.get(bench_for(idx), {}),
-        {}, today=today_et()) for idx, g in groups.items()}
+    scored = scoring.score_all(universe.lookup_groups(c), tech, fund, {}, today=today_et())
     publish.put(_lookup_payload(scored, names, now_et(), c), dry=args.dry)
+
+
+def _weekly_snapshot(c, fund):
+    """Once a week, save who is in each list (plus sector and size) to
+    data/state/snapshots/. Over time this lets backtests use the lists as they
+    really were, instead of today's survivors."""
+    d = config.SNAPSHOT_DIR
+    d.mkdir(parents=True, exist_ok=True)
+    today = today_et()
+    last = sorted(d.glob("universe-*.csv.gz"))
+    if last:
+        try:
+            if (today - date.fromisoformat(last[-1].name[9:19])).days < 7:
+                return
+        except ValueError:
+            pass
+    lists = {}
+    for key in ("sp500", "ndx", "nasdaqMid", "tsx", "usWide"):
+        for s in c.get(key, {}):
+            lists.setdefault(s, []).append(key)
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["date", "ticker", "lists", "sector", "marketCap"])
+    for s in sorted(lists):
+        f = fund.get(s) or {}
+        w.writerow([today.isoformat(), s, "|".join(lists[s]), f.get("sector") or "",
+                    f.get("marketCap") or ""])
+    path = d / f"universe-{today.isoformat()}.csv.gz"
+    with gzip.GzipFile(path, "wb", mtime=0) as gz:
+        gz.write(buf.getvalue().encode())
+    log(f"weekly list snapshot saved: {path.name} ({len(lists)} stocks)")
 
 
 # ---------------------------------------------------------------- refresh helpers
@@ -81,7 +111,10 @@ def _volume_pace(q, avg_vol, t, today_iso):
 
 def _stock_row(s, q, tech, fund, names, t, today_iso, trex=None):
     tt = tech.get(s, {})
-    ts = (trex or {}).get(s) or [None, None]
+    ts = list((trex or {}).get(s) or [])
+    if len(ts) == 2:  # older [score, bestFit] format, until the next prep run
+        ts = [ts[0], None, ts[1]]
+    ts += [None, None, None]
     f = fund.get(s, {})
     pace = _volume_pace(q, tt.get("avgVol50"), t, today_iso)
     return {
@@ -92,7 +125,7 @@ def _stock_row(s, q, tech, fund, names, t, today_iso, trex=None):
         "fiftyTwoWeekHigh": tt.get("high52"), "fiftyTwoWeekLow": tt.get("low52"),
         "marketCap": scoring.market_cap(s, fund, q["price"]),
         "sector": f.get("sector") or "Unknown", "currency": currency_of(s),
-        "trexScore": ts[0], "bestFit": ts[1],
+        "trexScore": ts[0], "trexPct": ts[1], "bestFit": ts[2],
         "_dayHigh": q["high"], "_dayLow": q["low"],
     }
 
@@ -203,15 +236,14 @@ def refresh(args):
             extra = sorted(pool_syms - set(live))
             if extra:
                 live.update(market.quotes(extra))
-            scored = {idx: scoring.score_index(
-                idx, g["pool"], tech, fund, tech.get(bench_for(idx), {}),
-                live, today=today_et()) for idx, g in lgroups.items()}
+            scored = scoring.score_all(lgroups, tech, fund, live, today=today_et())
             chosen, notes = picks.choose(scored, history, live, names, today_iso)
             history.extend(picks.history_rows(chosen, today_iso, live))
             save_state(HISTORY_FILE, history)
             picks_payload = {
                 "timestamp": t.isoformat(), "date": today_iso,
                 "disclaimer": config.DISCLAIMER, "algorithm": config.ALGORITHM_NAME,
+                "model": config.PICKS_MODEL, "scoreModel": config.SCORE_MODEL,
                 "picks": chosen, "notes": notes,
                 "universe": {idx: len(r) for idx, r in scored.items()},
             }
@@ -219,7 +251,7 @@ def refresh(args):
             payload["picks"] = picks_payload
             payload.update(_lookup_payload(scored, names, t, c))
             log("picks locked: " + ", ".join(
-                p["symbol"] for cats in chosen.values() for p in cats.values())
+                p["symbol"] for cats in chosen.values() for p in cats.values() if p)
                 + (f" | notes: {notes}" if notes else ""))
 
             main_scored = {k: v for k, v in scored.items() if k in MAIN}
@@ -230,7 +262,8 @@ def refresh(args):
     payload["quotes"] = {s: [round(q["price"], 4), round(q["changePercent"], 3)]
                          for s, q in live.items()}
     payload["meta"] = {
-        "version": config.VERSION, "asOf": t.isoformat(),
+        "version": config.VERSION, "scoreModel": config.SCORE_MODEL,
+        "picksModel": config.PICKS_MODEL, "asOf": t.isoformat(),
         "asOfET": t.strftime("%-I:%M %p ET"), "dataDate": data_date,
         "marketOpen": us_today and in_window(t, (9, 30), (16, 0)),
         "delayNote": "Prices are delayed about 15 minutes.",
@@ -243,8 +276,9 @@ def refresh(args):
 def _lookup_payload(scored, names, t, c=None):
     """Lookup data, split by first letter so the Worker only reads a small piece."""
     table = _lookup_table(scored, names, t, c)
-    save_state("trex_scores.json", {"asOf": table["asOf"], "scores": {
-        k: [v["trexScore"], v["bestFit"]] for k, v in table["stocks"].items()}})
+    save_state("trex_scores.json", {"asOf": table["asOf"], "model": config.SCORE_MODEL,
+                                    "scores": {k: [v["trexScore"], v["trexPct"], v["bestFit"]]
+                                               for k, v in table["stocks"].items()}})
     out = {f"scores_{letter}": {"asOf": table["asOf"], "stocks": chunk}
            for letter, chunk in _shard(table["stocks"]).items()}
     out["symbols"] = {"asOf": table["asOf"], "count": table["count"],
@@ -279,7 +313,6 @@ def _lookup_table(scored, names, t, c=None):
                 if not c:
                     table[key]["indexes"].append(idx)
                 continue
-            best = r["bestFit"] or max(scoring.CATEGORIES, key=lambda k: r["scores"][k])
             table[key] = {
                 "symbol": display_symbol(s), "yahoo": s, "name": names.get(s) or key,
                 "indexes": _memberships(s, c) or [idx], "sector": r["sector"], "currency": r["currency"],
@@ -287,9 +320,12 @@ def _lookup_table(scored, names, t, c=None):
                 "scores": r["scores"], "eligible": r["eligible"],
                 "factors": r["factors"], "metrics": r["metrics"],
                 "filtersFailed": r["filtersFailed"], "earningsSoon": r["earningsSoon"],
-                "nextEarnings": r["nextEarnings"], "bestCategory": best,
-                "trexScore": r["trexScore"], "bestFit": r["bestFit"],
-                "reasons": scoring.reasons(r, best),
+                "earningsUnknown": r["earningsUnknown"], "nextEarnings": r["nextEarnings"],
+                "daysToEarnings": r["daysToEarnings"],
+                "trexScore": r["trexScore"], "trexPct": r["trexPct"], "tier": r["tier"],
+                "coverage": r["coverage"], "limitedData": r["limitedData"],
+                "bestFit": r["bestFit"], "model": r["model"],
+                "reasons": scoring.reasons(r),
             }
     return {"asOf": t.isoformat(), "count": len(table), "stocks": table}
 

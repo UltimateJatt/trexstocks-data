@@ -20,6 +20,10 @@ FIELDS = {
     "profitMargins": "profitMargins", "returnOnEquity": "returnOnEquity",
     "debtToEquity": "debtToEquity", "numberOfAnalystOpinions": "analysts",
     "currency": "currency", "quoteType": "quoteType",
+    # Dividends (for the Steady / Balanced risk levels). Yahoo changed the format of
+    # "dividendYield" in 2025, so we store the dollar rate and work out the yield ourselves.
+    "dividendRate": "dividendRate",
+    "trailingAnnualDividendYield": "trailingDividendYield", "payoutRatio": "payoutRatio",
 }
 
 

@@ -56,16 +56,21 @@ def _parse(j):
     meta = res.get("meta") or {}
     tz = meta.get("exchangeTimezoneName") or "America/New_York"
     ts = res.get("timestamp") or []
-    q = ((res.get("indicators") or {}).get("quote") or [{}])[0]
+    ind = res.get("indicators") or {}
+    q = (ind.get("quote") or [{}])[0]
+    adj = (ind.get("adjclose") or [{}])[0].get("adjclose")
     df = pd.DataFrame({
         "Open": q.get("open") or [None] * len(ts),
         "High": q.get("high") or [None] * len(ts),
         "Low": q.get("low") or [None] * len(ts),
         "Close": q.get("close") or [None] * len(ts),
         "Volume": q.get("volume") or [None] * len(ts),
+        # Dividend-adjusted close (falls back to the plain close if Yahoo leaves it out)
+        "AdjClose": adj if adj and len(adj) == len(ts) else (q.get("close") or [None] * len(ts)),
     }, index=pd.to_datetime(ts, unit="s", utc=True).tz_convert(tz)
         .normalize().tz_localize(None), dtype="float64")
     df = df[~df.index.duplicated(keep="last")].dropna(subset=["Close"])
+    df["AdjClose"] = df["AdjClose"].fillna(df["Close"])
 
     # Fill in / correct the latest day from the live quote block
     price, t = meta.get("regularMarketPrice"), meta.get("regularMarketTime")
@@ -78,10 +83,12 @@ def _parse(j):
                 "Low": [meta.get("regularMarketDayLow") or price],
                 "Close": [price],
                 "Volume": [meta.get("regularMarketVolume")],
+                "AdjClose": [price],
             }, index=pd.DatetimeIndex([day]), dtype="float64")
             df = pd.concat([df, row])
         elif day == df.index[-1]:
             df.loc[day, "Close"] = price
+            df.loc[day, "AdjClose"] = price  # the latest day is never dividend-adjusted
             if meta.get("regularMarketVolume"):
                 df.loc[day, "Volume"] = meta["regularMarketVolume"]
     return df if len(df) else None
@@ -93,9 +100,10 @@ def _get(symbol, rng):
 
 
 def history(symbols, period="1y", auto_adjust=False):
-    """Return {symbol: DataFrame[Open, High, Low, Close, Volume]} for every symbol found.
+    """Return {symbol: DataFrame[Open, High, Low, Close, Volume, AdjClose]} for every symbol.
 
-    Close prices are split-adjusted but not dividend-adjusted (what Yahoo displays).
+    Close is split-adjusted but not dividend-adjusted (what Yahoo displays), used for
+    prices on the site. AdjClose also includes dividends, used for returns and risk.
     """
     symbols = list(dict.fromkeys(symbols))
     result = {}

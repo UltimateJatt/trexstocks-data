@@ -1,6 +1,8 @@
 """Track record: how each locked pick did 1 day, 1 week and 4 weeks later vs its index."""
 from collections import defaultdict
 
+from . import config
+
 HORIZONS = {"1d": 1, "1w": 5, "4w": 20}
 
 
@@ -27,18 +29,40 @@ def _eval_one(closes, date_iso, entry, ratio_key, row):
     return out
 
 
+def _series(df):
+    """Dividend-adjusted closes, so a stock's dividends count toward its return."""
+    if df is None:
+        return None
+    return df["AdjClose"] if "AdjClose" in df else df["Close"]
+
+
+def _pick_day_close(df, date_iso):
+    if df is None:
+        return None
+    for ts, v in df["Close"].items():
+        if ts.date().isoformat() == date_iso:
+            return float(v)
+    return None
+
+
 def evaluate(history, hist):
     for row in history:
         if all(h in row.get("results", {}) for h in HORIZONS):
             continue
         s = hist.get(row["yahoo"])
         b = hist.get(row["bench"])
-        sr = _eval_one(s["Close"] if s is not None else None, row["date"],
-                       row["entryPrice"], "entryRatio", row)
-        br = _eval_one(b["Close"] if b is not None else None, row["date"],
-                       row.get("benchEntry"), "benchRatio", row)
+        if "pickDayClose" not in row:
+            # kept next to the 10:30am lock price, so both can be compared
+            c = _pick_day_close(s, row["date"])
+            if c is not None:
+                row["pickDayClose"] = c
+        # "adjRatio" keys: v2 uses dividend-adjusted closes (old rows used plain closes)
+        sr = _eval_one(_series(s), row["date"], row["entryPrice"], "adjRatio", row)
+        br = _eval_one(_series(b), row["date"], row.get("benchEntry"), "benchAdjRatio", row)
         res = row.setdefault("results", {})
         for h, r in sr.items():
+            if h in res:
+                continue  # never rewrite a result that was already graded
             res[h] = {"return": r, "bench": br.get(h),
                       "excess": (r - br[h]) if h in br else None}
     return history
@@ -62,6 +86,15 @@ def summary(history, recent_days=60):
             }
         return out
 
+    # Picks made on the same day share the same market, so pick days (not picks)
+    # are what count as separate observations.
+    done_days = {r["date"] for r in history if "4w" in r.get("results", {})}
+    evidence = None
+    for limit, label in config.EVIDENCE_LABELS:
+        if len(done_days) < limit:
+            evidence = label
+            break
+
     by_cat = defaultdict(list)
     for r in history:
         by_cat[r["category"]].append(r)
@@ -70,13 +103,20 @@ def summary(history, recent_days=60):
     return {
         "since": min((r["date"] for r in history), default=None),
         "totalPicks": len(history),
+        "pickDays": len({r["date"] for r in history}),
+        "gradedPickDays4w": len(done_days),
+        "evidence": evidence,
+        "model": config.PICKS_MODEL,
+        "models": sorted({r.get("model", "Daily Picks v1") for r in history}),
         "overall": agg(history),
         "byCategory": {k: agg(v) for k, v in by_cat.items()},
         "recent": sorted(
-            ({k: r[k] for k in ("date", "index", "category", "symbol", "name",
-                                "sector", "score", "entryPrice", "results")}
+            ({**{k: r.get(k) for k in ("date", "index", "category", "symbol", "name",
+                                       "sector", "score", "entryPrice", "pickDayClose",
+                                       "results")},
+              "model": r.get("model", "Daily Picks v1")}
              for r in recent),
             key=lambda r: r["date"], reverse=True),
-        "note": ("Entry price is the price at pick time (about 10:30am ET, 15-min delayed). "
-                 "Returns exclude dividends and trading costs."),
+        "note": ("Entry price is the price at pick time (about 10:30am ET). Stock returns "
+                 "include dividends; index returns do not. Trading costs are not included."),
     }
