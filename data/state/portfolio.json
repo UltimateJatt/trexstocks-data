@@ -11,7 +11,7 @@
    "end": null,
    "nextRebalance": "2027-03-22",
    "startValueUSD": 10000,
-   "verified": false,
+   "verified": true,
    "holdings": [
     {
      "yahoo": "AAPL",
@@ -19,7 +19,8 @@
      "type": "blueChip",
      "allocationUSD": 1500,
      "purchasePrice": 339.75,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 4.415
     },
     {
      "yahoo": "JPM",
@@ -27,7 +28,8 @@
      "type": "blueChip",
      "allocationUSD": 1000,
      "purchasePrice": 340.0,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 2.9412
     },
     {
      "yahoo": "NVDA",
@@ -35,7 +37,8 @@
      "type": "speculative",
      "allocationUSD": 2000,
      "purchasePrice": 228.87,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 8.7386
     },
     {
      "yahoo": "GOOGL",
@@ -43,7 +46,8 @@
      "type": "blueChip",
      "allocationUSD": 1500,
      "purchasePrice": 351.16,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 4.2716
     },
     {
      "yahoo": "CRWD",
@@ -51,7 +55,8 @@
      "type": "speculative",
      "allocationUSD": 1000,
      "purchasePrice": 250.06,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 3.999
     },
     {
      "yahoo": "CELH",
@@ -59,7 +64,8 @@
      "type": "hiddenGem",
      "allocationUSD": 1000,
      "purchasePrice": 29.39,
-     "currency": "USD"
+     "currency": "USD",
+     "shares": 34.0252
     },
     {
      "yahoo": "RY.TO",
@@ -67,7 +73,8 @@
      "type": "blueChip",
      "allocationUSD": 1000,
      "purchasePrice": 203.98,
-     "currency": "CAD"
+     "currency": "CAD",
+     "shares": 6.8795
     },
     {
      "yahoo": "SHOP.TO",
@@ -75,9 +82,12 @@
      "type": "speculative",
      "allocationUSD": 1000,
      "purchasePrice": 207.69,
-     "currency": "CAD"
+     "currency": "CAD",
+     "shares": 6.7566
     }
-   ]
+   ],
+   "fxAtStart": 0.7126,
+   "verifyNote": "Prices checked against closing prices on the start date. NEEDS REVIEW (over 25% off, not changed): RY.TO entered 203.98 vs close 287.17"
   }
  ]
 }

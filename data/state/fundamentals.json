@@ -6,7 +6,7 @@
   "industry": "Diagnostics & Research",
   "name": "Agilent Technologies, Inc.",
   "forwardPE": 24.7523,
-  "trailingPE": 31.9198,
+  "trailingPE": 32.9901,
   "revenueGrowth": 0.081,
   "earningsGrowth": 0.085,
   "profitMargins": 0.1953,
@@ -16,7 +16,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-25",
-  "fetched": "2026-09-23T07:48:34.700185-04:00"
+  "fetched": "2026-09-23T08:35:28.232842-04:00"
  },
  "AAL": {
   "marketCap": 9009410048,
@@ -35,7 +35,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:48:35.394522-04:00"
+  "fetched": "2026-09-23T08:35:28.836232-04:00"
  },
  "AAOI": {
   "marketCap": 9084973056,
@@ -54,7 +54,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:48:35.949776-04:00"
+  "fetched": "2026-09-23T08:35:29.506996-04:00"
  },
  "AAON": {
   "marketCap": 6536099840,
@@ -63,7 +63,7 @@
   "industry": "Building Products & Equipment",
   "name": "AAON, Inc.",
   "forwardPE": 22.6594,
-  "trailingPE": 40.2386,
+  "trailingPE": 41.721,
   "revenueGrowth": 1.012,
   "earningsGrowth": 2.579,
   "profitMargins": 0.0824,
@@ -73,7 +73,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:48:36.529481-04:00"
+  "fetched": "2026-09-23T08:35:30.119419-04:00"
  },
  "AAPL": {
   "marketCap": 4958372495360,
@@ -92,7 +92,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:48:37.090669-04:00"
+  "fetched": "2026-09-23T08:35:30.746744-04:00"
  },
  "AAUC.TO": {
   "marketCap": 4492576256,
@@ -111,7 +111,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:37.648900-04:00"
+  "fetched": "2026-09-23T08:35:31.360652-04:00"
  },
  "AAV.TO": {
   "marketCap": 1660962304,
@@ -130,7 +130,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:48:38.206992-04:00"
+  "fetched": "2026-09-23T08:35:31.977544-04:00"
  },
  "ABBV": {
   "marketCap": 468657176576,
@@ -149,7 +149,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:48:38.804862-04:00"
+  "fetched": "2026-09-23T08:35:32.577575-04:00"
  },
  "ABCL": {
   "marketCap": 4099198976,
@@ -168,7 +168,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:48:39.373642-04:00"
+  "fetched": "2026-09-23T08:35:33.205923-04:00"
  },
  "ABNB": {
   "marketCap": 96889503744,
@@ -187,7 +187,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:48:39.953531-04:00"
+  "fetched": "2026-09-23T08:35:33.930110-04:00"
  },
  "ABRA.TO": {
   "marketCap": 2285452544,
@@ -206,7 +206,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:48:40.546452-04:00"
+  "fetched": "2026-09-23T08:35:34.537783-04:00"
  },
  "ABT": {
   "marketCap": 179423461376,
@@ -225,7 +225,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-14",
-  "fetched": "2026-09-23T07:48:41.098914-04:00"
+  "fetched": "2026-09-23T08:35:35.125667-04:00"
  },
  "ABVX": {
   "marketCap": 8576176128,
@@ -244,7 +244,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:41.663544-04:00"
+  "fetched": "2026-09-23T08:35:35.833589-04:00"
  },
  "ABX.TO": {
   "marketCap": 101732114432,
@@ -263,7 +263,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:48:42.253205-04:00"
+  "fetched": "2026-09-23T08:35:36.434811-04:00"
  },
  "AC.TO": {
   "marketCap": 7892332544,
@@ -282,7 +282,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:48:42.875473-04:00"
+  "fetched": "2026-09-23T08:35:37.071066-04:00"
  },
  "ACAD": {
   "marketCap": 4550588928,
@@ -301,7 +301,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:43.471399-04:00"
+  "fetched": "2026-09-23T08:35:37.717180-04:00"
  },
  "ACGL": {
   "marketCap": 32399704064,
@@ -320,7 +320,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:48:44.033567-04:00"
+  "fetched": "2026-09-23T08:35:38.378078-04:00"
  },
  "ACGLN": {
   "marketCap": null,
@@ -339,7 +339,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:44.584231-04:00"
+  "fetched": "2026-09-23T08:35:39.004367-04:00"
  },
  "ACGLO": {
   "marketCap": null,
@@ -358,7 +358,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:45.139163-04:00"
+  "fetched": "2026-09-23T08:35:39.619897-04:00"
  },
  "ACHC": {
   "marketCap": 2734354944,
@@ -377,7 +377,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:45.729000-04:00"
+  "fetched": "2026-09-23T08:35:40.269258-04:00"
  },
  "ACIW": {
   "marketCap": 4965988352,
@@ -396,7 +396,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:48:46.321623-04:00"
+  "fetched": "2026-09-23T08:35:40.914852-04:00"
  },
  "ACLS": {
   "marketCap": 3574223360,
@@ -415,7 +415,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:48:46.887464-04:00"
+  "fetched": "2026-09-23T08:35:41.540009-04:00"
  },
  "ACMR": {
   "marketCap": 5279409664,
@@ -434,7 +434,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:47.491914-04:00"
+  "fetched": "2026-09-23T08:35:42.176140-04:00"
  },
  "ACN": {
   "marketCap": 112426000384,
@@ -453,7 +453,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-01",
-  "fetched": "2026-09-23T07:48:48.081680-04:00"
+  "fetched": "2026-09-23T08:35:42.846401-04:00"
  },
  "ACO-X.TO": {
   "marketCap": 8253891072,
@@ -472,7 +472,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:48:48.644300-04:00"
+  "fetched": "2026-09-23T08:35:43.455118-04:00"
  },
  "ACT": {
   "marketCap": 6545597440,
@@ -491,7 +491,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:48:49.246025-04:00"
+  "fetched": "2026-09-23T08:35:44.075351-04:00"
  },
  "ADAML": {
   "marketCap": null,
@@ -510,7 +510,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:50.395461-04:00"
+  "fetched": "2026-09-23T08:35:44.704143-04:00"
  },
  "ADAMM": {
   "marketCap": null,
@@ -529,7 +529,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:51.023467-04:00"
+  "fetched": "2026-09-23T08:35:45.345424-04:00"
  },
  "ADAMN": {
   "marketCap": null,
@@ -548,7 +548,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:48:51.621738-04:00"
+  "fetched": "2026-09-23T08:35:45.953511-04:00"
  },
  "ADBE": {
   "marketCap": 94704377856,
@@ -567,7 +567,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-09",
-  "fetched": "2026-09-23T07:48:52.244306-04:00"
+  "fetched": "2026-09-23T08:35:46.587514-04:00"
  },
  "ADEA": {
   "marketCap": 2848536320,
@@ -586,7 +586,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:48:52.845814-04:00"
+  "fetched": "2026-09-23T08:35:47.232716-04:00"
  },
  "ADI": {
   "marketCap": 189159817216,
@@ -605,7 +605,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-24",
-  "fetched": "2026-09-23T07:48:53.400303-04:00"
+  "fetched": "2026-09-23T08:35:47.856657-04:00"
  },
  "ADM": {
   "marketCap": 39684550656,
@@ -614,7 +614,7 @@
   "industry": "Farm Products",
   "name": "Archer-Daniels-Midland Company",
   "forwardPE": 14.5217,
-  "trailingPE": 22.8089,
+  "trailingPE": 22.4973,
   "revenueGrowth": 0.072,
   "earningsGrowth": 3.156,
   "profitMargins": 0.0216,
@@ -624,7 +624,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:48:53.960399-04:00"
+  "fetched": "2026-09-23T08:35:48.527053-04:00"
  },
  "ADMA": {
   "marketCap": 2197289728,
@@ -643,7 +643,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:54.524520-04:00"
+  "fetched": "2026-09-23T08:35:49.179972-04:00"
  },
  "ADP": {
   "marketCap": 107117936640,
@@ -662,7 +662,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:48:55.137091-04:00"
+  "fetched": "2026-09-23T08:35:49.909189-04:00"
  },
  "ADPT": {
   "marketCap": 4478259200,
@@ -681,7 +681,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:55.752363-04:00"
+  "fetched": "2026-09-23T08:35:50.593252-04:00"
  },
  "ADSK": {
   "marketCap": 45900578816,
@@ -700,7 +700,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-27",
-  "fetched": "2026-09-23T07:48:56.313821-04:00"
+  "fetched": "2026-09-23T08:35:51.217804-04:00"
  },
  "ADUS": {
   "marketCap": 2133351936,
@@ -719,7 +719,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:48:56.900576-04:00"
+  "fetched": "2026-09-23T08:35:51.876995-04:00"
  },
  "AEE": {
   "marketCap": 28143886336,
@@ -738,7 +738,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:48:57.490188-04:00"
+  "fetched": "2026-09-23T08:35:52.512300-04:00"
  },
  "AEHR": {
   "marketCap": 3285550336,
@@ -757,7 +757,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:48:58.065273-04:00"
+  "fetched": "2026-09-23T08:35:53.168522-04:00"
  },
  "AEIS": {
   "marketCap": 10950991872,
@@ -776,7 +776,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:48:58.628354-04:00"
+  "fetched": "2026-09-23T08:35:53.764906-04:00"
  },
  "AEM.TO": {
   "marketCap": 145174806528,
@@ -795,7 +795,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:48:59.225299-04:00"
+  "fetched": "2026-09-23T08:35:54.394959-04:00"
  },
  "AEP": {
   "marketCap": 65474670592,
@@ -814,7 +814,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:48:59.810567-04:00"
+  "fetched": "2026-09-23T08:35:55.017493-04:00"
  },
  "AES": {
   "marketCap": 10573160448,
@@ -833,7 +833,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:00.369549-04:00"
+  "fetched": "2026-09-23T08:35:55.635341-04:00"
  },
  "AFL": {
   "marketCap": 57453940736,
@@ -852,7 +852,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:00.923078-04:00"
+  "fetched": "2026-09-23T08:35:56.250191-04:00"
  },
  "AFRM": {
   "marketCap": 24216721408,
@@ -871,7 +871,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:01.481452-04:00"
+  "fetched": "2026-09-23T08:35:56.849835-04:00"
  },
  "AG.TO": {
   "marketCap": 14097122304,
@@ -890,7 +890,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:02.081313-04:00"
+  "fetched": "2026-09-23T08:35:57.455622-04:00"
  },
  "AGI.TO": {
   "marketCap": 21369757696,
@@ -909,7 +909,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:02.643294-04:00"
+  "fetched": "2026-09-23T08:35:58.066606-04:00"
  },
  "AGIO": {
   "marketCap": 2087774848,
@@ -928,7 +928,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:03.203273-04:00"
+  "fetched": "2026-09-23T08:35:58.678152-04:00"
  },
  "AGNC": {
   "marketCap": 11961507840,
@@ -947,7 +947,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-19",
-  "fetched": "2026-09-23T07:49:03.790114-04:00"
+  "fetched": "2026-09-23T08:35:59.304416-04:00"
  },
  "AGYS": {
   "marketCap": 2831014912,
@@ -966,7 +966,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:49:04.423054-04:00"
+  "fetched": "2026-09-23T08:35:59.915219-04:00"
  },
  "AI": {
   "marketCap": 1744461440,
@@ -985,7 +985,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:49:04.990992-04:00"
+  "fetched": "2026-09-23T08:36:00.533233-04:00"
  },
  "AIF.TO": {
   "marketCap": 1529343104,
@@ -1004,7 +1004,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:05.624229-04:00"
+  "fetched": "2026-09-23T08:36:01.184630-04:00"
  },
  "AIG": {
   "marketCap": 39311110144,
@@ -1023,7 +1023,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:06.212072-04:00"
+  "fetched": "2026-09-23T08:36:01.799041-04:00"
  },
  "AIZ": {
   "marketCap": 13370686464,
@@ -1032,7 +1032,7 @@
   "industry": "Insurance - Property & Casualty",
   "name": "Assurant, Inc.",
   "forwardPE": 11.5681,
-  "trailingPE": 13.2817,
+  "trailingPE": 12.9703,
   "revenueGrowth": 0.094,
   "earningsGrowth": 0.305,
   "profitMargins": 0.079,
@@ -1042,7 +1042,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:06.773477-04:00"
+  "fetched": "2026-09-23T08:36:02.412092-04:00"
  },
  "AJG": {
   "marketCap": 59073781760,
@@ -1061,7 +1061,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:07.342362-04:00"
+  "fetched": "2026-09-23T08:36:03.045613-04:00"
  },
  "AKAM": {
   "marketCap": 17007422464,
@@ -1080,7 +1080,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:07.986444-04:00"
+  "fetched": "2026-09-23T08:36:03.717813-04:00"
  },
  "ALA.TO": {
   "marketCap": 16686057472,
@@ -1099,7 +1099,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:08.585147-04:00"
+  "fetched": "2026-09-23T08:36:04.360623-04:00"
  },
  "ALB": {
   "marketCap": 13782990848,
@@ -1118,7 +1118,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:09.152406-04:00"
+  "fetched": "2026-09-23T08:36:05.010952-04:00"
  },
  "ALGM": {
   "marketCap": 6619136512,
@@ -1137,7 +1137,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:09.754342-04:00"
+  "fetched": "2026-09-23T08:36:05.611452-04:00"
  },
  "ALGN": {
   "marketCap": 10889699328,
@@ -1156,7 +1156,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:10.333044-04:00"
+  "fetched": "2026-09-23T08:36:06.212302-04:00"
  },
  "ALGT": {
   "marketCap": 2232401152,
@@ -1175,7 +1175,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:10.905450-04:00"
+  "fetched": "2026-09-23T08:36:06.836455-04:00"
  },
  "ALKS": {
   "marketCap": 7262471680,
@@ -1194,7 +1194,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:11.462377-04:00"
+  "fetched": "2026-09-23T08:36:07.459743-04:00"
  },
  "ALL": {
   "marketCap": 58030899200,
@@ -1213,7 +1213,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:12.028783-04:00"
+  "fetched": "2026-09-23T08:36:08.105727-04:00"
  },
  "ALLE": {
   "marketCap": 13091412992,
@@ -1232,7 +1232,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:49:12.587085-04:00"
+  "fetched": "2026-09-23T08:36:08.700576-04:00"
  },
  "ALM": {
   "marketCap": 4139698688,
@@ -1251,7 +1251,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:49:13.156887-04:00"
+  "fetched": "2026-09-23T08:36:09.303819-04:00"
  },
  "ALMR": {
   "marketCap": 2305227776,
@@ -1270,7 +1270,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:13.834818-04:00"
+  "fetched": "2026-09-23T08:36:09.945607-04:00"
  },
  "ALRM": {
   "marketCap": 2609636608,
@@ -1289,7 +1289,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:14.407291-04:00"
+  "fetched": "2026-09-23T08:36:10.562588-04:00"
  },
  "ALVO": {
   "marketCap": 2083811456,
@@ -1308,7 +1308,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:49:15.080233-04:00"
+  "fetched": "2026-09-23T08:36:11.246121-04:00"
  },
  "AMAT": {
   "marketCap": 374943055872,
@@ -1327,7 +1327,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:49:15.672454-04:00"
+  "fetched": "2026-09-23T08:36:11.884898-04:00"
  },
  "AMBA": {
   "marketCap": 2960093440,
@@ -1346,7 +1346,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-01",
-  "fetched": "2026-09-23T07:49:16.283953-04:00"
+  "fetched": "2026-09-23T08:36:12.542210-04:00"
  },
  "AMCR": {
   "marketCap": 19991828480,
@@ -1365,7 +1365,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:16.851390-04:00"
+  "fetched": "2026-09-23T08:36:13.176828-04:00"
  },
  "AMD": {
   "marketCap": 1018288996352,
@@ -1384,7 +1384,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:17.444386-04:00"
+  "fetched": "2026-09-23T08:36:14.194763-04:00"
  },
  "AME": {
   "marketCap": 56263004160,
@@ -1403,7 +1403,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:18.004483-04:00"
+  "fetched": "2026-09-23T08:36:14.830051-04:00"
  },
  "AMGN": {
   "marketCap": 221788864512,
@@ -1422,7 +1422,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:18.625511-04:00"
+  "fetched": "2026-09-23T08:36:15.426381-04:00"
  },
  "AMKR": {
   "marketCap": 13563021312,
@@ -1441,7 +1441,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:49:19.247149-04:00"
+  "fetched": "2026-09-23T08:36:16.090617-04:00"
  },
  "AMLX": {
   "marketCap": 4211675904,
@@ -1460,7 +1460,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:19.819404-04:00"
+  "fetched": "2026-09-23T08:36:16.702630-04:00"
  },
  "AMP": {
   "marketCap": 45259288576,
@@ -1479,7 +1479,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:20.415683-04:00"
+  "fetched": "2026-09-23T08:36:17.346419-04:00"
  },
  "AMRX": {
   "marketCap": 6791772672,
@@ -1498,7 +1498,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:21.013034-04:00"
+  "fetched": "2026-09-23T08:36:17.972886-04:00"
  },
  "AMT": {
   "marketCap": 81659502592,
@@ -1517,7 +1517,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:49:21.612755-04:00"
+  "fetched": "2026-09-23T08:36:18.570083-04:00"
  },
  "AMZN": {
   "marketCap": 2750293999616,
@@ -1536,7 +1536,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:22.214079-04:00"
+  "fetched": "2026-09-23T08:36:19.190916-04:00"
  },
  "ANDE": {
   "marketCap": 2274324480,
@@ -1555,7 +1555,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:22.811552-04:00"
+  "fetched": "2026-09-23T08:36:19.803023-04:00"
  },
  "ANET": {
   "marketCap": 258790703104,
@@ -1574,7 +1574,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:23.365267-04:00"
+  "fetched": "2026-09-23T08:36:20.476672-04:00"
  },
  "AON": {
   "marketCap": 60689088512,
@@ -1593,7 +1593,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:49:23.926877-04:00"
+  "fetched": "2026-09-23T08:36:21.085930-04:00"
  },
  "AOS": {
   "marketCap": 7904442880,
@@ -1612,7 +1612,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:49:24.501993-04:00"
+  "fetched": "2026-09-23T08:36:21.737103-04:00"
  },
  "AP-UN.TO": {
   "marketCap": 1650215424,
@@ -1631,7 +1631,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:25.060711-04:00"
+  "fetched": "2026-09-23T08:36:22.381799-04:00"
  },
  "APA": {
   "marketCap": 14819868672,
@@ -1650,7 +1650,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:25.619475-04:00"
+  "fetched": "2026-09-23T08:36:23.039281-04:00"
  },
  "APD": {
   "marketCap": 64102256640,
@@ -1669,7 +1669,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:26.206987-04:00"
+  "fetched": "2026-09-23T08:36:23.683673-04:00"
  },
  "APH": {
   "marketCap": 204280692736,
@@ -1688,7 +1688,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:26.775824-04:00"
+  "fetched": "2026-09-23T08:36:24.339905-04:00"
  },
  "APLD": {
   "marketCap": 8114031104,
@@ -1707,7 +1707,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-08",
-  "fetched": "2026-09-23T07:49:27.335898-04:00"
+  "fetched": "2026-09-23T08:36:24.951576-04:00"
  },
  "APO": {
   "marketCap": 73315934208,
@@ -1726,7 +1726,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:27.908623-04:00"
+  "fetched": "2026-09-23T08:36:25.588778-04:00"
  },
  "APP": {
   "marketCap": 110433402880,
@@ -1745,7 +1745,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:28.465754-04:00"
+  "fetched": "2026-09-23T08:36:26.201478-04:00"
  },
  "APPF": {
   "marketCap": 7305463296,
@@ -1764,7 +1764,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:29.060212-04:00"
+  "fetched": "2026-09-23T08:36:26.870799-04:00"
  },
  "APPN": {
   "marketCap": 2643058432,
@@ -1783,7 +1783,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:29.618479-04:00"
+  "fetched": "2026-09-23T08:36:27.515699-04:00"
  },
  "APTV": {
   "marketCap": 9262523392,
@@ -1802,7 +1802,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:30.275809-04:00"
+  "fetched": "2026-09-23T08:36:28.170947-04:00"
  },
  "AQN.TO": {
   "marketCap": 5643380736,
@@ -1821,7 +1821,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:49:30.842791-04:00"
+  "fetched": "2026-09-23T08:36:28.777825-04:00"
  },
  "ARCB": {
   "marketCap": 2943897088,
@@ -1840,7 +1840,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:31.397744-04:00"
+  "fetched": "2026-09-23T08:36:29.397424-04:00"
  },
  "ARCC": {
   "marketCap": 13900922880,
@@ -1859,7 +1859,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:49:31.991959-04:00"
+  "fetched": "2026-09-23T08:36:30.248736-04:00"
  },
  "ARE": {
   "marketCap": 9267331072,
@@ -1878,7 +1878,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:49:32.556260-04:00"
+  "fetched": "2026-09-23T08:36:30.875776-04:00"
  },
  "ARE.TO": {
   "marketCap": 3744453376,
@@ -1897,7 +1897,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:33.120054-04:00"
+  "fetched": "2026-09-23T08:36:31.509118-04:00"
  },
  "ARES": {
   "marketCap": 41379094528,
@@ -1916,7 +1916,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:49:33.724454-04:00"
+  "fetched": "2026-09-23T08:36:32.137968-04:00"
  },
  "ARIS.TO": {
   "marketCap": 5769737728,
@@ -1924,7 +1924,7 @@
   "sector": "Basic Materials",
   "industry": "Gold",
   "name": "ARIS MINING CORPORATION",
-  "forwardPE": 6.7606,
+  "forwardPE": 6.7421,
   "trailingPE": 14.1878,
   "revenueGrowth": 0.623,
   "earningsGrowth": null,
@@ -1935,7 +1935,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:34.309669-04:00"
+  "fetched": "2026-09-23T08:36:32.765106-04:00"
  },
  "ARLP": {
   "marketCap": 3327116544,
@@ -1944,7 +1944,7 @@
   "industry": "Thermal Coal",
   "name": "Alliance Resource Partners, L.P",
   "forwardPE": 8.8866,
-  "trailingPE": 12.5534,
+  "trailingPE": 12.6146,
   "revenueGrowth": 0.007,
   "earningsGrowth": 0.341,
   "profitMargins": 0.1225,
@@ -1954,7 +1954,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:49:34.869287-04:00"
+  "fetched": "2026-09-23T08:36:33.370332-04:00"
  },
  "ARM": {
   "marketCap": 355857137664,
@@ -1973,7 +1973,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:35.423701-04:00"
+  "fetched": "2026-09-23T08:36:33.993574-04:00"
  },
  "ARQT": {
   "marketCap": 3491722752,
@@ -1992,7 +1992,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:49:35.992933-04:00"
+  "fetched": "2026-09-23T08:36:34.601028-04:00"
  },
  "ARWR": {
   "marketCap": 10150545408,
@@ -2011,7 +2011,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-24",
-  "fetched": "2026-09-23T07:49:36.589263-04:00"
+  "fetched": "2026-09-23T08:36:35.238675-04:00"
  },
  "ARX.TO": {
   "marketCap": 19188787200,
@@ -2030,7 +2030,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:37.178765-04:00"
+  "fetched": "2026-09-23T08:36:35.880508-04:00"
  },
  "ASM.TO": {
   "marketCap": 1550778624,
@@ -2049,7 +2049,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:37.760993-04:00"
+  "fetched": "2026-09-23T08:36:36.513592-04:00"
  },
  "ASND": {
   "marketCap": 15628154880,
@@ -2068,7 +2068,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:49:38.351236-04:00"
+  "fetched": "2026-09-23T08:36:37.166441-04:00"
  },
  "ASO": {
   "marketCap": 3048155136,
@@ -2087,7 +2087,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-08",
-  "fetched": "2026-09-23T07:49:38.949411-04:00"
+  "fetched": "2026-09-23T08:36:37.826476-04:00"
  },
  "ASST": {
   "marketCap": 2847027712,
@@ -2106,7 +2106,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-10",
-  "fetched": "2026-09-23T07:49:39.597193-04:00"
+  "fetched": "2026-09-23T08:36:38.498374-04:00"
  },
  "ATAT": {
   "marketCap": 4589155328,
@@ -2125,7 +2125,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-24",
-  "fetched": "2026-09-23T07:49:40.156294-04:00"
+  "fetched": "2026-09-23T08:36:39.099676-04:00"
  },
  "ATD.TO": {
   "marketCap": 73115721728,
@@ -2144,7 +2144,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-23",
-  "fetched": "2026-09-23T07:49:40.715229-04:00"
+  "fetched": "2026-09-23T08:36:39.757058-04:00"
  },
  "ATH.TO": {
   "marketCap": 4870755840,
@@ -2163,7 +2163,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:41.288809-04:00"
+  "fetched": "2026-09-23T08:36:40.369827-04:00"
  },
  "ATO": {
   "marketCap": 26588659712,
@@ -2182,7 +2182,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:41.846023-04:00"
+  "fetched": "2026-09-23T08:36:40.995763-04:00"
  },
  "ATRC": {
   "marketCap": 2992464384,
@@ -2201,7 +2201,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:49:42.408991-04:00"
+  "fetched": "2026-09-23T08:36:41.621137-04:00"
  },
  "ATRL.TO": {
   "marketCap": 14812753920,
@@ -2220,7 +2220,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:49:42.966315-04:00"
+  "fetched": "2026-09-23T08:36:42.248704-04:00"
  },
  "ATRO": {
   "marketCap": 2997731584,
@@ -2239,7 +2239,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:43.549062-04:00"
+  "fetched": "2026-09-23T08:36:42.866501-04:00"
  },
  "ATS.TO": {
   "marketCap": 2638632192,
@@ -2258,7 +2258,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:44.145169-04:00"
+  "fetched": "2026-09-23T08:36:43.513548-04:00"
  },
  "ATZ.TO": {
   "marketCap": 14353479680,
@@ -2277,7 +2277,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-08",
-  "fetched": "2026-09-23T07:49:44.745294-04:00"
+  "fetched": "2026-09-23T08:36:44.145146-04:00"
  },
  "AUGO": {
   "marketCap": 7777543168,
@@ -2296,7 +2296,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:45.298091-04:00"
+  "fetched": "2026-09-23T08:36:44.733678-04:00"
  },
  "AUPH": {
   "marketCap": 2217963008,
@@ -2315,7 +2315,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:49:45.872032-04:00"
+  "fetched": "2026-09-23T08:36:45.340329-04:00"
  },
  "AUR": {
   "marketCap": 12946842624,
@@ -2334,7 +2334,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:46.464028-04:00"
+  "fetched": "2026-09-23T08:36:45.965184-04:00"
  },
  "AVAH": {
   "marketCap": 2885803008,
@@ -2353,7 +2353,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:47.019741-04:00"
+  "fetched": "2026-09-23T08:36:46.642694-04:00"
  },
  "AVAV": {
   "marketCap": 7935652864,
@@ -2372,7 +2372,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-02",
-  "fetched": "2026-09-23T07:49:47.588402-04:00"
+  "fetched": "2026-09-23T08:36:47.318560-04:00"
  },
  "AVGO": {
   "marketCap": 1740179111936,
@@ -2391,7 +2391,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-09",
-  "fetched": "2026-09-23T07:49:48.156099-04:00"
+  "fetched": "2026-09-23T08:36:47.970609-04:00"
  },
  "AVPT": {
   "marketCap": 2771507200,
@@ -2410,7 +2410,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:49:48.711492-04:00"
+  "fetched": "2026-09-23T08:36:48.616276-04:00"
  },
  "AVT": {
   "marketCap": 8063669760,
@@ -2429,7 +2429,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:49.262668-04:00"
+  "fetched": "2026-09-23T08:36:49.215330-04:00"
  },
  "AVY": {
   "marketCap": 13042381824,
@@ -2448,7 +2448,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:49:49.847574-04:00"
+  "fetched": "2026-09-23T08:36:49.840436-04:00"
  },
  "AWK": {
   "marketCap": 26593914880,
@@ -2467,7 +2467,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:50.403314-04:00"
+  "fetched": "2026-09-23T08:36:50.470221-04:00"
  },
  "AXGN": {
   "marketCap": 2613229312,
@@ -2486,7 +2486,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:51.027677-04:00"
+  "fetched": "2026-09-23T08:36:51.116710-04:00"
  },
  "AXON": {
   "marketCap": 37313970176,
@@ -2505,7 +2505,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:51.597206-04:00"
+  "fetched": "2026-09-23T08:36:51.708961-04:00"
  },
  "AXP": {
   "marketCap": 206016774144,
@@ -2524,7 +2524,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-23",
-  "fetched": "2026-09-23T07:49:52.202620-04:00"
+  "fetched": "2026-09-23T08:36:52.303554-04:00"
  },
  "AXSM": {
   "marketCap": 10638543872,
@@ -2543,7 +2543,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:49:52.818473-04:00"
+  "fetched": "2026-09-23T08:36:52.928753-04:00"
  },
  "AXTI": {
   "marketCap": 5100940288,
@@ -2562,7 +2562,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:49:53.442580-04:00"
+  "fetched": "2026-09-23T08:36:53.643755-04:00"
  },
  "AYA": {
   "marketCap": 4375818240,
@@ -2581,7 +2581,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:49:54.004224-04:00"
+  "fetched": "2026-09-23T08:36:54.369091-04:00"
  },
  "AYA.TO": {
   "marketCap": 6147463168,
@@ -2600,7 +2600,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:49:54.587268-04:00"
+  "fetched": "2026-09-23T08:36:55.014563-04:00"
  },
  "AZO": {
   "marketCap": 46816468992,
@@ -2618,8 +2618,8 @@
   "analysts": 23,
   "currency": "USD",
   "quoteType": "EQUITY",
-  "nextEarnings": "2026-09-22",
-  "fetched": "2026-09-23T07:49:55.167682-04:00"
+  "nextEarnings": "2026-12-08",
+  "fetched": "2026-09-23T08:36:55.655751-04:00"
  },
  "BA": {
   "marketCap": 156271968256,
@@ -2638,7 +2638,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:49:55.796381-04:00"
+  "fetched": "2026-09-23T08:36:56.290608-04:00"
  },
  "BAC": {
   "marketCap": 392992489472,
@@ -2646,7 +2646,7 @@
   "sector": "Financial Services",
   "industry": "Banks - Diversified",
   "name": "Bank of America Corporation",
-  "forwardPE": 10.6257,
+  "forwardPE": 10.6207,
   "trailingPE": 13.381,
   "revenueGrowth": 0.168,
   "earningsGrowth": 0.341,
@@ -2657,7 +2657,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-14",
-  "fetched": "2026-09-23T07:49:56.374135-04:00"
+  "fetched": "2026-09-23T08:36:56.900011-04:00"
  },
  "BALL": {
   "marketCap": 15874260992,
@@ -2676,7 +2676,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:49:57.000541-04:00"
+  "fetched": "2026-09-23T08:36:57.584802-04:00"
  },
  "BAM.TO": {
   "marketCap": 103485931520,
@@ -2695,7 +2695,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:49:57.562593-04:00"
+  "fetched": "2026-09-23T08:36:58.211076-04:00"
  },
  "BANF": {
   "marketCap": 3636728064,
@@ -2714,7 +2714,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-16",
-  "fetched": "2026-09-23T07:49:58.131529-04:00"
+  "fetched": "2026-09-23T08:36:58.804042-04:00"
  },
  "BANR": {
   "marketCap": 2523726848,
@@ -2733,7 +2733,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-14",
-  "fetched": "2026-09-23T07:49:58.699582-04:00"
+  "fetched": "2026-09-23T08:36:59.409307-04:00"
  },
  "BATRA": {
   "marketCap": 3705054464,
@@ -2752,7 +2752,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:59.257914-04:00"
+  "fetched": "2026-09-23T08:37:00.028481-04:00"
  },
  "BATRK": {
   "marketCap": 3390310656,
@@ -2771,7 +2771,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:49:59.854779-04:00"
+  "fetched": "2026-09-23T08:37:00.631748-04:00"
  },
  "BAX": {
   "marketCap": 12242465792,
@@ -2790,7 +2790,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:00.452196-04:00"
+  "fetched": "2026-09-23T08:37:01.285826-04:00"
  },
  "BB.TO": {
   "marketCap": 7103537152,
@@ -2809,7 +2809,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-24",
-  "fetched": "2026-09-23T07:50:01.008078-04:00"
+  "fetched": "2026-09-23T08:37:01.899241-04:00"
  },
  "BBAI": {
   "marketCap": 1385739136,
@@ -2828,7 +2828,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:50:01.568875-04:00"
+  "fetched": "2026-09-23T08:37:02.495596-04:00"
  },
  "BBD-B.TO": {
   "marketCap": 30824142848,
@@ -2847,7 +2847,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:02.150555-04:00"
+  "fetched": "2026-09-23T08:37:03.180196-04:00"
  },
  "BBIO": {
   "marketCap": 13533980672,
@@ -2866,7 +2866,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:02.712407-04:00"
+  "fetched": "2026-09-23T08:37:03.790524-04:00"
  },
  "BBUC.TO": {
   "marketCap": 7568483840,
@@ -2885,7 +2885,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:03.283522-04:00"
+  "fetched": "2026-09-23T08:37:04.414162-04:00"
  },
  "BBY": {
   "marketCap": 19886381056,
@@ -2904,7 +2904,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-24",
-  "fetched": "2026-09-23T07:50:03.850236-04:00"
+  "fetched": "2026-09-23T08:37:05.102658-04:00"
  },
  "BCE.TO": {
   "marketCap": 28507314176,
@@ -2923,7 +2923,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:04.403968-04:00"
+  "fetched": "2026-09-23T08:37:05.720035-04:00"
  },
  "BCPC": {
   "marketCap": 5368258560,
@@ -2942,7 +2942,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-20",
-  "fetched": "2026-09-23T07:50:04.970391-04:00"
+  "fetched": "2026-09-23T08:37:06.333271-04:00"
  },
  "BCRX": {
   "marketCap": 2243598080,
@@ -2961,7 +2961,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:50:05.576356-04:00"
+  "fetched": "2026-09-23T08:37:06.986278-04:00"
  },
  "BDGI.TO": {
   "marketCap": 3043834112,
@@ -2980,7 +2980,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:06.143021-04:00"
+  "fetched": "2026-09-23T08:37:07.613975-04:00"
  },
  "BDT.TO": {
   "marketCap": 4606784000,
@@ -2999,7 +2999,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:50:06.715034-04:00"
+  "fetched": "2026-09-23T08:37:08.227037-04:00"
  },
  "BDX": {
   "marketCap": 49846788096,
@@ -3018,7 +3018,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:07.315996-04:00"
+  "fetched": "2026-09-23T08:37:08.825615-04:00"
  },
  "BE": {
   "marketCap": 81445650432,
@@ -3037,7 +3037,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:07.905649-04:00"
+  "fetched": "2026-09-23T08:37:09.510282-04:00"
  },
  "BEAM": {
   "marketCap": 2678249216,
@@ -3056,7 +3056,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:08.537671-04:00"
+  "fetched": "2026-09-23T08:37:10.160483-04:00"
  },
  "BEI-UN.TO": {
   "marketCap": 3374673664,
@@ -3075,7 +3075,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:09.202185-04:00"
+  "fetched": "2026-09-23T08:37:10.820725-04:00"
  },
  "BELFA": {
   "marketCap": 2934240768,
@@ -3094,7 +3094,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:09.757454-04:00"
+  "fetched": "2026-09-23T08:37:11.485233-04:00"
  },
  "BELFB": {
   "marketCap": 3603508992,
@@ -3113,7 +3113,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:10.348041-04:00"
+  "fetched": "2026-09-23T08:37:12.106850-04:00"
  },
  "BEN": {
   "marketCap": 16832587776,
@@ -3132,7 +3132,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:50:10.939524-04:00"
+  "fetched": "2026-09-23T08:37:12.740717-04:00"
  },
  "BEP-UN.TO": {
   "marketCap": 20402571264,
@@ -3151,7 +3151,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:11.564648-04:00"
+  "fetched": "2026-09-23T08:37:13.370099-04:00"
  },
  "BF-B": {
   "marketCap": 12187433984,
@@ -3170,7 +3170,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-03",
-  "fetched": "2026-09-23T07:50:12.158682-04:00"
+  "fetched": "2026-09-23T08:37:13.987964-04:00"
  },
  "BG": {
   "marketCap": 21133103104,
@@ -3189,7 +3189,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:12.714870-04:00"
+  "fetched": "2026-09-23T08:37:14.601205-04:00"
  },
  "BGC": {
   "marketCap": 5833974272,
@@ -3208,7 +3208,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:13.316556-04:00"
+  "fetched": "2026-09-23T08:37:15.198663-04:00"
  },
  "BHC.TO": {
   "marketCap": 3055502848,
@@ -3227,7 +3227,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:13.884811-04:00"
+  "fetched": "2026-09-23T08:37:15.826283-04:00"
  },
  "BHF": {
   "marketCap": 2984850176,
@@ -3246,7 +3246,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:14.443687-04:00"
+  "fetched": "2026-09-23T08:37:16.432208-04:00"
  },
  "BIIB": {
   "marketCap": 33297842176,
@@ -3265,7 +3265,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:15.044154-04:00"
+  "fetched": "2026-09-23T08:37:17.058313-04:00"
  },
  "BILI": {
   "marketCap": 6298413056,
@@ -3284,7 +3284,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:50:15.640874-04:00"
+  "fetched": "2026-09-23T08:37:17.746780-04:00"
  },
  "BIP-UN.TO": {
   "marketCap": 39860469760,
@@ -3292,7 +3292,7 @@
   "sector": "Utilities",
   "industry": "Utilities - Diversified",
   "name": "BROOKFIELD INFRA PARTNERS LP UN",
-  "forwardPE": 24.7808,
+  "forwardPE": 24.7063,
   "trailingPE": 57.8621,
   "revenueGrowth": 0.194,
   "earningsGrowth": null,
@@ -3303,7 +3303,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:50:16.264775-04:00"
+  "fetched": "2026-09-23T08:37:18.360364-04:00"
  },
  "BIR.TO": {
   "marketCap": 1698868224,
@@ -3322,7 +3322,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:50:16.846400-04:00"
+  "fetched": "2026-09-23T08:37:18.972812-04:00"
  },
  "BKNG": {
   "marketCap": 123391705088,
@@ -3341,7 +3341,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:17.444668-04:00"
+  "fetched": "2026-09-23T08:37:19.603115-04:00"
  },
  "BKR": {
   "marketCap": 56840515584,
@@ -3360,7 +3360,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:50:18.004369-04:00"
+  "fetched": "2026-09-23T08:37:20.255299-04:00"
  },
  "BLK": {
   "marketCap": 173306855424,
@@ -3379,7 +3379,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-14",
-  "fetched": "2026-09-23T07:50:18.602990-04:00"
+  "fetched": "2026-09-23T08:37:20.912849-04:00"
  },
  "BLLN": {
   "marketCap": 5476999680,
@@ -3398,7 +3398,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:19.164972-04:00"
+  "fetched": "2026-09-23T08:37:21.585074-04:00"
  },
  "BLTE": {
   "marketCap": 7061720576,
@@ -3417,7 +3417,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:50:19.733998-04:00"
+  "fetched": "2026-09-23T08:37:22.224220-04:00"
  },
  "BLX.TO": {
   "marketCap": null,
@@ -3436,7 +3436,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:20.334387-04:00"
+  "fetched": "2026-09-23T08:37:22.889507-04:00"
  },
  "BMO.TO": {
   "marketCap": 170471374848,
@@ -3455,7 +3455,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:20.928374-04:00"
+  "fetched": "2026-09-23T08:37:23.537919-04:00"
  },
  "BMRN": {
   "marketCap": 12266769408,
@@ -3474,7 +3474,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:50:21.483817-04:00"
+  "fetched": "2026-09-23T08:37:24.177426-04:00"
  },
  "BMY": {
   "marketCap": 127158984704,
@@ -3493,7 +3493,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:22.083648-04:00"
+  "fetched": "2026-09-23T08:37:24.810587-04:00"
  },
  "BN.TO": {
   "marketCap": 118872719360,
@@ -3512,7 +3512,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:50:22.666670-04:00"
+  "fetched": "2026-09-23T08:37:25.468210-04:00"
  },
  "BNS.TO": {
   "marketCap": 161178075136,
@@ -3531,7 +3531,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:23.295697-04:00"
+  "fetched": "2026-09-23T08:37:26.113329-04:00"
  },
  "BNY": {
   "marketCap": 101890965504,
@@ -3550,7 +3550,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-15",
-  "fetched": "2026-09-23T07:50:23.862664-04:00"
+  "fetched": "2026-09-23T08:37:26.809743-04:00"
  },
  "BOKF": {
   "marketCap": 7963497984,
@@ -3569,7 +3569,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-19",
-  "fetched": "2026-09-23T07:50:24.423195-04:00"
+  "fetched": "2026-09-23T08:37:27.489666-04:00"
  },
  "BPOP": {
   "marketCap": 10216678400,
@@ -3588,7 +3588,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:50:24.991991-04:00"
+  "fetched": "2026-09-23T08:37:28.100102-04:00"
  },
  "BPYPN": {
   "marketCap": null,
@@ -3607,7 +3607,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:25.598585-04:00"
+  "fetched": "2026-09-23T08:37:28.915346-04:00"
  },
  "BPYPO": {
   "marketCap": null,
@@ -3626,7 +3626,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:26.193262-04:00"
+  "fetched": "2026-09-23T08:37:29.567963-04:00"
  },
  "BPYPP": {
   "marketCap": null,
@@ -3645,7 +3645,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:26.764000-04:00"
+  "fetched": "2026-09-23T08:37:30.201559-04:00"
  },
  "BR": {
   "marketCap": 18587834368,
@@ -3664,7 +3664,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:27.359352-04:00"
+  "fetched": "2026-09-23T08:37:30.812492-04:00"
  },
  "BRK-B": {
   "marketCap": 1077825961984,
@@ -3683,7 +3683,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-07",
-  "fetched": "2026-09-23T07:50:27.908397-04:00"
+  "fetched": "2026-09-23T08:37:31.441607-04:00"
  },
  "BRKR": {
   "marketCap": 9325913088,
@@ -3702,7 +3702,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:28.516322-04:00"
+  "fetched": "2026-09-23T08:37:32.027778-04:00"
  },
  "BRO": {
   "marketCap": 20893071360,
@@ -3721,7 +3721,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:50:29.101230-04:00"
+  "fetched": "2026-09-23T08:37:32.619519-04:00"
  },
  "BRVE": {
   "marketCap": 2125820032,
@@ -3740,7 +3740,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:50:29.663972-04:00"
+  "fetched": "2026-09-23T08:37:33.240459-04:00"
  },
  "BRZE": {
   "marketCap": 2898674432,
@@ -3759,7 +3759,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-08",
-  "fetched": "2026-09-23T07:50:30.227803-04:00"
+  "fetched": "2026-09-23T08:37:33.863078-04:00"
  },
  "BSX": {
   "marketCap": 65099390976,
@@ -3778,7 +3778,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:50:30.855787-04:00"
+  "fetched": "2026-09-23T08:37:34.479622-04:00"
  },
  "BSY": {
   "marketCap": 9624679424,
@@ -3797,7 +3797,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:31.433075-04:00"
+  "fetched": "2026-09-23T08:37:35.080729-04:00"
  },
  "BTDR": {
   "marketCap": 3560347392,
@@ -3816,7 +3816,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:50:31.992047-04:00"
+  "fetched": "2026-09-23T08:37:35.728101-04:00"
  },
  "BTE.TO": {
   "marketCap": 4502848000,
@@ -3835,7 +3835,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:32.550899-04:00"
+  "fetched": "2026-09-23T08:37:36.338284-04:00"
  },
  "BTO.TO": {
   "marketCap": 10370405376,
@@ -3843,7 +3843,7 @@
   "sector": "Basic Materials",
   "industry": "Gold",
   "name": "B2GOLD CORP.",
-  "forwardPE": 5.2676,
+  "forwardPE": 5.2117,
   "trailingPE": 10.0641,
   "revenueGrowth": 0.14,
   "earningsGrowth": 1.854,
@@ -3854,7 +3854,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:33.119985-04:00"
+  "fetched": "2026-09-23T08:37:36.983584-04:00"
  },
  "BTSG": {
   "marketCap": 11189222400,
@@ -3873,7 +3873,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:50:33.678684-04:00"
+  "fetched": "2026-09-23T08:37:37.607418-04:00"
  },
  "BULL": {
   "marketCap": 4365529088,
@@ -3892,7 +3892,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:50:34.443680-04:00"
+  "fetched": "2026-09-23T08:37:38.237344-04:00"
  },
  "BUSE": {
   "marketCap": 2453361408,
@@ -3911,7 +3911,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:35.029803-04:00"
+  "fetched": "2026-09-23T08:37:38.841176-04:00"
  },
  "BUSEP": {
   "marketCap": null,
@@ -3930,7 +3930,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:35.597432-04:00"
+  "fetched": "2026-09-23T08:37:39.476134-04:00"
  },
  "BVC": {
   "marketCap": 2150400000,
@@ -3949,7 +3949,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:50:36.293179-04:00"
+  "fetched": "2026-09-23T08:37:40.091979-04:00"
  },
  "BWIN": {
   "marketCap": 3093992704,
@@ -3968,7 +3968,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:36.859269-04:00"
+  "fetched": "2026-09-23T08:37:40.736741-04:00"
  },
  "BX": {
   "marketCap": 148228882432,
@@ -3987,7 +3987,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:50:37.450253-04:00"
+  "fetched": "2026-09-23T08:37:41.346506-04:00"
  },
  "BXP": {
   "marketCap": 11632226304,
@@ -4006,7 +4006,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:38.077882-04:00"
+  "fetched": "2026-09-23T08:37:41.995846-04:00"
  },
  "BYD.TO": {
   "marketCap": 3163721728,
@@ -4025,7 +4025,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:50:38.634897-04:00"
+  "fetched": "2026-09-23T08:37:42.629998-04:00"
  },
  "BZ": {
   "marketCap": 6760117760,
@@ -4044,7 +4044,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-17",
-  "fetched": "2026-09-23T07:50:39.199586-04:00"
+  "fetched": "2026-09-23T08:37:43.263000-04:00"
  },
  "C": {
   "marketCap": 222210048000,
@@ -4063,7 +4063,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-13",
-  "fetched": "2026-09-23T07:50:39.797474-04:00"
+  "fetched": "2026-09-23T08:37:43.870207-04:00"
  },
  "CACC": {
   "marketCap": 5837415424,
@@ -4082,7 +4082,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:40.359576-04:00"
+  "fetched": "2026-09-23T08:37:44.475136-04:00"
  },
  "CAE": {
   "marketCap": 7907831808,
@@ -4101,7 +4101,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-10",
-  "fetched": "2026-09-23T07:50:40.951295-04:00"
+  "fetched": "2026-09-23T08:37:45.112456-04:00"
  },
  "CAE.TO": {
   "marketCap": 11123104768,
@@ -4120,7 +4120,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-10",
-  "fetched": "2026-09-23T07:50:41.540477-04:00"
+  "fetched": "2026-09-23T08:37:45.725395-04:00"
  },
  "CAH": {
   "marketCap": 51415433216,
@@ -4139,7 +4139,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:42.139087-04:00"
+  "fetched": "2026-09-23T08:37:46.345641-04:00"
  },
  "CAI": {
   "marketCap": 8895961088,
@@ -4158,7 +4158,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:50:42.769058-04:00"
+  "fetched": "2026-09-23T08:37:46.953253-04:00"
  },
  "CAKE": {
   "marketCap": 5127335424,
@@ -4177,7 +4177,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:43.376084-04:00"
+  "fetched": "2026-09-23T08:37:47.577791-04:00"
  },
  "CALM": {
   "marketCap": 3415609088,
@@ -4186,7 +4186,7 @@
   "industry": "Farm Products",
   "name": "Cal-Maine Foods, Inc.",
   "forwardPE": 25.0875,
-  "trailingPE": 10.9476,
+  "trailingPE": 11.0302,
   "revenueGrowth": -0.499,
   "earningsGrowth": null,
   "profitMargins": 0.1088,
@@ -4196,7 +4196,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-30",
-  "fetched": "2026-09-23T07:50:43.936031-04:00"
+  "fetched": "2026-09-23T08:37:48.212314-04:00"
  },
  "CAMT": {
   "marketCap": 7063695360,
@@ -4215,7 +4215,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-16",
-  "fetched": "2026-09-23T07:50:44.522748-04:00"
+  "fetched": "2026-09-23T08:37:48.862649-04:00"
  },
  "CAR": {
   "marketCap": 3805643264,
@@ -4234,7 +4234,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:45.116646-04:00"
+  "fetched": "2026-09-23T08:37:49.483231-04:00"
  },
  "CAR-UN.TO": {
   "marketCap": 4906904064,
@@ -4253,7 +4253,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:45.681242-04:00"
+  "fetched": "2026-09-23T08:37:50.225748-04:00"
  },
  "CARG": {
   "marketCap": 2845007104,
@@ -4272,7 +4272,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:50:46.237435-04:00"
+  "fetched": "2026-09-23T08:37:50.841386-04:00"
  },
  "CARR": {
   "marketCap": 45552201728,
@@ -4291,7 +4291,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:46.832049-04:00"
+  "fetched": "2026-09-23T08:37:51.568578-04:00"
  },
  "CART": {
   "marketCap": 10280918016,
@@ -4310,7 +4310,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:50:47.421547-04:00"
+  "fetched": "2026-09-23T08:37:52.195343-04:00"
  },
  "CASY": {
   "marketCap": 21615415296,
@@ -4329,7 +4329,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-08",
-  "fetched": "2026-09-23T07:50:48.058056-04:00"
+  "fetched": "2026-09-23T08:37:52.835479-04:00"
  },
  "CAT": {
   "marketCap": 371421904896,
@@ -4348,7 +4348,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:48.645957-04:00"
+  "fetched": "2026-09-23T08:37:53.471270-04:00"
  },
  "CATY": {
   "marketCap": 4049528832,
@@ -4367,7 +4367,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:50:49.244438-04:00"
+  "fetched": "2026-09-23T08:37:54.088076-04:00"
  },
  "CAVA": {
   "marketCap": 6151014400,
@@ -4376,7 +4376,7 @@
   "industry": "Restaurants",
   "name": "CAVA Group, Inc.",
   "forwardPE": 70.79,
-  "trailingPE": 92.386,
+  "trailingPE": 94.0357,
   "revenueGrowth": 0.313,
   "earningsGrowth": 0.198,
   "profitMargins": 0.0482,
@@ -4386,7 +4386,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-10",
-  "fetched": "2026-09-23T07:50:49.910292-04:00"
+  "fetched": "2026-09-23T08:37:54.701988-04:00"
  },
  "CB": {
   "marketCap": 129540022272,
@@ -4405,7 +4405,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:50.556481-04:00"
+  "fetched": "2026-09-23T08:37:55.333825-04:00"
  },
  "CBC": {
   "marketCap": 7589917696,
@@ -4424,7 +4424,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:51.121882-04:00"
+  "fetched": "2026-09-23T08:37:55.955513-04:00"
  },
  "CBOE": {
   "marketCap": 27865327616,
@@ -4443,7 +4443,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:50:51.676757-04:00"
+  "fetched": "2026-09-23T08:37:56.555564-04:00"
  },
  "CBRE": {
   "marketCap": 40844595200,
@@ -4462,7 +4462,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:50:52.265777-04:00"
+  "fetched": "2026-09-23T08:37:57.177678-04:00"
  },
  "CBSH": {
   "marketCap": 7986303488,
@@ -4481,7 +4481,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-15",
-  "fetched": "2026-09-23T07:50:52.828281-04:00"
+  "fetched": "2026-09-23T08:37:57.813767-04:00"
  },
  "CCA.TO": {
   "marketCap": 2389795840,
@@ -4500,7 +4500,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:53.386497-04:00"
+  "fetched": "2026-09-23T08:37:58.555911-04:00"
  },
  "CCC": {
   "marketCap": 3869695232,
@@ -4519,7 +4519,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:50:53.941332-04:00"
+  "fetched": "2026-09-23T08:37:59.169711-04:00"
  },
  "CCI": {
   "marketCap": 31625691136,
@@ -4538,7 +4538,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:50:54.513960-04:00"
+  "fetched": "2026-09-23T08:37:59.823246-04:00"
  },
  "CCL": {
   "marketCap": 30515783680,
@@ -4557,7 +4557,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-29",
-  "fetched": "2026-09-23T07:50:55.082204-04:00"
+  "fetched": "2026-09-23T08:38:00.476213-04:00"
  },
  "CCL-B.TO": {
   "marketCap": 15827294208,
@@ -4576,7 +4576,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:50:55.640148-04:00"
+  "fetched": "2026-09-23T08:38:01.098903-04:00"
  },
  "CCO.TO": {
   "marketCap": 58043482112,
@@ -4595,7 +4595,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:50:56.263505-04:00"
+  "fetched": "2026-09-23T08:38:01.749628-04:00"
  },
  "CDNA": {
   "marketCap": 2922466304,
@@ -4614,7 +4614,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:56.827008-04:00"
+  "fetched": "2026-09-23T08:38:02.345854-04:00"
  },
  "CDNS": {
   "marketCap": 83430309888,
@@ -4633,7 +4633,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:50:57.386605-04:00"
+  "fetched": "2026-09-23T08:38:02.956823-04:00"
  },
  "CDW": {
   "marketCap": 18431318016,
@@ -4652,7 +4652,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:50:57.949008-04:00"
+  "fetched": "2026-09-23T08:38:03.573166-04:00"
  },
  "CECO": {
   "marketCap": 4317182464,
@@ -4671,7 +4671,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:50:58.519949-04:00"
+  "fetched": "2026-09-23T08:38:04.178718-04:00"
  },
  "CEG": {
   "marketCap": 93345824768,
@@ -4690,7 +4690,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:50:59.083424-04:00"
+  "fetched": "2026-09-23T08:38:04.795144-04:00"
  },
  "CELC": {
   "marketCap": 4115173376,
@@ -4709,7 +4709,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:50:59.643982-04:00"
+  "fetched": "2026-09-23T08:38:05.418651-04:00"
  },
  "CELH": {
   "marketCap": 7435434496,
@@ -4728,7 +4728,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:51:00.219100-04:00"
+  "fetched": "2026-09-23T08:38:06.027115-04:00"
  },
  "CENT": {
   "marketCap": 2518100224,
@@ -4747,7 +4747,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-25",
-  "fetched": "2026-09-23T07:51:00.777259-04:00"
+  "fetched": "2026-09-23T08:38:06.739625-04:00"
  },
  "CENTA": {
   "marketCap": 2171963392,
@@ -4766,7 +4766,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-25",
-  "fetched": "2026-09-23T07:51:01.385235-04:00"
+  "fetched": "2026-09-23T08:38:07.345825-04:00"
  },
  "CENX": {
   "marketCap": 3900336128,
@@ -4785,7 +4785,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:02.036315-04:00"
+  "fetched": "2026-09-23T08:38:08.024370-04:00"
  },
  "CEU.TO": {
   "marketCap": 3861242624,
@@ -4804,7 +4804,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:51:02.628326-04:00"
+  "fetched": "2026-09-23T08:38:08.655855-04:00"
  },
  "CF": {
   "marketCap": 18249865216,
@@ -4823,7 +4823,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:03.342041-04:00"
+  "fetched": "2026-09-23T08:38:09.322243-04:00"
  },
  "CFG": {
   "marketCap": 27582867456,
@@ -4842,7 +4842,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-16",
-  "fetched": "2026-09-23T07:51:03.934445-04:00"
+  "fetched": "2026-09-23T08:38:09.970452-04:00"
  },
  "CG": {
   "marketCap": 14335268864,
@@ -4851,7 +4851,7 @@
   "industry": "Asset Management",
   "name": "The Carlyle Group Inc.",
   "forwardPE": 7.8725,
-  "trailingPE": 42.3474,
+  "trailingPE": 41.9062,
   "revenueGrowth": -0.329,
   "earningsGrowth": -0.575,
   "profitMargins": 0.1301,
@@ -4861,7 +4861,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:04.535560-04:00"
+  "fetched": "2026-09-23T08:38:10.609860-04:00"
  },
  "CG.TO": {
   "marketCap": 6472653312,
@@ -4880,7 +4880,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:51:05.135619-04:00"
+  "fetched": "2026-09-23T08:38:11.250001-04:00"
  },
  "CGNX": {
   "marketCap": 9920159744,
@@ -4899,7 +4899,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:06.256205-04:00"
+  "fetched": "2026-09-23T08:38:11.883326-04:00"
  },
  "CGON": {
   "marketCap": 6890902528,
@@ -4918,7 +4918,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:51:06.818562-04:00"
+  "fetched": "2026-09-23T08:38:12.491475-04:00"
  },
  "CHA": {
   "marketCap": 2224300288,
@@ -4927,7 +4927,7 @@
   "industry": "Restaurants",
   "name": "Chagee Holdings Limited",
   "forwardPE": 7.3126,
-  "trailingPE": 12.0206,
+  "trailingPE": 11.4314,
   "revenueGrowth": 0.025,
   "earningsGrowth": 5.914,
   "profitMargins": 0.102,
@@ -4937,7 +4937,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-27",
-  "fetched": "2026-09-23T07:51:07.464171-04:00"
+  "fetched": "2026-09-23T08:38:13.144826-04:00"
  },
  "CHD": {
   "marketCap": 22800039936,
@@ -4946,7 +4946,7 @@
   "industry": "Household & Personal Products",
   "name": "Church & Dwight Company, Inc.",
   "forwardPE": 23.8201,
-  "trailingPE": 30.6115,
+  "trailingPE": 30.8077,
   "revenueGrowth": 0.016,
   "earningsGrowth": 0.09,
   "profitMargins": 0.1196,
@@ -4956,7 +4956,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:51:08.018014-04:00"
+  "fetched": "2026-09-23T08:38:13.762545-04:00"
  },
  "CHDN": {
   "marketCap": 5540471808,
@@ -4975,7 +4975,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:08.594403-04:00"
+  "fetched": "2026-09-23T08:38:14.392960-04:00"
  },
  "CHEF": {
   "marketCap": 4420663808,
@@ -4994,7 +4994,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:09.194688-04:00"
+  "fetched": "2026-09-23T08:38:14.992563-04:00"
  },
  "CHKP": {
   "marketCap": 14001059840,
@@ -5013,7 +5013,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:09.822039-04:00"
+  "fetched": "2026-09-23T08:38:15.619154-04:00"
  },
  "CHP-UN.TO": {
   "marketCap": 10828210176,
@@ -5032,7 +5032,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:51:10.411391-04:00"
+  "fetched": "2026-09-23T08:38:16.239418-04:00"
  },
  "CHRD": {
   "marketCap": 7432893952,
@@ -5051,7 +5051,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:10.971148-04:00"
+  "fetched": "2026-09-23T08:38:16.875192-04:00"
  },
  "CHRN": {
   "marketCap": 3087514112,
@@ -5070,7 +5070,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:11.536233-04:00"
+  "fetched": "2026-09-23T08:38:17.600702-04:00"
  },
  "CHRW": {
   "marketCap": 17476274176,
@@ -5079,7 +5079,7 @@
   "industry": "Integrated Freight & Logistics",
   "name": "C.H. Robinson Worldwide, Inc.",
   "forwardPE": 19.9434,
-  "trailingPE": 29.154,
+  "trailingPE": 28.5966,
   "revenueGrowth": 0.193,
   "earningsGrowth": 0.238,
   "profitMargins": 0.0373,
@@ -5089,7 +5089,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:12.102445-04:00"
+  "fetched": "2026-09-23T08:38:18.202283-04:00"
  },
  "CHTR": {
   "marketCap": 15238828032,
@@ -5097,7 +5097,7 @@
   "sector": "Communication Services",
   "industry": "Telecom Services",
   "name": "Charter Communications, Inc.",
-  "forwardPE": 2.8223,
+  "forwardPE": 2.8012,
   "trailingPE": 3.2091,
   "revenueGrowth": -0.017,
   "earningsGrowth": 0.161,
@@ -5108,7 +5108,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:51:12.749740-04:00"
+  "fetched": "2026-09-23T08:38:18.832579-04:00"
  },
  "CHYM": {
   "marketCap": 10835106816,
@@ -5127,7 +5127,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:13.903983-04:00"
+  "fetched": "2026-09-23T08:38:19.456452-04:00"
  },
  "CI": {
   "marketCap": 72333189120,
@@ -5146,7 +5146,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:14.511143-04:00"
+  "fetched": "2026-09-23T08:38:20.079480-04:00"
  },
  "CIEN": {
   "marketCap": 52264951808,
@@ -5165,7 +5165,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:15.144618-04:00"
+  "fetched": "2026-09-23T08:38:20.698438-04:00"
  },
  "CIFR": {
   "marketCap": 7922936320,
@@ -5184,7 +5184,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:51:15.708883-04:00"
+  "fetched": "2026-09-23T08:38:21.352761-04:00"
  },
  "CIGI": {
   "marketCap": 4724548096,
@@ -5203,7 +5203,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:16.274424-04:00"
+  "fetched": "2026-09-23T08:38:21.971090-04:00"
  },
  "CIGI.TO": {
   "marketCap": 6653716992,
@@ -5222,7 +5222,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:16.831928-04:00"
+  "fetched": "2026-09-23T08:38:22.624794-04:00"
  },
  "CINF": {
   "marketCap": 25451264000,
@@ -5241,7 +5241,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:51:17.449035-04:00"
+  "fetched": "2026-09-23T08:38:23.279629-04:00"
  },
  "CJT.TO": {
   "marketCap": 1280779776,
@@ -5260,7 +5260,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:18.028422-04:00"
+  "fetched": "2026-09-23T08:38:23.935614-04:00"
  },
  "CL": {
   "marketCap": 69393891328,
@@ -5279,7 +5279,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:51:18.590089-04:00"
+  "fetched": "2026-09-23T08:38:24.563516-04:00"
  },
  "CLBT": {
   "marketCap": 2930636800,
@@ -5298,7 +5298,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:51:19.185219-04:00"
+  "fetched": "2026-09-23T08:38:25.191509-04:00"
  },
  "CLDX": {
   "marketCap": 2631524608,
@@ -5317,7 +5317,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:51:19.773967-04:00"
+  "fetched": "2026-09-23T08:38:25.803320-04:00"
  },
  "CLMT": {
   "marketCap": 4959218176,
@@ -5336,7 +5336,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:51:20.354156-04:00"
+  "fetched": "2026-09-23T08:38:26.424142-04:00"
  },
  "CLOV": {
   "marketCap": 2480499712,
@@ -5355,7 +5355,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:20.912379-04:00"
+  "fetched": "2026-09-23T08:38:27.065545-04:00"
  },
  "CLS.TO": {
   "marketCap": 63272472576,
@@ -5374,7 +5374,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:51:21.510662-04:00"
+  "fetched": "2026-09-23T08:38:27.669693-04:00"
  },
  "CLSK": {
   "marketCap": 3888210432,
@@ -5393,7 +5393,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-24",
-  "fetched": "2026-09-23T07:51:22.104175-04:00"
+  "fetched": "2026-09-23T08:38:28.298723-04:00"
  },
  "CLX": {
   "marketCap": 10539137024,
@@ -5412,7 +5412,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:22.728429-04:00"
+  "fetched": "2026-09-23T08:38:28.929518-04:00"
  },
  "CM.TO": {
   "marketCap": 146767757312,
@@ -5421,7 +5421,7 @@
   "industry": "Banks - Diversified",
   "name": "CANADIAN IMPERIAL BANK OF COMME",
   "forwardPE": 14.1991,
-  "trailingPE": 15.5134,
+  "trailingPE": 15.679,
   "revenueGrowth": 0.166,
   "earningsGrowth": 0.149,
   "profitMargins": 0.3374,
@@ -5431,7 +5431,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:23.320410-04:00"
+  "fetched": "2026-09-23T08:38:29.620470-04:00"
  },
  "CMCSA": {
   "marketCap": 79560433664,
@@ -5450,7 +5450,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:51:23.957653-04:00"
+  "fetched": "2026-09-23T08:38:30.241430-04:00"
  },
  "CME": {
   "marketCap": 96083173376,
@@ -5469,7 +5469,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:51:24.525099-04:00"
+  "fetched": "2026-09-23T08:38:30.920257-04:00"
  },
  "CMG": {
   "marketCap": 41290588160,
@@ -5488,7 +5488,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:25.122262-04:00"
+  "fetched": "2026-09-23T08:38:31.520236-04:00"
  },
  "CMI": {
   "marketCap": 72429412352,
@@ -5507,7 +5507,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:25.732044-04:00"
+  "fetched": "2026-09-23T08:38:32.136348-04:00"
  },
  "CMPS": {
   "marketCap": 2046687360,
@@ -5526,7 +5526,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:26.326214-04:00"
+  "fetched": "2026-09-23T08:38:32.766341-04:00"
  },
  "CMS": {
   "marketCap": 20153602048,
@@ -5545,7 +5545,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:26.918374-04:00"
+  "fetched": "2026-09-23T08:38:33.373215-04:00"
  },
  "CNC": {
   "marketCap": 31269883904,
@@ -5564,7 +5564,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:51:27.513260-04:00"
+  "fetched": "2026-09-23T08:38:33.986857-04:00"
  },
  "CNP": {
   "marketCap": 24932560896,
@@ -5583,7 +5583,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:51:28.084967-04:00"
+  "fetched": "2026-09-23T08:38:34.614315-04:00"
  },
  "CNQ.TO": {
   "marketCap": 138718330880,
@@ -5602,7 +5602,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:28.646905-04:00"
+  "fetched": "2026-09-23T08:38:35.285164-04:00"
  },
  "CNR.TO": {
   "marketCap": 101645860864,
@@ -5621,7 +5621,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:51:29.210996-04:00"
+  "fetched": "2026-09-23T08:38:35.911902-04:00"
  },
  "CNXN": {
   "marketCap": 2191676416,
@@ -5640,7 +5640,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:29.807140-04:00"
+  "fetched": "2026-09-23T08:38:36.536160-04:00"
  },
  "COCO": {
   "marketCap": 3448703488,
@@ -5659,7 +5659,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:30.372896-04:00"
+  "fetched": "2026-09-23T08:38:37.152794-04:00"
  },
  "COF": {
   "marketCap": 123034394624,
@@ -5678,7 +5678,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-20",
-  "fetched": "2026-09-23T07:51:30.925102-04:00"
+  "fetched": "2026-09-23T08:38:37.759488-04:00"
  },
  "COGT": {
   "marketCap": 5662119936,
@@ -5697,7 +5697,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:31.518513-04:00"
+  "fetched": "2026-09-23T08:38:38.513279-04:00"
  },
  "COHR": {
   "marketCap": 60784373760,
@@ -5706,7 +5706,7 @@
   "industry": "Scientific & Technical Instruments",
   "name": "Coherent Corp.",
   "forwardPE": 22.2417,
-  "trailingPE": 78.1839,
+  "trailingPE": 75.155,
   "revenueGrowth": 0.337,
   "earningsGrowth": null,
   "profitMargins": 0.1131,
@@ -5716,7 +5716,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:32.124497-04:00"
+  "fetched": "2026-09-23T08:38:39.131881-04:00"
  },
  "COHU": {
   "marketCap": 3055222528,
@@ -5735,7 +5735,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:32.726309-04:00"
+  "fetched": "2026-09-23T08:38:39.760176-04:00"
  },
  "COIN": {
   "marketCap": 53049692160,
@@ -5754,7 +5754,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:33.314344-04:00"
+  "fetched": "2026-09-23T08:38:40.396160-04:00"
  },
  "COKE": {
   "marketCap": 12712449024,
@@ -5763,7 +5763,7 @@
   "industry": "Beverages - Non-Alcoholic",
   "name": "Coca-Cola Consolidated, Inc.",
   "forwardPE": 4.9045,
-  "trailingPE": 25.1953,
+  "trailingPE": 25.3963,
   "revenueGrowth": 0.106,
   "earningsGrowth": 0.107,
   "profitMargins": 0.0715,
@@ -5773,7 +5773,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:33.881616-04:00"
+  "fetched": "2026-09-23T08:38:41.030517-04:00"
  },
  "COLB": {
   "marketCap": 8300352512,
@@ -5792,7 +5792,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:34.462794-04:00"
+  "fetched": "2026-09-23T08:38:41.652487-04:00"
  },
  "COLM": {
   "marketCap": 2991218176,
@@ -5811,7 +5811,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:35.065793-04:00"
+  "fetched": "2026-09-23T08:38:42.272734-04:00"
  },
  "COO": {
   "marketCap": 10513686528,
@@ -5830,7 +5830,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:35.661491-04:00"
+  "fetched": "2026-09-23T08:38:42.902934-04:00"
  },
  "COP": {
   "marketCap": 150491545600,
@@ -5838,7 +5838,7 @@
   "sector": "Energy",
   "industry": "Oil & Gas E&P",
   "name": "ConocoPhillips",
-  "forwardPE": 13.0249,
+  "forwardPE": 12.9667,
   "trailingPE": 16.86,
   "revenueGrowth": 0.355,
   "earningsGrowth": 1.07,
@@ -5849,7 +5849,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:36.279640-04:00"
+  "fetched": "2026-09-23T08:38:43.516309-04:00"
  },
  "COR": {
   "marketCap": 60001783808,
@@ -5868,7 +5868,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:36.846343-04:00"
+  "fetched": "2026-09-23T08:38:44.104561-04:00"
  },
  "CORT": {
   "marketCap": 12702102528,
@@ -5887,7 +5887,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:37.706406-04:00"
+  "fetched": "2026-09-23T08:38:44.760113-04:00"
  },
  "CORZ": {
   "marketCap": 6037987328,
@@ -5906,7 +5906,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-23",
-  "fetched": "2026-09-23T07:51:38.275794-04:00"
+  "fetched": "2026-09-23T08:38:45.387054-04:00"
  },
  "COST": {
   "marketCap": 398869266432,
@@ -5925,7 +5925,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-24",
-  "fetched": "2026-09-23T07:51:39.999552-04:00"
+  "fetched": "2026-09-23T08:38:46.010383-04:00"
  },
  "CP.TO": {
   "marketCap": 108812427264,
@@ -5934,7 +5934,7 @@
   "industry": "Railroads",
   "name": "CANADIAN PACIFIC KANSAS CITY LI",
   "forwardPE": 20.6439,
-  "trailingPE": 28.8531,
+  "trailingPE": 28.786,
   "revenueGrowth": 0.126,
   "earningsGrowth": -0.135,
   "profitMargins": 0.2503,
@@ -5944,7 +5944,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:40.621752-04:00"
+  "fetched": "2026-09-23T08:38:46.649283-04:00"
  },
  "CPAY": {
   "marketCap": 25800941568,
@@ -5963,7 +5963,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:41.193261-04:00"
+  "fetched": "2026-09-23T08:38:47.310698-04:00"
  },
  "CPB": {
   "marketCap": 6026747904,
@@ -5982,7 +5982,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:41.784903-04:00"
+  "fetched": "2026-09-23T08:38:47.972843-04:00"
  },
  "CPRT": {
   "marketCap": 26658740224,
@@ -6001,7 +6001,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-19",
-  "fetched": "2026-09-23T07:51:42.368914-04:00"
+  "fetched": "2026-09-23T08:38:48.644173-04:00"
  },
  "CPT": {
   "marketCap": 11493401600,
@@ -6020,7 +6020,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:42.939054-04:00"
+  "fetched": "2026-09-23T08:38:49.279226-04:00"
  },
  "CPX.TO": {
   "marketCap": 9786084352,
@@ -6039,7 +6039,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:43.499810-04:00"
+  "fetched": "2026-09-23T08:38:49.888603-04:00"
  },
  "CRDO": {
   "marketCap": 36192022528,
@@ -6058,7 +6058,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-30",
-  "fetched": "2026-09-23T07:51:44.098164-04:00"
+  "fetched": "2026-09-23T08:38:50.496961-04:00"
  },
  "CRH": {
   "marketCap": 58571644928,
@@ -6077,7 +6077,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:44.702341-04:00"
+  "fetched": "2026-09-23T08:38:51.110301-04:00"
  },
  "CRL": {
   "marketCap": 13733100544,
@@ -6096,7 +6096,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:45.275069-04:00"
+  "fetched": "2026-09-23T08:38:51.749158-04:00"
  },
  "CRM": {
   "marketCap": 191989432320,
@@ -6115,7 +6115,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-02",
-  "fetched": "2026-09-23T07:51:45.857821-04:00"
+  "fetched": "2026-09-23T08:38:52.416975-04:00"
  },
  "CROX": {
   "marketCap": 5972997632,
@@ -6134,7 +6134,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:46.439874-04:00"
+  "fetched": "2026-09-23T08:38:53.130359-04:00"
  },
  "CRR-UN.TO": {
   "marketCap": 4128914432,
@@ -6153,7 +6153,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:46.999384-04:00"
+  "fetched": "2026-09-23T08:38:53.738513-04:00"
  },
  "CRSP": {
   "marketCap": 5707767296,
@@ -6172,7 +6172,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:51:47.565890-04:00"
+  "fetched": "2026-09-23T08:38:54.385251-04:00"
  },
  "CRT-UN.TO": {
   "marketCap": 4035214336,
@@ -6191,7 +6191,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-09",
-  "fetched": "2026-09-23T07:51:48.154535-04:00"
+  "fetched": "2026-09-23T08:38:55.036838-04:00"
  },
  "CRUS": {
   "marketCap": 6033151488,
@@ -6210,7 +6210,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:48.777784-04:00"
+  "fetched": "2026-09-23T08:38:55.669580-04:00"
  },
  "CRVL": {
   "marketCap": 3717514240,
@@ -6229,7 +6229,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:49.337588-04:00"
+  "fetched": "2026-09-23T08:38:56.299477-04:00"
  },
  "CRWD": {
   "marketCap": 256045137920,
@@ -6238,7 +6238,7 @@
   "industry": "Software - Infrastructure",
   "name": "CrowdStrike Holdings, Inc.",
   "forwardPE": 155.7123,
-  "trailingPE": 5001.1997,
+  "trailingPE": 8335.333,
   "revenueGrowth": 0.258,
   "earningsGrowth": null,
   "profitMargins": 0.0083,
@@ -6248,7 +6248,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-01",
-  "fetched": "2026-09-23T07:51:49.897893-04:00"
+  "fetched": "2026-09-23T08:38:56.915415-04:00"
  },
  "CS.TO": {
   "marketCap": 11428681728,
@@ -6267,7 +6267,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:50.496335-04:00"
+  "fetched": "2026-09-23T08:38:57.537831-04:00"
  },
  "CSCO": {
   "marketCap": 419648962560,
@@ -6286,7 +6286,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:51:51.051619-04:00"
+  "fetched": "2026-09-23T08:38:58.161672-04:00"
  },
  "CSGP": {
   "marketCap": 11657535488,
@@ -6305,7 +6305,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:51:51.645133-04:00"
+  "fetched": "2026-09-23T08:38:58.878960-04:00"
  },
  "CSH-UN.TO": {
   "marketCap": 6676884992,
@@ -6324,7 +6324,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:51:52.213913-04:00"
+  "fetched": "2026-09-23T08:38:59.589837-04:00"
  },
  "CSQ": {
   "marketCap": 3377384448,
@@ -6343,7 +6343,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:52.765729-04:00"
+  "fetched": "2026-09-23T08:39:00.237213-04:00"
  },
  "CSU.TO": {
   "marketCap": 58706046976,
@@ -6362,7 +6362,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:51:53.323574-04:00"
+  "fetched": "2026-09-23T08:39:00.879771-04:00"
  },
  "CSX": {
   "marketCap": 86306807808,
@@ -6381,7 +6381,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:51:53.882552-04:00"
+  "fetched": "2026-09-23T08:39:01.485219-04:00"
  },
  "CTAS": {
   "marketCap": 79553708032,
@@ -6400,7 +6400,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-23",
-  "fetched": "2026-09-23T07:51:54.466653-04:00"
+  "fetched": "2026-09-23T08:39:02.154066-04:00"
  },
  "CTC-A.TO": {
   "marketCap": 9813089280,
@@ -6419,7 +6419,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:51:55.039640-04:00"
+  "fetched": "2026-09-23T08:39:02.777001-04:00"
  },
  "CTSH": {
   "marketCap": 26432067584,
@@ -6438,7 +6438,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:51:55.688735-04:00"
+  "fetched": "2026-09-23T08:39:03.381894-04:00"
  },
  "CTVA": {
   "marketCap": 53602525184,
@@ -6457,7 +6457,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:51:56.251157-04:00"
+  "fetched": "2026-09-23T08:39:04.012639-04:00"
  },
  "CU.TO": {
   "marketCap": 13869797376,
@@ -6476,7 +6476,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:51:56.813695-04:00"
+  "fetched": "2026-09-23T08:39:04.671896-04:00"
  },
  "CURA.TO": {
   "marketCap": 4333226496,
@@ -6495,7 +6495,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:51:57.373505-04:00"
+  "fetched": "2026-09-23T08:39:05.346993-04:00"
  },
  "CVBF": {
   "marketCap": 3900103168,
@@ -6514,7 +6514,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:51:57.965509-04:00"
+  "fetched": "2026-09-23T08:39:06.095843-04:00"
  },
  "CVCO": {
   "marketCap": 4293685248,
@@ -6533,7 +6533,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:58.552941-04:00"
+  "fetched": "2026-09-23T08:39:06.726651-04:00"
  },
  "CVE.TO": {
   "marketCap": 81331200000,
@@ -6552,7 +6552,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:51:59.139086-04:00"
+  "fetched": "2026-09-23T08:39:07.378264-04:00"
  },
  "CVLT": {
   "marketCap": 6067898880,
@@ -6571,7 +6571,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:51:59.714919-04:00"
+  "fetched": "2026-09-23T08:39:07.993527-04:00"
  },
  "CVNA": {
   "marketCap": 72493531136,
@@ -6590,7 +6590,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:52:00.309083-04:00"
+  "fetched": "2026-09-23T08:39:08.611009-04:00"
  },
  "CVS": {
   "marketCap": 111398313984,
@@ -6609,7 +6609,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:52:00.897613-04:00"
+  "fetched": "2026-09-23T08:39:09.236980-04:00"
  },
  "CVX": {
   "marketCap": 397048152064,
@@ -6628,7 +6628,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:52:01.456992-04:00"
+  "fetched": "2026-09-23T08:39:09.878514-04:00"
  },
  "CWST": {
   "marketCap": 5457770496,
@@ -6647,7 +6647,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:02.016710-04:00"
+  "fetched": "2026-09-23T08:39:10.605628-04:00"
  },
  "CYTK": {
   "marketCap": 9396592640,
@@ -6666,7 +6666,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:02.569104-04:00"
+  "fetched": "2026-09-23T08:39:11.233857-04:00"
  },
  "CZR": {
   "marketCap": 6035885568,
@@ -6685,7 +6685,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:52:03.130656-04:00"
+  "fetched": "2026-09-23T08:39:11.860104-04:00"
  },
  "D": {
   "marketCap": 54908805120,
@@ -6704,7 +6704,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-30",
-  "fetched": "2026-09-23T07:52:03.720346-04:00"
+  "fetched": "2026-09-23T08:39:12.547036-04:00"
  },
  "DAL": {
   "marketCap": 55187726336,
@@ -6723,7 +6723,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-09",
-  "fetched": "2026-09-23T07:52:04.292651-04:00"
+  "fetched": "2026-09-23T08:39:13.232253-04:00"
  },
  "DASH": {
   "marketCap": 83284205568,
@@ -6742,7 +6742,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:04.871023-04:00"
+  "fetched": "2026-09-23T08:39:13.859598-04:00"
  },
  "DAVE": {
   "marketCap": 4509964800,
@@ -6761,7 +6761,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:05.439790-04:00"
+  "fetched": "2026-09-23T08:39:14.478975-04:00"
  },
  "DBX": {
   "marketCap": 7371305472,
@@ -6770,7 +6770,7 @@
   "industry": "Software - Infrastructure",
   "name": "Dropbox, Inc.",
   "forwardPE": 10.2052,
-  "trailingPE": 19.8246,
+  "trailingPE": 18.7293,
   "revenueGrowth": 0.009,
   "earningsGrowth": -0.067,
   "profitMargins": 0.1749,
@@ -6780,7 +6780,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:05.992062-04:00"
+  "fetched": "2026-09-23T08:39:15.137701-04:00"
  },
  "DD": {
   "marketCap": 17798664192,
@@ -6799,7 +6799,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:06.567549-04:00"
+  "fetched": "2026-09-23T08:39:15.892940-04:00"
  },
  "DDOG": {
   "marketCap": 88862089216,
@@ -6818,7 +6818,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:07.219427-04:00"
+  "fetched": "2026-09-23T08:39:16.650135-04:00"
  },
  "DE": {
   "marketCap": 189579018240,
@@ -6837,7 +6837,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-25",
-  "fetched": "2026-09-23T07:52:07.813030-04:00"
+  "fetched": "2026-09-23T08:39:17.269367-04:00"
  },
  "DECK": {
   "marketCap": 10871397376,
@@ -6856,7 +6856,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:08.389052-04:00"
+  "fetched": "2026-09-23T08:39:17.968847-04:00"
  },
  "DELL": {
   "marketCap": 349010329600,
@@ -6875,7 +6875,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-27",
-  "fetched": "2026-09-23T07:52:08.962450-04:00"
+  "fetched": "2026-09-23T08:39:18.589946-04:00"
  },
  "DFTX": {
   "marketCap": 5417675264,
@@ -6894,7 +6894,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:09.539465-04:00"
+  "fetched": "2026-09-23T08:39:19.284470-04:00"
  },
  "DFY.TO": {
   "marketCap": 8678366208,
@@ -6913,7 +6913,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:10.168662-04:00"
+  "fetched": "2026-09-23T08:39:19.902348-04:00"
  },
  "DG": {
   "marketCap": 27054235648,
@@ -6932,7 +6932,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:52:10.761869-04:00"
+  "fetched": "2026-09-23T08:39:20.511470-04:00"
  },
  "DGII": {
   "marketCap": 2840037376,
@@ -6951,7 +6951,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:52:11.317775-04:00"
+  "fetched": "2026-09-23T08:39:21.161082-04:00"
  },
  "DGX": {
   "marketCap": 25911248896,
@@ -6970,7 +6970,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:11.876386-04:00"
+  "fetched": "2026-09-23T08:39:21.794370-04:00"
  },
  "DHI": {
   "marketCap": 40307752960,
@@ -6989,7 +6989,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:13.623037-04:00"
+  "fetched": "2026-09-23T08:39:22.437280-04:00"
  },
  "DHR": {
   "marketCap": 155423178752,
@@ -7008,7 +7008,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:52:14.183393-04:00"
+  "fetched": "2026-09-23T08:39:23.395256-04:00"
  },
  "DIOD": {
   "marketCap": 4418200576,
@@ -7027,7 +7027,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:14.790095-04:00"
+  "fetched": "2026-09-23T08:39:24.014143-04:00"
  },
  "DIR-UN.TO": {
   "marketCap": 3778040576,
@@ -7046,7 +7046,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:52:15.403245-04:00"
+  "fetched": "2026-09-23T08:39:24.635090-04:00"
  },
  "DIS": {
   "marketCap": 179264634880,
@@ -7065,7 +7065,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:52:15.978334-04:00"
+  "fetched": "2026-09-23T08:39:25.250465-04:00"
  },
  "DJT": {
   "marketCap": 2607089152,
@@ -7084,7 +7084,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:52:16.544012-04:00"
+  "fetched": "2026-09-23T08:39:25.872775-04:00"
  },
  "DKNG": {
   "marketCap": 10822697984,
@@ -7103,7 +7103,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:17.129538-04:00"
+  "fetched": "2026-09-23T08:39:26.612369-04:00"
  },
  "DLO": {
   "marketCap": 4196277760,
@@ -7122,7 +7122,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:52:17.689459-04:00"
+  "fetched": "2026-09-23T08:39:27.263297-04:00"
  },
  "DLR": {
   "marketCap": 70113263616,
@@ -7141,7 +7141,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:18.284981-04:00"
+  "fetched": "2026-09-23T08:39:27.879974-04:00"
  },
  "DLTR": {
   "marketCap": 21584990208,
@@ -7160,7 +7160,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:52:18.849136-04:00"
+  "fetched": "2026-09-23T08:39:28.485930-04:00"
  },
  "DML.TO": {
   "marketCap": 3747766272,
@@ -7179,7 +7179,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:52:19.447581-04:00"
+  "fetched": "2026-09-23T08:39:29.117669-04:00"
  },
  "DNLI": {
   "marketCap": 3452704000,
@@ -7198,7 +7198,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:20.029957-04:00"
+  "fetched": "2026-09-23T08:39:29.715249-04:00"
  },
  "DNTH": {
   "marketCap": 5501145600,
@@ -7217,7 +7217,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:20.622186-04:00"
+  "fetched": "2026-09-23T08:39:30.364641-04:00"
  },
  "DOC": {
   "marketCap": 14604313600,
@@ -7236,7 +7236,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:21.183592-04:00"
+  "fetched": "2026-09-23T08:39:31.000443-04:00"
  },
  "DOCU": {
   "marketCap": 12477607936,
@@ -7255,7 +7255,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-03",
-  "fetched": "2026-09-23T07:52:21.766367-04:00"
+  "fetched": "2026-09-23T08:39:31.611773-04:00"
  },
  "DOL.TO": {
   "marketCap": 48489000960,
@@ -7274,7 +7274,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-10",
-  "fetched": "2026-09-23T07:52:22.323310-04:00"
+  "fetched": "2026-09-23T08:39:32.212663-04:00"
  },
  "DOO": {
   "marketCap": 4119602688,
@@ -7293,7 +7293,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-03",
-  "fetched": "2026-09-23T07:52:22.876771-04:00"
+  "fetched": "2026-09-23T08:39:32.807703-04:00"
  },
  "DOO.TO": {
   "marketCap": 5778116096,
@@ -7302,7 +7302,7 @@
   "industry": "Recreational Vehicles",
   "name": "BRP INC",
   "forwardPE": 14.9167,
-  "trailingPE": 52.7338,
+  "trailingPE": 53.0784,
   "revenueGrowth": 0.185,
   "earningsGrowth": null,
   "profitMargins": 0.0121,
@@ -7312,7 +7312,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-03",
-  "fetched": "2026-09-23T07:52:23.491096-04:00"
+  "fetched": "2026-09-23T08:39:33.462267-04:00"
  },
  "DORM": {
   "marketCap": 3585111296,
@@ -7331,7 +7331,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:52:24.097814-04:00"
+  "fetched": "2026-09-23T08:39:34.071544-04:00"
  },
  "DOV": {
   "marketCap": 25123248128,
@@ -7350,7 +7350,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:24.650759-04:00"
+  "fetched": "2026-09-23T08:39:34.723445-04:00"
  },
  "DOW": {
   "marketCap": 20370010112,
@@ -7369,7 +7369,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:25.226757-04:00"
+  "fetched": "2026-09-23T08:39:35.335827-04:00"
  },
  "DOX": {
   "marketCap": 6138557952,
@@ -7388,7 +7388,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-10",
-  "fetched": "2026-09-23T07:52:25.796274-04:00"
+  "fetched": "2026-09-23T08:39:36.022111-04:00"
  },
  "DPM.TO": {
   "marketCap": 14175602688,
@@ -7407,7 +7407,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:52:26.366862-04:00"
+  "fetched": "2026-09-23T08:39:36.619492-04:00"
  },
  "DPZ": {
   "marketCap": 9829080064,
@@ -7426,7 +7426,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-13",
-  "fetched": "2026-09-23T07:52:26.952871-04:00"
+  "fetched": "2026-09-23T08:39:37.410031-04:00"
  },
  "DRH": {
   "marketCap": 2528339968,
@@ -7445,7 +7445,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-03",
-  "fetched": "2026-09-23T07:52:27.505085-04:00"
+  "fetched": "2026-09-23T08:39:38.087666-04:00"
  },
  "DRI": {
   "marketCap": 24245706752,
@@ -7464,7 +7464,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-09-24",
-  "fetched": "2026-09-23T07:52:28.073679-04:00"
+  "fetched": "2026-09-23T08:39:38.699774-04:00"
  },
  "DRS": {
   "marketCap": 9915020288,
@@ -7483,7 +7483,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:28.718963-04:00"
+  "fetched": "2026-09-23T08:39:39.388764-04:00"
  },
  "DRVN": {
   "marketCap": 2024302336,
@@ -7502,7 +7502,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:29.305479-04:00"
+  "fetched": "2026-09-23T08:39:40.000149-04:00"
  },
  "DSG.TO": {
   "marketCap": 9483057152,
@@ -7521,7 +7521,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-02",
-  "fetched": "2026-09-23T07:52:29.865177-04:00"
+  "fetched": "2026-09-23T08:39:40.598155-04:00"
  },
  "DSGX": {
   "marketCap": 6746358784,
@@ -7540,7 +7540,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-02",
-  "fetched": "2026-09-23T07:52:30.423222-04:00"
+  "fetched": "2026-09-23T08:39:41.246413-04:00"
  },
  "DSV.TO": {
   "marketCap": 10599804928,
@@ -7559,7 +7559,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-12",
-  "fetched": "2026-09-23T07:52:31.048165-04:00"
+  "fetched": "2026-09-23T08:39:41.851342-04:00"
  },
  "DTE": {
   "marketCap": 26096324608,
@@ -7578,7 +7578,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:31.646319-04:00"
+  "fetched": "2026-09-23T08:39:42.474155-04:00"
  },
  "DUK": {
   "marketCap": 90687160320,
@@ -7597,7 +7597,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:32.230619-04:00"
+  "fetched": "2026-09-23T08:39:43.144083-04:00"
  },
  "DUOL": {
   "marketCap": 6882269696,
@@ -7616,7 +7616,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:32.783358-04:00"
+  "fetched": "2026-09-23T08:39:43.744631-04:00"
  },
  "DVA": {
   "marketCap": 11721335808,
@@ -7635,7 +7635,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:52:33.347567-04:00"
+  "fetched": "2026-09-23T08:39:44.353266-04:00"
  },
  "DVN": {
   "marketCap": 51623002112,
@@ -7654,7 +7654,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:33.905221-04:00"
+  "fetched": "2026-09-23T08:39:44.948976-04:00"
  },
  "DXCM": {
   "marketCap": 33785108480,
@@ -7663,7 +7663,7 @@
   "industry": "Medical Devices",
   "name": "DexCom, Inc.",
   "forwardPE": 28.6582,
-  "trailingPE": 35.248,
+  "trailingPE": 35.3874,
   "revenueGrowth": 0.131,
   "earningsGrowth": 0.436,
   "profitMargins": 0.2012,
@@ -7673,7 +7673,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:34.490553-04:00"
+  "fetched": "2026-09-23T08:39:45.591389-04:00"
  },
  "DXPE": {
   "marketCap": 2945930752,
@@ -7692,7 +7692,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:35.086633-04:00"
+  "fetched": "2026-09-23T08:39:46.256184-04:00"
  },
  "DYN": {
   "marketCap": 3200833792,
@@ -7711,7 +7711,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:35.648015-04:00"
+  "fetched": "2026-09-23T08:39:46.898672-04:00"
  },
  "EBAY": {
   "marketCap": 48629600256,
@@ -7730,7 +7730,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:36.212311-04:00"
+  "fetched": "2026-09-23T08:39:47.592207-04:00"
  },
  "EBC": {
   "marketCap": 4883292160,
@@ -7749,7 +7749,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-22",
-  "fetched": "2026-09-23T07:52:36.785973-04:00"
+  "fetched": "2026-09-23T08:39:48.246270-04:00"
  },
  "ECHO": {
   "marketCap": 27761278976,
@@ -7768,7 +7768,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:37.370893-04:00"
+  "fetched": "2026-09-23T08:39:48.865017-04:00"
  },
  "ECL": {
   "marketCap": 77432365056,
@@ -7787,7 +7787,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:52:37.918189-04:00"
+  "fetched": "2026-09-23T08:39:49.509995-04:00"
  },
  "ECPG": {
   "marketCap": 2084668544,
@@ -7806,7 +7806,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:38.502207-04:00"
+  "fetched": "2026-09-23T08:39:50.114056-04:00"
  },
  "ED": {
   "marketCap": 38403006464,
@@ -7825,7 +7825,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:39.058968-04:00"
+  "fetched": "2026-09-23T08:39:50.717326-04:00"
  },
  "EDR.TO": {
   "marketCap": 4379976704,
@@ -7844,7 +7844,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:39.615657-04:00"
+  "fetched": "2026-09-23T08:39:51.347609-04:00"
  },
  "EEFT": {
   "marketCap": 2457042432,
@@ -7863,7 +7863,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:52:40.244031-04:00"
+  "fetched": "2026-09-23T08:39:52.002152-04:00"
  },
  "EFN.TO": {
   "marketCap": 9828530176,
@@ -7882,7 +7882,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:52:40.828969-04:00"
+  "fetched": "2026-09-23T08:39:52.620769-04:00"
  },
  "EFR.TO": {
   "marketCap": 4532923904,
@@ -7901,7 +7901,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:52:41.394551-04:00"
+  "fetched": "2026-09-23T08:39:53.241818-04:00"
  },
  "EFSC": {
   "marketCap": 2185666304,
@@ -7910,7 +7910,7 @@
   "industry": "Banks - Regional",
   "name": "Enterprise Financial Services C",
   "forwardPE": 10.2704,
-  "trailingPE": 12.1022,
+  "trailingPE": 12.006,
   "revenueGrowth": 0.012,
   "earningsGrowth": -0.199,
   "profitMargins": 0.2736,
@@ -7920,7 +7920,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-26",
-  "fetched": "2026-09-23T07:52:41.952579-04:00"
+  "fetched": "2026-09-23T08:39:53.848369-04:00"
  },
  "EFX": {
   "marketCap": 18771736576,
@@ -7928,7 +7928,7 @@
   "sector": "Industrials",
   "industry": "Consulting Services",
   "name": "Equifax, Inc.",
-  "forwardPE": 15.718,
+  "forwardPE": 15.7247,
   "trailingPE": 27.8362,
   "revenueGrowth": 0.106,
   "earningsGrowth": 0.007,
@@ -7939,7 +7939,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-20",
-  "fetched": "2026-09-23T07:52:42.502957-04:00"
+  "fetched": "2026-09-23T08:39:54.492515-04:00"
  },
  "EFX.TO": {
   "marketCap": 3846240768,
@@ -7958,7 +7958,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:43.109953-04:00"
+  "fetched": "2026-09-23T08:39:55.153456-04:00"
  },
  "EG": {
   "marketCap": 14223621120,
@@ -7977,7 +7977,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:52:43.671672-04:00"
+  "fetched": "2026-09-23T08:39:55.762677-04:00"
  },
  "EIF.TO": {
   "marketCap": 6741396992,
@@ -7996,7 +7996,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-05",
-  "fetched": "2026-09-23T07:52:44.230765-04:00"
+  "fetched": "2026-09-23T08:39:56.395007-04:00"
  },
  "EIX": {
   "marketCap": 21184010240,
@@ -8015,7 +8015,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:52:44.798472-04:00"
+  "fetched": "2026-09-23T08:39:57.016613-04:00"
  },
  "EL": {
   "marketCap": 36284776448,
@@ -8034,7 +8034,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-02",
-  "fetched": "2026-09-23T07:52:45.372524-04:00"
+  "fetched": "2026-09-23T08:39:57.636230-04:00"
  },
  "ELD.TO": {
   "marketCap": 16472780800,
@@ -8053,7 +8053,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-28",
-  "fetched": "2026-09-23T07:52:45.979862-04:00"
+  "fetched": "2026-09-23T08:39:58.302744-04:00"
  },
  "ELV": {
   "marketCap": 87274708992,
@@ -8072,7 +8072,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-21",
-  "fetched": "2026-09-23T07:52:46.539755-04:00"
+  "fetched": "2026-09-23T08:39:59.013576-04:00"
  },
  "ELVN": {
   "marketCap": 3530917888,
@@ -8091,7 +8091,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:52:47.119117-04:00"
+  "fetched": "2026-09-23T08:39:59.634904-04:00"
  },
  "EMA.TO": {
   "marketCap": 21052061696,
@@ -8110,7 +8110,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:52:47.685582-04:00"
+  "fetched": "2026-09-23T08:40:00.304895-04:00"
  },
  "EMAT": {
   "marketCap": 2324872448,
@@ -8129,7 +8129,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": null,
-  "fetched": "2026-09-23T07:52:48.275286-04:00"
+  "fetched": "2026-09-23T08:40:00.947493-04:00"
  },
  "EME": {
   "marketCap": 33369139200,
@@ -8148,7 +8148,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-29",
-  "fetched": "2026-09-23T07:52:48.883214-04:00"
+  "fetched": "2026-09-23T08:40:01.560407-04:00"
  },
  "EMP-A.TO": {
   "marketCap": 10542737408,
@@ -8167,7 +8167,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-12-10",
-  "fetched": "2026-09-23T07:52:49.439949-04:00"
+  "fetched": "2026-09-23T08:40:02.177149-04:00"
  },
  "EMR": {
   "marketCap": 86007185408,
@@ -8186,7 +8186,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-04",
-  "fetched": "2026-09-23T07:52:49.995488-04:00"
+  "fetched": "2026-09-23T08:40:02.813039-04:00"
  },
  "ENB.TO": {
   "marketCap": 150380068864,
@@ -8205,7 +8205,7 @@
   "currency": "CAD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-06",
-  "fetched": "2026-09-23T07:52:50.556168-04:00"
+  "fetched": "2026-09-23T08:40:03.449104-04:00"
  },
  "ENLT": {
   "marketCap": 10287162368,
@@ -8214,7 +8214,7 @@
   "industry": "Utilities - Renewable",
   "name": "Enlight Renewable Energy Ltd.",
   "forwardPE": 94.2692,
-  "trailingPE": 122.55,
+  "trailingPE": 120.541,
   "revenueGrowth": 0.43,
   "earningsGrowth": 19.002,
   "profitMargins": 0.1533,
@@ -8224,7 +8224,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-11-11",
-  "fetched": "2026-09-23T07:52:51.118197-04:00"
+  "fetched": "2026-09-23T08:40:04.084451-04:00"
  },
  "ENPH": {
   "marketCap": 4548418560,
@@ -8243,7 +8243,7 @@
   "currency": "USD",
   "quoteType": "EQUITY",
   "nextEarnings": "2026-10-27",
-  "fetched": "2026-09-23T07:52:51.752226-04:00"
+  "fetched": "2026-09-23T08:40:04.716054-04:00"
  },
  "ENSG": {
   "marketCap": 10276359168,
