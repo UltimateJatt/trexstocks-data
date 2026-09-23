@@ -1,0 +1,83 @@
+{
+ "baseCurrency": "USD",
+ "inception": {
+  "date": "2026-09-22",
+  "valueUSD": 10000
+ },
+ "periods": [
+  {
+   "id": 1,
+   "start": "2026-09-22",
+   "end": null,
+   "nextRebalance": "2027-03-22",
+   "startValueUSD": 10000,
+   "verified": false,
+   "holdings": [
+    {
+     "yahoo": "AAPL",
+     "name": "Apple Inc",
+     "type": "blueChip",
+     "allocationUSD": 1500,
+     "purchasePrice": 339.75,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "JPM",
+     "name": "JPMorgan Chase",
+     "type": "blueChip",
+     "allocationUSD": 1000,
+     "purchasePrice": 340.0,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "NVDA",
+     "name": "NVIDIA Corporation",
+     "type": "speculative",
+     "allocationUSD": 2000,
+     "purchasePrice": 228.87,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "GOOGL",
+     "name": "Alphabet Inc",
+     "type": "blueChip",
+     "allocationUSD": 1500,
+     "purchasePrice": 351.16,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "CRWD",
+     "name": "CrowdStrike Holdings",
+     "type": "speculative",
+     "allocationUSD": 1000,
+     "purchasePrice": 250.06,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "CELH",
+     "name": "Celsius Holdings",
+     "type": "hiddenGem",
+     "allocationUSD": 1000,
+     "purchasePrice": 29.39,
+     "currency": "USD"
+    },
+    {
+     "yahoo": "RY.TO",
+     "name": "Royal Bank of Canada",
+     "type": "blueChip",
+     "allocationUSD": 1000,
+     "purchasePrice": 203.98,
+     "currency": "CAD"
+    },
+    {
+     "yahoo": "SHOP.TO",
+     "name": "Shopify Inc",
+     "type": "speculative",
+     "allocationUSD": 1000,
+     "purchasePrice": 207.69,
+     "currency": "CAD"
+    }
+   ]
+  }
+ ]
+}
