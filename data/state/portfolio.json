@@ -11,7 +11,7 @@
    "end": null,
    "nextRebalance": "2027-03-22",
    "startValueUSD": 10000,
-   "verified": true,
+   "verified": false,
    "holdings": [
     {
      "yahoo": "AAPL",
@@ -72,7 +72,7 @@
      "name": "Royal Bank of Canada",
      "type": "blueChip",
      "allocationUSD": 1000,
-     "purchasePrice": 203.98,
+     "purchasePrice": 287.17,
      "currency": "CAD",
      "shares": 6.8795
     },
