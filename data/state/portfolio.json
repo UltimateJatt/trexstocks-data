@@ -11,7 +11,7 @@
    "end": null,
    "nextRebalance": "2027-03-22",
    "startValueUSD": 10000,
-   "verified": false,
+   "verified": true,
    "holdings": [
     {
      "yahoo": "AAPL",
@@ -74,7 +74,7 @@
      "allocationUSD": 1000,
      "purchasePrice": 287.17,
      "currency": "CAD",
-     "shares": 6.8795
+     "shares": 4.8866
     },
     {
      "yahoo": "SHOP.TO",
@@ -87,7 +87,7 @@
     }
    ],
    "fxAtStart": 0.7126,
-   "verifyNote": "Prices checked against closing prices on the start date. NEEDS REVIEW (over 25% off, not changed): RY.TO entered 203.98 vs close 287.17"
+   "verifyNote": "Prices checked against closing prices on the start date. All matched."
   }
  ]
 }
