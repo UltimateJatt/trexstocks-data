@@ -1,0 +1,24 @@
+name: Price check
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: "Tickers to check, separated by spaces (TSX ones end in .TO)"
+        type: string
+        default: "SHOP.TO CURA.TO RY.TO SHOP AAPL"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - name: Compare Yahoo with TrexStocks
+        run: python -m pipeline.check ${{ inputs.symbols }}
