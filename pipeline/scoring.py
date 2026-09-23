@@ -153,7 +153,24 @@ def score_index(index_key, pool, tech, fund, bench, live, today=None):
             "earningsSoon": earnings_soon, "nextEarnings": ne,
             "scores": scores,
         }
+        out[s]["trexScore"], out[s]["bestFit"] = trex_score(out[s], earnings_soon)
     return out
+
+
+def trex_score(rec, earnings_soon=False):
+    """The headline Trex Score (0-100) and the category it comes from.
+
+    Best fit = the highest-scoring category the stock qualifies for. A stock that
+    qualifies for none gets a balanced average of all 10 factors (bestFit None).
+    """
+    fits = [c for c in CATEGORIES if rec["eligible"][c]]
+    if fits:
+        best = max(fits, key=lambda c: rec["scores"][c])
+        return round(rec["scores"][best]), best
+    bal = sum(rec["factors"].values()) / len(rec["factors"])
+    if earnings_soon:
+        bal -= config.EARNINGS_PENALTY
+    return round(max(0.0, bal)), None
 
 
 # ---------- Plain-language reasons ----------

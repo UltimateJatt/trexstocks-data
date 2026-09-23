@@ -83,6 +83,7 @@ def choose(scored, history, live, names, today_iso):
                 "currency": chosen["currency"], "sector": chosen["sector"],
                 "marketCap": chosen["marketCap"],
                 "score": chosen["scores"][cat],
+                "trexScore": chosen["trexScore"], "bestFit": chosen["bestFit"],
                 "factors": chosen["factors"],
                 "metrics": chosen["metrics"],
                 "reasons": why,

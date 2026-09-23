@@ -42,7 +42,19 @@ def prep(args):
     publish.put({"track": track.summary(history)}, dry=args.dry)
 
     # Slowest step last, so a Yahoo hiccup here never blocks prices
-    fundamentals.refresh(stock_syms)
+    fund = fundamentals.refresh(stock_syms)
+
+    # Publish stock-lookup scores now (based on yesterday's close) so the search
+    # works before the 10:30am picks run, which refreshes them with live prices.
+    names = universe.names(c)
+    for s, f in fund.items():
+        if not names.get(s):
+            names[s] = f.get("name")
+    groups = universe.groups(c)
+    scored = {idx: scoring.score_index(
+        idx, g["pool"], tech, fund, tech.get(config.INDEX_SYMBOLS[idx]["yahoo"], {}),
+        {}, today=today_et()) for idx, g in groups.items()}
+    publish.put(_lookup_payload(scored, names, now_et()), dry=args.dry)
 
 
 # ---------------------------------------------------------------- refresh helpers
@@ -59,8 +71,9 @@ def _volume_pace(q, avg_vol, t, today_iso):
     return q["volume"] / (avg_vol * frac)
 
 
-def _stock_row(s, q, tech, fund, names, t, today_iso):
+def _stock_row(s, q, tech, fund, names, t, today_iso, trex=None):
     tt = tech.get(s, {})
+    ts = (trex or {}).get(s) or [None, None]
     f = fund.get(s, {})
     pace = _volume_pace(q, tt.get("avgVol50"), t, today_iso)
     return {
@@ -71,6 +84,7 @@ def _stock_row(s, q, tech, fund, names, t, today_iso):
         "fiftyTwoWeekHigh": tt.get("high52"), "fiftyTwoWeekLow": tt.get("low52"),
         "marketCap": scoring.market_cap(s, fund, q["price"]),
         "sector": f.get("sector") or "Unknown", "currency": currency_of(s),
+        "trexScore": ts[0], "bestFit": ts[1],
         "_dayHigh": q["high"], "_dayLow": q["low"],
     }
 
@@ -113,6 +127,7 @@ def refresh(args):
         if not names.get(s):
             names[s] = f.get("name")
     groups = universe.groups(c)
+    trex = (load_state("trex_scores.json", {}) or {}).get("scores", {})
 
     movers_syms = set().union(*(g["movers"] for g in groups.values()))
     live = market.quotes(sorted(movers_syms | set(portfolio.symbols(state))
@@ -147,7 +162,7 @@ def refresh(args):
     # Movers, sectors, unusual volume, 52-week highs/lows
     movers, extras = {}, {"sectors": {}, "unusualVolume": {}, "newHighs": {}, "newLows": {}}
     for idx, g in groups.items():
-        rows = [_stock_row(s, live[s], tech, fund, names, t, today_iso)
+        rows = [_stock_row(s, live[s], tech, fund, names, t, today_iso, trex)
                 for s in g["movers"] if s in live]
         up = sorted((r for r in rows if r["changePercent"] > 0),
                     key=lambda r: r["changePercent"], reverse=True)
@@ -193,13 +208,7 @@ def refresh(args):
             }
             save_state("picks_today.json", picks_payload)
             payload["picks"] = picks_payload
-            # Lookup data is split by first letter so the Worker only reads a small piece
-            table = _lookup_table(scored, names, t)
-            for letter, chunk in _shard(table["stocks"]).items():
-                payload[f"scores_{letter}"] = {"asOf": table["asOf"], "stocks": chunk}
-            payload["symbols"] = {"asOf": table["asOf"], "count": table["count"],
-                                  "symbols": [[v["yahoo"], v["name"], v["indexes"]]
-                                              for v in table["stocks"].values()]}
+            payload.update(_lookup_payload(scored, names, t))
             log("picks locked: " + ", ".join(
                 p["symbol"] for cats in chosen.values() for p in cats.values())
                 + (f" | notes: {notes}" if notes else ""))
@@ -221,6 +230,19 @@ def refresh(args):
     publish.put(payload, dry=args.dry)
 
 
+def _lookup_payload(scored, names, t):
+    """Lookup data, split by first letter so the Worker only reads a small piece."""
+    table = _lookup_table(scored, names, t)
+    save_state("trex_scores.json", {"asOf": table["asOf"], "scores": {
+        k: [v["trexScore"], v["bestFit"]] for k, v in table["stocks"].items()}})
+    out = {f"scores_{letter}": {"asOf": table["asOf"], "stocks": chunk}
+           for letter, chunk in _shard(table["stocks"]).items()}
+    out["symbols"] = {"asOf": table["asOf"], "count": table["count"],
+                      "symbols": [[v["yahoo"], v["name"], v["indexes"]]
+                                  for v in table["stocks"].values()]}
+    return out
+
+
 def _shard(stocks):
     out = {}
     for k, v in stocks.items():
@@ -237,7 +259,7 @@ def _lookup_table(scored, names, t):
             if key in table:
                 table[key]["indexes"].append(idx)
                 continue
-            best = max(scoring.CATEGORIES, key=lambda k: r["scores"][k] if r["eligible"][k] else -1)
+            best = r["bestFit"] or max(scoring.CATEGORIES, key=lambda k: r["scores"][k])
             table[key] = {
                 "symbol": display_symbol(s), "yahoo": s, "name": names.get(s) or key,
                 "indexes": [idx], "sector": r["sector"], "currency": r["currency"],
@@ -246,6 +268,7 @@ def _lookup_table(scored, names, t):
                 "factors": r["factors"], "metrics": r["metrics"],
                 "filtersFailed": r["filtersFailed"], "earningsSoon": r["earningsSoon"],
                 "nextEarnings": r["nextEarnings"], "bestCategory": best,
+                "trexScore": r["trexScore"], "bestFit": r["bestFit"],
                 "reasons": scoring.reasons(r, best),
             }
     return {"asOf": t.isoformat(), "count": len(table), "stocks": table}
