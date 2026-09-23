@@ -15,6 +15,12 @@ from .util import (now_et, today_et, in_window, display_symbol, load_state, save
                    log, currency_of)
 
 BENCH = [v["yahoo"] for v in config.INDEX_SYMBOLS.values()]
+MAIN = ("sp500", "nasdaq", "tsx")
+
+
+def bench_for(idx):
+    """Benchmark for relative strength; the wide 'us' group uses the S&P 500."""
+    return config.INDEX_SYMBOLS.get(idx, config.INDEX_SYMBOLS["sp500"])["yahoo"]
 HISTORY_FILE = "picks_history.json"
 
 
@@ -28,8 +34,10 @@ def prep(args):
 
     hist = market.history(stock_syms + recent_picks + BENCH + [config.FX_SYMBOL],
                           period="1y", auto_adjust=False)
-    if len(hist) < 0.7 * len(stock_syms):
-        raise RuntimeError(f"Only got prices for {len(hist)} of {len(stock_syms)} stocks; "
+    core = universe.all_symbols(c, include_wide=False)
+    got_core = sum(1 for s in core if s in hist)
+    if got_core < 0.7 * len(core):
+        raise RuntimeError(f"Only got prices for {got_core} of {len(core)} index stocks; "
                            "Yahoo may be blocking. Keeping yesterday's data.")
     tech = technicals.compute_all(hist)
     save_state("technicals.json", tech)
@@ -42,7 +50,7 @@ def prep(args):
     publish.put({"track": track.summary(history)}, dry=args.dry)
 
     # Slowest step last, so a Yahoo hiccup here never blocks prices
-    fund = fundamentals.refresh(stock_syms)
+    fund = fundamentals.refresh(stock_syms, priority=set(core))
 
     # Publish stock-lookup scores now (based on yesterday's close) so the search
     # works before the 10:30am picks run, which refreshes them with live prices.
@@ -50,11 +58,11 @@ def prep(args):
     for s, f in fund.items():
         if not names.get(s):
             names[s] = f.get("name")
-    groups = universe.groups(c)
+    groups = universe.lookup_groups(c)
     scored = {idx: scoring.score_index(
-        idx, g["pool"], tech, fund, tech.get(config.INDEX_SYMBOLS[idx]["yahoo"], {}),
+        idx, g["pool"], tech, fund, tech.get(bench_for(idx), {}),
         {}, today=today_et()) for idx, g in groups.items()}
-    publish.put(_lookup_payload(scored, names, now_et()), dry=args.dry)
+    publish.put(_lookup_payload(scored, names, now_et(), c), dry=args.dry)
 
 
 # ---------------------------------------------------------------- refresh helpers
@@ -190,13 +198,14 @@ def refresh(args):
         if not tech:
             log("ERROR: no technicals yet; run the Daily prep workflow first")
         else:
-            pool_syms = set().union(*(g["pool"] for g in groups.values()))
+            lgroups = universe.lookup_groups(c)
+            pool_syms = set().union(*(g["pool"] for g in lgroups.values()))
             extra = sorted(pool_syms - set(live))
             if extra:
                 live.update(market.quotes(extra))
             scored = {idx: scoring.score_index(
-                idx, g["pool"], tech, fund, tech.get(config.INDEX_SYMBOLS[idx]["yahoo"], {}),
-                live, today=today_et()) for idx, g in groups.items()}
+                idx, g["pool"], tech, fund, tech.get(bench_for(idx), {}),
+                live, today=today_et()) for idx, g in lgroups.items()}
             chosen, notes = picks.choose(scored, history, live, names, today_iso)
             history.extend(picks.history_rows(chosen, today_iso, live))
             save_state(HISTORY_FILE, history)
@@ -208,12 +217,13 @@ def refresh(args):
             }
             save_state("picks_today.json", picks_payload)
             payload["picks"] = picks_payload
-            payload.update(_lookup_payload(scored, names, t))
+            payload.update(_lookup_payload(scored, names, t, c))
             log("picks locked: " + ", ".join(
                 p["symbol"] for cats in chosen.values() for p in cats.values())
                 + (f" | notes: {notes}" if notes else ""))
 
-            if portfolio.rebalance(state, scored, live, fx, names, today_et()):
+            main_scored = {k: v for k, v in scored.items() if k in MAIN}
+            if portfolio.rebalance(state, main_scored, live, fx, names, today_et()):
                 state = portfolio.load()
 
     payload["portfolio"] = portfolio.value(state, live, fx, today_et()) | {"asOf": t.isoformat()}
@@ -230,9 +240,9 @@ def refresh(args):
     publish.put(payload, dry=args.dry)
 
 
-def _lookup_payload(scored, names, t):
+def _lookup_payload(scored, names, t, c=None):
     """Lookup data, split by first letter so the Worker only reads a small piece."""
-    table = _lookup_table(scored, names, t)
+    table = _lookup_table(scored, names, t, c)
     save_state("trex_scores.json", {"asOf": table["asOf"], "scores": {
         k: [v["trexScore"], v["bestFit"]] for k, v in table["stocks"].items()}})
     out = {f"scores_{letter}": {"asOf": table["asOf"], "stocks": chunk}
@@ -250,19 +260,29 @@ def _shard(stocks):
     return out
 
 
-def _lookup_table(scored, names, t):
-    home = ["sp500", "nasdaq", "tsx"]  # which index's ranking to show for dual listings
+def _memberships(s, c):
+    """Which lists a stock is really in: sp500, nasdaq (NASDAQ-100), nasdaqMid, tsx."""
+    if not c:
+        return None
+    keys = [("sp500", "sp500"), ("ndx", "nasdaq"), ("nasdaqMid", "nasdaqMid"), ("tsx", "tsx"),
+            ("usWide", "us")]
+    return [label for k, label in keys if s in c.get(k, {})]
+
+
+def _lookup_table(scored, names, t, c=None):
+    home = ["sp500", "nasdaq", "tsx", "us"]  # which ranking to show for stocks in several lists
     table = {}
     for idx in home:
         for s, r in scored.get(idx, {}).items():
             key = s  # Yahoo symbol, so TSX "T.TO" (Telus) and US "T" (AT&T) don't clash
             if key in table:
-                table[key]["indexes"].append(idx)
+                if not c:
+                    table[key]["indexes"].append(idx)
                 continue
             best = r["bestFit"] or max(scoring.CATEGORIES, key=lambda k: r["scores"][k])
             table[key] = {
                 "symbol": display_symbol(s), "yahoo": s, "name": names.get(s) or key,
-                "indexes": [idx], "sector": r["sector"], "currency": r["currency"],
+                "indexes": _memberships(s, c) or [idx], "sector": r["sector"], "currency": r["currency"],
                 "marketCap": r["marketCap"], "price": r["price"],
                 "scores": r["scores"], "eligible": r["eligible"],
                 "factors": r["factors"], "metrics": r["metrics"],

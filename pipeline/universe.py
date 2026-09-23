@@ -70,24 +70,46 @@ def _nasdaq100():
     return [(s, n) for s, n in out if s]
 
 
-def _nasdaq_midcaps(exclude):
-    """All NASDAQ-listed stocks between $2B and $20B, minus index members."""
+WIDE_MIN_CAP = 300e6  # US-listed stocks worth at least this get a Trex Score in search
+
+
+def _screener(exchange):
+    """(symbol, name, market cap) for every stock listed on one US exchange."""
     url = ("https://api.nasdaq.com/api/screener/stocks"
-           "?tableonly=true&limit=10000&exchange=nasdaq&download=true")
+           f"?tableonly=true&limit=10000&exchange={exchange}&download=true")
     headers = {**UA, "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                "Accept": "application/json"}
     rows = requests.get(url, headers=headers, timeout=60).json()["data"]["rows"]
     out = []
     for r in rows:
         sym = (r.get("symbol") or "").strip()
-        if not sym or any(ch in sym for ch in "^/ ") or sym in exclude:
+        if not sym or any(ch in sym for ch in "^ "):   # skip preferred shares etc.
             continue
         try:
             cap = float(r.get("marketCap") or 0)
         except ValueError:
             continue
-        if 2e9 <= cap <= 20e9:
-            out.append((sym.replace(".", "-"), (r.get("name") or "").strip()))
+        out.append((sym.replace("/", "-").replace(".", "-"), (r.get("name") or "").strip(), cap))
+    return out
+
+
+def _nasdaq_midcaps(exclude, rows=None):
+    """All NASDAQ-listed stocks between $2B and $20B, minus index members."""
+    rows = rows if rows is not None else _screener("nasdaq")
+    return [(s, n) for s, n, cap in rows
+            if "-" not in s and s not in exclude and 2e9 <= cap <= 20e9]
+
+
+def _us_wide(exclude):
+    """Every NYSE, NASDAQ and NYSE American stock worth $300M+ not already covered."""
+    out = {}
+    for ex in ("nyse", "nasdaq", "amex"):
+        try:
+            for s, n, cap in _screener(ex):
+                if cap >= WIDE_MIN_CAP and s not in exclude:
+                    out[s] = n
+        except Exception as e:
+            log(f"WARNING {ex} screener failed: {e}")
     return out
 
 
@@ -131,6 +153,14 @@ def refresh(force=False):
     except Exception as e:
         log(f"WARNING nasdaqMid refresh failed, keeping old list: {e}")
 
+    covered = set().union(*(set(new.get(k, {})) for k in ("sp500", "ndx", "nasdaqMid")))
+    wide = _us_wide(covered)
+    if len(wide) >= 1000:
+        new["usWide"] = wide
+        log(f"usWide: {len(wide)} extra US stocks for search")
+    else:
+        log(f"WARNING usWide only {len(wide)} rows, keeping old list")
+
     if ok == len(SOURCES):
         new["updated"] = now_et().isoformat()
         new.pop("seed", None)
@@ -161,15 +191,24 @@ def groups(c):
     }
 
 
+def lookup_groups(c):
+    """Groups scored for the Trex Score / search. Adds 'us': every US stock we cover,
+    so stocks outside the main indexes are ranked against the whole US list."""
+    g = groups(c)
+    us = set().union(*(set(c.get(k, {})) for k in ("sp500", "ndx", "nasdaqMid", "usWide")))
+    return {**g, "us": {"movers": set(), "pool": us}}
+
+
 def names(c):
     out = {}
-    for k in ("nasdaqMid", "tsx", "ndx", "sp500"):
+    for k in ("usWide", "nasdaqMid", "tsx", "ndx", "sp500"):
         out.update(c.get(k, {}))
     return out
 
 
-def all_symbols(c, include_mid=True):
-    keys = ["sp500", "ndx", "tsx"] + (["nasdaqMid"] if include_mid else [])
+def all_symbols(c, include_mid=True, include_wide=True):
+    keys = ["sp500", "ndx", "tsx"] + (["nasdaqMid"] if include_mid else []) \
+        + (["usWide"] if include_wide else [])
     s = set()
     for k in keys:
         s |= set(c.get(k, {}))

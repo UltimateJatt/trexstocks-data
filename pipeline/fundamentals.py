@@ -11,7 +11,7 @@ import yfinance as yf
 from .util import load_state, save_state, log, now_et
 
 STATE_FILE = "fundamentals.json"
-PER_RUN = 450
+PER_RUN = 1500
 FIELDS = {
     "marketCap": "marketCap", "sharesOutstanding": "sharesOutstanding",
     "sector": "sector", "industry": "industry", "shortName": "name",
@@ -41,13 +41,15 @@ def _fetch(sym):
     return rec
 
 
-def refresh(symbols, per_run=PER_RUN):
+def refresh(symbols, per_run=PER_RUN, priority=None):
     data = load_state(STATE_FILE, {})
     missing = [s for s in symbols if s not in data]
     stale = sorted((s for s in symbols if s in data),
                    key=lambda s: data[s].get("fetched") or "")
-    # New companies always get fetched (the first run fetches everything, ~20 min)
-    todo = missing + stale[:max(0, per_run - len(missing))]
+    # New companies first (index members before the wide US list), capped per run so
+    # the first big fill-in is spread over a few mornings instead of timing out.
+    missing.sort(key=lambda s: (s not in (priority or set()), s))
+    todo = (missing + stale)[:per_run]
     ok = fail = 0
     for i, s in enumerate(todo):
         try:
@@ -56,6 +58,8 @@ def refresh(symbols, per_run=PER_RUN):
                 data[s] = rec
                 ok += 1
             else:
+                # remember the attempt so it waits its turn instead of blocking new stocks
+                data[s] = {"fetched": now_et().isoformat(), "empty": True}
                 fail += 1
         except Exception as e:
             fail += 1
