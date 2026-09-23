@@ -1,9 +1,7 @@
 name: Daily prep
 
 on:
-  schedule:
-    # 12:05 UTC = 8:05am Eastern in summer, 7:05am in winter. Weekdays only.
-    - cron: "5 12 * * 1-5"
+  
   workflow_dispatch:
     inputs:
       force:
