@@ -1,10 +1,8 @@
 name: Market refresh
 
 on:
-  schedule:
-    # Every 15 min, 9am-5pm Eastern on weekdays (times below are UTC).
-    # The script itself skips runs outside 9:25am-4:45pm ET and on holidays.
-    - cron: "*/15 13-21 * * 1-5"
+  # Started every 15 min on weekdays by the Cloudflare timer (see the Worker).
+  # The script itself skips runs outside 9:25am-4:45pm ET and on holidays.
   workflow_dispatch:
     inputs:
       force:
