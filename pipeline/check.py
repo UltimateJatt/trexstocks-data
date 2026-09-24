@@ -46,8 +46,40 @@ def show(sym):
         print("TrexStocks shows: no quote")
 
 
+def beta_check(syms):
+    """Beta diagnostics: are stock and index days lined up correctly?"""
+    import pandas as pd
+    benches = ["^GSPC", "^GSPTSE"]
+    hist = market.history(list(syms) + benches, period="1y")
+    for sym in syms:
+        b = "^GSPTSE" if sym.endswith(".TO") else "^GSPC"
+        s, x = hist.get(sym), hist.get(b)
+        print(f"\n==================== BETA {sym} vs {b} ====================")
+        if s is None or x is None:
+            print("missing data")
+            continue
+        print(f"rows: stock={len(s)} index={len(x)}")
+        print(f"only in stock: {[d.date().isoformat() for d in s.index.difference(x.index)][:10]}")
+        print(f"only in index: {[d.date().isoformat() for d in x.index.difference(s.index)][:10]}")
+        print("last 4 closes stock:", [(d.date().isoformat(), round(v, 2)) for d, v in s["Close"].tail(4).items()])
+        print("last 4 closes index:", [(d.date().isoformat(), round(v, 2)) for d, v in x["Close"].tail(4).items()])
+        for col in ("Close", "AdjClose"):
+            rs, rx = s[col].pct_change(), x[col].pct_change()
+            both = pd.concat([rs, rx], axis=1, join="inner").dropna()
+            both.columns = ["s", "x"]
+            corr = {lag: round(float(both["s"].corr(both["x"].shift(lag))), 3) for lag in (-1, 0, 1)}
+            beta = both["s"].cov(both["x"]) / both["x"].var()
+            wk = pd.concat([s[col].resample("W-FRI").last().pct_change(),
+                            x[col].resample("W-FRI").last().pct_change()], axis=1).dropna()
+            wbeta = wk.iloc[:, 0].cov(wk.iloc[:, 1]) / wk.iloc[:, 1].var()
+            print(f"[{col}] n={len(both)} corr by lag {corr} daily beta={beta:.2f} weekly beta={wbeta:.2f}")
+
+
 def main():
     syms = sys.argv[1:] or ["SHOP.TO", "CURA.TO", "RY.TO", "SHOP", "AAPL"]
+    if syms and syms[0] == "beta":
+        beta_check(syms[1:] or ["KO", "AAPL", "CNQ.TO", "BCE.TO"])
+        return
     for s in syms:
         try:
             show(s)
