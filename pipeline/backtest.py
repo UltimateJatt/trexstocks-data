@@ -4,9 +4,11 @@
     python -m pipeline.backtest --quick    # 200 stocks, for a fast trial run
 
 Tests, on about 2 years of daily prices:
-  1. Swing Setups vs two random baselines (1,000 draws each)
-  2. The price-based part of the Trex Score: do higher score groups do better?
-  3. Entry timing: RSI v1 vs v2 vs no RSI factor
+  1. Swing Setups vs two random baselines (1,000 draws each), split by pattern, market
+     backdrop, size and sector, plus a doubled-cost check
+  2. Model lab: the pre-declared Swing alternatives S1 to S4, each vs its own random baseline
+  3. The price-based part of the Trex Score and the pre-declared alternatives T1 to T4
+     (plus RSI v2 and no RSI): do higher score groups do better, by period and market?
   4. Chart Coach labels: what happened next, by label (description, not prediction)
 
 Honest limits, printed in the report:
@@ -85,6 +87,9 @@ def features(df, bench):
     bo = b["Open"].ffill()
     r63, r126 = ca / ca.shift(63) - 1, ca.shift(21) / ca.shift(126) - 1
     br63, br126 = bca / bca.shift(63) - 1, bca.shift(21) / bca.shift(126) - 1
+    r12_1, br12_1 = ca.shift(21) / ca.shift(252) - 1, bca.shift(21) / bca.shift(252) - 1
+    bfull = bench["AdjClose"] if "AdjClose" in bench else bench["Close"]
+    b_above200 = (bfull > bfull.rolling(200).mean()).reindex(df.index).ffill().fillna(False)
     daily, bdaily = ca.pct_change(), bca.pct_change()
     beta = daily.rolling(252, min_periods=200).cov(bdaily) / bdaily.rolling(252, min_periods=200).var()
     dd = (ca / ca.rolling(252, min_periods=200).max() - 1).rolling(252, min_periods=200).min()
@@ -99,7 +104,8 @@ def features(df, bench):
         "ext50": ext50, "slope50": slope50, "nearHigh": c / h.rolling(252, min_periods=200).max(),
         "updown": upv / dnv.replace(0, np.nan),
         "strength": 0.6 * (r63 - br63) + 0.4 * (r126 - br126),
-        "rs3m": r63 - br63, "rs6m": r126 - br126,
+        "rs3m": r63 - br63, "rs6m": r126 - br126, "mom12_1": r12_1 - br12_1,
+        "ret1m": ca / ca.shift(21) - 1, "benchAbove200": b_above200.astype(bool),
         "dist50": c / s50 - 1, "dist200": c / s200 - 1, "rsi": rsi,
         "volTrend": v.rolling(10).mean() / v.rolling(50).mean(),
         "vol60": daily.rolling(60).std() * np.sqrt(252), "beta": beta, "maxDD": dd,
@@ -225,7 +231,28 @@ def run(quick=False):
 
 
 # ---------------------------------------------------------------- 1. Swing Setups
-def _swing_test(panel):
+PERIODS = ("build (months 1-12)", "check (13-18)", "final (19-24)")
+
+
+def _backdrop_state(p):
+    """Historical market backdrop per date and market (same rule as the live Chart Coach):
+    Supportive = index above its 200-day average and 60%+ of stocks above their 50-day;
+    Weak = index below and 40% or fewer; otherwise Mixed."""
+    above50 = (p["dist50"] > 0).astype(float).where(p["dist50"].notna())
+    share = above50.groupby([p.index.get_level_values("date"), p["ccy"]]).transform("mean") * 100
+    b200 = p["benchAbove200"].astype(bool)
+    return pd.Series(np.select([b200 & (share >= 60), ~b200 & (share <= 40)], ["Supportive", "Weak"],
+                               default="Mixed"), index=p.index)
+
+
+def _size_band(cap):
+    return np.select([cap.isna(), cap < 2e9, cap < 10e9], ["unknown", "under $2B", "$2B to $10B"],
+                     default="over $10B")
+
+
+def _swing_prep(panel):
+    """Every eligible stock-day with a pattern (the pool) and every eligible stock-day (the
+    base), with the parts each variant needs, costs and worked / failed outcomes."""
     p = panel
     ccy = p["ccy"]
     cap_ok = p["cap"].isna() | (p["cap"] >= np.where(ccy == "CAD", 300e6, 500e6))
@@ -234,103 +261,168 @@ def _swing_test(panel):
             & p["has200"] & p["atrp"].between(0.015, 0.07)
             & (p["gap5"] <= 0.08)            # also the stand-in for "no earnings in the way"
             & p["above200"])
-    pattern = p["breakout"] | p["pullback"]
-    pool = p[elig & pattern].copy()
+    backdrop = _backdrop_state(p)
+    pool = p[elig & (p["breakout"] | p["pullback"])].copy()
     base = p[elig].copy()
-    log(f"swing: {len(base):,} eligible stock-days, {len(pool):,} with a pattern")
-    pool["strengthPct"] = _pct_rank(pool, "strength")
-    pool["slopePct"] = _pct_rank(pool, "slope50")
-    pq = np.where(pool["breakout"], swing.breakout_quality(pool["rvol"], pool["loc"], pool["tightPre"].fillna(9)),
-                  swing.pullback_quality(pool["depth"], pool["near"], pool["pbvol"].fillna(9)))
-    pool["score"] = swing.score_parts(pool["strengthPct"], pq, pool["slopePct"], pool["ext50"].fillna(0),
-                                      pool["nearHigh"].fillna(0.5), pool["updown"].fillna(1))
-    # costs: both sides, by size
     for df in (pool, base):
-        cost = np.where(df["cap"] >= 2e9, 2 * COST["large"], 2 * COST["small"])
+        df["backdrop"] = backdrop.reindex(df.index)
+        df["kind"] = np.where(df["breakout"], "Breakout", np.where(df["pullback"], "Pullback", "None"))
+        df["size"] = _size_band(df["cap"])
+        df["cost"] = np.where(df["cap"] >= 2e9, 2 * COST["large"], 2 * COST["small"])
         for hz in HZ:
-            df[f"n{hz}"] = df[f"r{hz}"] - cost
-
-    # the daily top list: 10, max 2 per sector, max 6 per pattern
-    picks = []
-    for d, g in pool.groupby(level="date"):
-        g = g.sort_values("score", ascending=False)
-        sec, pat, n = {}, {}, 0
-        for (dd, s), row in g.iterrows():
-            kind = "Breakout" if row["breakout"] else "Pullback"
-            if sec.get(row["sector"], 0) >= 2 or pat.get(kind, 0) >= 6:
-                continue
-            sec[row["sector"]] = sec.get(row["sector"], 0) + 1
-            pat[kind] = pat.get(kind, 0) + 1
-            picks.append((dd, s))
-            n += 1
-            if n == swing.TOP_N:
-                break
-    top = pool.loc[picks].copy()
-    top["kind"] = np.where(top["breakout"], "Breakout", "Pullback")
-
-    # worked / failed / expired for everything in the pool (needed for the random baseline)
+            df[f"n{hz}"] = df[f"r{hz}"] - df["cost"]
+    log(f"swing: {len(base):,} eligible stock-days, {len(pool):,} with a pattern")
+    bq = swing.breakout_quality(pool["rvol"], pool["loc"], pool["tightPre"].fillna(9))
+    pool["pqMain"] = np.where(pool["breakout"], bq,
+                              swing.pullback_quality(pool["depth"], pool["near"], pool["pbvol"].fillna(9)))
+    pool["pqDeep"] = np.where(pool["breakout"], bq,
+                              swing.pullback_quality(pool["depth"], pool["near"], pool["pbvol"].fillna(9), deep=True))
+    pool["calm"] = swing.calm_score(pool["atrp"])
+    # worked / failed / expired, once for the whole pool (all variants draw from it)
     outcome = pd.Series(index=pool.index, dtype=object)
+    pool_syms = set(pool.index.get_level_values("sym"))
     for s, g in p.groupby(level="sym"):
+        if s not in pool_syms:
+            continue
         f = g.droplevel("sym")
         pos = {d: i for i, d in enumerate(f.index)}
-        dates = [d for d in pool.xs(s, level="sym").index] if s in pool.index.get_level_values("sym") else []
-        res = worked_first(f, [pos[d] for d in dates])
         inv = {i: d for d, i in pos.items()}
+        res = worked_first(f, [pos[d] for d in pool.xs(s, level="sym").index])
         for i, r in res.items():
             outcome.loc[(inv[i], s)] = r
     pool["outcome"] = outcome
-    top["outcome"] = outcome.reindex(top.index)
+    return pool, base
 
-    rng = np.random.default_rng(SEED)
+
+def _variant_pool(pool, base, variant):
+    """Rows the variant may choose from, its score, and the matching filter-only base."""
+    cfg = swing.VARIANTS[variant]
+    kinds = {"Breakout" if k == "Breakout" else "Pullback" for k in cfg["patterns"]}
+    pl = pool[pool["kind"].isin(kinds)].copy()
+    bs = base
+    if cfg.get("backdrop"):
+        pl = pl[pl["backdrop"] == cfg["backdrop"]]
+        bs = base[base["backdrop"] == cfg["backdrop"]]
+    pl["strengthPct"] = _pct_rank(pl, "strength")
+    pl["slopePct"] = _pct_rank(pl, "slope50")
+    pq = pl["pqDeep"] if cfg.get("deep") else pl["pqMain"]
+    pl["score"] = swing.score_parts(pl["strengthPct"], pq, pl["slopePct"], pl["ext50"].fillna(0),
+                                    pl["nearHigh"].fillna(0.5), pl["updown"].fillna(1))
+    if cfg.get("calm"):
+        pl["score"] = (1 - cfg["calm"]) * pl["score"] + cfg["calm"] * pl["calm"]
+    return pl, bs, (swing.MAX_PER_PATTERN if len(kinds) > 1 else swing.TOP_N)
+
+
+def _daily_top(pl, pat_cap):
+    """The daily list: 10, max 2 per sector, max 6 per pattern (one-pattern variants: 10)."""
+    picks = []
+    for _, g in pl.sort_values("score", ascending=False).groupby(level="date", sort=False):
+        sec, pat = {}, {}
+        for (dd, s), sector, kind in zip(g.index, g["sector"], g["kind"]):
+            if sec.get(sector, 0) >= swing.MAX_PER_SECTOR or pat.get(kind, 0) >= pat_cap:
+                continue
+            sec[sector] = sec.get(sector, 0) + 1
+            pat[kind] = pat.get(kind, 0) + 1
+            picks.append((dd, s))
+            if sum(sec.values()) == swing.TOP_N:
+                break
+    return pl.loc[picks].sort_index()
+
+
+def _ex5(df, cost_mult=1.0):
+    """5-day return vs index after costs (cost_mult=2 doubles the assumed costs)."""
+    return df["n5"] - df["b5"] - (cost_mult - 1) * df["cost"]
+
+
+def _swing_eval(pool, base, variant, rng, full=False):
+    pl, bs, pat_cap = _variant_pool(pool, base, variant)
+    top = _daily_top(pl, pat_cap)
     out = {}
-    for per in ("build (months 1-12)", "check (13-18)", "final (19-24)", "all"):
+    for per in PERIODS + ("all",):
         t = top if per == "all" else top[top["period"] == per]
-        pl = pool if per == "all" else pool[pool["period"] == per]
-        bs = base if per == "all" else base[base["period"] == per]
+        src = pl if per == "all" else pl[pl["period"] == per]
         # compare like with like: only rows whose 5-day outcome is already known
-        t, pl, bs = (x[x["n5"].notna() & x["b5"].notna()] for x in (t, pl, bs))
-        res = {"picks": int(len(t)), "days": int(t.index.get_level_values("date").nunique()),
-               "stats": _stats(t, "n"), "byPattern": {k: _stats(g, "n") for k, g in t.groupby("kind")},
-               "byMarket": {k: _stats(g, "n") for k, g in t.groupby("ccy")}}
-        oc = t["outcome"].value_counts(normalize=True).to_dict()
-        res["outcomes"] = {k: float(v) for k, v in oc.items()}
+        t, src = (x[x["n5"].notna() & x["b5"].notna()] for x in (t, src))
+        res = {"picks": int(len(t)), "days": int(t.index.get_level_values("date").nunique())}
+        if not len(t):
+            out[per] = res
+            continue
+        ex = _ex5(t)
+        res["actualAvgExcess5d"] = float(ex.mean())
+        res["avgExcess5d2xCost"] = float(_ex5(t, 2.0).mean())
+        res["beat5d"] = float((ex > 0).mean())
+        res["actualWorkedRate"] = float((t["outcome"] == "Worked").mean())
+        res["outcomes"] = {k: float(v) for k, v in t["outcome"].value_counts(normalize=True).items()}
         res["mae10"], res["mfe10"] = float(t["mae10"].mean()), float(t["mfe10"].mean())
-        # random baselines: same number of stocks per day, drawn from the pool / the eligible base
-        for name, src in (("sameFilterRandom", pl), ("filterOnlyRandom", bs)):
-            draws5, worked = _random(t, src, rng, need_outcome=(name == "sameFilterRandom"))
-            actual5 = float((t["n5"] - t["b5"]).mean())
-            res[name] = {
-                "avgExcess5dMedian": float(np.nanmedian(draws5)),
-                "avgExcess5dP95": float(np.nanpercentile(draws5, 95)),
-                "percentileOfActual": float((draws5 < actual5).mean() * 100),
-                "workedRateMedian": float(np.nanmedian(worked)) if worked is not None else None,
-            }
-        res["actualAvgExcess5d"] = float((t["n5"] - t["b5"]).mean())
-        res["actualWorkedRate"] = float((t["outcome"] == "Worked").mean()) if len(t) else None
-        # confidence interval: resample pick DAYS (not stocks)
-        daily = (t["n5"] - t["b5"]).groupby(level="date").mean().dropna()
+        res["byMarket"] = {m: {"n": int(len(g)), "avgExcess5d": float(_ex5(g).mean())}
+                           for m, g in t.groupby("ccy")}
+        draws5, worked = _random(t, src, rng, need_outcome=True)
+        res["sameFilterRandom"] = {
+            "avgExcess5dMedian": float(np.nanmedian(draws5)),
+            "avgExcess5dP95": float(np.nanpercentile(draws5, 95)),
+            "percentileOfActual": float((draws5 < res["actualAvgExcess5d"]).mean() * 100),
+            "workedRateMedian": float(np.nanmedian(worked)) if worked is not None else None,
+        }
+        daily = ex.groupby(level="date").mean().dropna()
         if len(daily) > 10:
-            bs_means = [daily.sample(len(daily), replace=True, random_state=int(i)).mean() for i in range(2000)]
+            idx = rng.integers(0, len(daily), (2000, len(daily)))
+            bs_means = daily.values[idx].mean(axis=1)
             res["ci95Excess5d"] = [float(np.percentile(bs_means, 2.5)), float(np.percentile(bs_means, 97.5))]
+        if full and per == "all":
+            b = bs[bs["n5"].notna() & bs["b5"].notna()]
+            d5, _ = _random(t, b, rng)
+            res["filterOnlyRandom"] = {"avgExcess5dMedian": float(np.nanmedian(d5)),
+                                       "percentileOfActual": float((d5 < res["actualAvgExcess5d"]).mean() * 100)}
+            res["stats"] = _stats(t, "n")
+            for grp, col in (("byPattern", "kind"), ("byBackdrop", "backdrop"), ("bySector", "sector"),
+                             ("bySize", "size")):
+                res[grp] = {str(k): {"n": int(len(g)), "avgExcess5d": float(_ex5(g).mean()),
+                                     "beat5d": float((_ex5(g) > 0).mean()),
+                                     "worked": float((g["outcome"] == "Worked").mean())}
+                            for k, g in t.groupby(col)}
         out[per] = res
     fin = out["final (19-24)"]
     ci = fin.get("ci95Excess5d") or [np.nan, np.nan]
-    out["verdict"] = {
-        "beatsRandom95": fin["actualAvgExcess5d"] > fin["sameFilterRandom"]["avgExcess5dP95"],
-        "ciAboveZero": bool(ci[0] > 0),
-        "workedBeatsRandom": (fin["actualWorkedRate"] or 0) > (fin["sameFilterRandom"]["workedRateMedian"] or 0),
-    }
-    out["verdict"]["pass"] = all(out["verdict"].values())
+    if fin.get("picks"):
+        v = {"beatsRandom95": fin["actualAvgExcess5d"] > fin["sameFilterRandom"]["avgExcess5dP95"],
+             "ciAboveZero": bool(ci[0] > 0),
+             "workedBeatsRandom": (fin["actualWorkedRate"] or 0) > (fin["sameFilterRandom"]["workedRateMedian"] or 0)}
+        v["pass"] = all(v.values())
+    else:
+        v = {"beatsRandom95": False, "ciAboveZero": False, "workedBeatsRandom": False, "pass": False}
+    out["verdict"] = v
+    return out
+
+
+def _swing_test(panel):
+    pool, base = _swing_prep(panel)
+    rng = np.random.default_rng(SEED)
+    out = {}
+    for v in swing.VARIANTS:
+        log(f"swing: testing {v}")
+        out[v] = _swing_eval(pool, base, v, rng, full=(v == "main"))
+    # the pre-declared switch rule: beats the current version in every period and both markets
+    m = out["main"]
+    for v, r in out.items():
+        if v == "main":
+            continue
+        per_ok = {per: (r[per].get("actualAvgExcess5d", -9) > m[per].get("actualAvgExcess5d", 9)) for per in PERIODS}
+        mk_ok = {k: ((r["all"].get("byMarket") or {}).get(k, {}).get("avgExcess5d", -9)
+                     > (m["all"].get("byMarket") or {}).get(k, {}).get("avgExcess5d", 9)) for k in ("USD", "CAD")}
+        r["vsCurrent"] = {"periods": per_ok, "markets": mk_ok,
+                          "beatsCurrentEverywhere": all(per_ok.values()) and all(mk_ok.values())}
     return out
 
 
 def _random(top, src, rng, need_outcome=False):
     """1,000 draws: each day pick the same number of stocks at random from `src`."""
     counts = top.groupby(level="date").size()
-    ex = (src["n5"] - src["b5"])
+    ex = _ex5(src)
     by_day = {d: g.values for d, g in ex.groupby(level="date")}
-    oc = (src["outcome"] == "Worked").astype(float) if need_outcome and "outcome" in src else None
-    oc_day = {d: g.values for d, g in oc.groupby(level="date")} if oc is not None else None
+    oc_day = None
+    if need_outcome and "outcome" in src:
+        oc = (src["outcome"] == "Worked").astype(float)
+        oc_day = {d: g.values for d, g in oc.groupby(level="date")}
     sums, n_tot = np.zeros(DRAWS), 0
     wsum = np.zeros(DRAWS) if oc_day else None
     for d, k in counts.items():
@@ -338,9 +430,9 @@ def _random(top, src, rng, need_outcome=False):
         if vals is None or len(vals) == 0:
             continue
         k = min(k, len(vals))
-        idx = np.argsort(rng.random((DRAWS, len(vals))), axis=1)[:, :k]
-        pickv = vals[idx]
-        sums += np.nansum(pickv, axis=1)
+        idx = np.argpartition(rng.random((DRAWS, len(vals))), k - 1, axis=1)[:, :k] if k < len(vals) \
+            else np.tile(np.arange(len(vals)), (DRAWS, 1))
+        sums += np.nansum(vals[idx], axis=1)
         if wsum is not None:
             wsum += oc_day[d][idx].sum(axis=1)
         n_tot += k
@@ -350,6 +442,9 @@ def _random(top, src, rng, need_outcome=False):
 
 
 # ---------------------------------------------------------------- 2. Trex Score (price part)
+TREX_CURRENT = "Current (RSI v1)"
+
+
 def _trex_test(panel):
     p = panel[panel["has200"] & (panel["medDV20"] > 1e6)].copy()
     dates = p.index.get_level_values("date").unique().sort_values()[::5]   # every 5th day
@@ -366,26 +461,47 @@ def _trex_test(panel):
         [rsi < 45, rsi < 55, rsi <= 65, rsi <= 75],
         [(60 - 3 * (45 - rsi)).clip(lower=0), 60 + 4 * (rsi - 45), 100.0, 100 - 4 * (rsi - 65)],
         default=(60 - 5 * (rsi - 75)).clip(lower=0)), index=p.index)
+    mom = rk("mom12_1")
+    rev = rk("ret1m", asc=False)          # last month's losers rank higher
+    hi = rk("nearHigh")
+    core = trend * 20 + rs * 20 + entry_v1 * 10 + vol * 5 + risk * 10
     variants = {
-        "RSI v1 (current)": (trend * 20 + rs * 20 + entry_v1 * 10 + vol * 5 + risk * 10) / 65,
-        "RSI v2 (proposed)": (trend * 20 + rs * 20 + entry_v2 * 10 + vol * 5 + risk * 10) / 65,
+        TREX_CURRENT: core / 65,
+        "RSI v2": (trend * 20 + rs * 20 + entry_v2 * 10 + vol * 5 + risk * 10) / 65,
         "No RSI factor": (trend * 20 + rs * 20 + vol * 5 + risk * 10) / 55,
+        "T1 12-month momentum": (trend * 20 + mom * 20 + entry_v1 * 10 + vol * 5 + risk * 10) / 65,
+        "T2 Reversal credit": (core + rev * 10) / 75,
+        "T3 Low-volatility tilt": (core + risk * 15) / 80,
+        "T4 Near 52-week high": (core + hi * 10) / 75,
     }
     out = {}
     for name, score in variants.items():
         p["score"] = score
         p["q"] = p.groupby(level="date")["score"].transform(
             lambda x: pd.qcut(x.rank(method="first"), 5, labels=False) + 1)
+
+        def spread(mask, hz=20):
+            ex = (p[f"r{hz}"] - p[f"b{hz}"])[mask]
+            byq = ex.groupby(p["q"][mask]).mean()
+            return float(byq.get(5, np.nan) - byq.get(1, np.nan))
+
         res = {}
         for hz, col in ((20, "r20"), (60, "r60")):
             ex = p[col] - p[f"b{hz}"]
             byq = ex.groupby(p["q"]).mean()
             res[f"{hz}d"] = {f"Q{int(k)}": float(v) for k, v in byq.items()}
             res[f"{hz}d_topMinusBottom"] = float(byq.get(5, np.nan) - byq.get(1, np.nan))
-            res[f"{hz}d_byMarket"] = {m: float((ex[p["ccy"] == m].groupby(p["q"][p["ccy"] == m]).mean()).get(5, np.nan)
-                                               - (ex[p["ccy"] == m].groupby(p["q"][p["ccy"] == m]).mean()).get(1, np.nan))
-                                      for m in ("USD", "CAD")}
+        res["20d_byMarket"] = {m: spread(p["ccy"] == m) for m in ("USD", "CAD")}
+        res["20d_byPeriod"] = {per: spread(p["period"] == per) for per in PERIODS}
         out[name] = res
+    cur = out[TREX_CURRENT]
+    for name, r in out.items():
+        if name == TREX_CURRENT:
+            continue
+        per_ok = {per: r["20d_byPeriod"][per] > cur["20d_byPeriod"][per] for per in PERIODS}
+        mk_ok = {m: r["20d_byMarket"][m] > cur["20d_byMarket"][m] for m in ("USD", "CAD")}
+        r["vsCurrent"] = {"periods": per_ok, "markets": mk_ok,
+                          "beatsCurrentEverywhere": all(per_ok.values()) and all(mk_ok.values())}
     return out
 
 
@@ -405,6 +521,10 @@ def _label_test(panel):
 
 
 # ---------------------------------------------------------------- report
+def _yn(x):
+    return "yes" if x else "no"
+
+
 def _write(rep):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     day = date.today().isoformat()
@@ -414,47 +534,83 @@ def _write(rep):
          "Limits: survivorship bias (today's lists), today's sizes and sectors, earnings dates "
          "approximated by skipping days after big gaps, company numbers not tested. "
          "Entry at the next day's open; swing returns after estimated trading costs.", ""]
-    sw = rep["swing"]
+    allsw = rep["swing"]
+    sw = allsw["main"]
     v = sw["verdict"]
-    L += ["## 1. Swing Setups vs random", "",
+    L += ["## 1. Swing Setups (current version) vs random", "",
           f"**Verdict on the untouched final 6 months: {'PASS' if v['pass'] else 'DID NOT PASS'}** "
           f"(beats 95% of random draws: {v['beatsRandom95']}; confidence interval above zero: {v['ciAboveZero']}; "
           f"worked-first rate beats random: {v['workedBeatsRandom']})", "",
           "| Period | Picks | Days | Avg 5-day vs index | Random (same filters) median / 95th | Percentile vs random | Worked / Failed / Expired | Avg worst dip (10d) |",
           "| --- | --- | --- | --- | --- | --- | --- | --- |"]
-    for per in ("build (months 1-12)", "check (13-18)", "final (19-24)", "all"):
+    for per in PERIODS + ("all",):
         r = sw[per]
+        if not r.get("picks"):
+            L.append(f"| {per} | 0 | 0 | -- | -- | -- | -- | -- |")
+            continue
         oc = r.get("outcomes", {})
         L.append(f"| {per} | {r['picks']} | {r['days']} | {_fmt(r['actualAvgExcess5d'])} | "
                  f"{_fmt(r['sameFilterRandom']['avgExcess5dMedian'])} / {_fmt(r['sameFilterRandom']['avgExcess5dP95'])} | "
                  f"{r['sameFilterRandom']['percentileOfActual']:.0f} | "
                  f"{oc.get('Worked', 0) * 100:.0f}% / {oc.get('Failed', 0) * 100:.0f}% / {oc.get('Expired', 0) * 100:.0f}% | "
                  f"{_fmt(r['mae10'])} |")
-    L += ["", "Returns by horizon (all periods, after costs):", "",
-          "| Horizon | Picks | Avg | Median | Avg vs index | Hit rate | Beat index | 5th percentile |",
-          "| --- | --- | --- | --- | --- | --- | --- | --- |"]
-    for hz, s in sw["all"]["stats"].items():
-        L.append(f"| {hz} | {s['n']} | {_fmt(s['avg'])} | {_fmt(s['median'])} | {_fmt(s['avgExcess'])} | "
-                 f"{s['hit'] * 100:.0f}% | {s['beat'] * 100:.0f}% | {_fmt(s['p5'])} |")
-    for grp in ("byPattern", "byMarket"):
-        L += ["", f"5-day, {grp[2:].lower()} (all periods):", ""]
-        for k, st in sw["all"][grp].items():
-            s5 = st.get("5d")
-            if s5:
-                L.append(f"- {k}: {s5['n']} picks, avg vs index {_fmt(s5['avgExcess'])}, beat index {s5['beat'] * 100:.0f}%")
-    fr = sw["all"]["filterOnlyRandom"]
-    L += ["", f"Filter-only random (ignores patterns): median {_fmt(fr['avgExcess5dMedian'])}, "
-              f"actual beats {fr['percentileOfActual']:.0f}% of draws.", ""]
-    L += ["## 2. Trex Score, price-based part: do higher groups do better?", "",
-          "Stocks split into 5 equal groups each sampled day (Q5 = highest score). Average return vs index.", "",
-          "| Version | 20d Q1 | Q2 | Q3 | Q4 | Q5 | Q5 minus Q1 (20d) | Q5 minus Q1 (60d) | US / Canada (20d) |",
-          "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    a = sw["all"]
+    if a.get("picks"):
+        L += ["", f"With trading costs doubled: avg 5-day vs index {_fmt(a['avgExcess5d2xCost'])} (all periods).", "",
+              "Returns by horizon (all periods, after costs):", "",
+              "| Horizon | Picks | Avg | Median | Avg vs index | Hit rate | Beat index | 5th percentile |",
+              "| --- | --- | --- | --- | --- | --- | --- | --- |"]
+        for hz, s in a["stats"].items():
+            L.append(f"| {hz} | {s['n']} | {_fmt(s['avg'])} | {_fmt(s['median'])} | {_fmt(s['avgExcess'])} | "
+                     f"{s['hit'] * 100:.0f}% | {s['beat'] * 100:.0f}% | {_fmt(s['p5'])} |")
+        for grp, title in (("byPattern", "pattern"), ("byBackdrop", "market backdrop on the signal day"),
+                           ("bySize", "company size"), ("bySector", "sector")):
+            L += ["", f"5-day, by {title} (all periods):", "",
+                  "| Group | Picks | Avg vs index | Beat index | Worked first |", "| --- | --- | --- | --- | --- |"]
+            items = sorted(a[grp].items(), key=lambda kv: -kv[1]["n"])
+            for k, st in items:
+                L.append(f"| {k} | {st['n']} | {_fmt(st['avgExcess5d'])} | {st['beat5d'] * 100:.0f}% | {st['worked'] * 100:.0f}% |")
+        fr = a["filterOnlyRandom"]
+        L += ["", f"Filter-only random (ignores patterns): median {_fmt(fr['avgExcess5dMedian'])}, "
+                  f"actual beats {fr['percentileOfActual']:.0f}% of draws.", "",
+              "Small groups (under about 200 picks) mean little on their own.", ""]
+
+    L += ["## 2. Swing Setups: pre-declared alternatives (declared Sep 24, 2026)", "",
+          "Each version is compared with its own random baseline (random picks from the same filtered pool). "
+          "Switch rule: an alternative replaces the current version only if it beats it in all three periods "
+          "and in both markets here, and also in live silent tracking (data/lab/live-report.md).", "",
+          "| Version | Picks | Avg 5d vs index: build / check / final | US / Canada (all) | Final: percentile vs own random | Final verdict | Worked first (all) | Avg worst dip | 2x costs (all) | Beats current everywhere |",
+          "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for name, r in allsw.items():
+        a = r["all"]
+        if not a.get("picks"):
+            L.append(f"| {name} | 0 | -- | -- | -- | -- | -- | -- | -- | -- |")
+            continue
+        pers = " / ".join(_fmt(r[p_].get("actualAvgExcess5d")) for p_ in PERIODS)
+        bm = a.get("byMarket", {})
+        fin = r["final (19-24)"]
+        pct = fin.get("sameFilterRandom", {}).get("percentileOfActual")
+        vc = r.get("vsCurrent")
+        L.append(f"| {name} | {a['picks']} | {pers} | {_fmt((bm.get('USD') or {}).get('avgExcess5d'))} / "
+                 f"{_fmt((bm.get('CAD') or {}).get('avgExcess5d'))} | {'--' if pct is None else f'{pct:.0f}'} | "
+                 f"{'PASS' if r['verdict']['pass'] else 'did not pass'} | {a['actualWorkedRate'] * 100:.0f}% | "
+                 f"{_fmt(a['mae10'])} | {_fmt(a['avgExcess5d2xCost'])} | "
+                 f"{'(current)' if vc is None else _yn(vc['beatsCurrentEverywhere'])} |")
+
+    L += ["", "## 3. Trex Score, price-based part: do higher groups do better?", "",
+          "Stocks split into 5 equal groups each sampled day (Q5 = highest score). Average return vs index. "
+          "Same switch rule: an alternative must beat the current version's Q5 minus Q1 in all three periods and both markets.", "",
+          "| Version | 20d Q1 | Q2 | Q3 | Q4 | Q5 | Q5 minus Q1 (20d) | build / check / final (20d) | US / Canada (20d) | Q5 minus Q1 (60d) | Beats current everywhere |",
+          "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
     for name, r in rep["trex"].items():
         q = r["20d"]
+        vc = r.get("vsCurrent")
         L.append(f"| {name} | " + " | ".join(_fmt(q.get(f'Q{i}')) for i in range(1, 6)) +
-                 f" | {_fmt(r['20d_topMinusBottom'])} | {_fmt(r['60d_topMinusBottom'])} | "
-                 f"{_fmt(r['20d_byMarket'].get('USD'))} / {_fmt(r['20d_byMarket'].get('CAD'))} |")
-    L += ["", "## 3. Chart Coach labels: what happened over the next 10 days", "",
+                 f" | {_fmt(r['20d_topMinusBottom'])} | "
+                 + " / ".join(_fmt(r["20d_byPeriod"].get(p_)) for p_ in PERIODS) +
+                 f" | {_fmt(r['20d_byMarket'].get('USD'))} / {_fmt(r['20d_byMarket'].get('CAD'))} | "
+                 f"{_fmt(r['60d_topMinusBottom'])} | {'(current)' if vc is None else _yn(vc['beatsCurrentEverywhere'])} |")
+    L += ["", "## 4. Chart Coach labels: what happened over the next 10 days", "",
           "Description only; a difference here is not proof a label predicts anything.", "",
           "| Label | Stock-days | Avg 10d | Avg vs index | Avg worst dip | Avg best rise |",
           "| --- | --- | --- | --- | --- | --- |"]

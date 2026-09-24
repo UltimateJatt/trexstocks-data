@@ -30,6 +30,17 @@ ELIG = {
 }
 WEIGHTS = {"strength": .30, "pattern": .30, "trend": .15, "nearHigh": .15, "volume": .10}
 
+# Model lab: pre-declared alternatives (analysis doc, "Model lab", Sep 24, 2026).
+# Tracked silently side by side; only adopted if they win on backtest AND new live data.
+VARIANTS = {
+    "main": {"patterns": PATTERNS},
+    "S1_pullbacksOnly": {"patterns": ("Pullback in uptrend",)},
+    "S2_supportiveOnly": {"patterns": PATTERNS, "backdrop": "Supportive"},
+    "S3_calmerFirst": {"patterns": PATTERNS, "calm": 0.2},
+    "S4_deeperDips": {"patterns": ("Pullback in uptrend",), "deep": True},
+}
+ALIASES = {"pullbackOnly": "S1_pullbacksOnly"}   # name used for the first few days
+
 
 def lin(x, zero, full):
     """Linear 0-100 score: `zero` maps to 0, `full` to 100, clipped. Works on arrays too."""
@@ -40,10 +51,18 @@ def breakout_quality(rvol, loc, tight_pre):
     return 0.4 * lin(rvol, 1.5, 3.0) + 0.3 * lin(loc, 0.5, 1.0) + 0.3 * lin(tight_pre, 6.0, 2.0)
 
 
-def pullback_quality(depth, near, pb_vol):
+def pullback_quality(depth, near, pb_vol, deep=False):
     d = np.asarray(depth, dtype=float)
-    depth_s = np.where(d <= 3.0, lin(d, 1.0, 1.5), lin(d, 5.0, 3.0))
+    if deep:   # S4: deeper dips score higher, up to 4 ATR
+        depth_s = np.where(d <= 4.0, lin(d, 1.5, 4.0), lin(d, 6.0, 4.0))
+    else:
+        depth_s = np.where(d <= 3.0, lin(d, 1.0, 1.5), lin(d, 5.0, 3.0))
     return 0.4 * depth_s + 0.3 * lin(near, 1.0, 0.0) + 0.3 * lin(pb_vol, 0.9, 0.5)
+
+
+def calm_score(atr_pct):
+    """S3: 100 for a 1.5% typical daily move, 0 for 7%."""
+    return lin(atr_pct, 0.07, 0.015)
 
 
 def score_parts(strength_pct, pattern_q, slope_pct, ext50, near_high, updown):
@@ -72,12 +91,10 @@ def _eligible(rec, sw, setup):
             and m.get("high52"))
 
 
-def build(scored, readings, tech, names, signal_date, patterns=PATTERNS, variant="main"):
-    """Today's ranked Swing Setups (list of dicts).
-
-    variant "pullbackOnly" is a pre-declared alternative tracked side by side: in the
-    first backtest, pullbacks did better than breakouts over 5 days. It is only
-    adopted if it also wins on new, live data."""
+def build(scored, readings, tech, names, signal_date, variant="main", backdrop=None):
+    """Today's ranked Swing Setups (list of dicts) for one variant (see VARIANTS)."""
+    cfg = VARIANTS[variant]
+    patterns = cfg["patterns"]
     uniq = {}
     for recs in scored.values():
         for s, r in recs.items():
@@ -91,6 +108,10 @@ def build(scored, readings, tech, names, signal_date, patterns=PATTERNS, variant
         sw = rd.get("swing") or {}
         if rd["setup"] not in patterns or not _eligible(r, sw, rd["setup"]):
             continue
+        if cfg.get("backdrop"):
+            mkt = "ca" if r["currency"] == "CAD" else "us"
+            if ((backdrop or {}).get(mkt) or {}).get("state") != cfg["backdrop"]:
+                continue
         t, b = tech.get(s, {}), bench[r["currency"]]
         if t.get("ret63") is None or t.get("ret126_21") is None:
             continue
@@ -100,7 +121,8 @@ def build(scored, readings, tech, names, signal_date, patterns=PATTERNS, variant
             pq = float(breakout_quality(bo.get("rvol") or 0, bo.get("loc") or 0, bo.get("tightPre") or 9))
         else:
             pb = sw.get("pullback") or {}
-            pq = float(pullback_quality(pb.get("depth") or 0, pb.get("near") or 9, pb.get("pbVol") or 9))
+            pq = float(pullback_quality(pb.get("depth") or 0, pb.get("near") or 9, pb.get("pbVol") or 9,
+                                        deep=cfg.get("deep", False)))
         rows.append({"sym": s, "rec": r, "rd": rd, "strength": strength, "pattern": pq,
                      "slope50": sw.get("slope50") or 0})
     if not rows:
@@ -113,11 +135,16 @@ def build(scored, readings, tech, names, signal_date, patterns=PATTERNS, variant
                                      x.rec["price"] / x.rec["metrics"]["high52"],
                                      x.rd["swing"].get("updown") or 1))
                    for x in df.itertuples()]
+    if cfg.get("calm"):
+        w = cfg["calm"]
+        df["score"] = [(1 - w) * sc + w * float(calm_score(x.rd["swing"].get("atrPct") or 0.07))
+                       for sc, x in zip(df["score"], df.itertuples())]
     df = df.sort_values("score", ascending=False)
+    pat_cap = MAX_PER_PATTERN if len(cfg["patterns"]) > 1 else TOP_N   # one-pattern variants fill all 10
     out, sectors, patterns = [], Counter(), Counter()
     for x in df.itertuples():
         r, rd = x.rec, x.rd
-        if sectors[r["sector"]] >= MAX_PER_SECTOR or patterns[rd["setup"]] >= MAX_PER_PATTERN:
+        if sectors[r["sector"]] >= MAX_PER_SECTOR or patterns[rd["setup"]] >= pat_cap:
             continue
         sectors[r["sector"]] += 1
         patterns[rd["setup"]] += 1
@@ -183,7 +210,7 @@ def _grade(row, df, bdf):
         row["mfe"] = float(win["High"].max()) / entry - 1
 
 
-def update(scored, readings, tech, hist, names, signal_date):
+def update(scored, readings, tech, hist, names, signal_date, backdrop=None):
     """Grade earlier lists, then log today's list. Returns today's list."""
     history = load_state(HISTORY_FILE, []) or []
     for row in history:
@@ -196,11 +223,34 @@ def update(scored, readings, tech, hist, names, signal_date):
             log(f"swing grading failed for {row['yahoo']}: {e}")
     today = []
     if not any(r["signalDate"] == signal_date for r in history):
-        today = build(scored, readings, tech, names, signal_date)
-        alt = build(scored, readings, tech, names, signal_date,
-                    patterns=("Pullback in uptrend",), variant="pullbackOnly")
-        history.extend(today + alt)
+        for v in VARIANTS:
+            rows = build(scored, readings, tech, names, signal_date, variant=v, backdrop=backdrop)
+            if v == "main":
+                today = rows
+            history.extend(rows)
     save_state(HISTORY_FILE, history)
     log(f"swing setups (silent): {len(today)} logged for {signal_date}: "
         + ", ".join(f"{r['yahoo']} ({r['pattern'].split()[0]})" for r in today))
     return today
+
+
+def lab_summary(history=None):
+    """Live comparison of the variants, from graded silent picks."""
+    history = history if history is not None else (load_state(HISTORY_FILE, []) or [])
+    out = {}
+    for v in VARIANTS:
+        rows = [r for r in history if ALIASES.get(r.get("variant", "main"), r.get("variant", "main")) == v]
+        g5 = [r["results"]["5d"] for r in rows if "5d" in r.get("results", {})
+              and r["results"]["5d"].get("excess") is not None]
+        oc = [r["outcome"] for r in rows if r.get("outcome")]
+        days = sorted({r["signalDate"] for r in rows})
+        out[v] = {
+            "picks": len(rows), "days": len(days), "graded5d": len(g5),
+            "avgExcess5d": (sum(x["excess"] for x in g5) / len(g5)) if g5 else None,
+            "beat5d": (sum(x["excess"] > 0 for x in g5) / len(g5)) if g5 else None,
+            "worked": (oc.count("Worked") / len(oc)) if oc else None,
+            "failed": (oc.count("Failed") / len(oc)) if oc else None,
+            "avgWorstDip": (sum(r["mae"] for r in rows if "mae" in r) /
+                            max(1, sum(1 for r in rows if "mae" in r))) if any("mae" in r for r in rows) else None,
+        }
+    return out

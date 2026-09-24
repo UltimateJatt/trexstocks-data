@@ -15,7 +15,7 @@ from datetime import date
 import pandas as pd
 
 from . import (config, universe, market, fundamentals, technicals, scoring, picks,
-               track, portfolio, publish, risklevels, coach, swing)
+               track, portfolio, publish, risklevels, coach, swing, lab)
 from .util import (now_et, today_et, in_window, display_symbol, load_state, save_state,
                    log, currency_of, clean)
 
@@ -65,15 +65,20 @@ def prep(args):
     scored = scoring.score_all(lgroups, tech, fund, {}, today=today_et())
     risklevels.attach(scored)
     charts, readings = _chart_coach(scored, hist)
+    backdrop = coach.backdrop(tech, lgroups)
     _score_snapshot(scored, tech)
     try:  # silent Swing Setups: logged and graded, not shown on the site yet
         swing.update(scored, readings, tech, hist, names,
-                     (tech.get("^GSPC") or {}).get("asOf") or today_et().isoformat())
+                     (tech.get("^GSPC") or {}).get("asOf") or today_et().isoformat(), backdrop)
     except Exception as e:
         log(f"WARNING swing setups failed: {e}")
+    try:  # model lab: live comparison of alternatives + factor monitor
+        lab.write_report()
+    except Exception as e:
+        log(f"WARNING model lab report failed: {e}")
     out = _lookup_payload(scored, names, now_et(), c)
     out["risk"] = risklevels.payload(scored, names, now_et().isoformat())
-    out["backdrop"] = {"asOf": now_et().isoformat(), **coach.backdrop(tech, lgroups)}
+    out["backdrop"] = {"asOf": now_et().isoformat(), **backdrop}
     out.update(charts)
     publish.put(out, dry=args.dry)
 
@@ -128,14 +133,17 @@ def _score_snapshot(scored, tech):
             seen.setdefault(s, r)
     buf = io.StringIO()
     w = csv.writer(buf)
+    fac = scoring.FACTORS
     w.writerow(["date", "ticker", "trexScore", "trexPct", "bestFit",
-                "steady", "balanced", "bold", "close", "model", "setup"])
+                "steady", "balanced", "bold", "close", "model", "setup",
+                "currency", "sector"] + fac)
     for s in sorted(seen):
         r = seen[s]
         fits = r.get("riskFits") or {}
         w.writerow([day, s, r["trexScore"], r["trexPct"], r["bestFit"] or "",
                     fits.get("steady"), fits.get("balanced"), fits.get("bold"),
-                    round(r["price"], 4), r["model"], r.get("setup") or ""])
+                    round(r["price"], 4), r["model"], r.get("setup") or "",
+                    r["currency"], r["sector"]] + [(r["factors"] or {}).get(k) for k in fac])
     with gzip.GzipFile(path, "wb", mtime=0) as gz:
         gz.write(buf.getvalue().encode())
     log(f"score snapshot saved: {path.name} ({len(seen)} stocks)")
