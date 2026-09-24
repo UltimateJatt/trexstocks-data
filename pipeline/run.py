@@ -14,7 +14,7 @@ from datetime import date
 import pandas as pd
 
 from . import (config, universe, market, fundamentals, technicals, scoring, picks,
-               track, portfolio, publish)
+               track, portfolio, publish, risklevels)
 from .util import (now_et, today_et, in_window, display_symbol, load_state, save_state,
                    log, currency_of)
 
@@ -61,7 +61,38 @@ def prep(args):
         if not names.get(s):
             names[s] = f.get("name")
     scored = scoring.score_all(universe.lookup_groups(c), tech, fund, {}, today=today_et())
-    publish.put(_lookup_payload(scored, names, now_et(), c), dry=args.dry)
+    risklevels.attach(scored)
+    _score_snapshot(scored, tech)
+    out = _lookup_payload(scored, names, now_et(), c)
+    out["risk"] = risklevels.payload(scored, names, now_et().isoformat())
+    publish.put(out, dry=args.dry)
+
+
+def _score_snapshot(scored, tech):
+    """Save every stock's scores for the last completed trading day (one small file
+    a day). Score history, "Rising Scores" and "What changed" are built from these;
+    past days can't be recreated later, so this starts now."""
+    day = (tech.get("^GSPC") or {}).get("asOf") or today_et().isoformat()
+    d = config.SNAPSHOT_DIR
+    d.mkdir(parents=True, exist_ok=True)
+    path = d / f"scores-{day}.csv.gz"
+    seen = {}
+    for recs in scored.values():
+        for s, r in recs.items():
+            seen.setdefault(s, r)
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["date", "ticker", "trexScore", "trexPct", "bestFit",
+                "steady", "balanced", "bold", "close", "model"])
+    for s in sorted(seen):
+        r = seen[s]
+        fits = r.get("riskFits") or {}
+        w.writerow([day, s, r["trexScore"], r["trexPct"], r["bestFit"] or "",
+                    fits.get("steady"), fits.get("balanced"), fits.get("bold"),
+                    round(r["price"], 4), r["model"]])
+    with gzip.GzipFile(path, "wb", mtime=0) as gz:
+        gz.write(buf.getvalue().encode())
+    log(f"score snapshot saved: {path.name} ({len(seen)} stocks)")
 
 
 def _weekly_snapshot(c, fund):
@@ -237,6 +268,7 @@ def refresh(args):
             if extra:
                 live.update(market.quotes(extra))
             scored = scoring.score_all(lgroups, tech, fund, live, today=today_et())
+            risklevels.attach(scored)
             chosen, notes = picks.choose(scored, history, live, names, today_iso)
             history.extend(picks.history_rows(chosen, today_iso, live))
             save_state(HISTORY_FILE, history)
@@ -250,6 +282,7 @@ def refresh(args):
             save_state("picks_today.json", picks_payload)
             payload["picks"] = picks_payload
             payload.update(_lookup_payload(scored, names, t, c))
+            payload["risk"] = risklevels.payload(scored, names, t.isoformat())
             log("picks locked: " + ", ".join(
                 p["symbol"] for cats in chosen.values() for p in cats.values() if p)
                 + (f" | notes: {notes}" if notes else ""))
@@ -325,6 +358,7 @@ def _lookup_table(scored, names, t, c=None):
                 "trexScore": r["trexScore"], "trexPct": r["trexPct"], "tier": r["tier"],
                 "coverage": r["coverage"], "limitedData": r["limitedData"],
                 "bestFit": r["bestFit"], "model": r["model"],
+                "riskFits": r.get("riskFits"), "riskWhyNot": r.get("riskWhyNot"),
                 "reasons": scoring.reasons(r),
             }
     return {"asOf": t.isoformat(), "count": len(table), "stocks": table}

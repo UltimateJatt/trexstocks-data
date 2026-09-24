@@ -27,14 +27,22 @@ def _ret(c, a, b=None):
 
 
 def _beta(daily, bench_daily):
-    """Beta vs the stock's home index over the last year of daily returns."""
+    """(beta, correlation) vs the stock's home index over the last year of daily returns.
+
+    Correlation matters for reading beta: when a stock's moves have little to do
+    with the market's (correlation near 0), its beta is near 0 too, which says
+    nothing about how much the stock swings on its own.
+    """
     if bench_daily is None:
-        return None
+        return None, None
     both = pd.concat([daily, bench_daily], axis=1, join="inner").dropna().tail(RISK_WINDOW)
     if len(both) < RISK_MIN_OBS:
-        return None
+        return None, None
     var = both.iloc[:, 1].var()
-    return float(both.iloc[:, 0].cov(both.iloc[:, 1]) / var) if var else None
+    if not var:
+        return None, None
+    return (float(both.iloc[:, 0].cov(both.iloc[:, 1]) / var),
+            float(both.iloc[:, 0].corr(both.iloc[:, 1])))
 
 
 def _max_drawdown(adj):
@@ -61,6 +69,7 @@ def compute(df, bench_daily=None):
     down = daily[daily < 0].tail(60)
     avg_vol50 = float(v.tail(50).mean())
     high52 = float(df["High"].astype(float).tail(252).max())
+    beta, corr = _beta(daily, bench_daily)
     return {
         "bars": n,
         "close": close,
@@ -79,7 +88,8 @@ def compute(df, bench_daily=None):
         "avgDollarVol50": float((c.tail(50) * v.tail(50)).mean()),
         "volatility60": float(daily.tail(60).std() * np.sqrt(252)),
         "downsideVol60": float(np.sqrt((down ** 2).sum() / 60) * np.sqrt(252)) if len(down) else 0.0,
-        "beta": _beta(daily, bench_daily),
+        "beta": beta,
+        "marketCorr": corr,
         "maxDrawdown": _max_drawdown(a),
         "high52": high52,
         "low52": float(df["Low"].astype(float).tail(252).min()),

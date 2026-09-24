@@ -189,7 +189,7 @@ def score_all(groups, tech, fund, live, today=None):
     df = pd.DataFrame(rows).set_index("sym")
     # Older saved measurements may lack newer columns; treat them as missing data
     for col in ("dist50", "dist200", "slope50", "rsi14", "volTrend", "volatility60",
-                "beta", "maxDrawdown", "fromHigh", "high52", "low52", "ret63",
+                "beta", "marketCorr", "maxDrawdown", "fromHigh", "high52", "low52", "ret63",
                 "avgDollarVol50", "bars"):
         if col not in df:
             df[col] = np.nan
@@ -283,6 +283,7 @@ def score_all(groups, tech, fund, live, today=None):
                 "dist200": dist200, "rs3m": _f(r["rs3m"]), "ret63": _f(r["ret63"]),
                 "rsi14": _f(r["rsi14"]), "volTrend": _f(r["volTrend"]),
                 "volatility60": _f(r["volatility60"]), "beta": _f(r["beta"]),
+                "marketCorr": _f(r["marketCorr"]),
                 "maxDrawdown": _f(r["maxDrawdown"]), "fromHigh": _f(r["fromHigh"]),
                 "high52": _f(r["high52"]), "low52": _f(r["low52"]),
                 "pe": _f(r["peUsed"]), "sectorPE": _f(r["sectorPE"]),
