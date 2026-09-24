@@ -48,8 +48,9 @@ def _fetch(sym):
 def refresh(symbols, per_run=PER_RUN, priority=None):
     data = load_state(STATE_FILE, {})
     missing = [s for s in symbols if s not in data]
+    # Stocks whose last fetch came back empty go first, then the oldest data
     stale = sorted((s for s in symbols if s in data),
-                   key=lambda s: data[s].get("fetched") or "")
+                   key=lambda s: (not data[s].get("empty"), data[s].get("fetched") or ""))
     # New companies first (index members before the wide US list), capped per run so
     # the first big fill-in is spread over a few mornings instead of timing out.
     missing.sort(key=lambda s: (s not in (priority or set()), s))
@@ -62,8 +63,14 @@ def refresh(symbols, per_run=PER_RUN, priority=None):
                 data[s] = rec
                 ok += 1
             else:
-                # remember the attempt so it waits its turn instead of blocking new stocks
-                data[s] = {"fetched": now_et().isoformat(), "empty": True}
+                old = data.get(s)
+                if old and not old.get("empty"):
+                    # Yahoo sent nothing this time: keep the last good data (a blank reply
+                    # used to wipe it, e.g. Newmont). It stays first in line for a retry.
+                    old["lastFailed"] = now_et().isoformat()
+                else:
+                    # remember the attempt so it waits its turn instead of blocking new stocks
+                    data[s] = {"fetched": now_et().isoformat(), "empty": True}
                 fail += 1
         except Exception as e:
             fail += 1
