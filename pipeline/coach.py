@@ -208,7 +208,8 @@ def analyse(df, days_to_earnings=None, ccy="USD", bench_dates=None):
         if k > 0:
             conds.append(("Has held above the breakout level since", held))
         if all(ok for _, ok in conds):
-            bo = {"k": k, "level": level, "low": float(l.iloc[t]), "rvol": vk,
+            pre = (float(h.iloc[max(0, t - 10):t].max() - l.iloc[max(0, t - 10):t].min()) / atr) if atr else None
+            bo = {"k": k, "level": level, "low": float(l.iloc[t]), "rvol": vk, "loc": loc, "tightPre": pre,
                   "is52": high52_prior is not None and float(c.iloc[t]) > float(h.iloc[max(0, t - 252):t].max()),
                   "conds": conds}
             break
@@ -353,6 +354,17 @@ def analyse(df, days_to_earnings=None, ccy="USD", bench_dates=None):
         },
         "sma": {"s20": _price(s20), "s50": _price(s50), "s200": _price(s200) if s200 else None},
         "missingDays": missing,
+        # Numbers Swing Setups uses (not shown on the stock page)
+        "swing": {
+            "breakout": ({"rvol": _f(bo["rvol"], 2), "loc": _f(bo["loc"], 2), "tightPre": _f(bo["tightPre"], 2),
+                          "daysAgo": bo["k"]} if bo else None),
+            "pullback": {"depth": _f(depth, 2), "near": _f(near, 2), "pbVol": _f(pb_vol, 2)},
+            "ext50": _f(ext50, 2), "slope50": _f(slope50, 4), "atrPct": _f(atr_pct, 4), "gap5": _f(gap5, 4),
+            "updown": _f(updown, 2), "atr": _f(atr, 4),
+            "above200": bool(s200 is not None and close > s200 and s50 > s200),
+            "medDollarVol20": _f(float((c.iloc[-20:] * v.iloc[-20:]).median()), 0),
+            "bars": n,
+        },
     }
 
 

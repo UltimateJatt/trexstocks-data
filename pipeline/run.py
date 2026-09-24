@@ -15,7 +15,7 @@ from datetime import date
 import pandas as pd
 
 from . import (config, universe, market, fundamentals, technicals, scoring, picks,
-               track, portfolio, publish, risklevels, coach)
+               track, portfolio, publish, risklevels, coach, swing)
 from .util import (now_et, today_et, in_window, display_symbol, load_state, save_state,
                    log, currency_of, clean)
 
@@ -64,8 +64,13 @@ def prep(args):
     lgroups = universe.lookup_groups(c)
     scored = scoring.score_all(lgroups, tech, fund, {}, today=today_et())
     risklevels.attach(scored)
-    charts = _chart_coach(scored, hist)
+    charts, readings = _chart_coach(scored, hist)
     _score_snapshot(scored, tech)
+    try:  # silent Swing Setups: logged and graded, not shown on the site yet
+        swing.update(scored, readings, tech, hist, names,
+                     (tech.get("^GSPC") or {}).get("asOf") or today_et().isoformat())
+    except Exception as e:
+        log(f"WARNING swing setups failed: {e}")
     out = _lookup_payload(scored, names, now_et(), c)
     out["risk"] = risklevels.payload(scored, names, now_et().isoformat())
     out["backdrop"] = {"asOf": now_et().isoformat(), **coach.backdrop(tech, lgroups)}
@@ -98,13 +103,15 @@ def _chart_coach(scored, hist):
                         log(f"chart coach failed for {sym}: {e}")
                 done[sym] = reading
                 if reading:
-                    entry = json.dumps(clean({"coach": reading, "chart": series}),
+                    public = {k: v for k, v in reading.items() if k != "swing"}
+                    entry = json.dumps(clean({"coach": public, "chart": series}),
                                        separators=(",", ":"))
                     lines.setdefault(sym[0].upper(), []).append(f"{sym}\t{entry}")
             r["setup"] = (done[sym] or {}).get("setup")
     save_state("setups.json", {k: (v or {}).get("setup") for k, v in done.items()})
     log(f"chart coach: {len(done) - failed} stocks, {failed} failed")
-    return {f"chart_{k}": "\n" + "\n".join(v) + "\n" for k, v in lines.items()}
+    return ({f"chart_{k}": "\n" + "\n".join(v) + "\n" for k, v in lines.items()},
+            {k: v for k, v in done.items() if v})
 
 
 def _score_snapshot(scored, tech):
