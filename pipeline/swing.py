@@ -72,8 +72,12 @@ def _eligible(rec, sw, setup):
             and m.get("high52"))
 
 
-def build(scored, readings, tech, names, signal_date):
-    """Today's ranked Swing Setups (list of dicts)."""
+def build(scored, readings, tech, names, signal_date, patterns=PATTERNS, variant="main"):
+    """Today's ranked Swing Setups (list of dicts).
+
+    variant "pullbackOnly" is a pre-declared alternative tracked side by side: in the
+    first backtest, pullbacks did better than breakouts over 5 days. It is only
+    adopted if it also wins on new, live data."""
     uniq = {}
     for recs in scored.values():
         for s, r in recs.items():
@@ -85,7 +89,7 @@ def build(scored, readings, tech, names, signal_date):
         if not rd:
             continue
         sw = rd.get("swing") or {}
-        if not _eligible(r, sw, rd["setup"]):
+        if rd["setup"] not in patterns or not _eligible(r, sw, rd["setup"]):
             continue
         t, b = tech.get(s, {}), bench[r["currency"]]
         if t.get("ret63") is None or t.get("ret126_21") is None:
@@ -123,7 +127,7 @@ def build(scored, readings, tech, names, signal_date):
             "sector": r["sector"], "currency": r["currency"], "marketCap": r.get("marketCap"),
             "signalClose": r["price"], "breakLevel": rd.get("breakLevel"),
             "setupArea": rd.get("setupArea"), "ceiling": rd.get("ceiling"),
-            "atr": rd["swing"].get("atr"), "model": MODEL, "results": {},
+            "atr": rd["swing"].get("atr"), "model": MODEL, "variant": variant, "results": {},
         })
         if len(out) == TOP_N:
             break
@@ -193,7 +197,9 @@ def update(scored, readings, tech, hist, names, signal_date):
     today = []
     if not any(r["signalDate"] == signal_date for r in history):
         today = build(scored, readings, tech, names, signal_date)
-        history.extend(today)
+        alt = build(scored, readings, tech, names, signal_date,
+                    patterns=("Pullback in uptrend",), variant="pullbackOnly")
+        history.extend(today + alt)
     save_state(HISTORY_FILE, history)
     log(f"swing setups (silent): {len(today)} logged for {signal_date}: "
         + ", ".join(f"{r['yahoo']} ({r['pattern'].split()[0]})" for r in today))

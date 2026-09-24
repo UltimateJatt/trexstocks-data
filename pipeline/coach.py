@@ -298,7 +298,7 @@ def analyse(df, days_to_earnings=None, ccy="USD", bench_dates=None):
         if ext20 is not None:
             bits.append(f"{ext20:.1f} ATRs above its 20-day average")
         s.append(f"Up strongly, now {' and '.join(bits) or 'well above its averages'} (RSI {rsi14:.0f}).")
-        s.append("Stretched moves often pause or pull back, though they can keep going. "
+        s.append("Prices this far above their averages can swing sharply in either direction. "
                  "There is no defined setup at this price.")
     elif setup == "Consolidation":
         s.append(f"Above its 50-day average and trading in a tight range ({M(area[0])} to {M(area[1])}) "
