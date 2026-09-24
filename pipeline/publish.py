@@ -40,16 +40,26 @@ def put(payloads: dict, dry=False):
     out_dir.mkdir(parents=True, exist_ok=True)
     body = []
     for k, v in payloads.items():
-        text = json.dumps(clean(v), separators=(",", ":"))
-        (out_dir / f"{k}.json").write_text(text)
+        # A plain string is stored as-is (the chart files are line-per-stock text)
+        text = v if isinstance(v, str) else json.dumps(clean(v), separators=(",", ":"))
+        (out_dir / f"{k}.{'txt' if isinstance(v, str) else 'json'}").write_text(text)
         body.append({"key": k, "value": text})
     sizes = ", ".join(f"{b['key']} {len(b['value']) // 1024}KB" for b in body)
     base, h = _base()
     if dry or not base:
         log(f"DRY RUN (not sent to Cloudflare): {sizes}")
         return
-    r = requests.put(f"{base}/bulk", headers={**h, "Content-Type": "application/json"},
-                     data=json.dumps(body), timeout=60)
-    if r.status_code != 200 or not r.json().get("success"):
-        raise RuntimeError(f"Cloudflare KV upload failed: {r.status_code} {r.text[:300]}")
+    # Send in batches of about 20MB so large uploads stay well inside Cloudflare's limits
+    batch, size = [], 0
+    for item in body + [None]:
+        if item is not None and (not batch or size + len(item["value"]) < 20_000_000):
+            batch.append(item)
+            size += len(item["value"])
+            continue
+        if batch:
+            r = requests.put(f"{base}/bulk", headers={**h, "Content-Type": "application/json"},
+                             data=json.dumps(batch), timeout=120)
+            if r.status_code != 200 or not r.json().get("success"):
+                raise RuntimeError(f"Cloudflare KV upload failed: {r.status_code} {r.text[:300]}")
+        batch, size = ([item], len(item["value"])) if item is not None else ([], 0)
     log(f"published to Cloudflare KV: {sizes}")

@@ -9,14 +9,15 @@ import argparse
 import csv
 import gzip
 import io
+import json
 from datetime import date
 
 import pandas as pd
 
 from . import (config, universe, market, fundamentals, technicals, scoring, picks,
-               track, portfolio, publish, risklevels)
+               track, portfolio, publish, risklevels, coach)
 from .util import (now_et, today_et, in_window, display_symbol, load_state, save_state,
-                   log, currency_of)
+                   log, currency_of, clean)
 
 BENCH = [v["yahoo"] for v in config.INDEX_SYMBOLS.values()]
 MAIN = ("sp500", "nasdaq", "tsx")
@@ -60,12 +61,50 @@ def prep(args):
     for s, f in fund.items():
         if not names.get(s):
             names[s] = f.get("name")
-    scored = scoring.score_all(universe.lookup_groups(c), tech, fund, {}, today=today_et())
+    lgroups = universe.lookup_groups(c)
+    scored = scoring.score_all(lgroups, tech, fund, {}, today=today_et())
     risklevels.attach(scored)
+    charts = _chart_coach(scored, hist)
     _score_snapshot(scored, tech)
     out = _lookup_payload(scored, names, now_et(), c)
     out["risk"] = risklevels.payload(scored, names, now_et().isoformat())
+    out["backdrop"] = {"asOf": now_et().isoformat(), **coach.backdrop(tech, lgroups)}
+    out.update(charts)
     publish.put(out, dry=args.dry)
+
+
+def _chart_coach(scored, hist):
+    """Chart Coach reading + 6-month chart for every covered stock.
+
+    Stored as one text file per first letter, one stock per line ("SYMBOL<tab>{json}"),
+    so the Worker can pull out a single stock without reading the whole file.
+    Also adds the setup label to each scored record.
+    """
+    bench_dates = {"USD": hist["^GSPC"].index if "^GSPC" in hist else None,
+                   "CAD": hist["^GSPTSE"].index if "^GSPTSE" in hist else None}
+    lines, done, failed = {}, {}, 0
+    for recs in scored.values():
+        for sym, r in recs.items():
+            if sym not in done:
+                df = hist.get(sym)
+                try:
+                    reading = coach.analyse(df, r.get("daysToEarnings"), r["currency"],
+                                            bench_dates[r["currency"]])
+                    series = coach.chart_series(df) if reading else None
+                except Exception as e:  # one odd stock must never stop the run
+                    reading, series = None, None
+                    failed += 1
+                    if failed <= 5:
+                        log(f"chart coach failed for {sym}: {e}")
+                done[sym] = reading
+                if reading:
+                    entry = json.dumps(clean({"coach": reading, "chart": series}),
+                                       separators=(",", ":"))
+                    lines.setdefault(sym[0].upper(), []).append(f"{sym}\t{entry}")
+            r["setup"] = (done[sym] or {}).get("setup")
+    save_state("setups.json", {k: (v or {}).get("setup") for k, v in done.items()})
+    log(f"chart coach: {len(done) - failed} stocks, {failed} failed")
+    return {f"chart_{k}": "\n" + "\n".join(v) + "\n" for k, v in lines.items()}
 
 
 def _score_snapshot(scored, tech):
@@ -83,13 +122,13 @@ def _score_snapshot(scored, tech):
     buf = io.StringIO()
     w = csv.writer(buf)
     w.writerow(["date", "ticker", "trexScore", "trexPct", "bestFit",
-                "steady", "balanced", "bold", "close", "model"])
+                "steady", "balanced", "bold", "close", "model", "setup"])
     for s in sorted(seen):
         r = seen[s]
         fits = r.get("riskFits") or {}
         w.writerow([day, s, r["trexScore"], r["trexPct"], r["bestFit"] or "",
                     fits.get("steady"), fits.get("balanced"), fits.get("bold"),
-                    round(r["price"], 4), r["model"]])
+                    round(r["price"], 4), r["model"], r.get("setup") or ""])
     with gzip.GzipFile(path, "wb", mtime=0) as gz:
         gz.write(buf.getvalue().encode())
     log(f"score snapshot saved: {path.name} ({len(seen)} stocks)")
@@ -269,6 +308,10 @@ def refresh(args):
                 live.update(market.quotes(extra))
             scored = scoring.score_all(lgroups, tech, fund, live, today=today_et())
             risklevels.attach(scored)
+            setups = load_state("setups.json", {}) or {}
+            for recs in scored.values():
+                for s, r in recs.items():
+                    r["setup"] = setups.get(s)
             chosen, notes = picks.choose(scored, history, live, names, today_iso)
             history.extend(picks.history_rows(chosen, today_iso, live))
             save_state(HISTORY_FILE, history)
@@ -359,6 +402,7 @@ def _lookup_table(scored, names, t, c=None):
                 "coverage": r["coverage"], "limitedData": r["limitedData"],
                 "bestFit": r["bestFit"], "model": r["model"],
                 "riskFits": r.get("riskFits"), "riskWhyNot": r.get("riskWhyNot"),
+                "setup": r.get("setup"),
                 "reasons": scoring.reasons(r),
             }
     return {"asOf": t.isoformat(), "count": len(table), "stocks": table}
