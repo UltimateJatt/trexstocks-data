@@ -125,25 +125,76 @@ def history(symbols, period="1y", auto_adjust=False):
     return result
 
 
+def _quote_from_meta(j):
+    """Price and change exactly as Yahoo's quote page shows them.
+
+    Uses the quote block of a 1-day chart: the latest price and Yahoo's own
+    previous close. Daily candles can't be trusted for this, because Yahoo
+    sometimes leaves a whole day's candle empty (seen on TSX stocks), which made
+    the change look like a 2-day move.
+    """
+    try:
+        m = j["chart"]["result"][0]["meta"]
+    except (KeyError, IndexError, TypeError):
+        return None
+    price, pc, t = m.get("regularMarketPrice"), m.get("chartPreviousClose"), m.get("regularMarketTime")
+    if not price or not pc or not t:
+        return None
+    tz = m.get("exchangeTimezoneName") or "America/New_York"
+    day = pd.Timestamp(t, unit="s", tz="UTC").tz_convert(tz).date().isoformat()
+    return {
+        "price": float(price),
+        "prevClose": float(pc),
+        "change": float(price) - float(pc),
+        "changePercent": (float(price) - float(pc)) / float(pc) * 100,
+        "volume": float(m.get("regularMarketVolume") or 0),
+        "high": float(m.get("regularMarketDayHigh") or price),
+        "low": float(m.get("regularMarketDayLow") or price),
+        "date": day,
+    }
+
+
+def _quote_from_candles(d):
+    """Fallback when the quote block is missing: last two daily candles."""
+    if d is None or len(d) < 2:
+        return None
+    last, prev = d.iloc[-1], d.iloc[-2]
+    price, pc = float(last["Close"]), float(prev["Close"])
+    if not pc:
+        return None
+    return {
+        "price": price,
+        "prevClose": pc,
+        "change": price - pc,
+        "changePercent": (price - pc) / pc * 100,
+        "volume": float(last["Volume"]) if pd.notna(last["Volume"]) else 0.0,
+        "high": float(last["High"]) if pd.notna(last["High"]) else price,
+        "low": float(last["Low"]) if pd.notna(last["Low"]) else price,
+        "date": d.index[-1].date().isoformat(),
+    }
+
+
+def _quote(symbol):
+    j = _fetch_chart(symbol, "1d")
+    q = _quote_from_meta(j) if j else None
+    if q is None:
+        q = _quote_from_candles(_get(symbol, "5d"))
+    return q
+
+
 def quotes(symbols):
-    """Latest price, change vs previous close, and today's volume for each symbol."""
-    data = history(symbols, period="5d")
+    """Latest price, change vs Yahoo's previous close, and today's volume per symbol."""
+    symbols = list(dict.fromkeys(symbols))
     out = {}
-    for s, d in data.items():
-        if len(d) < 2:
-            continue
-        last, prev = d.iloc[-1], d.iloc[-2]
-        price, pc = float(last["Close"]), float(prev["Close"])
-        if not pc:
-            continue
-        out[s] = {
-            "price": price,
-            "prevClose": pc,
-            "change": price - pc,
-            "changePercent": (price - pc) / pc * 100,
-            "volume": float(last["Volume"]) if pd.notna(last["Volume"]) else 0.0,
-            "high": float(last["High"]) if pd.notna(last["High"]) else price,
-            "low": float(last["Low"]) if pd.notna(last["Low"]) else price,
-            "date": d.index[-1].date().isoformat(),
-        }
+    for attempt in (1, 2):
+        todo = [s for s in symbols if s not in out]
+        if not todo:
+            break
+        with ThreadPoolExecutor(WORKERS) as ex:
+            for s, q in zip(todo, ex.map(_quote, todo)):
+                if q:
+                    out[s] = q
+        if attempt == 1 and len(out) < len(symbols):
+            time.sleep(10)
+    log(f"quotes: got {len(out)}/{len(symbols)}")
     return out
