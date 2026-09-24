@@ -43,6 +43,7 @@ jobs:
           git config user.name "trexstocks-bot"
           git config user.email "trexstocks-bot@users.noreply.github.com"
           git add data/state
+          if [ -d data/lab ]; then git add data/lab; fi
           if git diff --cached --quiet; then echo "no state changes"; exit 0; fi
           git commit -m "data: daily prep $(date -u +%Y-%m-%d)"
           # If another run saved data while this one was working, keep this run's
