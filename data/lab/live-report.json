@@ -1,0 +1,71 @@
+{
+ "generated": "2026-09-25T08:28:42.553217-04:00",
+ "swing": {
+  "main": {
+   "picks": 10,
+   "days": 1,
+   "graded5d": 0,
+   "avgExcess5d": null,
+   "beat5d": null,
+   "worked": null,
+   "failed": null,
+   "avgWorstDip": null
+  },
+  "S1_pullbacksOnly": {
+   "picks": 10,
+   "days": 1,
+   "graded5d": 0,
+   "avgExcess5d": null,
+   "beat5d": null,
+   "worked": null,
+   "failed": null,
+   "avgWorstDip": null
+  },
+  "S2_supportiveOnly": {
+   "picks": 0,
+   "days": 0,
+   "graded5d": 0,
+   "avgExcess5d": null,
+   "beat5d": null,
+   "worked": null,
+   "failed": null,
+   "avgWorstDip": null
+  },
+  "S3_calmerFirst": {
+   "picks": 10,
+   "days": 1,
+   "graded5d": 0,
+   "avgExcess5d": null,
+   "beat5d": null,
+   "worked": null,
+   "failed": null,
+   "avgWorstDip": null
+  },
+  "S4_deeperDips": {
+   "picks": 10,
+   "days": 1,
+   "graded5d": 0,
+   "avgExcess5d": null,
+   "beat5d": null,
+   "worked": null,
+   "failed": null,
+   "avgWorstDip": null
+  }
+ },
+ "factorMonitor": {
+  "dates": 0,
+  "first": null,
+  "last": null,
+  "factors": {
+   "trexScore": {},
+   "trend": {},
+   "relStrength": {},
+   "entry": {},
+   "volume": {},
+   "risk": {},
+   "quality": {},
+   "value": {},
+   "growth": {}
+  }
+ }
+}
