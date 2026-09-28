@@ -19,7 +19,15 @@
   "atr": 2.0246,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0187,
+    "bench": 0.0044,
+    "excess": -0.023
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 36.45
  },
  {
   "signalDate": "2026-09-24",
@@ -41,7 +49,15 @@
   "atr": 1.4198,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0017,
+    "bench": 0.0044,
+    "excess": -0.0027
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.4
  },
  {
   "signalDate": "2026-09-24",
@@ -63,7 +79,15 @@
   "atr": 1.2318,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0177,
+    "bench": 0.0044,
+    "excess": -0.022
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.96
  },
  {
   "signalDate": "2026-09-24",
@@ -85,7 +109,15 @@
   "atr": 1.6221,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0171,
+    "bench": 0.0044,
+    "excess": 0.0127
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 52.66
  },
  {
   "signalDate": "2026-09-24",
@@ -107,7 +139,15 @@
   "atr": 0.8177,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0115,
+    "bench": 0.0044,
+    "excess": -0.0159
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 20.0
  },
  {
   "signalDate": "2026-09-24",
@@ -129,7 +169,15 @@
   "atr": 1.9532,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.017,
+    "bench": 0.0044,
+    "excess": -0.0213
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-09-24",
@@ -151,7 +199,15 @@
   "atr": 3.4829,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0038,
+    "bench": 0.0044,
+    "excess": -0.0006
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 126.78
  },
  {
   "signalDate": "2026-09-24",
@@ -173,7 +229,15 @@
   "atr": 0.6132,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0205,
+    "bench": 0.0044,
+    "excess": -0.0248
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 25.91
  },
  {
   "signalDate": "2026-09-24",
@@ -195,7 +259,15 @@
   "atr": 1.5324,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0088,
+    "bench": 0.0044,
+    "excess": -0.0131
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 56.97
  },
  {
   "signalDate": "2026-09-24",
@@ -217,7 +289,15 @@
   "atr": 3.2688,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0089,
+    "bench": 0.0044,
+    "excess": 0.0046
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 89.71
  },
  {
   "signalDate": "2026-09-24",
@@ -239,7 +319,15 @@
   "atr": 1.4198,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0017,
+    "bench": 0.0044,
+    "excess": -0.0027
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.4
  },
  {
   "signalDate": "2026-09-24",
@@ -261,7 +349,15 @@
   "atr": 1.9532,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.017,
+    "bench": 0.0044,
+    "excess": -0.0213
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-09-24",
@@ -283,7 +379,15 @@
   "atr": 15.1367,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.006,
+    "bench": 0.0044,
+    "excess": 0.0016
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 333.94
  },
  {
   "signalDate": "2026-09-24",
@@ -305,7 +409,15 @@
   "atr": 3.4829,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0038,
+    "bench": 0.0044,
+    "excess": -0.0006
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 126.78
  },
  {
   "signalDate": "2026-09-24",
@@ -327,7 +439,15 @@
   "atr": 3.2688,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0089,
+    "bench": 0.0044,
+    "excess": 0.0046
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 89.71
  },
  {
   "signalDate": "2026-09-24",
@@ -349,7 +469,15 @@
   "atr": 1.4669,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0031,
+    "bench": 0.0044,
+    "excess": -0.0074
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 35.79
  },
  {
   "signalDate": "2026-09-24",
@@ -371,7 +499,15 @@
   "atr": 1.5324,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0088,
+    "bench": 0.0044,
+    "excess": -0.0131
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 56.97
  },
  {
   "signalDate": "2026-09-24",
@@ -393,7 +529,15 @@
   "atr": 1.074,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0091,
+    "bench": 0.0044,
+    "excess": -0.0135
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 25.21
  },
  {
   "signalDate": "2026-09-24",
@@ -415,7 +559,15 @@
   "atr": 1.8021,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0028,
+    "bench": 0.0044,
+    "excess": -0.0016
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 68.0
  },
  {
   "signalDate": "2026-09-24",
@@ -437,7 +589,15 @@
   "atr": 0.5581,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0073,
+    "bench": 0.0044,
+    "excess": 0.003
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 28.66
  },
  {
   "signalDate": "2026-09-24",
@@ -459,7 +619,15 @@
   "atr": 1.6221,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0171,
+    "bench": 0.0044,
+    "excess": 0.0127
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 52.66
  },
  {
   "signalDate": "2026-09-24",
@@ -481,7 +649,15 @@
   "atr": 1.2318,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0177,
+    "bench": 0.0044,
+    "excess": -0.022
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.96
  },
  {
   "signalDate": "2026-09-24",
@@ -503,7 +679,15 @@
   "atr": 1.4198,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0017,
+    "bench": 0.0044,
+    "excess": -0.0027
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.4
  },
  {
   "signalDate": "2026-09-24",
@@ -525,7 +709,15 @@
   "atr": 10.0725,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0432,
+    "bench": 0.0044,
+    "excess": -0.0475
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 204.0
  },
  {
   "signalDate": "2026-09-24",
@@ -547,7 +739,15 @@
   "atr": 3.4829,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0038,
+    "bench": 0.0044,
+    "excess": -0.0006
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 126.78
  },
  {
   "signalDate": "2026-09-24",
@@ -569,7 +769,15 @@
   "atr": 0.6132,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0205,
+    "bench": 0.0044,
+    "excess": -0.0248
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 25.91
  },
  {
   "signalDate": "2026-09-24",
@@ -591,7 +799,15 @@
   "atr": 1.5324,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0088,
+    "bench": 0.0044,
+    "excess": -0.0131
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 56.97
  },
  {
   "signalDate": "2026-09-24",
@@ -613,7 +829,15 @@
   "atr": 1.9532,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.017,
+    "bench": 0.0044,
+    "excess": -0.0213
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-09-24",
@@ -635,7 +859,15 @@
   "atr": 0.8177,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0115,
+    "bench": 0.0044,
+    "excess": -0.0159
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 20.0
  },
  {
   "signalDate": "2026-09-24",
@@ -657,7 +889,15 @@
   "atr": 3.2688,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0089,
+    "bench": 0.0044,
+    "excess": 0.0046
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 89.71
  },
  {
   "signalDate": "2026-09-24",
@@ -679,7 +919,15 @@
   "atr": 1.4198,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0017,
+    "bench": 0.0044,
+    "excess": -0.0027
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 29.4
  },
  {
   "signalDate": "2026-09-24",
@@ -701,7 +949,15 @@
   "atr": 15.1367,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.006,
+    "bench": 0.0044,
+    "excess": 0.0016
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 333.94
  },
  {
   "signalDate": "2026-09-24",
@@ -723,7 +979,15 @@
   "atr": 1.9532,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.017,
+    "bench": 0.0044,
+    "excess": -0.0213
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-09-24",
@@ -745,7 +1009,15 @@
   "atr": 3.4829,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0038,
+    "bench": 0.0044,
+    "excess": -0.0006
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 126.78
  },
  {
   "signalDate": "2026-09-24",
@@ -767,7 +1039,15 @@
   "atr": 1.4669,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0031,
+    "bench": 0.0044,
+    "excess": -0.0074
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 35.79
  },
  {
   "signalDate": "2026-09-24",
@@ -789,7 +1069,15 @@
   "atr": 26.6865,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0059,
+    "bench": 0.0044,
+    "excess": -0.0103
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 965.23
  },
  {
   "signalDate": "2026-09-24",
@@ -811,7 +1099,15 @@
   "atr": 3.2688,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0089,
+    "bench": 0.0044,
+    "excess": 0.0046
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 89.71
  },
  {
   "signalDate": "2026-09-24",
@@ -833,7 +1129,15 @@
   "atr": 1.5324,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0088,
+    "bench": 0.0044,
+    "excess": -0.0131
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 56.97
  },
  {
   "signalDate": "2026-09-24",
@@ -855,7 +1159,15 @@
   "atr": 0.6112,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0073,
+    "bench": 0.0015,
+    "excess": -0.0088
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 16.53
  },
  {
   "signalDate": "2026-09-24",
@@ -875,6 +1187,850 @@
   ],
   "ceiling": 67.1,
   "atr": 2.2827,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {
+   "1d": {
+    "return": 0.0023,
+    "bench": 0.0044,
+    "excess": -0.0021
+   }
+  },
+  "entryDate": "2026-09-25",
+  "entryOpen": 65.9
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ADPT",
+  "name": "Adaptive Biotechnologies Corporation Common Stock",
+  "pattern": "Breakout",
+  "score": 74.8,
+  "trexScore": 64,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4696905630.06,
+  "signalClose": 29.43,
+  "breakLevel": 27.5,
+  "setupArea": [
+   28.78,
+   30.03
+  ],
+  "ceiling": null,
+  "atr": 1.2456,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZETA",
+  "name": "Zeta Global Holdings Corp. Class A Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 72.8,
+  "trexScore": 70,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 6644485292.75,
+  "signalClose": 29.45,
+  "breakLevel": 26.76,
+  "setupArea": [
+   29.95,
+   31.36
+  ],
+  "ceiling": 31.54,
+  "atr": 1.4169,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 68.9,
+  "trexScore": 69,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 700961033.34,
+  "signalClose": 7.74,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.5,
+   7.95
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4489,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 67.0,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44681763685.86,
+  "signalClose": 127.26,
+  "breakLevel": 125.36,
+  "setupArea": [
+   126.3,
+   129.6
+  ],
+  "ceiling": 132.25,
+  "atr": 3.3011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "TBBB",
+  "name": "BBB Foods Inc. Class A Common Shares",
+  "pattern": "Breakout",
+  "score": 66.0,
+  "trexScore": 67,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 4174372348.64,
+  "signalClose": 53.56,
+  "breakLevel": 52.07,
+  "setupArea": [
+   53.33,
+   54.97
+  ],
+  "ceiling": null,
+  "atr": 1.6415,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 65.3,
+  "trexScore": 76,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3437877043.29,
+  "signalClose": 23.97,
+  "breakLevel": 22.8,
+  "setupArea": [
+   23.64,
+   24.63
+  ],
+  "ceiling": 25.11,
+  "atr": 0.9909,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ANF",
+  "name": "Abercrombie & Fitch Company Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 61.1,
+  "trexScore": 73,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 5758769302.67,
+  "signalClose": 135.71,
+  "breakLevel": 98.9,
+  "setupArea": [
+   137.88,
+   144.01
+  ],
+  "ceiling": 153.05,
+  "atr": 6.1309,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 60.7,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18982453945.98,
+  "signalClose": 90.51,
+  "breakLevel": 85.97,
+  "setupArea": [
+   88.13,
+   91.32
+  ],
+  "ceiling": 95.85,
+  "atr": 3.1833,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VIAV",
+  "name": "Viavi Solutions Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 36.7,
+  "trexScore": 49,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 10037783003.04,
+  "signalClose": 40.68,
+  "breakLevel": 37.43,
+  "setupArea": [
+   40.04,
+   42.38
+  ],
+  "ceiling": 43.05,
+  "atr": 2.3443,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZETA",
+  "name": "Zeta Global Holdings Corp. Class A Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 72.0,
+  "trexScore": 70,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 6644485292.75,
+  "signalClose": 29.45,
+  "breakLevel": 26.76,
+  "setupArea": [
+   29.95,
+   31.36
+  ],
+  "ceiling": 31.54,
+  "atr": 1.4169,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 68.7,
+  "trexScore": 69,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 700961033.34,
+  "signalClose": 7.74,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.5,
+   7.95
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4489,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 67.4,
+  "trexScore": 76,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3437877043.29,
+  "signalClose": 23.97,
+  "breakLevel": 22.8,
+  "setupArea": [
+   23.64,
+   24.63
+  ],
+  "ceiling": 25.11,
+  "atr": 0.9909,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 66.5,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44681763685.86,
+  "signalClose": 127.26,
+  "breakLevel": 125.36,
+  "setupArea": [
+   126.3,
+   129.6
+  ],
+  "ceiling": 132.25,
+  "atr": 3.3011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ANF",
+  "name": "Abercrombie & Fitch Company Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 62.6,
+  "trexScore": 73,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 5758769302.67,
+  "signalClose": 135.71,
+  "breakLevel": 98.9,
+  "setupArea": [
+   137.88,
+   144.01
+  ],
+  "ceiling": 153.05,
+  "atr": 6.1309,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 61.1,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18982453945.98,
+  "signalClose": 90.51,
+  "breakLevel": 85.97,
+  "setupArea": [
+   88.13,
+   91.32
+  ],
+  "ceiling": 95.85,
+  "atr": 3.1833,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "CIB",
+  "name": "Grupo Cibest S.A. American Depositary Shares each representing four Preferred Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 58.6,
+  "trexScore": 75,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 10375803305.45,
+  "signalClose": 95.15,
+  "breakLevel": 93.67,
+  "setupArea": [
+   93.54,
+   96.56
+  ],
+  "ceiling": 102.53,
+  "atr": 3.0193,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ELF",
+  "name": "e.l.f. Beauty Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 57.9,
+  "trexScore": 69,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 5871885681.96,
+  "signalClose": 99.51,
+  "breakLevel": 90.35,
+  "setupArea": [
+   98.71,
+   102.92
+  ],
+  "ceiling": 108.95,
+  "atr": 4.21,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "CNH",
+  "name": "CNH Industrial N.V. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 54.7,
+  "trexScore": 55,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 16201832790.22,
+  "signalClose": 13.09,
+  "breakLevel": 11.21,
+  "setupArea": [
+   13.14,
+   13.66
+  ],
+  "ceiling": 14.23,
+  "atr": 0.5248,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZIM",
+  "name": "ZIM Integrated Shipping Services Ltd. Ordinary Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 54.1,
+  "trexScore": 65,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3517969050.54,
+  "signalClose": 29.19,
+  "breakLevel": 26.65,
+  "setupArea": [
+   28.76,
+   29.56
+  ],
+  "ceiling": 30.96,
+  "atr": 0.8043,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ADPT",
+  "name": "Adaptive Biotechnologies Corporation Common Stock",
+  "pattern": "Breakout",
+  "score": 69.9,
+  "trexScore": 64,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4696905630.06,
+  "signalClose": 29.43,
+  "breakLevel": 27.5,
+  "setupArea": [
+   28.78,
+   30.03
+  ],
+  "ceiling": null,
+  "atr": 1.2456,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 69.6,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44681763685.86,
+  "signalClose": 127.26,
+  "breakLevel": 125.36,
+  "setupArea": [
+   126.3,
+   129.6
+  ],
+  "ceiling": 132.25,
+  "atr": 3.3011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "TBBB",
+  "name": "BBB Foods Inc. Class A Common Shares",
+  "pattern": "Breakout",
+  "score": 67.2,
+  "trexScore": 67,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 4174372348.64,
+  "signalClose": 53.56,
+  "breakLevel": 52.07,
+  "setupArea": [
+   53.33,
+   54.97
+  ],
+  "ceiling": null,
+  "atr": 1.6415,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZETA",
+  "name": "Zeta Global Holdings Corp. Class A Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 66.2,
+  "trexScore": 70,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 6644485292.75,
+  "signalClose": 29.45,
+  "breakLevel": 26.76,
+  "setupArea": [
+   29.95,
+   31.36
+  ],
+  "ceiling": 31.54,
+  "atr": 1.4169,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 62.6,
+  "trexScore": 76,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3437877043.29,
+  "signalClose": 23.97,
+  "breakLevel": 22.8,
+  "setupArea": [
+   23.64,
+   24.63
+  ],
+  "ceiling": 25.11,
+  "atr": 0.9909,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 61.2,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18982453945.98,
+  "signalClose": 90.51,
+  "breakLevel": 85.97,
+  "setupArea": [
+   88.13,
+   91.32
+  ],
+  "ceiling": 95.85,
+  "atr": 3.1833,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZIM",
+  "name": "ZIM Integrated Shipping Services Ltd. Ordinary Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 60.0,
+  "trexScore": 65,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3517969050.54,
+  "signalClose": 29.19,
+  "breakLevel": 26.65,
+  "setupArea": [
+   28.76,
+   29.56
+  ],
+  "ceiling": 30.96,
+  "atr": 0.8043,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 59.5,
+  "trexScore": 69,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 700961033.34,
+  "signalClose": 7.74,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.5,
+   7.95
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4489,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VIAV",
+  "name": "Viavi Solutions Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 33.9,
+  "trexScore": 49,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 10037783003.04,
+  "signalClose": 40.68,
+  "breakLevel": 37.43,
+  "setupArea": [
+   40.04,
+   42.38
+  ],
+  "ceiling": 43.05,
+  "atr": 2.3443,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZETA",
+  "name": "Zeta Global Holdings Corp. Class A Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 64.2,
+  "trexScore": 70,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 6644485292.75,
+  "signalClose": 29.45,
+  "breakLevel": 26.76,
+  "setupArea": [
+   29.95,
+   31.36
+  ],
+  "ceiling": 31.54,
+  "atr": 1.4169,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 62.1,
+  "trexScore": 76,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3437877043.29,
+  "signalClose": 23.97,
+  "breakLevel": 22.8,
+  "setupArea": [
+   23.64,
+   24.63
+  ],
+  "ceiling": 25.11,
+  "atr": 0.9909,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ANF",
+  "name": "Abercrombie & Fitch Company Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 59.8,
+  "trexScore": 73,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 5758769302.67,
+  "signalClose": 135.71,
+  "breakLevel": 98.9,
+  "setupArea": [
+   137.88,
+   144.01
+  ],
+  "ceiling": 153.05,
+  "atr": 6.1309,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 59.3,
+  "trexScore": 69,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 700961033.34,
+  "signalClose": 7.74,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.5,
+   7.95
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4489,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "CIB",
+  "name": "Grupo Cibest S.A. American Depositary Shares each representing four Preferred Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 58.7,
+  "trexScore": 75,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 10375803305.45,
+  "signalClose": 95.15,
+  "breakLevel": 93.67,
+  "setupArea": [
+   93.54,
+   96.56
+  ],
+  "ceiling": 102.53,
+  "atr": 3.0193,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 56.0,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44681763685.86,
+  "signalClose": 127.26,
+  "breakLevel": 125.36,
+  "setupArea": [
+   126.3,
+   129.6
+  ],
+  "ceiling": 132.25,
+  "atr": 3.3011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 50.9,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18982453945.98,
+  "signalClose": 90.51,
+  "breakLevel": 85.97,
+  "setupArea": [
+   88.13,
+   91.32
+  ],
+  "ceiling": 95.85,
+  "atr": 3.1833,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ELF",
+  "name": "e.l.f. Beauty Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 50.7,
+  "trexScore": 69,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 5871885681.96,
+  "signalClose": 99.51,
+  "breakLevel": 90.35,
+  "setupArea": [
+   98.71,
+   102.92
+  ],
+  "ceiling": 108.95,
+  "atr": 4.21,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "CNH",
+  "name": "CNH Industrial N.V. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 48.1,
+  "trexScore": 55,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 16201832790.22,
+  "signalClose": 13.09,
+  "breakLevel": 11.21,
+  "setupArea": [
+   13.14,
+   13.66
+  ],
+  "ceiling": 14.23,
+  "atr": 0.5248,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-25",
+  "yahoo": "ZIM",
+  "name": "ZIM Integrated Shipping Services Ltd. Ordinary Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 45.4,
+  "trexScore": 65,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3517969050.54,
+  "signalClose": 29.19,
+  "breakLevel": 26.65,
+  "setupArea": [
+   28.76,
+   29.56
+  ],
+  "ceiling": 30.96,
+  "atr": 0.8043,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
   "results": {}
