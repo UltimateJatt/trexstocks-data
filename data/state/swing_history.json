@@ -1219,7 +1219,15 @@
   "atr": 1.2456,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0169,
+    "bench": -0.0049,
+    "excess": -0.012
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 29.0
  },
  {
   "signalDate": "2026-09-25",
@@ -1241,7 +1249,15 @@
   "atr": 1.4169,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0122,
+    "bench": -0.0049,
+    "excess": 0.0171
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 28.64
  },
  {
   "signalDate": "2026-09-25",
@@ -1263,7 +1279,15 @@
   "atr": 0.4489,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0237,
+    "bench": -0.0049,
+    "excess": 0.0286
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 7.59
  },
  {
   "signalDate": "2026-09-25",
@@ -1285,7 +1309,15 @@
   "atr": 3.3011,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0013,
+    "bench": -0.0049,
+    "excess": 0.0062
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 127.01
  },
  {
   "signalDate": "2026-09-25",
@@ -1307,7 +1339,15 @@
   "atr": 1.6415,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0051,
+    "bench": -0.0049,
+    "excess": 0.01
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 53.27
  },
  {
   "signalDate": "2026-09-25",
@@ -1329,7 +1369,15 @@
   "atr": 0.9909,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0064,
+    "bench": -0.0049,
+    "excess": -0.0014
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 23.55
  },
  {
   "signalDate": "2026-09-25",
@@ -1351,7 +1399,15 @@
   "atr": 6.1309,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0047,
+    "bench": -0.0049,
+    "excess": 0.0002
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 134.81
  },
  {
   "signalDate": "2026-09-25",
@@ -1373,7 +1429,15 @@
   "atr": 3.1833,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0095,
+    "bench": -0.0049,
+    "excess": 0.0145
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 89.06
  },
  {
   "signalDate": "2026-09-25",
@@ -1395,7 +1459,15 @@
   "atr": 2.3443,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0007,
+    "bench": -0.0049,
+    "excess": 0.0057
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 40.84
  },
  {
   "signalDate": "2026-09-25",
@@ -1417,7 +1489,15 @@
   "atr": 1.4169,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0122,
+    "bench": -0.0049,
+    "excess": 0.0171
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 28.64
  },
  {
   "signalDate": "2026-09-25",
@@ -1439,7 +1519,15 @@
   "atr": 0.4489,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0237,
+    "bench": -0.0049,
+    "excess": 0.0286
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 7.59
  },
  {
   "signalDate": "2026-09-25",
@@ -1461,7 +1549,15 @@
   "atr": 0.9909,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0064,
+    "bench": -0.0049,
+    "excess": -0.0014
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 23.55
  },
  {
   "signalDate": "2026-09-25",
@@ -1483,7 +1579,15 @@
   "atr": 3.3011,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0013,
+    "bench": -0.0049,
+    "excess": 0.0062
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 127.01
  },
  {
   "signalDate": "2026-09-25",
@@ -1505,7 +1609,15 @@
   "atr": 6.1309,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0047,
+    "bench": -0.0049,
+    "excess": 0.0002
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 134.81
  },
  {
   "signalDate": "2026-09-25",
@@ -1527,7 +1639,15 @@
   "atr": 3.1833,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0095,
+    "bench": -0.0049,
+    "excess": 0.0145
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 89.06
  },
  {
   "signalDate": "2026-09-25",
@@ -1549,7 +1669,15 @@
   "atr": 3.0193,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0234,
+    "bench": -0.0049,
+    "excess": -0.0184
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 94.56
  },
  {
   "signalDate": "2026-09-25",
@@ -1571,7 +1699,15 @@
   "atr": 4.21,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.035,
+    "bench": -0.0049,
+    "excess": 0.0399
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 98.36
  },
  {
   "signalDate": "2026-09-25",
@@ -1593,7 +1729,15 @@
   "atr": 0.5248,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0161,
+    "bench": -0.0049,
+    "excess": 0.021
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 13.05
  },
  {
   "signalDate": "2026-09-25",
@@ -1615,7 +1759,15 @@
   "atr": 0.8043,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0537,
+    "bench": -0.0049,
+    "excess": -0.0487
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 30.0
  },
  {
   "signalDate": "2026-09-25",
@@ -1637,7 +1789,15 @@
   "atr": 1.2456,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0169,
+    "bench": -0.0049,
+    "excess": -0.012
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 29.0
  },
  {
   "signalDate": "2026-09-25",
@@ -1659,7 +1819,15 @@
   "atr": 3.3011,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0013,
+    "bench": -0.0049,
+    "excess": 0.0062
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 127.01
  },
  {
   "signalDate": "2026-09-25",
@@ -1681,7 +1849,15 @@
   "atr": 1.6415,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0051,
+    "bench": -0.0049,
+    "excess": 0.01
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 53.27
  },
  {
   "signalDate": "2026-09-25",
@@ -1703,7 +1879,15 @@
   "atr": 1.4169,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0122,
+    "bench": -0.0049,
+    "excess": 0.0171
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 28.64
  },
  {
   "signalDate": "2026-09-25",
@@ -1725,7 +1909,15 @@
   "atr": 0.9909,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0064,
+    "bench": -0.0049,
+    "excess": -0.0014
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 23.55
  },
  {
   "signalDate": "2026-09-25",
@@ -1747,7 +1939,15 @@
   "atr": 3.1833,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0095,
+    "bench": -0.0049,
+    "excess": 0.0145
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 89.06
  },
  {
   "signalDate": "2026-09-25",
@@ -1769,7 +1969,15 @@
   "atr": 0.8043,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0537,
+    "bench": -0.0049,
+    "excess": -0.0487
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 30.0
  },
  {
   "signalDate": "2026-09-25",
@@ -1791,7 +1999,15 @@
   "atr": 0.4489,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0237,
+    "bench": -0.0049,
+    "excess": 0.0286
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 7.59
  },
  {
   "signalDate": "2026-09-25",
@@ -1813,7 +2029,15 @@
   "atr": 2.3443,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0007,
+    "bench": -0.0049,
+    "excess": 0.0057
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 40.84
  },
  {
   "signalDate": "2026-09-25",
@@ -1835,7 +2059,15 @@
   "atr": 1.4169,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0122,
+    "bench": -0.0049,
+    "excess": 0.0171
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 28.64
  },
  {
   "signalDate": "2026-09-25",
@@ -1857,7 +2089,15 @@
   "atr": 0.9909,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0064,
+    "bench": -0.0049,
+    "excess": -0.0014
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 23.55
  },
  {
   "signalDate": "2026-09-25",
@@ -1879,7 +2119,15 @@
   "atr": 6.1309,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0047,
+    "bench": -0.0049,
+    "excess": 0.0002
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 134.81
  },
  {
   "signalDate": "2026-09-25",
@@ -1901,7 +2149,15 @@
   "atr": 0.4489,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0237,
+    "bench": -0.0049,
+    "excess": 0.0286
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 7.59
  },
  {
   "signalDate": "2026-09-25",
@@ -1923,7 +2179,15 @@
   "atr": 3.0193,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0234,
+    "bench": -0.0049,
+    "excess": -0.0184
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 94.56
  },
  {
   "signalDate": "2026-09-25",
@@ -1945,7 +2209,15 @@
   "atr": 3.3011,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0013,
+    "bench": -0.0049,
+    "excess": 0.0062
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 127.01
  },
  {
   "signalDate": "2026-09-25",
@@ -1967,7 +2239,15 @@
   "atr": 3.1833,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0095,
+    "bench": -0.0049,
+    "excess": 0.0145
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 89.06
  },
  {
   "signalDate": "2026-09-25",
@@ -1989,7 +2269,15 @@
   "atr": 4.21,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.035,
+    "bench": -0.0049,
+    "excess": 0.0399
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 98.36
  },
  {
   "signalDate": "2026-09-25",
@@ -2011,7 +2299,15 @@
   "atr": 0.5248,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0161,
+    "bench": -0.0049,
+    "excess": 0.021
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 13.05
  },
  {
   "signalDate": "2026-09-25",
@@ -2031,6 +2327,850 @@
   ],
   "ceiling": 30.96,
   "atr": 0.8043,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {
+   "1d": {
+    "return": -0.0537,
+    "bench": -0.0049,
+    "excess": -0.0487
+   }
+  },
+  "entryDate": "2026-09-28",
+  "entryOpen": 30.0
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "FIVN",
+  "name": "Five9 Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 77.0,
+  "trexScore": 72,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 2589917584.46,
+  "signalClose": 34.66,
+  "breakLevel": 29.59,
+  "setupArea": [
+   32.89,
+   34.94
+  ],
+  "ceiling": 40.0,
+  "atr": 2.0546,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "TWST",
+  "name": "Twist Bioscience Corporation Common Stock",
+  "pattern": "Breakout",
+  "score": 71.9,
+  "trexScore": 66,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 11907690850.4,
+  "signalClose": 179.6,
+  "breakLevel": 156.83,
+  "setupArea": [
+   170.66,
+   181.8
+  ],
+  "ceiling": null,
+  "atr": 11.1443,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MAU.TO",
+  "name": "Montage Gold Corp.",
+  "pattern": "Pullback in uptrend",
+  "score": 68.5,
+  "trexScore": 66,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 7644394446.75,
+  "signalClose": 18.91,
+  "breakLevel": 17.86,
+  "setupArea": [
+   18.12,
+   19.13
+  ],
+  "ceiling": 20.6,
+  "atr": 1.005,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 68.1,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44650164135.87,
+  "signalClose": 127.17,
+  "breakLevel": 125.4,
+  "setupArea": [
+   126.51,
+   129.69
+  ],
+  "ceiling": 132.29,
+  "atr": 3.1796,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "TBBB",
+  "name": "BBB Foods Inc. Class A Common Shares",
+  "pattern": "Breakout",
+  "score": 67.9,
+  "trexScore": 67,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 4172813583.76,
+  "signalClose": 53.54,
+  "breakLevel": 52.07,
+  "setupArea": [
+   53.33,
+   54.93
+  ],
+  "ceiling": null,
+  "atr": 1.6011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 66.9,
+  "trexScore": 70,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 703677936.57,
+  "signalClose": 7.77,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.53,
+   7.97
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4447,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 66.3,
+  "trexScore": 77,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5422961725.2,
+  "signalClose": 37.65,
+  "breakLevel": 34.86,
+  "setupArea": [
+   34.84,
+   37.11
+  ],
+  "ceiling": 41.15,
+  "atr": 2.2721,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 66.1,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18856617327.18,
+  "signalClose": 89.91,
+  "breakLevel": 85.99,
+  "setupArea": [
+   88.54,
+   91.66
+  ],
+  "ceiling": 95.07,
+  "atr": 3.1266,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "VIAV",
+  "name": "Viavi Solutions Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 36.4,
+  "trexScore": 49,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 10084665470.36,
+  "signalClose": 40.87,
+  "breakLevel": 37.43,
+  "setupArea": [
+   40.04,
+   42.45
+  ],
+  "ceiling": 43.04,
+  "atr": 2.4104,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "FIVN",
+  "name": "Five9 Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 78.7,
+  "trexScore": 72,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 2589917584.46,
+  "signalClose": 34.66,
+  "breakLevel": 29.59,
+  "setupArea": [
+   32.89,
+   34.94
+  ],
+  "ceiling": 40.0,
+  "atr": 2.0546,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MAU.TO",
+  "name": "Montage Gold Corp.",
+  "pattern": "Pullback in uptrend",
+  "score": 70.1,
+  "trexScore": 66,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 7644394446.75,
+  "signalClose": 18.91,
+  "breakLevel": 17.86,
+  "setupArea": [
+   18.12,
+   19.13
+  ],
+  "ceiling": 20.6,
+  "atr": 1.005,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 69.2,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44650164135.87,
+  "signalClose": 127.17,
+  "breakLevel": 125.4,
+  "setupArea": [
+   126.51,
+   129.69
+  ],
+  "ceiling": 132.29,
+  "atr": 3.1796,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 68.5,
+  "trexScore": 70,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 703677936.57,
+  "signalClose": 7.77,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.53,
+   7.97
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4447,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 67.5,
+  "trexScore": 77,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5422961725.2,
+  "signalClose": 37.65,
+  "breakLevel": 34.86,
+  "setupArea": [
+   34.84,
+   37.11
+  ],
+  "ceiling": 41.15,
+  "atr": 2.2721,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 67.1,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18856617327.18,
+  "signalClose": 89.91,
+  "breakLevel": 85.99,
+  "setupArea": [
+   88.54,
+   91.66
+  ],
+  "ceiling": 95.07,
+  "atr": 3.1266,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "SNDK",
+  "name": "Sandisk",
+  "pattern": "Pullback in uptrend",
+  "score": 63.0,
+  "trexScore": 68,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 250799642622.89,
+  "signalClose": 1712.89,
+  "breakLevel": 1476.17,
+  "setupArea": [
+   1619.12,
+   1731.24
+  ],
+  "ceiling": 1779.35,
+  "atr": 112.1196,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BNS",
+  "name": "Bank Nova Scotia Halifax Pfd 3 Ordinary Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 60.2,
+  "trexScore": 67,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 113046482500.0,
+  "signalClose": 92.75,
+  "breakLevel": 91.39,
+  "setupArea": [
+   92.41,
+   94.0
+  ],
+  "ceiling": 94.56,
+  "atr": 1.5839,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 58.8,
+  "trexScore": 75,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3356125273.8,
+  "signalClose": 23.4,
+  "breakLevel": 22.8,
+  "setupArea": [
+   22.35,
+   23.33
+  ],
+  "ceiling": 25.11,
+  "atr": 0.983,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "SU",
+  "name": "Suncor Energy  Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 53.6,
+  "trexScore": 71,
+  "sector": "Energy",
+  "currency": "USD",
+  "marketCap": 81199846647.53,
+  "signalClose": 68.77,
+  "breakLevel": 65.42,
+  "setupArea": [
+   67.64,
+   69.42
+  ],
+  "ceiling": 69.76,
+  "atr": 1.7765,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 70.9,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44650164135.87,
+  "signalClose": 127.17,
+  "breakLevel": 125.4,
+  "setupArea": [
+   126.51,
+   129.69
+  ],
+  "ceiling": 132.29,
+  "atr": 3.1796,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "TBBB",
+  "name": "BBB Foods Inc. Class A Common Shares",
+  "pattern": "Breakout",
+  "score": 68.9,
+  "trexScore": 67,
+  "sector": "Consumer Defensive",
+  "currency": "USD",
+  "marketCap": 4172813583.76,
+  "signalClose": 53.54,
+  "breakLevel": 52.07,
+  "setupArea": [
+   53.33,
+   54.93
+  ],
+  "ceiling": null,
+  "atr": 1.6011,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BNS",
+  "name": "Bank Nova Scotia Halifax Pfd 3 Ordinary Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 67.2,
+  "trexScore": 67,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 113046482500.0,
+  "signalClose": 92.75,
+  "breakLevel": 91.39,
+  "setupArea": [
+   92.41,
+   94.0
+  ],
+  "ceiling": 94.56,
+  "atr": 1.5839,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 65.6,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18856617327.18,
+  "signalClose": 89.91,
+  "breakLevel": 85.99,
+  "setupArea": [
+   88.54,
+   91.66
+  ],
+  "ceiling": 95.07,
+  "atr": 3.1266,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "FIVN",
+  "name": "Five9 Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 65.5,
+  "trexScore": 72,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 2589917584.46,
+  "signalClose": 34.66,
+  "breakLevel": 29.59,
+  "setupArea": [
+   32.89,
+   34.94
+  ],
+  "ceiling": 40.0,
+  "atr": 2.0546,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MAU.TO",
+  "name": "Montage Gold Corp.",
+  "pattern": "Pullback in uptrend",
+  "score": 60.9,
+  "trexScore": 66,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 7644394446.75,
+  "signalClose": 18.91,
+  "breakLevel": 17.86,
+  "setupArea": [
+   18.12,
+   19.13
+  ],
+  "ceiling": 20.6,
+  "atr": 1.005,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "TWST",
+  "name": "Twist Bioscience Corporation Common Stock",
+  "pattern": "Breakout",
+  "score": 60.4,
+  "trexScore": 66,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 11907690850.4,
+  "signalClose": 179.6,
+  "breakLevel": 156.83,
+  "setupArea": [
+   170.66,
+   181.8
+  ],
+  "ceiling": null,
+  "atr": 11.1443,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "SU",
+  "name": "Suncor Energy  Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 58.9,
+  "trexScore": 71,
+  "sector": "Energy",
+  "currency": "USD",
+  "marketCap": 81199846647.53,
+  "signalClose": 68.77,
+  "breakLevel": 65.42,
+  "setupArea": [
+   67.64,
+   69.42
+  ],
+  "ceiling": 69.76,
+  "atr": 1.7765,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "VIAV",
+  "name": "Viavi Solutions Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 33.1,
+  "trexScore": 49,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 10084665470.36,
+  "signalClose": 40.87,
+  "breakLevel": 37.43,
+  "setupArea": [
+   40.04,
+   42.45
+  ],
+  "ceiling": 43.04,
+  "atr": 2.4104,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "FIVN",
+  "name": "Five9 Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 72.0,
+  "trexScore": 72,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 2589917584.46,
+  "signalClose": 34.66,
+  "breakLevel": 29.59,
+  "setupArea": [
+   32.89,
+   34.94
+  ],
+  "ceiling": 40.0,
+  "atr": 2.0546,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MAU.TO",
+  "name": "Montage Gold Corp.",
+  "pattern": "Pullback in uptrend",
+  "score": 61.5,
+  "trexScore": 66,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 7644394446.75,
+  "signalClose": 18.91,
+  "breakLevel": 17.86,
+  "setupArea": [
+   18.12,
+   19.13
+  ],
+  "ceiling": 20.6,
+  "atr": 1.005,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 59.9,
+  "trexScore": 77,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5422961725.2,
+  "signalClose": 37.65,
+  "breakLevel": 34.86,
+  "setupArea": [
+   34.84,
+   37.11
+  ],
+  "ceiling": 41.15,
+  "atr": 2.2721,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "MGNI",
+  "name": "Magnite Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 59.4,
+  "trexScore": 75,
+  "sector": "Communication Services",
+  "currency": "USD",
+  "marketCap": 3356125273.8,
+  "signalClose": 23.4,
+  "breakLevel": 22.8,
+  "setupArea": [
+   22.35,
+   23.33
+  ],
+  "ceiling": 25.11,
+  "atr": 0.983,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "KB",
+  "name": "KB Financial Group Inc",
+  "pattern": "Pullback in uptrend",
+  "score": 59.2,
+  "trexScore": 70,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 44650164135.87,
+  "signalClose": 127.17,
+  "breakLevel": 125.4,
+  "setupArea": [
+   126.51,
+   129.69
+  ],
+  "ceiling": 132.29,
+  "atr": 3.1796,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "VSTM",
+  "name": "Verastem Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 58.8,
+  "trexScore": 70,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 703677936.57,
+  "signalClose": 7.77,
+  "breakLevel": 7.09,
+  "setupArea": [
+   7.53,
+   7.97
+  ],
+  "ceiling": 8.43,
+  "atr": 0.4447,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "BBY",
+  "name": "Best Buy",
+  "pattern": "Pullback in uptrend",
+  "score": 58.0,
+  "trexScore": 72,
+  "sector": "Consumer Cyclical",
+  "currency": "USD",
+  "marketCap": 18856617327.18,
+  "signalClose": 89.91,
+  "breakLevel": 85.99,
+  "setupArea": [
+   88.54,
+   91.66
+  ],
+  "ceiling": 95.07,
+  "atr": 3.1266,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "SNDK",
+  "name": "Sandisk",
+  "pattern": "Pullback in uptrend",
+  "score": 52.2,
+  "trexScore": 68,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 250799642622.89,
+  "signalClose": 1712.89,
+  "breakLevel": 1476.17,
+  "setupArea": [
+   1619.12,
+   1731.24
+  ],
+  "ceiling": 1779.35,
+  "atr": 112.1196,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "IAG.TO",
+  "name": "iA Financial Corporation Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 52.2,
+  "trexScore": 68,
+  "sector": "Financial Services",
+  "currency": "CAD",
+  "marketCap": 18373451348.96,
+  "signalClose": 207.88,
+  "breakLevel": 197.88,
+  "setupArea": [
+   205.6,
+   209.38
+  ],
+  "ceiling": 218.54,
+  "atr": 3.7793,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-09-28",
+  "yahoo": "SU",
+  "name": "Suncor Energy  Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 43.3,
+  "trexScore": 71,
+  "sector": "Energy",
+  "currency": "USD",
+  "marketCap": 81199846647.53,
+  "signalClose": 68.77,
+  "breakLevel": 65.42,
+  "setupArea": [
+   67.64,
+   69.42
+  ],
+  "ceiling": 69.76,
+  "atr": 1.7765,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
   "results": {}

@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-28T08:27:37.082688-04:00",
+ "generated": "2026-09-29T08:23:57.048919-04:00",
  "swing": {
   "main": {
-   "picks": 19,
-   "days": 2,
+   "picks": 28,
+   "days": 3,
    "graded5d": 0,
    "avgExcess5d": null,
    "beat5d": null,
@@ -12,8 +12,8 @@
    "avgWorstDip": null
   },
   "S1_pullbacksOnly": {
-   "picks": 20,
-   "days": 2,
+   "picks": 30,
+   "days": 3,
    "graded5d": 0,
    "avgExcess5d": null,
    "beat5d": null,
@@ -32,8 +32,8 @@
    "avgWorstDip": null
   },
   "S3_calmerFirst": {
-   "picks": 19,
-   "days": 2,
+   "picks": 28,
+   "days": 3,
    "graded5d": 0,
    "avgExcess5d": null,
    "beat5d": null,
@@ -42,8 +42,8 @@
    "avgWorstDip": null
   },
   "S4_deeperDips": {
-   "picks": 20,
-   "days": 2,
+   "picks": 30,
+   "days": 3,
    "graded5d": 0,
    "avgExcess5d": null,
    "beat5d": null,
