@@ -1,4 +1,4 @@
-# TrexStocks model lab, live evidence (2026-09-29)
+# TrexStocks model lab, live evidence (2026-09-30)
 
 Research only; nothing here is shown on the site. Alternatives were pre-declared on Sep 24, 2026 (see the analysis doc, "Model lab"). Small samples mean little: wait for at least 20 graded pick days before reading anything into Swing results.
 
@@ -6,11 +6,11 @@ Research only; nothing here is shown on the site. Alternatives were pre-declared
 
 | Variant | Pick days | Picks | Graded (5d) | Avg 5d vs index | Beat index | Worked | Failed | Avg worst dip (10d) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| main | 3 | 28 | 0 | -- | -- | -- | -- | -- |
-| S1_pullbacksOnly | 3 | 30 | 0 | -- | -- | -- | -- | -- |
+| main | 4 | 38 | 0 | -- | -- | -- | -- | -- |
+| S1_pullbacksOnly | 4 | 40 | 0 | -- | -- | -- | -- | -- |
 | S2_supportiveOnly | 0 | 0 | 0 | -- | -- | -- | -- | -- |
-| S3_calmerFirst | 3 | 28 | 0 | -- | -- | -- | -- | -- |
-| S4_deeperDips | 3 | 30 | 0 | -- | -- | -- | -- | -- |
+| S3_calmerFirst | 4 | 38 | 0 | -- | -- | -- | -- | -- |
+| S4_deeperDips | 4 | 40 | 0 | -- | -- | -- | -- | -- |
 
 ## Factor monitor: next-20-day return vs the average stock, by factor group
 
