@@ -1,22 +1,22 @@
 {
- "generated": "2026-10-07T08:16:45.036886-04:00",
+ "generated": "2026-10-08T08:24:00.868257-04:00",
  "swing": {
   "main": {
-   "picks": 84,
-   "days": 9,
-   "graded5d": 38,
-   "avgExcess5d": -0.001149999999999999,
-   "beat5d": 0.39473684210526316,
+   "picks": 94,
+   "days": 10,
+   "graded5d": 45,
+   "avgExcess5d": -0.006635555555555553,
+   "beat5d": 0.37777777777777777,
    "worked": null,
    "failed": null,
    "avgWorstDip": null
   },
   "S1_pullbacksOnly": {
-   "picks": 89,
-   "days": 9,
-   "graded5d": 40,
-   "avgExcess5d": -0.0066025,
-   "beat5d": 0.425,
+   "picks": 98,
+   "days": 10,
+   "graded5d": 50,
+   "avgExcess5d": -0.010174,
+   "beat5d": 0.38,
    "worked": null,
    "failed": null,
    "avgWorstDip": null
@@ -32,21 +32,21 @@
    "avgWorstDip": null
   },
   "S3_calmerFirst": {
-   "picks": 82,
-   "days": 9,
-   "graded5d": 38,
-   "avgExcess5d": -0.002634210526315786,
-   "beat5d": 0.34210526315789475,
+   "picks": 92,
+   "days": 10,
+   "graded5d": 45,
+   "avgExcess5d": -0.007999999999999997,
+   "beat5d": 0.3333333333333333,
    "worked": null,
    "failed": null,
    "avgWorstDip": null
   },
   "S4_deeperDips": {
-   "picks": 89,
-   "days": 9,
-   "graded5d": 40,
-   "avgExcess5d": -0.006162500000000001,
-   "beat5d": 0.4,
+   "picks": 98,
+   "days": 10,
+   "graded5d": 50,
+   "avgExcess5d": -0.009822000000000003,
+   "beat5d": 0.36,
    "worked": null,
    "failed": null,
    "avgWorstDip": null
