@@ -1954,10 +1954,18 @@
     "return": -0.0224,
     "bench": 0.0001,
     "excess": -0.0225
+   },
+   "10d": {
+    "return": -0.0866,
+    "bench": 0.0116,
+    "excess": -0.0982
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 29.0
+  "entryOpen": 29.0,
+  "outcome": "Failed",
+  "mae": -0.1338,
+  "mfe": 0.06
  },
  {
   "signalDate": "2026-09-25",
@@ -1994,10 +2002,18 @@
     "return": 0.1393,
     "bench": 0.0001,
     "excess": 0.1392
+   },
+   "10d": {
+    "return": 0.1554,
+    "bench": 0.0116,
+    "excess": 0.1437
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 28.64
+  "entryOpen": 28.64,
+  "outcome": "Worked",
+  "mae": -0.0213,
+  "mfe": 0.2151
  },
  {
   "signalDate": "2026-09-25",
@@ -2034,10 +2050,18 @@
     "return": 0.0145,
     "bench": 0.0001,
     "excess": 0.0144
+   },
+   "10d": {
+    "return": 0.1041,
+    "bench": 0.0116,
+    "excess": 0.0924
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 7.59
+  "entryOpen": 7.59,
+  "outcome": "Worked",
+  "mae": -0.0264,
+  "mfe": 0.1304
  },
  {
   "signalDate": "2026-09-25",
@@ -2074,10 +2098,18 @@
     "return": -0.0246,
     "bench": 0.0001,
     "excess": -0.0248
+   },
+   "10d": {
+    "return": -0.031,
+    "bench": 0.0116,
+    "excess": -0.0427
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 127.01
+  "entryOpen": 127.01,
+  "outcome": "Failed",
+  "mae": -0.0573,
+  "mfe": 0.0124
  },
  {
   "signalDate": "2026-09-25",
@@ -2114,10 +2146,18 @@
     "return": -0.0116,
     "bench": 0.0001,
     "excess": -0.0118
+   },
+   "10d": {
+    "return": 0.0436,
+    "bench": 0.0116,
+    "excess": 0.0319
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 53.27
+  "entryOpen": 53.27,
+  "outcome": "Expired",
+  "mae": -0.0372,
+  "mfe": 0.0488
  },
  {
   "signalDate": "2026-09-25",
@@ -2154,10 +2194,18 @@
     "return": 0.0501,
     "bench": 0.0001,
     "excess": 0.05
+   },
+   "10d": {
+    "return": 0.0786,
+    "bench": 0.0116,
+    "excess": 0.0669
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 23.55
+  "entryOpen": 23.55,
+  "outcome": "Worked",
+  "mae": -0.0195,
+  "mfe": 0.121
  },
  {
   "signalDate": "2026-09-25",
@@ -2194,10 +2242,18 @@
     "return": 0.0082,
     "bench": 0.0001,
     "excess": 0.008
+   },
+   "10d": {
+    "return": 0.0576,
+    "bench": 0.0116,
+    "excess": 0.046
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 134.81
+  "entryOpen": 134.81,
+  "outcome": "Expired",
+  "mae": -0.0268,
+  "mfe": 0.0718
  },
  {
   "signalDate": "2026-09-25",
@@ -2234,10 +2290,18 @@
     "return": -0.0122,
     "bench": 0.0001,
     "excess": -0.0124
+   },
+   "10d": {
+    "return": -0.023,
+    "bench": 0.0116,
+    "excess": -0.0347
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 89.06
+  "entryOpen": 89.06,
+  "outcome": "Failed",
+  "mae": -0.0607,
+  "mfe": 0.0167
  },
  {
   "signalDate": "2026-09-25",
@@ -2274,10 +2338,18 @@
     "return": 0.1533,
     "bench": 0.0001,
     "excess": 0.1531
+   },
+   "10d": {
+    "return": 0.1131,
+    "bench": 0.0116,
+    "excess": 0.1015
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 40.84
+  "entryOpen": 40.84,
+  "outcome": "Worked",
+  "mae": -0.06,
+  "mfe": 0.1856
  },
  {
   "signalDate": "2026-09-25",
@@ -2314,10 +2386,18 @@
     "return": 0.1393,
     "bench": 0.0001,
     "excess": 0.1392
+   },
+   "10d": {
+    "return": 0.1554,
+    "bench": 0.0116,
+    "excess": 0.1437
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 28.64
+  "entryOpen": 28.64,
+  "outcome": "Worked",
+  "mae": -0.0213,
+  "mfe": 0.2151
  },
  {
   "signalDate": "2026-09-25",
@@ -2354,10 +2434,18 @@
     "return": 0.0145,
     "bench": 0.0001,
     "excess": 0.0144
+   },
+   "10d": {
+    "return": 0.1041,
+    "bench": 0.0116,
+    "excess": 0.0924
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 7.59
+  "entryOpen": 7.59,
+  "outcome": "Worked",
+  "mae": -0.0264,
+  "mfe": 0.1304
  },
  {
   "signalDate": "2026-09-25",
@@ -2394,10 +2482,18 @@
     "return": 0.0501,
     "bench": 0.0001,
     "excess": 0.05
+   },
+   "10d": {
+    "return": 0.0786,
+    "bench": 0.0116,
+    "excess": 0.0669
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 23.55
+  "entryOpen": 23.55,
+  "outcome": "Worked",
+  "mae": -0.0195,
+  "mfe": 0.121
  },
  {
   "signalDate": "2026-09-25",
@@ -2434,10 +2530,18 @@
     "return": -0.0246,
     "bench": 0.0001,
     "excess": -0.0248
+   },
+   "10d": {
+    "return": -0.031,
+    "bench": 0.0116,
+    "excess": -0.0427
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 127.01
+  "entryOpen": 127.01,
+  "outcome": "Failed",
+  "mae": -0.0573,
+  "mfe": 0.0124
  },
  {
   "signalDate": "2026-09-25",
@@ -2474,10 +2578,18 @@
     "return": 0.0082,
     "bench": 0.0001,
     "excess": 0.008
+   },
+   "10d": {
+    "return": 0.0576,
+    "bench": 0.0116,
+    "excess": 0.046
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 134.81
+  "entryOpen": 134.81,
+  "outcome": "Expired",
+  "mae": -0.0268,
+  "mfe": 0.0718
  },
  {
   "signalDate": "2026-09-25",
@@ -2514,10 +2626,18 @@
     "return": -0.0122,
     "bench": 0.0001,
     "excess": -0.0124
+   },
+   "10d": {
+    "return": -0.023,
+    "bench": 0.0116,
+    "excess": -0.0347
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 89.06
+  "entryOpen": 89.06,
+  "outcome": "Failed",
+  "mae": -0.0607,
+  "mfe": 0.0167
  },
  {
   "signalDate": "2026-09-25",
@@ -2554,10 +2674,18 @@
     "return": -0.028,
     "bench": 0.0001,
     "excess": -0.0282
+   },
+   "10d": {
+    "return": 0.0026,
+    "bench": 0.0116,
+    "excess": -0.009
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 94.56
+  "entryOpen": 94.56,
+  "outcome": "Failed",
+  "mae": -0.0518,
+  "mfe": 0.0403
  },
  {
   "signalDate": "2026-09-25",
@@ -2594,10 +2722,18 @@
     "return": 0.0643,
     "bench": 0.0001,
     "excess": 0.0641
+   },
+   "10d": {
+    "return": 0.1105,
+    "bench": 0.0116,
+    "excess": 0.0989
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 98.36
+  "entryOpen": 98.36,
+  "outcome": "Worked",
+  "mae": -0.0138,
+  "mfe": 0.114
  },
  {
   "signalDate": "2026-09-25",
@@ -2634,10 +2770,18 @@
     "return": 0.0322,
     "bench": 0.0001,
     "excess": 0.0321
+   },
+   "10d": {
+    "return": -0.1272,
+    "bench": 0.0116,
+    "excess": -0.1388
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 13.05
+  "entryOpen": 13.05,
+  "outcome": "Expired",
+  "mae": -0.128,
+  "mfe": 0.0414
  },
  {
   "signalDate": "2026-09-25",
@@ -2674,10 +2818,18 @@
     "return": -0.0123,
     "bench": 0.0001,
     "excess": -0.0125
+   },
+   "10d": {
+    "return": -0.0003,
+    "bench": 0.0116,
+    "excess": -0.012
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 30.0
+  "entryOpen": 30.0,
+  "outcome": "Expired",
+  "mae": -0.1,
+  "mfe": 0.0117
  },
  {
   "signalDate": "2026-09-25",
@@ -2714,10 +2866,18 @@
     "return": -0.0224,
     "bench": 0.0001,
     "excess": -0.0225
+   },
+   "10d": {
+    "return": -0.0866,
+    "bench": 0.0116,
+    "excess": -0.0982
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 29.0
+  "entryOpen": 29.0,
+  "outcome": "Failed",
+  "mae": -0.1338,
+  "mfe": 0.06
  },
  {
   "signalDate": "2026-09-25",
@@ -2754,10 +2914,18 @@
     "return": -0.0246,
     "bench": 0.0001,
     "excess": -0.0248
+   },
+   "10d": {
+    "return": -0.031,
+    "bench": 0.0116,
+    "excess": -0.0427
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 127.01
+  "entryOpen": 127.01,
+  "outcome": "Failed",
+  "mae": -0.0573,
+  "mfe": 0.0124
  },
  {
   "signalDate": "2026-09-25",
@@ -2794,10 +2962,18 @@
     "return": -0.0116,
     "bench": 0.0001,
     "excess": -0.0118
+   },
+   "10d": {
+    "return": 0.0436,
+    "bench": 0.0116,
+    "excess": 0.0319
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 53.27
+  "entryOpen": 53.27,
+  "outcome": "Expired",
+  "mae": -0.0372,
+  "mfe": 0.0488
  },
  {
   "signalDate": "2026-09-25",
@@ -2834,10 +3010,18 @@
     "return": 0.1393,
     "bench": 0.0001,
     "excess": 0.1392
+   },
+   "10d": {
+    "return": 0.1554,
+    "bench": 0.0116,
+    "excess": 0.1437
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 28.64
+  "entryOpen": 28.64,
+  "outcome": "Worked",
+  "mae": -0.0213,
+  "mfe": 0.2151
  },
  {
   "signalDate": "2026-09-25",
@@ -2874,10 +3058,18 @@
     "return": 0.0501,
     "bench": 0.0001,
     "excess": 0.05
+   },
+   "10d": {
+    "return": 0.0786,
+    "bench": 0.0116,
+    "excess": 0.0669
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 23.55
+  "entryOpen": 23.55,
+  "outcome": "Worked",
+  "mae": -0.0195,
+  "mfe": 0.121
  },
  {
   "signalDate": "2026-09-25",
@@ -2914,10 +3106,18 @@
     "return": -0.0122,
     "bench": 0.0001,
     "excess": -0.0124
+   },
+   "10d": {
+    "return": -0.023,
+    "bench": 0.0116,
+    "excess": -0.0347
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 89.06
+  "entryOpen": 89.06,
+  "outcome": "Failed",
+  "mae": -0.0607,
+  "mfe": 0.0167
  },
  {
   "signalDate": "2026-09-25",
@@ -2954,10 +3154,18 @@
     "return": -0.0123,
     "bench": 0.0001,
     "excess": -0.0125
+   },
+   "10d": {
+    "return": -0.0003,
+    "bench": 0.0116,
+    "excess": -0.012
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 30.0
+  "entryOpen": 30.0,
+  "outcome": "Expired",
+  "mae": -0.1,
+  "mfe": 0.0117
  },
  {
   "signalDate": "2026-09-25",
@@ -2994,10 +3202,18 @@
     "return": 0.0145,
     "bench": 0.0001,
     "excess": 0.0144
+   },
+   "10d": {
+    "return": 0.1041,
+    "bench": 0.0116,
+    "excess": 0.0924
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 7.59
+  "entryOpen": 7.59,
+  "outcome": "Worked",
+  "mae": -0.0264,
+  "mfe": 0.1304
  },
  {
   "signalDate": "2026-09-25",
@@ -3034,10 +3250,18 @@
     "return": 0.1533,
     "bench": 0.0001,
     "excess": 0.1531
+   },
+   "10d": {
+    "return": 0.1131,
+    "bench": 0.0116,
+    "excess": 0.1015
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 40.84
+  "entryOpen": 40.84,
+  "outcome": "Worked",
+  "mae": -0.06,
+  "mfe": 0.1856
  },
  {
   "signalDate": "2026-09-25",
@@ -3074,10 +3298,18 @@
     "return": 0.1393,
     "bench": 0.0001,
     "excess": 0.1392
+   },
+   "10d": {
+    "return": 0.1554,
+    "bench": 0.0116,
+    "excess": 0.1437
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 28.64
+  "entryOpen": 28.64,
+  "outcome": "Worked",
+  "mae": -0.0213,
+  "mfe": 0.2151
  },
  {
   "signalDate": "2026-09-25",
@@ -3114,10 +3346,18 @@
     "return": 0.0501,
     "bench": 0.0001,
     "excess": 0.05
+   },
+   "10d": {
+    "return": 0.0786,
+    "bench": 0.0116,
+    "excess": 0.0669
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 23.55
+  "entryOpen": 23.55,
+  "outcome": "Worked",
+  "mae": -0.0195,
+  "mfe": 0.121
  },
  {
   "signalDate": "2026-09-25",
@@ -3154,10 +3394,18 @@
     "return": 0.0082,
     "bench": 0.0001,
     "excess": 0.008
+   },
+   "10d": {
+    "return": 0.0576,
+    "bench": 0.0116,
+    "excess": 0.046
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 134.81
+  "entryOpen": 134.81,
+  "outcome": "Expired",
+  "mae": -0.0268,
+  "mfe": 0.0718
  },
  {
   "signalDate": "2026-09-25",
@@ -3194,10 +3442,18 @@
     "return": 0.0145,
     "bench": 0.0001,
     "excess": 0.0144
+   },
+   "10d": {
+    "return": 0.1041,
+    "bench": 0.0116,
+    "excess": 0.0924
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 7.59
+  "entryOpen": 7.59,
+  "outcome": "Worked",
+  "mae": -0.0264,
+  "mfe": 0.1304
  },
  {
   "signalDate": "2026-09-25",
@@ -3234,10 +3490,18 @@
     "return": -0.028,
     "bench": 0.0001,
     "excess": -0.0282
+   },
+   "10d": {
+    "return": 0.0026,
+    "bench": 0.0116,
+    "excess": -0.009
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 94.56
+  "entryOpen": 94.56,
+  "outcome": "Failed",
+  "mae": -0.0518,
+  "mfe": 0.0403
  },
  {
   "signalDate": "2026-09-25",
@@ -3274,10 +3538,18 @@
     "return": -0.0246,
     "bench": 0.0001,
     "excess": -0.0248
+   },
+   "10d": {
+    "return": -0.031,
+    "bench": 0.0116,
+    "excess": -0.0427
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 127.01
+  "entryOpen": 127.01,
+  "outcome": "Failed",
+  "mae": -0.0573,
+  "mfe": 0.0124
  },
  {
   "signalDate": "2026-09-25",
@@ -3314,10 +3586,18 @@
     "return": -0.0122,
     "bench": 0.0001,
     "excess": -0.0124
+   },
+   "10d": {
+    "return": -0.023,
+    "bench": 0.0116,
+    "excess": -0.0347
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 89.06
+  "entryOpen": 89.06,
+  "outcome": "Failed",
+  "mae": -0.0607,
+  "mfe": 0.0167
  },
  {
   "signalDate": "2026-09-25",
@@ -3354,10 +3634,18 @@
     "return": 0.0643,
     "bench": 0.0001,
     "excess": 0.0641
+   },
+   "10d": {
+    "return": 0.1105,
+    "bench": 0.0116,
+    "excess": 0.0989
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 98.36
+  "entryOpen": 98.36,
+  "outcome": "Worked",
+  "mae": -0.0138,
+  "mfe": 0.114
  },
  {
   "signalDate": "2026-09-25",
@@ -3394,10 +3682,18 @@
     "return": 0.0322,
     "bench": 0.0001,
     "excess": 0.0321
+   },
+   "10d": {
+    "return": -0.1272,
+    "bench": 0.0116,
+    "excess": -0.1388
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 13.05
+  "entryOpen": 13.05,
+  "outcome": "Expired",
+  "mae": -0.128,
+  "mfe": 0.0414
  },
  {
   "signalDate": "2026-09-25",
@@ -3434,10 +3730,18 @@
     "return": -0.0123,
     "bench": 0.0001,
     "excess": -0.0125
+   },
+   "10d": {
+    "return": -0.0003,
+    "bench": 0.0116,
+    "excess": -0.012
    }
   },
   "entryDate": "2026-09-28",
-  "entryOpen": 30.0
+  "entryOpen": 30.0,
+  "outcome": "Expired",
+  "mae": -0.1,
+  "mfe": 0.0117
  },
  {
   "signalDate": "2026-09-28",
@@ -9319,6 +9623,11 @@
     "return": -0.0247,
     "bench": 0.0092,
     "excess": -0.0339
+   },
+   "5d": {
+    "return": 0.1381,
+    "bench": 0.0104,
+    "excess": 0.1276
    }
   },
   "entryDate": "2026-10-05",
@@ -9354,6 +9663,11 @@
     "return": 0.0113,
     "bench": 0.0092,
     "excess": 0.0022
+   },
+   "5d": {
+    "return": 0.0275,
+    "bench": 0.0104,
+    "excess": 0.0171
    }
   },
   "entryDate": "2026-10-05",
@@ -9389,6 +9703,11 @@
     "return": -0.0037,
     "bench": 0.0092,
     "excess": -0.0129
+   },
+   "5d": {
+    "return": 0.0537,
+    "bench": 0.0104,
+    "excess": 0.0432
    }
   },
   "entryDate": "2026-10-05",
@@ -9424,6 +9743,11 @@
     "return": -0.0373,
     "bench": 0.0092,
     "excess": -0.0465
+   },
+   "5d": {
+    "return": 0.0269,
+    "bench": 0.0104,
+    "excess": 0.0164
    }
   },
   "entryDate": "2026-10-05",
@@ -9459,6 +9783,11 @@
     "return": -0.023,
     "bench": 0.0092,
     "excess": -0.0322
+   },
+   "5d": {
+    "return": 0.0528,
+    "bench": 0.0104,
+    "excess": 0.0423
    }
   },
   "entryDate": "2026-10-05",
@@ -9494,6 +9823,11 @@
     "return": -0.0173,
     "bench": 0.0092,
     "excess": -0.0265
+   },
+   "5d": {
+    "return": -0.1007,
+    "bench": 0.0104,
+    "excess": -0.1111
    }
   },
   "entryDate": "2026-10-05",
@@ -9529,6 +9863,11 @@
     "return": -0.0396,
     "bench": -0.0136,
     "excess": -0.026
+   },
+   "5d": {
+    "return": 0.0044,
+    "bench": 0.0039,
+    "excess": 0.0005
    }
   },
   "entryDate": "2026-10-05",
@@ -9564,6 +9903,11 @@
     "return": -0.0542,
     "bench": 0.0092,
     "excess": -0.0634
+   },
+   "5d": {
+    "return": -0.0294,
+    "bench": 0.0104,
+    "excess": -0.0398
    }
   },
   "entryDate": "2026-10-05",
@@ -9599,6 +9943,11 @@
     "return": -0.0394,
     "bench": 0.0092,
     "excess": -0.0486
+   },
+   "5d": {
+    "return": -0.0119,
+    "bench": 0.0104,
+    "excess": -0.0224
    }
   },
   "entryDate": "2026-10-05",
@@ -9634,6 +9983,11 @@
     "return": -0.0221,
     "bench": 0.0092,
     "excess": -0.0312
+   },
+   "5d": {
+    "return": 0.0028,
+    "bench": 0.0104,
+    "excess": -0.0077
    }
   },
   "entryDate": "2026-10-05",
@@ -9669,6 +10023,11 @@
     "return": -0.0247,
     "bench": 0.0092,
     "excess": -0.0339
+   },
+   "5d": {
+    "return": 0.1381,
+    "bench": 0.0104,
+    "excess": 0.1276
    }
   },
   "entryDate": "2026-10-05",
@@ -9704,6 +10063,11 @@
     "return": -0.0037,
     "bench": 0.0092,
     "excess": -0.0129
+   },
+   "5d": {
+    "return": 0.0537,
+    "bench": 0.0104,
+    "excess": 0.0432
    }
   },
   "entryDate": "2026-10-05",
@@ -9739,6 +10103,11 @@
     "return": -0.0173,
     "bench": 0.0092,
     "excess": -0.0265
+   },
+   "5d": {
+    "return": -0.1007,
+    "bench": 0.0104,
+    "excess": -0.1111
    }
   },
   "entryDate": "2026-10-05",
@@ -9774,6 +10143,11 @@
     "return": -0.023,
     "bench": 0.0092,
     "excess": -0.0322
+   },
+   "5d": {
+    "return": 0.0528,
+    "bench": 0.0104,
+    "excess": 0.0423
    }
   },
   "entryDate": "2026-10-05",
@@ -9809,6 +10183,11 @@
     "return": -0.0396,
     "bench": -0.0136,
     "excess": -0.026
+   },
+   "5d": {
+    "return": 0.0044,
+    "bench": 0.0039,
+    "excess": 0.0005
    }
   },
   "entryDate": "2026-10-05",
@@ -9844,6 +10223,11 @@
     "return": -0.0394,
     "bench": 0.0092,
     "excess": -0.0486
+   },
+   "5d": {
+    "return": -0.0119,
+    "bench": 0.0104,
+    "excess": -0.0224
    }
   },
   "entryDate": "2026-10-05",
@@ -9879,6 +10263,11 @@
     "return": -0.0286,
     "bench": -0.0136,
     "excess": -0.015
+   },
+   "5d": {
+    "return": -0.0116,
+    "bench": 0.0039,
+    "excess": -0.0155
    }
   },
   "entryDate": "2026-10-05",
@@ -9914,6 +10303,11 @@
     "return": 0.0291,
     "bench": 0.0092,
     "excess": 0.0199
+   },
+   "5d": {
+    "return": 0.0416,
+    "bench": 0.0104,
+    "excess": 0.0311
    }
   },
   "entryDate": "2026-10-05",
@@ -9949,6 +10343,11 @@
     "return": 0.0059,
     "bench": 0.0092,
     "excess": -0.0033
+   },
+   "5d": {
+    "return": -0.0075,
+    "bench": 0.0104,
+    "excess": -0.0179
    }
   },
   "entryDate": "2026-10-05",
@@ -9984,6 +10383,11 @@
     "return": -0.0862,
     "bench": 0.0092,
     "excess": -0.0953
+   },
+   "5d": {
+    "return": -0.0537,
+    "bench": 0.0104,
+    "excess": -0.0641
    }
   },
   "entryDate": "2026-10-05",
@@ -10019,6 +10423,11 @@
     "return": -0.0247,
     "bench": 0.0092,
     "excess": -0.0339
+   },
+   "5d": {
+    "return": 0.1381,
+    "bench": 0.0104,
+    "excess": 0.1276
    }
   },
   "entryDate": "2026-10-05",
@@ -10054,6 +10463,11 @@
     "return": 0.0113,
     "bench": 0.0092,
     "excess": 0.0022
+   },
+   "5d": {
+    "return": 0.0275,
+    "bench": 0.0104,
+    "excess": 0.0171
    }
   },
   "entryDate": "2026-10-05",
@@ -10089,6 +10503,11 @@
     "return": -0.0373,
     "bench": 0.0092,
     "excess": -0.0465
+   },
+   "5d": {
+    "return": 0.0269,
+    "bench": 0.0104,
+    "excess": 0.0164
    }
   },
   "entryDate": "2026-10-05",
@@ -10124,6 +10543,11 @@
     "return": -0.0037,
     "bench": 0.0092,
     "excess": -0.0129
+   },
+   "5d": {
+    "return": 0.0537,
+    "bench": 0.0104,
+    "excess": 0.0432
    }
   },
   "entryDate": "2026-10-05",
@@ -10159,6 +10583,11 @@
     "return": -0.0382,
     "bench": 0.0092,
     "excess": -0.0474
+   },
+   "5d": {
+    "return": -0.0679,
+    "bench": 0.0104,
+    "excess": -0.0784
    }
   },
   "entryDate": "2026-10-05",
@@ -10194,6 +10623,11 @@
     "return": -0.0173,
     "bench": 0.0092,
     "excess": -0.0265
+   },
+   "5d": {
+    "return": -0.1007,
+    "bench": 0.0104,
+    "excess": -0.1111
    }
   },
   "entryDate": "2026-10-05",
@@ -10229,6 +10663,11 @@
     "return": -0.0542,
     "bench": 0.0092,
     "excess": -0.0634
+   },
+   "5d": {
+    "return": -0.0294,
+    "bench": 0.0104,
+    "excess": -0.0398
    }
   },
   "entryDate": "2026-10-05",
@@ -10264,6 +10703,11 @@
     "return": -0.0286,
     "bench": -0.0136,
     "excess": -0.015
+   },
+   "5d": {
+    "return": -0.0116,
+    "bench": 0.0039,
+    "excess": -0.0155
    }
   },
   "entryDate": "2026-10-05",
@@ -10299,6 +10743,11 @@
     "return": -0.0396,
     "bench": -0.0136,
     "excess": -0.026
+   },
+   "5d": {
+    "return": 0.0044,
+    "bench": 0.0039,
+    "excess": 0.0005
    }
   },
   "entryDate": "2026-10-05",
@@ -10334,6 +10783,11 @@
     "return": -0.0394,
     "bench": 0.0092,
     "excess": -0.0486
+   },
+   "5d": {
+    "return": -0.0119,
+    "bench": 0.0104,
+    "excess": -0.0224
    }
   },
   "entryDate": "2026-10-05",
@@ -10369,6 +10823,11 @@
     "return": -0.0247,
     "bench": 0.0092,
     "excess": -0.0339
+   },
+   "5d": {
+    "return": 0.1381,
+    "bench": 0.0104,
+    "excess": 0.1276
    }
   },
   "entryDate": "2026-10-05",
@@ -10404,6 +10863,11 @@
     "return": -0.0037,
     "bench": 0.0092,
     "excess": -0.0129
+   },
+   "5d": {
+    "return": 0.0537,
+    "bench": 0.0104,
+    "excess": 0.0432
    }
   },
   "entryDate": "2026-10-05",
@@ -10439,6 +10903,11 @@
     "return": -0.023,
     "bench": 0.0092,
     "excess": -0.0322
+   },
+   "5d": {
+    "return": 0.0528,
+    "bench": 0.0104,
+    "excess": 0.0423
    }
   },
   "entryDate": "2026-10-05",
@@ -10474,6 +10943,11 @@
     "return": -0.0173,
     "bench": 0.0092,
     "excess": -0.0265
+   },
+   "5d": {
+    "return": -0.1007,
+    "bench": 0.0104,
+    "excess": -0.1111
    }
   },
   "entryDate": "2026-10-05",
@@ -10509,6 +10983,11 @@
     "return": -0.0396,
     "bench": -0.0136,
     "excess": -0.026
+   },
+   "5d": {
+    "return": 0.0044,
+    "bench": 0.0039,
+    "excess": 0.0005
    }
   },
   "entryDate": "2026-10-05",
@@ -10544,6 +11023,11 @@
     "return": -0.0394,
     "bench": 0.0092,
     "excess": -0.0486
+   },
+   "5d": {
+    "return": -0.0119,
+    "bench": 0.0104,
+    "excess": -0.0224
    }
   },
   "entryDate": "2026-10-05",
@@ -10579,6 +11063,11 @@
     "return": 0.009,
     "bench": 0.0092,
     "excess": -0.0002
+   },
+   "5d": {
+    "return": 0.023,
+    "bench": 0.0104,
+    "excess": 0.0125
    }
   },
   "entryDate": "2026-10-05",
@@ -10614,6 +11103,11 @@
     "return": 0.0059,
     "bench": 0.0092,
     "excess": -0.0033
+   },
+   "5d": {
+    "return": -0.0075,
+    "bench": 0.0104,
+    "excess": -0.0179
    }
   },
   "entryDate": "2026-10-05",
@@ -10649,6 +11143,11 @@
     "return": 0.0291,
     "bench": 0.0092,
     "excess": 0.0199
+   },
+   "5d": {
+    "return": 0.0416,
+    "bench": 0.0104,
+    "excess": 0.0311
    }
   },
   "entryDate": "2026-10-05",
@@ -10684,6 +11183,11 @@
     "return": -0.0862,
     "bench": 0.0092,
     "excess": -0.0953
+   },
+   "5d": {
+    "return": -0.0537,
+    "bench": 0.0104,
+    "excess": -0.0641
    }
   },
   "entryDate": "2026-10-05",
@@ -12079,6 +12583,11 @@
     "return": -0.0637,
     "bench": 0.0011,
     "excess": -0.0648
+   },
+   "3d": {
+    "return": -0.0159,
+    "bench": 0.0024,
+    "excess": -0.0183
    }
   },
   "entryDate": "2026-10-07",
@@ -12109,6 +12618,11 @@
     "return": -0.0179,
     "bench": -0.012,
     "excess": -0.0059
+   },
+   "3d": {
+    "return": 0.0271,
+    "bench": 0.0056,
+    "excess": 0.0216
    }
   },
   "entryDate": "2026-10-07",
@@ -12139,6 +12653,11 @@
     "return": 0.0353,
     "bench": 0.0011,
     "excess": 0.0342
+   },
+   "3d": {
+    "return": 0.095,
+    "bench": 0.0024,
+    "excess": 0.0926
    }
   },
   "entryDate": "2026-10-07",
@@ -12169,6 +12688,11 @@
     "return": 0.0236,
     "bench": 0.0011,
     "excess": 0.0225
+   },
+   "3d": {
+    "return": 0.103,
+    "bench": 0.0024,
+    "excess": 0.1006
    }
   },
   "entryDate": "2026-10-07",
@@ -12199,6 +12723,11 @@
     "return": 0.012,
     "bench": 0.0011,
     "excess": 0.0109
+   },
+   "3d": {
+    "return": -0.0214,
+    "bench": 0.0024,
+    "excess": -0.0238
    }
   },
   "entryDate": "2026-10-07",
@@ -12229,6 +12758,11 @@
     "return": 0.0016,
     "bench": 0.0011,
     "excess": 0.0005
+   },
+   "3d": {
+    "return": 0.0684,
+    "bench": 0.0024,
+    "excess": 0.066
    }
   },
   "entryDate": "2026-10-07",
@@ -12259,6 +12793,11 @@
     "return": 0.021,
     "bench": 0.0011,
     "excess": 0.0199
+   },
+   "3d": {
+    "return": 0.0275,
+    "bench": 0.0024,
+    "excess": 0.0251
    }
   },
   "entryDate": "2026-10-07",
@@ -12289,6 +12828,11 @@
     "return": -0.0116,
     "bench": 0.0011,
     "excess": -0.0128
+   },
+   "3d": {
+    "return": -0.0369,
+    "bench": 0.0024,
+    "excess": -0.0393
    }
   },
   "entryDate": "2026-10-07",
@@ -12319,6 +12863,11 @@
     "return": -0.0009,
     "bench": 0.0011,
     "excess": -0.002
+   },
+   "3d": {
+    "return": 0.0238,
+    "bench": 0.0024,
+    "excess": 0.0214
    }
   },
   "entryDate": "2026-10-07",
@@ -12349,6 +12898,11 @@
     "return": 0.0175,
     "bench": -0.012,
     "excess": 0.0295
+   },
+   "3d": {
+    "return": -0.0092,
+    "bench": 0.0056,
+    "excess": -0.0147
    }
   },
   "entryDate": "2026-10-07",
@@ -12379,6 +12933,11 @@
     "return": 0.0353,
     "bench": 0.0011,
     "excess": 0.0342
+   },
+   "3d": {
+    "return": 0.095,
+    "bench": 0.0024,
+    "excess": 0.0926
    }
   },
   "entryDate": "2026-10-07",
@@ -12409,6 +12968,11 @@
     "return": -0.0179,
     "bench": -0.012,
     "excess": -0.0059
+   },
+   "3d": {
+    "return": 0.0271,
+    "bench": 0.0056,
+    "excess": 0.0216
    }
   },
   "entryDate": "2026-10-07",
@@ -12439,6 +13003,11 @@
     "return": -0.0171,
     "bench": 0.0011,
     "excess": -0.0182
+   },
+   "3d": {
+    "return": 0.147,
+    "bench": 0.0024,
+    "excess": 0.1446
    }
   },
   "entryDate": "2026-10-07",
@@ -12469,6 +13038,11 @@
     "return": 0.0236,
     "bench": 0.0011,
     "excess": 0.0225
+   },
+   "3d": {
+    "return": 0.103,
+    "bench": 0.0024,
+    "excess": 0.1006
    }
   },
   "entryDate": "2026-10-07",
@@ -12499,6 +13073,11 @@
     "return": 0.0016,
     "bench": 0.0011,
     "excess": 0.0005
+   },
+   "3d": {
+    "return": 0.0684,
+    "bench": 0.0024,
+    "excess": 0.066
    }
   },
   "entryDate": "2026-10-07",
@@ -12529,6 +13108,11 @@
     "return": 0.021,
     "bench": 0.0011,
     "excess": 0.0199
+   },
+   "3d": {
+    "return": 0.0275,
+    "bench": 0.0024,
+    "excess": 0.0251
    }
   },
   "entryDate": "2026-10-07",
@@ -12559,6 +13143,11 @@
     "return": -0.0116,
     "bench": 0.0011,
     "excess": -0.0128
+   },
+   "3d": {
+    "return": -0.0369,
+    "bench": 0.0024,
+    "excess": -0.0393
    }
   },
   "entryDate": "2026-10-07",
@@ -12589,6 +13178,11 @@
     "return": 0.0447,
     "bench": 0.0011,
     "excess": 0.0436
+   },
+   "3d": {
+    "return": -0.0236,
+    "bench": 0.0024,
+    "excess": -0.0259
    }
   },
   "entryDate": "2026-10-07",
@@ -12619,6 +13213,11 @@
     "return": -0.0198,
     "bench": -0.012,
     "excess": -0.0078
+   },
+   "3d": {
+    "return": -0.0026,
+    "bench": 0.0056,
+    "excess": -0.0082
    }
   },
   "entryDate": "2026-10-07",
@@ -12649,6 +13248,11 @@
     "return": -0.0062,
     "bench": -0.012,
     "excess": 0.0058
+   },
+   "3d": {
+    "return": -0.013,
+    "bench": 0.0056,
+    "excess": -0.0186
    }
   },
   "entryDate": "2026-10-07",
@@ -12679,6 +13283,11 @@
     "return": -0.0171,
     "bench": 0.0011,
     "excess": -0.0182
+   },
+   "3d": {
+    "return": 0.147,
+    "bench": 0.0024,
+    "excess": 0.1446
    }
   },
   "entryDate": "2026-10-07",
@@ -12709,6 +13318,11 @@
     "return": 0.0353,
     "bench": 0.0011,
     "excess": 0.0342
+   },
+   "3d": {
+    "return": 0.095,
+    "bench": 0.0024,
+    "excess": 0.0926
    }
   },
   "entryDate": "2026-10-07",
@@ -12739,6 +13353,11 @@
     "return": 0.0016,
     "bench": 0.0011,
     "excess": 0.0005
+   },
+   "3d": {
+    "return": 0.0684,
+    "bench": 0.0024,
+    "excess": 0.066
    }
   },
   "entryDate": "2026-10-07",
@@ -12769,6 +13388,11 @@
     "return": -0.0179,
     "bench": -0.012,
     "excess": -0.0059
+   },
+   "3d": {
+    "return": 0.0271,
+    "bench": 0.0056,
+    "excess": 0.0216
    }
   },
   "entryDate": "2026-10-07",
@@ -12799,6 +13423,11 @@
     "return": -0.0198,
     "bench": -0.012,
     "excess": -0.0078
+   },
+   "3d": {
+    "return": -0.0026,
+    "bench": 0.0056,
+    "excess": -0.0082
    }
   },
   "entryDate": "2026-10-07",
@@ -12829,6 +13458,11 @@
     "return": -0.0009,
     "bench": 0.0011,
     "excess": -0.002
+   },
+   "3d": {
+    "return": -0.0009,
+    "bench": 0.0024,
+    "excess": -0.0033
    }
   },
   "entryDate": "2026-10-07",
@@ -12859,6 +13493,11 @@
     "return": 0.012,
     "bench": 0.0011,
     "excess": 0.0109
+   },
+   "3d": {
+    "return": -0.0214,
+    "bench": 0.0024,
+    "excess": -0.0238
    }
   },
   "entryDate": "2026-10-07",
@@ -12889,6 +13528,11 @@
     "return": 0.0175,
     "bench": -0.012,
     "excess": 0.0295
+   },
+   "3d": {
+    "return": -0.0092,
+    "bench": 0.0056,
+    "excess": -0.0147
    }
   },
   "entryDate": "2026-10-07",
@@ -12919,6 +13563,11 @@
     "return": -0.0009,
     "bench": 0.0011,
     "excess": -0.002
+   },
+   "3d": {
+    "return": 0.0238,
+    "bench": 0.0024,
+    "excess": 0.0214
    }
   },
   "entryDate": "2026-10-07",
@@ -12949,6 +13598,11 @@
     "return": -0.0099,
     "bench": 0.0011,
     "excess": -0.011
+   },
+   "3d": {
+    "return": 0.016,
+    "bench": 0.0024,
+    "excess": 0.0136
    }
   },
   "entryDate": "2026-10-07",
@@ -12979,6 +13633,11 @@
     "return": 0.0353,
     "bench": 0.0011,
     "excess": 0.0342
+   },
+   "3d": {
+    "return": 0.095,
+    "bench": 0.0024,
+    "excess": 0.0926
    }
   },
   "entryDate": "2026-10-07",
@@ -13009,6 +13668,11 @@
     "return": 0.0236,
     "bench": 0.0011,
     "excess": 0.0225
+   },
+   "3d": {
+    "return": 0.103,
+    "bench": 0.0024,
+    "excess": 0.1006
    }
   },
   "entryDate": "2026-10-07",
@@ -13039,6 +13703,11 @@
     "return": -0.0171,
     "bench": 0.0011,
     "excess": -0.0182
+   },
+   "3d": {
+    "return": 0.147,
+    "bench": 0.0024,
+    "excess": 0.1446
    }
   },
   "entryDate": "2026-10-07",
@@ -13069,6 +13738,11 @@
     "return": -0.0179,
     "bench": -0.012,
     "excess": -0.0059
+   },
+   "3d": {
+    "return": 0.0271,
+    "bench": 0.0056,
+    "excess": 0.0216
    }
   },
   "entryDate": "2026-10-07",
@@ -13099,6 +13773,11 @@
     "return": 0.0016,
     "bench": 0.0011,
     "excess": 0.0005
+   },
+   "3d": {
+    "return": 0.0684,
+    "bench": 0.0024,
+    "excess": 0.066
    }
   },
   "entryDate": "2026-10-07",
@@ -13129,6 +13808,11 @@
     "return": 0.021,
     "bench": 0.0011,
     "excess": 0.0199
+   },
+   "3d": {
+    "return": 0.0275,
+    "bench": 0.0024,
+    "excess": 0.0251
    }
   },
   "entryDate": "2026-10-07",
@@ -13159,6 +13843,11 @@
     "return": 0.0447,
     "bench": 0.0011,
     "excess": 0.0436
+   },
+   "3d": {
+    "return": -0.0236,
+    "bench": 0.0024,
+    "excess": -0.0259
    }
   },
   "entryDate": "2026-10-07",
@@ -13189,6 +13878,11 @@
     "return": -0.0116,
     "bench": 0.0011,
     "excess": -0.0128
+   },
+   "3d": {
+    "return": -0.0369,
+    "bench": 0.0024,
+    "excess": -0.0393
    }
   },
   "entryDate": "2026-10-07",
@@ -13219,6 +13913,11 @@
     "return": -0.0198,
     "bench": -0.012,
     "excess": -0.0078
+   },
+   "3d": {
+    "return": -0.0026,
+    "bench": 0.0056,
+    "excess": -0.0082
    }
   },
   "entryDate": "2026-10-07",
@@ -13249,6 +13948,11 @@
     "return": -0.0062,
     "bench": -0.012,
     "excess": 0.0058
+   },
+   "3d": {
+    "return": -0.013,
+    "bench": 0.0056,
+    "excess": -0.0186
    }
   },
   "entryDate": "2026-10-07",
@@ -14414,7 +15118,15 @@
   "atr": 1.9277,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0367,
+    "bench": 0.0032,
+    "excess": 0.0335
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 35.11
  },
  {
   "signalDate": "2026-10-08",
@@ -14436,7 +15148,15 @@
   "atr": 0.823,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0328,
+    "bench": 0.0032,
+    "excess": 0.0296
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 19.2
  },
  {
   "signalDate": "2026-10-08",
@@ -14458,7 +15178,15 @@
   "atr": 14.4667,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0425,
+    "bench": 0.0032,
+    "excess": 0.0392
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 277.68
  },
  {
   "signalDate": "2026-10-08",
@@ -14480,7 +15208,15 @@
   "atr": 2.0119,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0011,
+    "bench": 0.0032,
+    "excess": -0.0043
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 56.16
  },
  {
   "signalDate": "2026-10-08",
@@ -14502,7 +15238,15 @@
   "atr": 4.3872,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0137,
+    "bench": 0.0032,
+    "excess": -0.0169
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 121.48
  },
  {
   "signalDate": "2026-10-08",
@@ -14524,7 +15268,15 @@
   "atr": 3.4132,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0127,
+    "bench": 0.0032,
+    "excess": 0.0095
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 92.66
  },
  {
   "signalDate": "2026-10-08",
@@ -14546,7 +15298,15 @@
   "atr": 2.6772,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0441,
+    "bench": 0.0032,
+    "excess": 0.0408
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 47.64
  },
  {
   "signalDate": "2026-10-08",
@@ -14568,7 +15328,15 @@
   "atr": 2.5583,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0126,
+    "bench": 0.0097,
+    "excess": 0.0029
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-10-08",
@@ -14590,7 +15358,15 @@
   "atr": 4.0313,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.011,
+    "bench": 0.0032,
+    "excess": -0.0142
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 170.97
  },
  {
   "signalDate": "2026-10-08",
@@ -14612,7 +15388,15 @@
   "atr": 0.7021,
   "model": "Swing Setups v1 (silent)",
   "variant": "main",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0527,
+    "bench": 0.0032,
+    "excess": 0.0495
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 14.99
  },
  {
   "signalDate": "2026-10-08",
@@ -14634,7 +15418,15 @@
   "atr": 14.4667,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0425,
+    "bench": 0.0032,
+    "excess": 0.0392
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 277.68
  },
  {
   "signalDate": "2026-10-08",
@@ -14656,7 +15448,15 @@
   "atr": 1.9277,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0367,
+    "bench": 0.0032,
+    "excess": 0.0335
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 35.11
  },
  {
   "signalDate": "2026-10-08",
@@ -14678,7 +15478,15 @@
   "atr": 0.823,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0328,
+    "bench": 0.0032,
+    "excess": 0.0296
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 19.2
  },
  {
   "signalDate": "2026-10-08",
@@ -14700,7 +15508,15 @@
   "atr": 3.4132,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0127,
+    "bench": 0.0032,
+    "excess": 0.0095
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 92.66
  },
  {
   "signalDate": "2026-10-08",
@@ -14722,7 +15538,15 @@
   "atr": 2.5583,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0126,
+    "bench": 0.0097,
+    "excess": 0.0029
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-10-08",
@@ -14744,7 +15568,15 @@
   "atr": 2.6772,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0441,
+    "bench": 0.0032,
+    "excess": 0.0408
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 47.64
  },
  {
   "signalDate": "2026-10-08",
@@ -14766,7 +15598,15 @@
   "atr": 1.2266,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0093,
+    "bench": 0.0032,
+    "excess": -0.0125
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 36.74
  },
  {
   "signalDate": "2026-10-08",
@@ -14788,7 +15628,15 @@
   "atr": 0.5758,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0434,
+    "bench": 0.0032,
+    "excess": -0.0467
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 8.98
  },
  {
   "signalDate": "2026-10-08",
@@ -14810,7 +15658,15 @@
   "atr": 1.5925,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0152,
+    "bench": 0.0032,
+    "excess": -0.0184
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 24.4
  },
  {
   "signalDate": "2026-10-08",
@@ -14832,7 +15688,15 @@
   "atr": 2.9844,
   "model": "Swing Setups v1 (silent)",
   "variant": "S1_pullbacksOnly",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0109,
+    "bench": 0.0097,
+    "excess": -0.0206
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 91.55
  },
  {
   "signalDate": "2026-10-08",
@@ -14854,7 +15718,15 @@
   "atr": 0.823,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0328,
+    "bench": 0.0032,
+    "excess": 0.0296
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 19.2
  },
  {
   "signalDate": "2026-10-08",
@@ -14876,7 +15748,15 @@
   "atr": 2.0119,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0011,
+    "bench": 0.0032,
+    "excess": -0.0043
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 56.16
  },
  {
   "signalDate": "2026-10-08",
@@ -14898,7 +15778,15 @@
   "atr": 4.3872,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0137,
+    "bench": 0.0032,
+    "excess": -0.0169
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 121.48
  },
  {
   "signalDate": "2026-10-08",
@@ -14920,7 +15808,15 @@
   "atr": 14.4667,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0425,
+    "bench": 0.0032,
+    "excess": 0.0392
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 277.68
  },
  {
   "signalDate": "2026-10-08",
@@ -14942,7 +15838,15 @@
   "atr": 4.0313,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.011,
+    "bench": 0.0032,
+    "excess": -0.0142
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 170.97
  },
  {
   "signalDate": "2026-10-08",
@@ -14964,7 +15868,15 @@
   "atr": 1.9277,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0367,
+    "bench": 0.0032,
+    "excess": 0.0335
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 35.11
  },
  {
   "signalDate": "2026-10-08",
@@ -14986,7 +15898,15 @@
   "atr": 3.4132,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0127,
+    "bench": 0.0032,
+    "excess": 0.0095
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 92.66
  },
  {
   "signalDate": "2026-10-08",
@@ -15008,7 +15928,15 @@
   "atr": 2.121,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0053,
+    "bench": 0.0097,
+    "excess": -0.0044
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 79.34
  },
  {
   "signalDate": "2026-10-08",
@@ -15030,7 +15958,15 @@
   "atr": 5.2086,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0038,
+    "bench": 0.0032,
+    "excess": 0.0005
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 255.02
  },
  {
   "signalDate": "2026-10-08",
@@ -15052,7 +15988,15 @@
   "atr": 1.2266,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0093,
+    "bench": 0.0032,
+    "excess": -0.0125
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 36.74
  },
  {
   "signalDate": "2026-10-08",
@@ -15074,7 +16018,15 @@
   "atr": 0.823,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0328,
+    "bench": 0.0032,
+    "excess": 0.0296
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 19.2
  },
  {
   "signalDate": "2026-10-08",
@@ -15096,7 +16048,15 @@
   "atr": 1.9277,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0367,
+    "bench": 0.0032,
+    "excess": 0.0335
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 35.11
  },
  {
   "signalDate": "2026-10-08",
@@ -15118,7 +16078,15 @@
   "atr": 14.4667,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0425,
+    "bench": 0.0032,
+    "excess": 0.0392
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 277.68
  },
  {
   "signalDate": "2026-10-08",
@@ -15140,7 +16108,15 @@
   "atr": 3.4132,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0127,
+    "bench": 0.0032,
+    "excess": 0.0095
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 92.66
  },
  {
   "signalDate": "2026-10-08",
@@ -15162,7 +16138,15 @@
   "atr": 2.9844,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0109,
+    "bench": 0.0097,
+    "excess": -0.0206
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 91.55
  },
  {
   "signalDate": "2026-10-08",
@@ -15184,7 +16168,15 @@
   "atr": 2.6772,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0441,
+    "bench": 0.0032,
+    "excess": 0.0408
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 47.64
  },
  {
   "signalDate": "2026-10-08",
@@ -15206,7 +16198,15 @@
   "atr": 2.5583,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0126,
+    "bench": 0.0097,
+    "excess": 0.0029
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 53.0
  },
  {
   "signalDate": "2026-10-08",
@@ -15228,7 +16228,15 @@
   "atr": 0.5758,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0434,
+    "bench": 0.0032,
+    "excess": -0.0467
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 8.98
  },
  {
   "signalDate": "2026-10-08",
@@ -15250,7 +16258,15 @@
   "atr": 1.5925,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": -0.0152,
+    "bench": 0.0032,
+    "excess": -0.0184
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 24.4
  },
  {
   "signalDate": "2026-10-08",
@@ -15270,6 +16286,894 @@
   ],
   "ceiling": 38.52,
   "atr": 1.2266,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {
+   "1d": {
+    "return": -0.0093,
+    "bench": 0.0032,
+    "excess": -0.0125
+   }
+  },
+  "entryDate": "2026-10-09",
+  "entryOpen": 36.74
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "SNOW",
+  "name": "Snowflake Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 78.8,
+  "trexScore": 63,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 130144392000.0,
+  "signalClose": 368.89,
+  "breakLevel": 345.3,
+  "setupArea": [
+   349.0,
+   363.34
+  ],
+  "ceiling": 384.56,
+  "atr": 14.3441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "HTFL",
+  "name": "Heartflow Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 77.7,
+  "trexScore": 68,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4325073406.98,
+  "signalClose": 49.74,
+  "breakLevel": 46.66,
+  "setupArea": [
+   48.14,
+   50.82
+  ],
+  "ceiling": 50.15,
+  "atr": 2.6816,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "FRO",
+  "name": "Frontline Plc Ordinary Shares",
+  "pattern": "Breakout",
+  "score": 74.6,
+  "trexScore": 81,
+  "sector": "Energy",
+  "currency": "USD",
+  "marketCap": 12489144072.9,
+  "signalClose": 56.1,
+  "breakLevel": 54.42,
+  "setupArea": [
+   54.91,
+   56.86
+  ],
+  "ceiling": null,
+  "atr": 1.9461,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "GCT",
+  "name": "GigaCloud Technology Inc Class A Ordinary Shares",
+  "pattern": "Breakout",
+  "score": 73.1,
+  "trexScore": 68,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 1651353377.38,
+  "signalClose": 57.26,
+  "breakLevel": 53.19,
+  "setupArea": [
+   55.8,
+   58.26
+  ],
+  "ceiling": null,
+  "atr": 2.4643,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 72.6,
+  "trexScore": 75,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5621731637.04,
+  "signalClose": 39.03,
+  "breakLevel": 36.88,
+  "setupArea": [
+   37.92,
+   39.86
+  ],
+  "ceiling": 41.23,
+  "atr": 1.9441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "ABCL",
+  "name": "AbCellera Biologics Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 72.5,
+  "trexScore": 60,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4065174168.835,
+  "signalClose": 12.545,
+  "breakLevel": 11.57,
+  "setupArea": [
+   12.47,
+   13.32
+  ],
+  "ceiling": 15.02,
+  "atr": 0.8438,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "ECO",
+  "name": "Okeanis Eco Tankers Corp. Common Stock",
+  "pattern": "Breakout",
+  "score": 70.3,
+  "trexScore": 80,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3635447827.05,
+  "signalClose": 93.11,
+  "breakLevel": 90.64,
+  "setupArea": [
+   90.64,
+   94.23
+  ],
+  "ceiling": null,
+  "atr": 3.5876,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA",
+  "name": "Aya Gold & Silver Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 68.9,
+  "trexScore": 78,
+  "sector": "Basic Materials",
+  "currency": "USD",
+  "marketCap": 3949471726.56,
+  "signalClose": 27.42,
+  "breakLevel": 25.96,
+  "setupArea": [
+   26.8,
+   28.23
+  ],
+  "ceiling": 27.48,
+  "atr": 1.4307,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "HAFN",
+  "name": "Hafnia Limited Common Shares",
+  "pattern": "Breakout",
+  "score": 65.2,
+  "trexScore": 81,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 5738749970.88,
+  "signalClose": 10.72,
+  "breakLevel": 10.48,
+  "setupArea": [
+   10.48,
+   10.85
+  ],
+  "ceiling": null,
+  "atr": 0.3739,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "EQH",
+  "name": "Equitable Holdings Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 60.3,
+  "trexScore": 56,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 14434765448.04,
+  "signalClose": 52.92,
+  "breakLevel": 49.48,
+  "setupArea": [
+   52.44,
+   53.84
+  ],
+  "ceiling": 54.71,
+  "atr": 1.4041,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "main",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "HTFL",
+  "name": "Heartflow Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 78.1,
+  "trexScore": 68,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4325073406.98,
+  "signalClose": 49.74,
+  "breakLevel": 46.66,
+  "setupArea": [
+   48.14,
+   50.82
+  ],
+  "ceiling": 50.15,
+  "atr": 2.6816,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 74.4,
+  "trexScore": 75,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5621731637.04,
+  "signalClose": 39.03,
+  "breakLevel": 36.88,
+  "setupArea": [
+   37.92,
+   39.86
+  ],
+  "ceiling": 41.23,
+  "atr": 1.9441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "ABCL",
+  "name": "AbCellera Biologics Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 72.5,
+  "trexScore": 60,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4065174168.835,
+  "signalClose": 12.545,
+  "breakLevel": 11.57,
+  "setupArea": [
+   12.47,
+   13.32
+  ],
+  "ceiling": 15.02,
+  "atr": 0.8438,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "SMCI",
+  "name": "Supermicro",
+  "pattern": "Pullback in uptrend",
+  "score": 70.9,
+  "trexScore": 74,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 27497286147.32,
+  "signalClose": 41.855,
+  "breakLevel": 39.54,
+  "setupArea": [
+   39.99,
+   42.34
+  ],
+  "ceiling": 43.76,
+  "atr": 2.3541,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA",
+  "name": "Aya Gold & Silver Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 70.0,
+  "trexScore": 78,
+  "sector": "Basic Materials",
+  "currency": "USD",
+  "marketCap": 3949471726.56,
+  "signalClose": 27.42,
+  "breakLevel": 25.96,
+  "setupArea": [
+   26.8,
+   28.23
+  ],
+  "ceiling": 27.48,
+  "atr": 1.4307,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AVT",
+  "name": "Avnet Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 68.1,
+  "trexScore": 77,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 8170656671.52,
+  "signalClose": 99.36,
+  "breakLevel": 97.63,
+  "setupArea": [
+   97.81,
+   101.48
+  ],
+  "ceiling": 108.63,
+  "atr": 3.6704,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "EQH",
+  "name": "Equitable Holdings Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 60.5,
+  "trexScore": 56,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 14434765448.04,
+  "signalClose": 52.92,
+  "breakLevel": 49.48,
+  "setupArea": [
+   52.44,
+   53.84
+  ],
+  "ceiling": 54.71,
+  "atr": 1.4041,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "CLH",
+  "name": "Clean Harbors Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 58.5,
+  "trexScore": 64,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 16729862508.64,
+  "signalClose": 316.93,
+  "breakLevel": 306.78,
+  "setupArea": [
+   312.63,
+   318.81
+  ],
+  "ceiling": 324.38,
+  "atr": 6.1783,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "BMNR",
+  "name": "BitMine Immersion Technologies Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 56.0,
+  "trexScore": 59,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 14495530247.82,
+  "signalClose": 24.03,
+  "breakLevel": 21.78,
+  "setupArea": [
+   22.55,
+   24.09
+  ],
+  "ceiling": 26.22,
+  "atr": 1.5344,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "BDGI.TO",
+  "name": "Badger Infrastructure Solutions Ltd.",
+  "pattern": "Pullback in uptrend",
+  "score": 51.9,
+  "trexScore": 66,
+  "sector": "Industrials",
+  "currency": "CAD",
+  "marketCap": 3047873339.1,
+  "signalClose": 90.55,
+  "breakLevel": 79.96,
+  "setupArea": [
+   90.06,
+   93.06
+  ],
+  "ceiling": 94.47,
+  "atr": 2.9991,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S1_pullbacksOnly",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "SNOW",
+  "name": "Snowflake Inc. Common Stock",
+  "pattern": "Breakout",
+  "score": 74.4,
+  "trexScore": 63,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 130144392000.0,
+  "signalClose": 368.89,
+  "breakLevel": 345.3,
+  "setupArea": [
+   349.0,
+   363.34
+  ],
+  "ceiling": 384.56,
+  "atr": 14.3441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "FRO",
+  "name": "Frontline Plc Ordinary Shares",
+  "pattern": "Breakout",
+  "score": 72.5,
+  "trexScore": 81,
+  "sector": "Energy",
+  "currency": "USD",
+  "marketCap": 12489144072.9,
+  "signalClose": 56.1,
+  "breakLevel": 54.42,
+  "setupArea": [
+   54.91,
+   56.86
+  ],
+  "ceiling": null,
+  "atr": 1.9461,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "TEVA",
+  "name": "Teva Pharmaceutical Industries Limited Ordinary Shares",
+  "pattern": "Breakout",
+  "score": 69.7,
+  "trexScore": 65,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 47934627627.3,
+  "signalClose": 41.1,
+  "breakLevel": 40.12,
+  "setupArea": [
+   40.79,
+   42.05
+  ],
+  "ceiling": null,
+  "atr": 1.2616,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "GCT",
+  "name": "GigaCloud Technology Inc Class A Ordinary Shares",
+  "pattern": "Breakout",
+  "score": 68.3,
+  "trexScore": 68,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 1651353377.38,
+  "signalClose": 57.26,
+  "breakLevel": 53.19,
+  "setupArea": [
+   55.8,
+   58.26
+  ],
+  "ceiling": null,
+  "atr": 2.4643,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "HTFL",
+  "name": "Heartflow Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 68.0,
+  "trexScore": 68,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4325073406.98,
+  "signalClose": 49.74,
+  "breakLevel": 46.66,
+  "setupArea": [
+   48.14,
+   50.82
+  ],
+  "ceiling": 50.15,
+  "atr": 2.6816,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "ECO",
+  "name": "Okeanis Eco Tankers Corp. Common Stock",
+  "pattern": "Breakout",
+  "score": 67.7,
+  "trexScore": 80,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3635447827.05,
+  "signalClose": 93.11,
+  "breakLevel": 90.64,
+  "setupArea": [
+   90.64,
+   94.23
+  ],
+  "ceiling": null,
+  "atr": 3.5876,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "DAC",
+  "name": "Danaos Corporation Common Stock",
+  "pattern": "Breakout",
+  "score": 67.1,
+  "trexScore": 75,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 3078041144.03,
+  "signalClose": 169.09,
+  "breakLevel": 166.83,
+  "setupArea": [
+   168.15,
+   172.13
+  ],
+  "ceiling": null,
+  "atr": 3.9784,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 65.4,
+  "trexScore": 75,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5621731637.04,
+  "signalClose": 39.03,
+  "breakLevel": 36.88,
+  "setupArea": [
+   37.92,
+   39.86
+  ],
+  "ceiling": 41.23,
+  "atr": 1.9441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "EQH",
+  "name": "Equitable Holdings Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 64.1,
+  "trexScore": 56,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 14434765448.04,
+  "signalClose": 52.92,
+  "breakLevel": 49.48,
+  "setupArea": [
+   52.44,
+   53.84
+  ],
+  "ceiling": 54.71,
+  "atr": 1.4041,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA",
+  "name": "Aya Gold & Silver Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 61.6,
+  "trexScore": 78,
+  "sector": "Basic Materials",
+  "currency": "USD",
+  "marketCap": 3949471726.56,
+  "signalClose": 27.42,
+  "breakLevel": 25.96,
+  "setupArea": [
+   26.8,
+   28.23
+  ],
+  "ceiling": 27.48,
+  "atr": 1.4307,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S3_calmerFirst",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "ABCL",
+  "name": "AbCellera Biologics Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 67.4,
+  "trexScore": 60,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4065174168.835,
+  "signalClose": 12.545,
+  "breakLevel": 11.57,
+  "setupArea": [
+   12.47,
+   13.32
+  ],
+  "ceiling": 15.02,
+  "atr": 0.8438,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "HTFL",
+  "name": "Heartflow Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 67.1,
+  "trexScore": 68,
+  "sector": "Healthcare",
+  "currency": "USD",
+  "marketCap": 4325073406.98,
+  "signalClose": 49.74,
+  "breakLevel": 46.66,
+  "setupArea": [
+   48.14,
+   50.82
+  ],
+  "ceiling": 50.15,
+  "atr": 2.6816,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA.TO",
+  "name": "Aya Gold & Silver Inc.",
+  "pattern": "Pullback in uptrend",
+  "score": 65.3,
+  "trexScore": 75,
+  "sector": "Basic Materials",
+  "currency": "CAD",
+  "marketCap": 5621731637.04,
+  "signalClose": 39.03,
+  "breakLevel": 36.88,
+  "setupArea": [
+   37.92,
+   39.86
+  ],
+  "ceiling": 41.23,
+  "atr": 1.9441,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AYA",
+  "name": "Aya Gold & Silver Inc. Common Shares",
+  "pattern": "Pullback in uptrend",
+  "score": 61.6,
+  "trexScore": 78,
+  "sector": "Basic Materials",
+  "currency": "USD",
+  "marketCap": 3949471726.56,
+  "signalClose": 27.42,
+  "breakLevel": 25.96,
+  "setupArea": [
+   26.8,
+   28.23
+  ],
+  "ceiling": 27.48,
+  "atr": 1.4307,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "AVT",
+  "name": "Avnet Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 61.0,
+  "trexScore": 77,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 8170656671.52,
+  "signalClose": 99.36,
+  "breakLevel": 97.63,
+  "setupArea": [
+   97.81,
+   101.48
+  ],
+  "ceiling": 108.63,
+  "atr": 3.6704,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "SMCI",
+  "name": "Supermicro",
+  "pattern": "Pullback in uptrend",
+  "score": 59.7,
+  "trexScore": 74,
+  "sector": "Technology",
+  "currency": "USD",
+  "marketCap": 27497286147.32,
+  "signalClose": 41.855,
+  "breakLevel": 39.54,
+  "setupArea": [
+   39.99,
+   42.34
+  ],
+  "ceiling": 43.76,
+  "atr": 2.3541,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "BDGI.TO",
+  "name": "Badger Infrastructure Solutions Ltd.",
+  "pattern": "Pullback in uptrend",
+  "score": 56.4,
+  "trexScore": 66,
+  "sector": "Industrials",
+  "currency": "CAD",
+  "marketCap": 3047873339.1,
+  "signalClose": 90.55,
+  "breakLevel": 79.96,
+  "setupArea": [
+   90.06,
+   93.06
+  ],
+  "ceiling": 94.47,
+  "atr": 2.9991,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "SBET",
+  "name": "Sharplink Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 53.5,
+  "trexScore": 62,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 1865950758.36,
+  "signalClose": 8.59,
+  "breakLevel": 7.67,
+  "setupArea": [
+   7.89,
+   8.46
+  ],
+  "ceiling": 10.09,
+  "atr": 0.5633,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "BMNR",
+  "name": "BitMine Immersion Technologies Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 52.9,
+  "trexScore": 59,
+  "sector": "Financial Services",
+  "currency": "USD",
+  "marketCap": 14495530247.82,
+  "signalClose": 24.03,
+  "breakLevel": 21.78,
+  "setupArea": [
+   22.55,
+   24.09
+  ],
+  "ceiling": 26.22,
+  "atr": 1.5344,
+  "model": "Swing Setups v1 (silent)",
+  "variant": "S4_deeperDips",
+  "results": {}
+ },
+ {
+  "signalDate": "2026-10-09",
+  "yahoo": "CLH",
+  "name": "Clean Harbors Inc. Common Stock",
+  "pattern": "Pullback in uptrend",
+  "score": 47.4,
+  "trexScore": 64,
+  "sector": "Industrials",
+  "currency": "USD",
+  "marketCap": 16729862508.64,
+  "signalClose": 316.93,
+  "breakLevel": 306.78,
+  "setupArea": [
+   312.63,
+   318.81
+  ],
+  "ceiling": 324.38,
+  "atr": 6.1783,
   "model": "Swing Setups v1 (silent)",
   "variant": "S4_deeperDips",
   "results": {}

@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-09T08:24:15.939794-04:00",
+ "generated": "2026-10-12T08:23:08.946536-04:00",
  "swing": {
   "main": {
-   "picks": 104,
-   "days": 11,
-   "graded5d": 53,
-   "avgExcess5d": -0.005167924528301887,
-   "beat5d": 0.3584905660377358,
-   "worked": 0.0,
-   "failed": 0.5,
-   "avgWorstDip": -0.07182999999999999
+   "picks": 114,
+   "days": 12,
+   "graded5d": 63,
+   "avgExcess5d": -0.0032984126984126985,
+   "beat5d": 0.3968253968253968,
+   "worked": 0.21052631578947367,
+   "failed": 0.42105263157894735,
+   "avgWorstDip": -0.061121052631578944
   },
   "S1_pullbacksOnly": {
-   "picks": 108,
-   "days": 11,
-   "graded5d": 58,
-   "avgExcess5d": -0.009201724137931036,
-   "beat5d": 0.3793103448275862,
-   "worked": 0.0,
-   "failed": 0.5,
-   "avgWorstDip": -0.06301
+   "picks": 118,
+   "days": 12,
+   "graded5d": 68,
+   "avgExcess5d": -0.007647058823529414,
+   "beat5d": 0.39705882352941174,
+   "worked": 0.2,
+   "failed": 0.4,
+   "avgWorstDip": -0.056784999999999995
   },
   "S2_supportiveOnly": {
    "picks": 0,
@@ -32,24 +32,24 @@
    "avgWorstDip": null
   },
   "S3_calmerFirst": {
-   "picks": 102,
-   "days": 11,
-   "graded5d": 52,
-   "avgExcess5d": -0.006080769230769228,
-   "beat5d": 0.3269230769230769,
-   "worked": 0.1,
-   "failed": 0.5,
-   "avgWorstDip": -0.06803000000000001
+   "picks": 112,
+   "days": 12,
+   "graded5d": 62,
+   "avgExcess5d": -0.0061064516129032236,
+   "beat5d": 0.3548387096774194,
+   "worked": 0.2631578947368421,
+   "failed": 0.42105263157894735,
+   "avgWorstDip": -0.06297368421052632
   },
   "S4_deeperDips": {
-   "picks": 108,
-   "days": 11,
-   "graded5d": 59,
-   "avgExcess5d": -0.008359322033898308,
-   "beat5d": 0.3728813559322034,
-   "worked": 0.0,
-   "failed": 0.6,
-   "avgWorstDip": -0.07094
+   "picks": 118,
+   "days": 12,
+   "graded5d": 69,
+   "avgExcess5d": -0.006543478260869567,
+   "beat5d": 0.4057971014492754,
+   "worked": 0.2,
+   "failed": 0.45,
+   "avgWorstDip": -0.060750000000000005
   }
  },
  "factorMonitor": {
