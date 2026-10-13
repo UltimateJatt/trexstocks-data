@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-12T08:23:08.946536-04:00",
+ "generated": "2026-10-13T08:24:45.364271-04:00",
  "swing": {
   "main": {
-   "picks": 114,
-   "days": 12,
-   "graded5d": 63,
-   "avgExcess5d": -0.0032984126984126985,
-   "beat5d": 0.3968253968253968,
-   "worked": 0.21052631578947367,
-   "failed": 0.42105263157894735,
-   "avgWorstDip": -0.061121052631578944
+   "picks": 124,
+   "days": 13,
+   "graded5d": 70,
+   "avgExcess5d": -0.000828571428571429,
+   "beat5d": 0.44285714285714284,
+   "worked": 0.23076923076923078,
+   "failed": 0.38461538461538464,
+   "avgWorstDip": -0.06366923076923078
   },
   "S1_pullbacksOnly": {
-   "picks": 118,
-   "days": 12,
-   "graded5d": 68,
-   "avgExcess5d": -0.007647058823529414,
-   "beat5d": 0.39705882352941174,
-   "worked": 0.2,
-   "failed": 0.4,
-   "avgWorstDip": -0.056784999999999995
+   "picks": 128,
+   "days": 13,
+   "graded5d": 74,
+   "avgExcess5d": -0.0034189189189189205,
+   "beat5d": 0.43243243243243246,
+   "worked": 0.17857142857142858,
+   "failed": 0.39285714285714285,
+   "avgWorstDip": -0.056785714285714294
   },
   "S2_supportiveOnly": {
    "picks": 0,
@@ -32,24 +32,24 @@
    "avgWorstDip": null
   },
   "S3_calmerFirst": {
-   "picks": 112,
-   "days": 12,
-   "graded5d": 62,
-   "avgExcess5d": -0.0061064516129032236,
-   "beat5d": 0.3548387096774194,
-   "worked": 0.2631578947368421,
-   "failed": 0.42105263157894735,
-   "avgWorstDip": -0.06297368421052632
+   "picks": 122,
+   "days": 13,
+   "graded5d": 69,
+   "avgExcess5d": 0.0021608695652173934,
+   "beat5d": 0.42028985507246375,
+   "worked": 0.2962962962962963,
+   "failed": 0.4074074074074074,
+   "avgWorstDip": -0.06412222222222223
   },
   "S4_deeperDips": {
-   "picks": 118,
-   "days": 12,
-   "graded5d": 69,
-   "avgExcess5d": -0.006543478260869567,
-   "beat5d": 0.4057971014492754,
-   "worked": 0.2,
-   "failed": 0.45,
-   "avgWorstDip": -0.060750000000000005
+   "picks": 128,
+   "days": 13,
+   "graded5d": 75,
+   "avgExcess5d": -0.002460000000000003,
+   "beat5d": 0.44,
+   "worked": 0.18518518518518517,
+   "failed": 0.4074074074074074,
+   "avgWorstDip": -0.05942962962962964
   }
  },
  "factorMonitor": {
