@@ -1,4 +1,4 @@
-# TrexStocks model lab, live evidence (2026-10-14)
+# TrexStocks model lab, live evidence (2026-10-15)
 
 Research only; nothing here is shown on the site. Alternatives were pre-declared on Sep 24, 2026 (see the analysis doc, "Model lab"). Small samples mean little: wait for at least 20 graded pick days before reading anything into Swing results.
 
@@ -6,11 +6,11 @@ Research only; nothing here is shown on the site. Alternatives were pre-declared
 
 | Variant | Pick days | Picks | Graded (5d) | Avg 5d vs index | Beat index | Worked | Failed | Avg worst dip (10d) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| main | 14 | 134 | 81 | +0.09% | 44% | 23% | 37% | -6.49% |
-| S1_pullbacksOnly | 14 | 138 | 85 | +0.00% | 45% | 21% | 42% | -5.58% |
+| main | 15 | 144 | 92 | +0.18% | 46% | 21% | 40% | -6.85% |
+| S1_pullbacksOnly | 15 | 145 | 96 | -0.02% | 45% | 21% | 43% | -5.78% |
 | S2_supportiveOnly | 0 | 0 | 0 | -- | -- | -- | -- | -- |
-| S3_calmerFirst | 14 | 132 | 78 | +0.65% | 45% | 31% | 42% | -6.47% |
-| S4_deeperDips | 14 | 138 | 86 | +0.08% | 45% | 21% | 42% | -5.71% |
+| S3_calmerFirst | 15 | 142 | 89 | +0.82% | 47% | 28% | 44% | -6.78% |
+| S4_deeperDips | 15 | 145 | 97 | +0.02% | 44% | 21% | 43% | -5.89% |
 
 ## Factor monitor: next-20-day return vs the average stock, by factor group
 
