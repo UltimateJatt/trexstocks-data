@@ -4008,6 +4008,11 @@
     "return": -0.0236,
     "bench": 0.0125,
     "excess": -0.0361
+   },
+   "4w": {
+    "return": 0.067,
+    "bench": 0.0271,
+    "excess": 0.04
    }
   },
   "pickDayClose": 349.61,
@@ -4038,6 +4043,11 @@
     "return": 0.0417,
     "bench": 0.0125,
     "excess": 0.0293
+   },
+   "4w": {
+    "return": -0.1347,
+    "bench": 0.0271,
+    "excess": -0.1618
    }
   },
   "pickDayClose": 44.75,
@@ -4068,6 +4078,11 @@
     "return": -0.0295,
     "bench": 0.0125,
     "excess": -0.042
+   },
+   "4w": {
+    "return": -0.0194,
+    "bench": 0.0271,
+    "excess": -0.0465
    }
   },
   "pickDayClose": 39.03,
@@ -4098,6 +4113,11 @@
     "return": 0.0196,
     "bench": -0.0147,
     "excess": 0.0344
+   },
+   "4w": {
+    "return": 0.1298,
+    "bench": -0.0328,
+    "excess": 0.1625
    }
   },
   "pickDayClose": 91.93,
@@ -4128,6 +4148,11 @@
     "return": -0.0371,
     "bench": -0.0147,
     "excess": -0.0224
+   },
+   "4w": {
+    "return": -0.2075,
+    "bench": -0.0328,
+    "excess": -0.1748
    }
   },
   "pickDayClose": 226.32,
@@ -4158,6 +4183,11 @@
     "return": -0.0208,
     "bench": -0.0147,
     "excess": -0.0061
+   },
+   "4w": {
+    "return": -0.021,
+    "bench": -0.0328,
+    "excess": 0.0118
    }
   },
   "pickDayClose": 330.44,
@@ -4188,6 +4218,11 @@
     "return": 0.0243,
     "bench": -0.0308,
     "excess": 0.0551
+   },
+   "4w": {
+    "return": 0.1214,
+    "bench": -0.074,
+    "excess": 0.1954
    }
   },
   "pickDayClose": 417.57,
@@ -4218,6 +4253,11 @@
     "return": -0.093,
     "bench": -0.0308,
     "excess": -0.0623
+   },
+   "4w": {
+    "return": -0.1218,
+    "bench": -0.074,
+    "excess": -0.0478
    }
   },
   "pickDayClose": 151.86,
@@ -4248,6 +4288,11 @@
     "return": 0.0571,
     "bench": -0.0308,
     "excess": 0.0879
+   },
+   "4w": {
+    "return": 0.0203,
+    "bench": -0.074,
+    "excess": 0.0942
    }
   },
   "pickDayClose": 25.53,
@@ -8101,6 +8146,11 @@
     "return": -0.0095,
     "bench": -0.0112,
     "excess": 0.0016
+   },
+   "1w": {
+    "return": 0.0157,
+    "bench": -0.0137,
+    "excess": 0.0294
    }
   },
   "pickDayClose": 288.84,
@@ -8126,6 +8176,11 @@
     "return": -0.0165,
     "bench": -0.0112,
     "excess": -0.0053
+   },
+   "1w": {
+    "return": -0.0949,
+    "bench": -0.0137,
+    "excess": -0.0813
    }
   },
   "pickDayClose": 381.46,
@@ -8151,6 +8206,11 @@
     "return": -0.0037,
     "bench": -0.0112,
     "excess": 0.0074
+   },
+   "1w": {
+    "return": 0.0106,
+    "bench": -0.0137,
+    "excess": 0.0243
    }
   },
   "pickDayClose": 187.01,
@@ -8176,6 +8236,11 @@
     "return": -0.0114,
     "bench": -0.0152,
     "excess": 0.0038
+   },
+   "1w": {
+    "return": 0.0309,
+    "bench": -0.0198,
+    "excess": 0.0507
    }
   },
   "pickDayClose": 52.55,
@@ -8201,6 +8266,11 @@
     "return": 0.0023,
     "bench": -0.0152,
     "excess": 0.0175
+   },
+   "1w": {
+    "return": 0.0348,
+    "bench": -0.0198,
+    "excess": 0.0546
    }
   },
   "pickDayClose": 157.84,
@@ -8226,6 +8296,11 @@
     "return": 0.0436,
     "bench": -0.0152,
     "excess": 0.0588
+   },
+   "1w": {
+    "return": -0.0042,
+    "bench": -0.0198,
+    "excess": 0.0156
    }
   },
   "pickDayClose": 85.88,
@@ -8251,6 +8326,11 @@
     "return": 0.0089,
     "bench": -0.0118,
     "excess": 0.0207
+   },
+   "1w": {
+    "return": 0.0232,
+    "bench": 0.0137,
+    "excess": 0.0095
    }
   },
   "pickDayClose": 177.35,
@@ -8276,6 +8356,11 @@
     "return": -0.0003,
     "bench": -0.0118,
     "excess": 0.0115
+   },
+   "1w": {
+    "return": 0.0114,
+    "bench": 0.0137,
+    "excess": -0.0023
    }
   },
   "pickDayClose": 64.35,
@@ -8301,6 +8386,11 @@
     "return": -0.0487,
     "bench": -0.0118,
     "excess": -0.0369
+   },
+   "1w": {
+    "return": -0.1755,
+    "bench": 0.0137,
+    "excess": -0.1892
    }
   },
   "pickDayClose": 13.02,
@@ -8996,7 +9086,13 @@
   "entryPrice": 200.16,
   "bench": "^GSPC",
   "benchEntry": 7407.38,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": -0.0352,
+    "bench": 0.0193,
+    "excess": -0.0544
+   }
+  },
   "pickDayClose": 197.88,
   "adjRatio": 1.0115,
   "benchAdjRatio": 1.0041
@@ -9015,7 +9111,13 @@
   "entryPrice": 397.935,
   "bench": "^GSPC",
   "benchEntry": 7407.38,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0381,
+    "bench": 0.0193,
+    "excess": 0.0188
+   }
+  },
   "pickDayClose": 399.81,
   "adjRatio": 0.9953,
   "benchAdjRatio": 1.0041
@@ -9034,7 +9136,13 @@
   "entryPrice": 152.855,
   "bench": "^GSPC",
   "benchEntry": 7407.38,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0769,
+    "bench": 0.0193,
+    "excess": 0.0576
+   }
+  },
   "pickDayClose": 157.0,
   "adjRatio": 0.9736,
   "benchAdjRatio": 1.0041
@@ -9053,7 +9161,13 @@
   "entryPrice": 532.5,
   "bench": "^IXIC",
   "benchEntry": 24635.287,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0238,
+    "bench": 0.0251,
+    "excess": -0.0013
+   }
+  },
   "pickDayClose": 530.61,
   "adjRatio": 1.0036,
   "benchAdjRatio": 1.0023
@@ -9072,7 +9186,13 @@
   "entryPrice": 90.27,
   "bench": "^IXIC",
   "benchEntry": 24635.287,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.094,
+    "bench": 0.0251,
+    "excess": 0.0689
+   }
+  },
   "pickDayClose": 93.86,
   "adjRatio": 0.9618,
   "benchAdjRatio": 1.0023
@@ -9091,7 +9211,13 @@
   "entryPrice": 88.465,
   "bench": "^IXIC",
   "benchEntry": 24635.287,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": -0.0006,
+    "bench": 0.0251,
+    "excess": -0.0256
+   }
+  },
   "pickDayClose": 87.23,
   "adjRatio": 1.0142,
   "benchAdjRatio": 1.0023
@@ -9110,7 +9236,13 @@
   "entryPrice": 68.57,
   "bench": "^GSPTSE",
   "benchEntry": 35628.61,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": -0.0102,
+    "bench": 0.023,
+    "excess": -0.0332
+   }
+  },
   "pickDayClose": 68.5,
   "adjRatio": 1.001,
   "benchAdjRatio": 0.9955
@@ -9129,7 +9261,13 @@
   "entryPrice": 92.33,
   "bench": "^GSPTSE",
   "benchEntry": 35628.61,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0181,
+    "bench": 0.023,
+    "excess": -0.0048
+   }
+  },
   "pickDayClose": 93.77,
   "adjRatio": 0.9846,
   "benchAdjRatio": 0.9955
@@ -9148,7 +9286,13 @@
   "entryPrice": 25.22,
   "bench": "^GSPTSE",
   "benchEntry": 35628.61,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": -0.0385,
+    "bench": 0.023,
+    "excess": -0.0614
+   }
+  },
   "pickDayClose": 24.25,
   "adjRatio": 1.04,
   "benchAdjRatio": 0.9955
@@ -9167,7 +9311,10 @@
   "entryPrice": 75.28,
   "bench": "^GSPC",
   "benchEntry": 7518.69,
-  "results": {}
+  "results": {},
+  "pickDayClose": 75.81,
+  "adjRatio": 0.993,
+  "benchAdjRatio": 0.9959
  },
  {
   "date": "2026-11-09",
@@ -9183,7 +9330,10 @@
   "entryPrice": 301.635,
   "bench": "^GSPC",
   "benchEntry": 7518.69,
-  "results": {}
+  "results": {},
+  "pickDayClose": 306.4,
+  "adjRatio": 0.9844,
+  "benchAdjRatio": 0.9959
  },
  {
   "date": "2026-11-09",
@@ -9199,7 +9349,10 @@
   "entryPrice": 187.785,
   "bench": "^GSPC",
   "benchEntry": 7518.69,
-  "results": {}
+  "results": {},
+  "pickDayClose": 185.54,
+  "adjRatio": 1.0121,
+  "benchAdjRatio": 0.9959
  },
  {
   "date": "2026-11-09",
@@ -9215,7 +9368,10 @@
   "entryPrice": 221.955,
   "bench": "^IXIC",
   "benchEntry": 25182.453,
-  "results": {}
+  "results": {},
+  "pickDayClose": 223.16,
+  "adjRatio": 0.9946,
+  "benchAdjRatio": 0.9972
  },
  {
   "date": "2026-11-09",
@@ -9231,7 +9387,10 @@
   "entryPrice": 16.23,
   "bench": "^IXIC",
   "benchEntry": 25182.453,
-  "results": {}
+  "results": {},
+  "pickDayClose": 16.81,
+  "adjRatio": 0.9655,
+  "benchAdjRatio": 0.9972
  },
  {
   "date": "2026-11-09",
@@ -9247,7 +9406,10 @@
   "entryPrice": 152.88,
   "bench": "^IXIC",
   "benchEntry": 25182.453,
-  "results": {}
+  "results": {},
+  "pickDayClose": 150.84,
+  "adjRatio": 1.0135,
+  "benchAdjRatio": 0.9972
  },
  {
   "date": "2026-11-09",
@@ -9263,7 +9425,10 @@
   "entryPrice": 287.02,
   "bench": "^GSPTSE",
   "benchEntry": 36254.83,
-  "results": {}
+  "results": {},
+  "pickDayClose": 288.32,
+  "adjRatio": 0.9955,
+  "benchAdjRatio": 0.9947
  },
  {
   "date": "2026-11-09",
@@ -9279,7 +9444,10 @@
   "entryPrice": 31.58,
   "bench": "^GSPTSE",
   "benchEntry": 36254.83,
-  "results": {}
+  "results": {},
+  "pickDayClose": 30.87,
+  "adjRatio": 1.023,
+  "benchAdjRatio": 0.9947
  },
  {
   "date": "2026-11-09",
@@ -9295,6 +9463,9 @@
   "entryPrice": 36.21,
   "bench": "^GSPTSE",
   "benchEntry": 36254.83,
-  "results": {}
+  "results": {},
+  "pickDayClose": 35.98,
+  "adjRatio": 1.0064,
+  "benchAdjRatio": 0.9947
  }
 ]
