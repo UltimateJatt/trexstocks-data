@@ -49884,6 +49884,11 @@
     "return": 0.0864,
     "bench": 0.0024,
     "excess": 0.084
+   },
+   "20d": {
+    "return": -0.0326,
+    "bench": -0.045,
+    "excess": 0.0124
    }
   },
   "entryDate": "2026-10-30",
@@ -50508,6 +50513,11 @@
     "return": 0.0864,
     "bench": 0.0024,
     "excess": 0.084
+   },
+   "20d": {
+    "return": -0.0326,
+    "bench": -0.045,
+    "excess": 0.0124
    }
   },
   "entryDate": "2026-10-30",
@@ -50892,6 +50902,11 @@
     "return": 0.0864,
     "bench": 0.0024,
     "excess": 0.084
+   },
+   "20d": {
+    "return": -0.0326,
+    "bench": -0.045,
+    "excess": 0.0124
    }
   },
   "entryDate": "2026-10-30",
@@ -68993,10 +69008,18 @@
     "return": -0.033,
     "bench": -0.0603,
     "excess": 0.0274
+   },
+   "10d": {
+    "return": -0.0299,
+    "bench": -0.0493,
+    "excess": 0.0194
    }
   },
   "entryDate": "2026-11-13",
-  "entryOpen": 32.77
+  "entryOpen": 32.77,
+  "outcome": "Expired",
+  "mae": -0.0616,
+  "mfe": 0.007
  },
  {
   "signalDate": "2026-11-13",
@@ -80972,7 +80995,15 @@
   "atr": 2.5236,
   "model": "Swing Setups v1 (silent)",
   "variant": "S3_calmerFirst",
-  "results": {}
+  "results": {
+   "1d": {
+    "return": 0.0103,
+    "bench": 0.0036,
+    "excess": 0.0067
+   }
+  },
+  "entryDate": "2026-11-26",
+  "entryOpen": 116.87
  },
  {
   "signalDate": "2026-11-25",

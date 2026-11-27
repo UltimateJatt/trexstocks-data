@@ -8326,6 +8326,11 @@
     "return": 0.0759,
     "bench": -0.0185,
     "excess": 0.0944
+   },
+   "4w": {
+    "return": 0.0896,
+    "bench": -0.051,
+    "excess": 0.1406
    }
   },
   "pickDayClose": 123.7,
@@ -8356,6 +8361,11 @@
     "return": -0.0975,
     "bench": -0.0185,
     "excess": -0.0789
+   },
+   "4w": {
+    "return": -0.0599,
+    "bench": -0.051,
+    "excess": -0.0088
    }
   },
   "pickDayClose": 12.85,
@@ -8386,6 +8396,11 @@
     "return": 0.0313,
     "bench": -0.0185,
     "excess": 0.0498
+   },
+   "4w": {
+    "return": 0.0756,
+    "bench": -0.051,
+    "excess": 0.1266
    }
   },
   "pickDayClose": 22.54,
@@ -12341,6 +12356,11 @@
     "return": -0.0257,
     "bench": -0.0325,
     "excess": 0.0068
+   },
+   "1w": {
+    "return": 0.0075,
+    "bench": 0.0036,
+    "excess": 0.004
    }
   },
   "pickDayClose": 93.09,
@@ -12366,6 +12386,11 @@
     "return": -0.099,
     "bench": -0.0325,
     "excess": -0.0665
+   },
+   "1w": {
+    "return": -0.0057,
+    "bench": 0.0036,
+    "excess": -0.0092
    }
   },
   "pickDayClose": 11.94,
@@ -12391,6 +12416,11 @@
     "return": -0.0164,
     "bench": -0.0325,
     "excess": 0.0161
+   },
+   "1w": {
+    "return": -0.001,
+    "bench": 0.0036,
+    "excess": -0.0046
    }
   },
   "pickDayClose": 20.25,
@@ -13200,7 +13230,13 @@
   "entryPrice": 153.41,
   "bench": "^GSPTSE",
   "benchEntry": 33445.6,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0135,
+    "bench": 0.0294,
+    "excess": -0.0159
+   }
+  },
   "pickDayClose": 155.38,
   "adjRatio": 0.9873,
   "benchAdjRatio": 0.9785
@@ -13219,7 +13255,13 @@
   "entryPrice": 12.08,
   "bench": "^GSPTSE",
   "benchEntry": 33445.6,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.024,
+    "bench": 0.0294,
+    "excess": -0.0054
+   }
+  },
   "pickDayClose": 12.13,
   "adjRatio": 0.9959,
   "benchAdjRatio": 0.9785
@@ -13238,7 +13280,13 @@
   "entryPrice": 70.59,
   "bench": "^GSPTSE",
   "benchEntry": 33445.6,
-  "results": {},
+  "results": {
+   "1d": {
+    "return": 0.0422,
+    "bench": 0.0294,
+    "excess": 0.0128
+   }
+  },
   "pickDayClose": 72.61,
   "adjRatio": 0.9722,
   "benchAdjRatio": 0.9785
